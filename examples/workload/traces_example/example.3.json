@@ -1,0 +1,60 @@
+{
+    "version": "0.0.4"
+  }
+  {
+    "id": "16",
+    "name": "ALL_REDUCE_1",
+    "type": "COMM_COLL_NODE",
+    "attr": [
+      { "name": "is_cpu_op",  "boolVal": false },
+      { "name": "comm_type",  "int64Val": "0" },          // ALL_REDUCE
+      { "name": "comm_size",  "int64Val": "1048576" }
+    ]
+  }
+  {
+    "id": "17",
+    "name": "RECONFIG_1",
+    "type": "COMM_COLL_NODE",
+    "dataDeps": ["16"],
+    "attr": [
+      { "name": "is_cpu_op",       "boolVal": false },
+      { "name": "comm_type",       "int64Val": "10" },          // RECONFIGURATION
+      { "name": "target_profile",  "stringVal": "fc_200g_800ns" },
+      { "name": "delay_cycles",    "int64Val": "1000" }
+    ]
+  }
+  {
+    "id": "18",
+    "name": "ALL_REDUCE_2",
+    "type": "COMM_COLL_NODE",
+    "dataDeps": ["17"],
+    "attr": [
+      { "name": "is_cpu_op",  "boolVal": false },
+      { "name": "comm_type",  "int64Val": "0" },
+      { "name": "comm_size",  "int64Val": "1048576" }
+    ]
+  }
+  {
+    "id": "19",
+    "name": "RECONFIG_2",
+    "type": "COMM_COLL_NODE",
+    "dataDeps": ["18"],
+    "attr": [
+      { "name": "is_cpu_op",       "boolVal": false },
+      { "name": "comm_type",       "int64Val": "10" },
+      { "name": "target_profile",  "stringVal": "switch_100g_600ns" },
+      { "name": "delay_cycles",    "int64Val": "1000" }
+    ]
+  }
+  {
+    "id": "20",
+    "name": "ALL_REDUCE_3",
+    "type": "COMM_COLL_NODE",
+    "dataDeps": ["19"],
+    "attr": [
+      { "name": "is_cpu_op",  "boolVal": false },
+      { "name": "comm_type",  "int64Val": "0" },
+      { "name": "comm_size",  "int64Val": "1048576" }
+    ]
+  }
+  

@@ -1,0 +1,30 @@
+# network.yml (Analytical) — profile-driven configuration
+# Units:
+# - bandwidth: GB/s
+# - latency: ns (per hop)
+# - delay_cycles: cycles (Analytical event queue time base)
+
+profiles:
+  - name: ring_50g_500ns
+    topology: [ Ring ]
+    npus_count: [ 4 ]
+    bandwidth: [ 50.0 ]   # GB/s
+    latency:   [ 500.0 ]  # ns
+
+  - name: fc_200g_800ns
+    topology: [ FullyConnected ]
+    npus_count: [ 4 ]
+    bandwidth: [ 200.0 ]  # GB/s
+    latency:   [ 800.0 ]  # ns
+
+  - name: switch_100g_600ns
+    topology: [ Switch ]
+    npus_count: [ 4 ]
+    bandwidth: [ 100.0 ]  # GB/s
+    latency:   [ 600.0 ]  # ns
+
+# Which profile is active at time 0
+active_profile: ring_50g_500ns
+
+# Optional default when a reconfiguration event omits delay_cycles
+reconfig_default_delay_cycles: 0
