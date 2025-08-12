@@ -649,11 +649,25 @@ void Sys::handleEvent(void* arg) {
         delete mehd;
     } else if (event == EventType::ReconfigStart) {
         auto* rhd = (ReconfigEventHandlerData*)ehd;
+        // Log Start
+        auto desc = AstraSimAnalytical::TopologyManager::describe_profile(rhd->target_profile);
+        std::cerr << "[ReconfigStart] profile=" << rhd->target_profile
+                  << ", topology=" << desc.topology_name
+                  << ", bandwidth=" << desc.bandwidth_gbps << " GB/s"
+                  << ", latency=" << desc.latency_ns << " ns"
+                  << ", npus_current=" << 0 /* filled at End via manager */
+                  << std::endl;
         all_sys[id]->network_paused = true;
         delete rhd;
     } else if (event == EventType::ReconfigEnd) {
         auto* rhd = (ReconfigEventHandlerData*)ehd;
         AstraSimAnalytical::ReconfigOverrides overrides; // empty per latest requirement
+        // Log End (final applied values will be printed by manager); also print Start-like line here
+        auto desc = AstraSimAnalytical::TopologyManager::describe_profile(rhd->target_profile);
+        std::cerr << "[ReconfigEnd] profile=" << rhd->target_profile
+                  << ", topology=" << desc.topology_name
+                  << ", bandwidth=" << desc.bandwidth_gbps << " GB/s"
+                  << ", latency=" << desc.latency_ns << " ns" << std::endl;
         AstraSimAnalytical::TopologyManager::switch_to_profile(rhd->target_profile, overrides);
         all_sys[id]->network_paused = false;
         delete rhd;

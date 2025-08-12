@@ -33,11 +33,18 @@ namespace AstraSimAnalytical {
 std::string TopologyManager::network_config_path;
 AnalyticalBackendType TopologyManager::backend_type =
     AnalyticalBackendType::CongestionUnaware;
+int TopologyManager::npus_count_current = -1;
 
 void TopologyManager::init(const std::string& network_config,
                            AnalyticalBackendType type) noexcept {
   network_config_path = network_config;
   backend_type = type;
+  // Parse initial config to record current N
+  NetworkParser parser(network_config_path);
+  const auto npus = parser.get_npus_counts_per_dim();
+  if (!npus.empty()) {
+    npus_count_current = npus[0];
+  }
 }
 
 static void exit_with_error(const std::string& msg) {
@@ -53,17 +60,17 @@ std::shared_ptr<Topology> TopologyManager::build_topology_from_profile(
     exit_with_error(std::string("[Reconfig] profile not found: ") + profile_name);
   }
   const auto prof = parser.get_profile(profile_name);
-
-  // 校验 npus_count 一致性：和 active_profile (parser 初始状态) 保持相同
-  const auto base_npus = parser.get_npus_counts_per_dim();
-  if (prof.npus_counts_per_dim != base_npus) {
-    exit_with_error("[Reconfig] npus_count mismatch across profiles");
+  // 运行时不改变 N：忽略 profile 中的 npus_count，与当前运行的 npus_count_current 保持一致
+  if (!prof.npus_counts_per_dim.empty() && npus_count_current > 0 &&
+      prof.npus_counts_per_dim[0] != npus_count_current) {
+    std::cerr << "[WARN] profile npus_count (" << prof.npus_counts_per_dim[0]
+              << ") ignored, using current N (" << npus_count_current << ")" << std::endl;
   }
 
   // 构建拓扑（目前仅支持 1 维；多维走 helper）
   if (prof.topologies_per_dim.size() == 1) {
     const auto topo = prof.topologies_per_dim[0];
-    const auto npus = prof.npus_counts_per_dim[0];
+    const auto npus = npus_count_current > 0 ? npus_count_current : (int)prof.npus_counts_per_dim[0];
     const auto bw = prof.bandwidths_per_dim[0];
     const auto lat = prof.latencies_per_dim[0];
     if (backend_type == AnalyticalBackendType::CongestionAware) {
@@ -124,9 +131,30 @@ void TopologyManager::switch_to_profile(const std::string& profile_name,
   // 打印最终生效参数
   const auto dims = topo->get_dims_count();
   const auto bws = topo->get_bandwidth_per_dim();
-  std::cerr << "[Reconfig] applied profile '" << profile_name << "' dims=" << dims
-            << " bw[0]=" << (bws.empty() ? 0.0 : bws[0]) << std::endl;
+  std::cerr << "[Reconfig] applied profile '" << profile_name
+            << "', topology=" << (prof.topologies_per_dim.empty() ? -1 : (int)prof.topologies_per_dim[0])
+            << ", bandwidth=" << (bws.empty() ? 0.0 : bws[0]) << " GB/s"
+            << ", latency=" << (prof.latencies_per_dim.empty() ? 0.0 : prof.latencies_per_dim[0]) << " ns"
+            << ", npus_current=" << npus_count_current
+            << std::endl;
   apply_topology(std::move(topo));
+}
+
+TopologyManager::ProfileDesc TopologyManager::describe_profile(const std::string& profile_name) {
+  NetworkParser parser(network_config_path);
+  const auto prof = parser.get_profile(profile_name);
+  ProfileDesc d;
+  if (!prof.topologies_per_dim.empty()) {
+    switch (prof.topologies_per_dim[0]) {
+      case TopologyBuildingBlock::Ring: d.topology_name = "Ring"; break;
+      case TopologyBuildingBlock::FullyConnected: d.topology_name = "FullyConnected"; break;
+      case TopologyBuildingBlock::Switch: d.topology_name = "Switch"; break;
+      default: d.topology_name = "Unknown"; break;
+    }
+  }
+  d.bandwidth_gbps = prof.bandwidths_per_dim.empty() ? 0.0 : prof.bandwidths_per_dim[0];
+  d.latency_ns = prof.latencies_per_dim.empty() ? 0.0 : prof.latencies_per_dim[0];
+  return d;
 }
 
 }  // namespace AstraSimAnalytical

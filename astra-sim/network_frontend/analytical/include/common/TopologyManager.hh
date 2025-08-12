@@ -36,9 +36,18 @@ class TopologyManager {
   static void switch_to_profile(const std::string& profile_name,
                                 const ReconfigOverrides& overrides);
 
+  // Inspect a profile (topology/bw/lat) without applying it
+  struct ProfileDesc {
+    std::string topology_name;
+    double bandwidth_gbps;
+    double latency_ns;
+  };
+  static ProfileDesc describe_profile(const std::string& profile_name);
+
  private:
   static std::string network_config_path;
   static AnalyticalBackendType backend_type;
+  static int npus_count_current;
 
   // Build a topology shared_ptr from a profile in example_network.yml
   static std::shared_ptr<NetworkAnalytical::Topology>
