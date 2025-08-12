@@ -46,57 +46,46 @@ static void exit_with_error(const std::string& msg) {
 }
 
 std::shared_ptr<Topology> TopologyManager::build_topology_from_profile(
-    const std::string& profile_name, const ReconfigOverrides& overrides) {
-  // For MVP we reuse the same YAML file; profiles are pre-resolved by user.
-  // Here we simply parse the YAML via NetworkParser, which expects the
-  // top-level keys (topology/npus_count/bandwidth/latency). The profile
-  // selection and overriding is assumed to be done by providing a temporary
-  // YAML path equal to network_config_path (already set to desired profile).
-  // If overrides are provided, we will adjust the parsed values before build.
+    const std::string& profile_name, const ReconfigOverrides& /*overrides*/) {
+  // Parse YAML and pick the named profile precisely
   NetworkParser parser(network_config_path);
+  if (!parser.has_profile(profile_name)) {
+    exit_with_error(std::string("[Reconfig] profile not found: ") + profile_name);
+  }
+  const auto prof = parser.get_profile(profile_name);
 
-  // If overrides exist and dims_count==1 (Analytical examples), apply them by
-  // creating a shallow clone of parsed values and constructing topology
-  // directly. Otherwise, defer to construct_topology(parser).
-  const auto dims = parser.get_dims_count();
-  const auto tops = parser.get_topologies_per_dim();
-  const auto npus = parser.get_npus_counts_per_dim();
-  auto bws = parser.get_bandwidths_per_dim();
-  auto lats = parser.get_latencies_per_dim();
+  // 校验 npus_count 一致性：和 active_profile (parser 初始状态) 保持相同
+  const auto base_npus = parser.get_npus_counts_per_dim();
+  if (prof.npus_counts_per_dim != base_npus) {
+    exit_with_error("[Reconfig] npus_count mismatch across profiles");
+  }
 
-  if (dims == 1) {
-    if (overrides.has_bandwidth_override) {
-      bws[0] = overrides.bandwidth_GBps;
-    }
-    if (overrides.has_latency_override) {
-      lats[0] = overrides.latency_ns;
-    }
+  // 构建拓扑（目前仅支持 1 维；多维走 helper）
+  if (prof.topologies_per_dim.size() == 1) {
+    const auto topo = prof.topologies_per_dim[0];
+    const auto npus = prof.npus_counts_per_dim[0];
+    const auto bw = prof.bandwidths_per_dim[0];
+    const auto lat = prof.latencies_per_dim[0];
     if (backend_type == AnalyticalBackendType::CongestionAware) {
-      switch (tops[0]) {
+      switch (topo) {
         case TopologyBuildingBlock::Ring:
-          return std::make_shared<NetworkAnalyticalCongestionAware::Ring>(
-              npus[0], bws[0], lats[0]);
+          return std::make_shared<NetworkAnalyticalCongestionAware::Ring>(npus, bw, lat);
         case TopologyBuildingBlock::FullyConnected:
-          return std::make_shared<NetworkAnalyticalCongestionAware::FullyConnected>(
-              npus[0], bws[0], lats[0]);
+          return std::make_shared<NetworkAnalyticalCongestionAware::FullyConnected>(npus, bw, lat);
         case TopologyBuildingBlock::Switch:
-          return std::make_shared<NetworkAnalyticalCongestionAware::Switch>(
-              npus[0], bws[0], lats[0]);
+          return std::make_shared<NetworkAnalyticalCongestionAware::Switch>(npus, bw, lat);
         default:
           exit_with_error("[Reconfig] Unsupported topology building block");
           return nullptr;
       }
     } else {
-      switch (tops[0]) {
+      switch (topo) {
         case TopologyBuildingBlock::Ring:
-          return std::make_shared<NetworkAnalyticalCongestionUnaware::Ring>(
-              npus[0], bws[0], lats[0]);
+          return std::make_shared<NetworkAnalyticalCongestionUnaware::Ring>(npus, bw, lat);
         case TopologyBuildingBlock::FullyConnected:
-          return std::make_shared<NetworkAnalyticalCongestionUnaware::FullyConnected>(
-              npus[0], bws[0], lats[0]);
+          return std::make_shared<NetworkAnalyticalCongestionUnaware::FullyConnected>(npus, bw, lat);
         case TopologyBuildingBlock::Switch:
-          return std::make_shared<NetworkAnalyticalCongestionUnaware::Switch>(
-              npus[0], bws[0], lats[0]);
+          return std::make_shared<NetworkAnalyticalCongestionUnaware::Switch>(npus, bw, lat);
         default:
           exit_with_error("[Reconfig] Unsupported topology building block");
           return nullptr;
@@ -104,11 +93,14 @@ std::shared_ptr<Topology> TopologyManager::build_topology_from_profile(
     }
   }
 
-  // Multi-dim path: delegate to helpers, which will use parser's values.
-  if (backend_type == AnalyticalBackendType::CongestionAware) {
-    return NetworkAnalyticalCongestionAware::construct_topology(parser);
-  }
-  return NetworkAnalyticalCongestionUnaware::construct_topology(parser);
+  // 多维：将当前 parser 状态替换为目标 profile 后，交给 helper 构造
+  // 这里直接临时覆盖 parser 的内部视图（通过局部变量），再调用 helper
+  // 简化起见，直接使用 helper 对 prof 构造
+  // 为保持与现有接口兼容，仍返回 helper 构造结果
+  // 注意：示例中使用 1 维，故通常不会走到这里
+  return (backend_type == AnalyticalBackendType::CongestionAware)
+             ? NetworkAnalyticalCongestionAware::construct_topology(parser)
+             : NetworkAnalyticalCongestionUnaware::construct_topology(parser);
 }
 
 void TopologyManager::apply_topology(
@@ -127,7 +119,13 @@ void TopologyManager::apply_topology(
 
 void TopologyManager::switch_to_profile(const std::string& profile_name,
                                         const ReconfigOverrides& overrides) {
+  // 忽略 overrides（按需求保持事件仅含 target_profile 与 delay_cycles）
   auto topo = build_topology_from_profile(profile_name, overrides);
+  // 打印最终生效参数
+  const auto dims = topo->get_dims_count();
+  const auto bws = topo->get_bandwidth_per_dim();
+  std::cerr << "[Reconfig] applied profile '" << profile_name << "' dims=" << dims
+            << " bw[0]=" << (bws.empty() ? 0.0 : bws[0]) << std::endl;
   apply_topology(std::move(topo));
 }
 

@@ -653,14 +653,7 @@ void Sys::handleEvent(void* arg) {
         delete rhd;
     } else if (event == EventType::ReconfigEnd) {
         auto* rhd = (ReconfigEventHandlerData*)ehd;
-        AstraSimAnalytical::ReconfigOverrides overrides;
-        overrides.has_bandwidth_override = rhd->has_bw_override;
-        overrides.bandwidth_GBps = rhd->bw_gbps;
-        overrides.has_latency_override = rhd->has_lat_override;
-        overrides.latency_ns = rhd->lat_ns;
-        // Avoid direct include to analytical headers here to keep Sys generic;
-        // top-level mains will have already set the appropriate topology via
-        // TopologyManager at startup, and TopologyManager is responsible for switching.
+        AstraSimAnalytical::ReconfigOverrides overrides; // empty per latest requirement
         AstraSimAnalytical::TopologyManager::switch_to_profile(rhd->target_profile, overrides);
         all_sys[id]->network_paused = false;
         delete rhd;
