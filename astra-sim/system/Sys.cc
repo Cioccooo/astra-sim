@@ -31,6 +31,7 @@ LICENSE file in the root directory of this source tree.
 #include "astra-sim/system/astraccl/native_collectives/logical_topology/BasicLogicalTopology.hh"
 #include "astra-sim/system/astraccl/native_collectives/logical_topology/GeneralComplexTopology.hh"
 #include <json/json.hpp>
+#include "astra-sim/system/ReconfigEventHandlerData.hh"
 
 using namespace std;
 using namespace Chakra;
@@ -657,8 +658,10 @@ void Sys::handleEvent(void* arg) {
         overrides.bandwidth_GBps = rhd->bw_gbps;
         overrides.has_latency_override = rhd->has_lat_override;
         overrides.latency_ns = rhd->lat_ns;
-        AstraSimAnalytical::TopologyManager::switch_to_profile(rhd->target_profile,
-                                                               overrides);
+        // Avoid direct include to analytical headers here to keep Sys generic;
+        // top-level mains will have already set the appropriate topology via
+        // TopologyManager at startup, and TopologyManager is responsible for switching.
+        AstraSimAnalytical::TopologyManager::switch_to_profile(rhd->target_profile, overrides);
         all_sys[id]->network_paused = false;
         delete rhd;
     } else if (event == EventType::PacketReceived) {

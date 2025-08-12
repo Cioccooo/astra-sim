@@ -24,6 +24,7 @@ using json = nlohmann::json;
 
 typedef ChakraProtoMsg::NodeType ChakraNodeType;
 typedef ChakraProtoMsg::CollectiveCommType ChakraCollectiveCommType;
+static constexpr int CHAKRA_RECONFIG_COMM_TYPE = 10;
 
 Workload::Workload(Sys* sys, string et_filename, string comm_group_filename) {
     string workload_filename = et_filename + "." + to_string(sys->id) + ".et";
@@ -257,7 +258,7 @@ void Workload::issue_comm(shared_ptr<Chakra::ETFeederNode> node) {
 
     if (!node->is_cpu_op() &&
         (node->type() == ChakraNodeType::COMM_COLL_NODE)) {
-        if (node->comm_type() == (ChakraCollectiveCommType)10 /* RECONFIGURATION */) {
+        if ((int)node->comm_type() == CHAKRA_RECONFIG_COMM_TYPE) {
             // Reconfiguration event handling
             std::string target_profile;
             uint64_t delay_cycles = 0;
