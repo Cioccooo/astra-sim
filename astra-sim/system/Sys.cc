@@ -646,6 +646,21 @@ void Sys::handleEvent(void* arg) {
             mehd->workload->call(event, mehd->wlhd);
         }
         delete mehd;
+    } else if (event == EventType::ReconfigStart) {
+        auto* rhd = (ReconfigEventHandlerData*)ehd;
+        all_sys[id]->network_paused = true;
+        delete rhd;
+    } else if (event == EventType::ReconfigEnd) {
+        auto* rhd = (ReconfigEventHandlerData*)ehd;
+        AstraSimAnalytical::ReconfigOverrides overrides;
+        overrides.has_bandwidth_override = rhd->has_bw_override;
+        overrides.bandwidth_GBps = rhd->bw_gbps;
+        overrides.has_latency_override = rhd->has_lat_override;
+        overrides.latency_ns = rhd->lat_ns;
+        AstraSimAnalytical::TopologyManager::switch_to_profile(rhd->target_profile,
+                                                               overrides);
+        all_sys[id]->network_paused = false;
+        delete rhd;
     } else if (event == EventType::PacketReceived) {
         RecvPacketEventHandlerData* rcehd = (RecvPacketEventHandlerData*)ehd;
         if (rcehd->workload) {
@@ -663,6 +678,26 @@ void Sys::handleEvent(void* arg) {
         sehd->callable->call(EventType::PacketSent, sehd->wlhd);
         delete sehd;
     }
+}
+void Sys::scheduleReconfig(const std::string& target_profile,
+                           Tick delay_cycles,
+                           bool has_bw_override,
+                           double bw_gbps,
+                           bool has_lat_override,
+                           double lat_ns) {
+    // Schedule start now
+    auto* start_ehd = new ReconfigEventHandlerData(
+        id, EventType::ReconfigStart, target_profile, has_bw_override, bw_gbps,
+        has_lat_override, lat_ns);
+    timespec_t zero{NS, 0};
+    comm_NI->sim_schedule(zero, &Sys::handleEvent, start_ehd);
+
+    // Schedule end at now + delay
+    auto* end_ehd = new ReconfigEventHandlerData(
+        id, EventType::ReconfigEnd, target_profile, has_bw_override, bw_gbps,
+        has_lat_override, lat_ns);
+    timespec_t wait{NS, static_cast<long double>(delay_cycles)};
+    comm_NI->sim_schedule(wait, &Sys::handleEvent, end_ehd);
 }
 
 LogicalTopology* Sys::get_logical_topology(ComType comm_type) {

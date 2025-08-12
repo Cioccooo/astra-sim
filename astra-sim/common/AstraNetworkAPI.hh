@@ -7,6 +7,7 @@ LICENSE file in the root directory of this source tree.
 #define __ASTRA_NETWORK_API_HH__
 
 #include "astra-sim/system/Common.hh"
+#include <string>
 
 namespace AstraSim {
 
@@ -64,6 +65,12 @@ class AstraNetworkAPI {
     virtual double get_BW_at_dimension(int dim) {
         return -1;
     };
+
+    // Topology reconfiguration hook (Analytical backends override)
+    // Default: no-op
+    virtual void reconfigure_topology(const std::string& /*profile_name*/, bool /*has_bw*/, double /*bw_gbps*/, bool /*has_lat*/, double /*lat_ns*/) {
+        return;
+    }
 
     // Notifies that the workload for this rank has finished. 
     // Note that we have one network handler per rank. 

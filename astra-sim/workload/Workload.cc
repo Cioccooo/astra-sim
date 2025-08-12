@@ -145,6 +145,11 @@ void Workload::issue(shared_ptr<Chakra::ETFeederNode> node) {
                    (node->type() == ChakraNodeType::COMM_COLL_NODE ||
                     (node->type() == ChakraNodeType::COMM_SEND_NODE) ||
                     (node->type() == ChakraNodeType::COMM_RECV_NODE))) {
+            // Pause guard: if system is paused for reconfiguration, push back
+            if (sys->is_network_paused()) {
+                et_feeder->pushBackIssuableNode(node->id());
+                return;
+            }
             if (sys->trace_enabled) {
                 if (sys->trace_enabled) {
                     logger->debug("issue,sys->id={}, tick={}, node->id={}, "
@@ -252,7 +257,58 @@ void Workload::issue_comm(shared_ptr<Chakra::ETFeederNode> node) {
 
     if (!node->is_cpu_op() &&
         (node->type() == ChakraNodeType::COMM_COLL_NODE)) {
-        if (node->comm_type() == ChakraCollectiveCommType::ALL_REDUCE) {
+        if (node->comm_type() == (ChakraCollectiveCommType)10 /* RECONFIGURATION */) {
+            // Reconfiguration event handling
+            std::string target_profile;
+            uint64_t delay_cycles = 0;
+            double override_bw = 0.0;
+            bool has_bw = false;
+            double override_lat = 0.0;
+            bool has_lat = false;
+
+            if (node->has_other_attr("target_profile")) {
+                target_profile = node->get_other_attr("target_profile").string_val();
+            }
+            if (node->has_other_attr("delay_cycles")) {
+                delay_cycles = (uint64_t)node->get_other_attr("delay_cycles").int64_val();
+            }
+            if (node->has_other_attr("bandwidth_GBps")) {
+                override_bw = node->get_other_attr("bandwidth_GBps").double_val();
+                has_bw = true;
+            }
+            if (node->has_other_attr("latency_ns")) {
+                const auto &attr = node->get_other_attr("latency_ns");
+                if (attr.has_double_val()) {
+                    override_lat = attr.double_val();
+                } else if (attr.has_int64_val()) {
+                    override_lat = static_cast<double>(attr.int64_val());
+                }
+                has_lat = true;
+            }
+
+            if (has_bw && override_bw <= 0.0) {
+                LoggerFactory::get_logger("workload")->critical(
+                    "Invalid bandwidth override: {}", override_bw);
+                exit(EXIT_FAILURE);
+            }
+            if (has_lat && override_lat < 0.0) {
+                LoggerFactory::get_logger("workload")->critical(
+                    "Invalid latency override: {}", override_lat);
+                exit(EXIT_FAILURE);
+            }
+
+            // Ask system to schedule reconfiguration
+            sys->scheduleReconfig(target_profile, delay_cycles, has_bw,
+                                   override_bw, has_lat, override_lat);
+
+            // Complete this ET node immediately
+            et_feeder->freeChildrenNodes(node->id());
+            et_feeder->removeNode(node->id());
+            hw_resource->release(node);
+            issue_dep_free_nodes();
+            return;
+
+        } else if (node->comm_type() == ChakraCollectiveCommType::ALL_REDUCE) {
             DataSet* fp =
                 sys->generate_all_reduce(node->comm_size(), involved_dim,
                                          comm_group, node->comm_priority());

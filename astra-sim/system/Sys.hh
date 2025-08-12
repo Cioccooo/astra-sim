@@ -111,6 +111,15 @@ class Sys : public Callable {
     static void handleEvent(void* arg);
     //---------------------------------------------------------------------------
 
+    // Reconfiguration control API (Analytical backend)
+    bool is_network_paused() const { return network_paused; }
+    void scheduleReconfig(const std::string& target_profile,
+                          Tick delay_cycles,
+                          bool has_bw_override,
+                          double bw_gbps,
+                          bool has_lat_override,
+                          double lat_ns);
+
     // Communicator Group Support
     // -----------------------------------------------
     LogicalTopology* get_logical_topology(ComType comm_type);
@@ -326,6 +335,9 @@ class Sys : public Callable {
 
     // skip simulation for all nodes and use current duration
     bool replay_only;
+
+    // Reconfiguration state
+    bool network_paused = false;
 };
 
 }  // namespace AstraSim

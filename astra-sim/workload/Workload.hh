@@ -55,6 +55,8 @@ class Workload : public Callable {
     bool is_finished;
 
     private:
+    // Helper to (re-)enqueue a node when network is paused
+    void requeue_node_when_paused(std::shared_ptr<Chakra::ETFeederNode> node);
     // From the ET node, find out the corresponding communicator group, and return the pointer.
     // If no communicator group is specified for this ET node, return nullptr.
     CommunicatorGroup* extract_comm_group(std::shared_ptr<Chakra::ETFeederNode> node);

@@ -9,6 +9,7 @@ LICENSE file in the root directory of this source tree.
 #include <astra-network-analytical/common/EventQueue.h>
 #include <astra-network-analytical/common/NetworkParser.h>
 #include <astra-network-analytical/congestion_aware/Helper.h>
+#include "common/TopologyManager.hh"
 #include <remote_memory_backend/analytical/AnalyticalRemoteMemory.hh>
 
 using namespace AstraSim;
@@ -61,6 +62,8 @@ int main(int argc, char* argv[]) {
     // Set up Network API
     CongestionAwareNetworkApi::set_event_queue(event_queue);
     CongestionAwareNetworkApi::set_topology(topology);
+    AstraSimAnalytical::TopologyManager::init(
+        network_configuration, AstraSimAnalytical::AnalyticalBackendType::CongestionAware);
 
     // Create ASTRA-sim related resources
     auto network_apis =
