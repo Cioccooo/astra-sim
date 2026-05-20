@@ -1,0 +1,481 @@
+workload,run_setting,bar_type,component,value_s
+GPT3 175B,"lump
+10 us",RAW_TOTAL,TP communication,147917.11492919922
+GPT3 175B,"lump
+10 us",RAW_TOTAL,PP communication,768.0633001327515
+GPT3 175B,"lump
+10 us",RAW_TOTAL,Other communication,37171.29455733299
+GPT3 175B,"lump
+10 us",RAW_TOTAL,DP communication,7323.220424652099
+GPT3 175B,"lump
+10 us",RAW_TOTAL,DP reconfiguration,17.166137695312504
+GPT3 175B,"lump
+10 us",EXPOSED_TOTAL,TP communication,147917.11492919922
+GPT3 175B,"lump
+10 us",EXPOSED_TOTAL,PP communication,768.0633001327515
+GPT3 175B,"lump
+10 us",EXPOSED_TOTAL,Other communication,37171.29455733299
+GPT3 175B,"lump
+10 us",EXPOSED_TOTAL,DP communication,7323.220424652099
+GPT3 175B,"lump
+10 us",EXPOSED_TOTAL,DP reconfiguration,17.166137695312504
+GPT3 175B,"lump
+10 us",DP_ONLY_RAW,TP communication,0.0
+GPT3 175B,"lump
+10 us",DP_ONLY_RAW,PP communication,0.0
+GPT3 175B,"lump
+10 us",DP_ONLY_RAW,Other communication,0.0
+GPT3 175B,"lump
+10 us",DP_ONLY_RAW,DP communication,7323.220424652099
+GPT3 175B,"lump
+10 us",DP_ONLY_RAW,DP reconfiguration,17.166137695312504
+GPT3 175B,"lump
+10 us",DP_ONLY_EXPOSED,TP communication,0.0
+GPT3 175B,"lump
+10 us",DP_ONLY_EXPOSED,PP communication,0.0
+GPT3 175B,"lump
+10 us",DP_ONLY_EXPOSED,Other communication,0.0
+GPT3 175B,"lump
+10 us",DP_ONLY_EXPOSED,DP communication,7323.220424652099
+GPT3 175B,"lump
+10 us",DP_ONLY_EXPOSED,DP reconfiguration,17.166137695312504
+GPT3 175B,"layerwise
+10 us",RAW_TOTAL,TP communication,147917.11492919922
+GPT3 175B,"layerwise
+10 us",RAW_TOTAL,PP communication,768.0633001327515
+GPT3 175B,"layerwise
+10 us",RAW_TOTAL,Other communication,37171.29455733299
+GPT3 175B,"layerwise
+10 us",RAW_TOTAL,DP communication,7323.220424652093
+GPT3 175B,"layerwise
+10 us",RAW_TOTAL,DP reconfiguration,0.1788139343261719
+GPT3 175B,"layerwise
+10 us",EXPOSED_TOTAL,TP communication,147917.11492919922
+GPT3 175B,"layerwise
+10 us",EXPOSED_TOTAL,PP communication,768.0633001327515
+GPT3 175B,"layerwise
+10 us",EXPOSED_TOTAL,Other communication,37171.29455733299
+GPT3 175B,"layerwise
+10 us",EXPOSED_TOTAL,DP communication,76.28354609023525
+GPT3 175B,"layerwise
+10 us",EXPOSED_TOTAL,DP reconfiguration,7.300434361277332e-15
+GPT3 175B,"layerwise
+10 us",DP_ONLY_RAW,TP communication,0.0
+GPT3 175B,"layerwise
+10 us",DP_ONLY_RAW,PP communication,0.0
+GPT3 175B,"layerwise
+10 us",DP_ONLY_RAW,Other communication,0.0
+GPT3 175B,"layerwise
+10 us",DP_ONLY_RAW,DP communication,7323.220424652093
+GPT3 175B,"layerwise
+10 us",DP_ONLY_RAW,DP reconfiguration,0.1788139343261719
+GPT3 175B,"layerwise
+10 us",DP_ONLY_EXPOSED,TP communication,0.0
+GPT3 175B,"layerwise
+10 us",DP_ONLY_EXPOSED,PP communication,0.0
+GPT3 175B,"layerwise
+10 us",DP_ONLY_EXPOSED,Other communication,0.0
+GPT3 175B,"layerwise
+10 us",DP_ONLY_EXPOSED,DP communication,76.28354609023525
+GPT3 175B,"layerwise
+10 us",DP_ONLY_EXPOSED,DP reconfiguration,7.300434361277332e-15
+GPT3 175B,"bucketed(4L)
+10 us",RAW_TOTAL,TP communication,147917.11492919922
+GPT3 175B,"bucketed(4L)
+10 us",RAW_TOTAL,PP communication,768.0633001327515
+GPT3 175B,"bucketed(4L)
+10 us",RAW_TOTAL,Other communication,37171.29455733299
+GPT3 175B,"bucketed(4L)
+10 us",RAW_TOTAL,DP communication,7317.864589691164
+GPT3 175B,"bucketed(4L)
+10 us",RAW_TOTAL,DP reconfiguration,0.1788139343261719
+GPT3 175B,"bucketed(4L)
+10 us",EXPOSED_TOTAL,TP communication,147917.11492919922
+GPT3 175B,"bucketed(4L)
+10 us",EXPOSED_TOTAL,PP communication,768.0633001327515
+GPT3 175B,"bucketed(4L)
+10 us",EXPOSED_TOTAL,Other communication,37171.29455733299
+GPT3 175B,"bucketed(4L)
+10 us",EXPOSED_TOTAL,DP communication,304.91102457051545
+GPT3 175B,"bucketed(4L)
+10 us",EXPOSED_TOTAL,DP reconfiguration,0.0
+GPT3 175B,"bucketed(4L)
+10 us",DP_ONLY_RAW,TP communication,0.0
+GPT3 175B,"bucketed(4L)
+10 us",DP_ONLY_RAW,PP communication,0.0
+GPT3 175B,"bucketed(4L)
+10 us",DP_ONLY_RAW,Other communication,0.0
+GPT3 175B,"bucketed(4L)
+10 us",DP_ONLY_RAW,DP communication,7317.864589691164
+GPT3 175B,"bucketed(4L)
+10 us",DP_ONLY_RAW,DP reconfiguration,0.1788139343261719
+GPT3 175B,"bucketed(4L)
+10 us",DP_ONLY_EXPOSED,TP communication,0.0
+GPT3 175B,"bucketed(4L)
+10 us",DP_ONLY_EXPOSED,PP communication,0.0
+GPT3 175B,"bucketed(4L)
+10 us",DP_ONLY_EXPOSED,Other communication,0.0
+GPT3 175B,"bucketed(4L)
+10 us",DP_ONLY_EXPOSED,DP communication,304.91102457051545
+GPT3 175B,"bucketed(4L)
+10 us",DP_ONLY_EXPOSED,DP reconfiguration,0.0
+GPT3 175B,"lump
+500 us",RAW_TOTAL,TP communication,148337.68530273438
+GPT3 175B,"lump
+500 us",RAW_TOTAL,PP communication,770.2537708282471
+GPT3 175B,"lump
+500 us",RAW_TOTAL,Other communication,37276.98476839065
+GPT3 175B,"lump
+500 us",RAW_TOTAL,DP communication,7323.220424652099
+GPT3 175B,"lump
+500 us",RAW_TOTAL,DP reconfiguration,858.306884765625
+GPT3 175B,"lump
+500 us",EXPOSED_TOTAL,TP communication,148337.68530273438
+GPT3 175B,"lump
+500 us",EXPOSED_TOTAL,PP communication,770.2537708282471
+GPT3 175B,"lump
+500 us",EXPOSED_TOTAL,Other communication,37276.98476839065
+GPT3 175B,"lump
+500 us",EXPOSED_TOTAL,DP communication,7323.220424652099
+GPT3 175B,"lump
+500 us",EXPOSED_TOTAL,DP reconfiguration,858.306884765625
+GPT3 175B,"lump
+500 us",DP_ONLY_RAW,TP communication,0.0
+GPT3 175B,"lump
+500 us",DP_ONLY_RAW,PP communication,0.0
+GPT3 175B,"lump
+500 us",DP_ONLY_RAW,Other communication,0.0
+GPT3 175B,"lump
+500 us",DP_ONLY_RAW,DP communication,7323.220424652099
+GPT3 175B,"lump
+500 us",DP_ONLY_RAW,DP reconfiguration,858.306884765625
+GPT3 175B,"lump
+500 us",DP_ONLY_EXPOSED,TP communication,0.0
+GPT3 175B,"lump
+500 us",DP_ONLY_EXPOSED,PP communication,0.0
+GPT3 175B,"lump
+500 us",DP_ONLY_EXPOSED,Other communication,0.0
+GPT3 175B,"lump
+500 us",DP_ONLY_EXPOSED,DP communication,7323.220424652099
+GPT3 175B,"lump
+500 us",DP_ONLY_EXPOSED,DP reconfiguration,858.306884765625
+GPT3 175B,"layerwise
+500 us",RAW_TOTAL,TP communication,148337.68530273438
+GPT3 175B,"layerwise
+500 us",RAW_TOTAL,PP communication,770.2537708282471
+GPT3 175B,"layerwise
+500 us",RAW_TOTAL,Other communication,37276.98476839065
+GPT3 175B,"layerwise
+500 us",RAW_TOTAL,DP communication,7323.220424652093
+GPT3 175B,"layerwise
+500 us",RAW_TOTAL,DP reconfiguration,8.940696716308594
+GPT3 175B,"layerwise
+500 us",EXPOSED_TOTAL,TP communication,148337.68530273438
+GPT3 175B,"layerwise
+500 us",EXPOSED_TOTAL,PP communication,770.2537708282471
+GPT3 175B,"layerwise
+500 us",EXPOSED_TOTAL,Other communication,37276.98476839065
+GPT3 175B,"layerwise
+500 us",EXPOSED_TOTAL,DP communication,76.28354609023525
+GPT3 175B,"layerwise
+500 us",EXPOSED_TOTAL,DP reconfiguration,0.0
+GPT3 175B,"layerwise
+500 us",DP_ONLY_RAW,TP communication,0.0
+GPT3 175B,"layerwise
+500 us",DP_ONLY_RAW,PP communication,0.0
+GPT3 175B,"layerwise
+500 us",DP_ONLY_RAW,Other communication,0.0
+GPT3 175B,"layerwise
+500 us",DP_ONLY_RAW,DP communication,7323.220424652093
+GPT3 175B,"layerwise
+500 us",DP_ONLY_RAW,DP reconfiguration,8.940696716308594
+GPT3 175B,"layerwise
+500 us",DP_ONLY_EXPOSED,TP communication,0.0
+GPT3 175B,"layerwise
+500 us",DP_ONLY_EXPOSED,PP communication,0.0
+GPT3 175B,"layerwise
+500 us",DP_ONLY_EXPOSED,Other communication,0.0
+GPT3 175B,"layerwise
+500 us",DP_ONLY_EXPOSED,DP communication,76.28354609023525
+GPT3 175B,"layerwise
+500 us",DP_ONLY_EXPOSED,DP reconfiguration,0.0
+GPT3 175B,"bucketed(4L)
+500 us",RAW_TOTAL,TP communication,148337.68530273438
+GPT3 175B,"bucketed(4L)
+500 us",RAW_TOTAL,PP communication,770.2537708282471
+GPT3 175B,"bucketed(4L)
+500 us",RAW_TOTAL,Other communication,37276.98476839065
+GPT3 175B,"bucketed(4L)
+500 us",RAW_TOTAL,DP communication,7317.864589691164
+GPT3 175B,"bucketed(4L)
+500 us",RAW_TOTAL,DP reconfiguration,8.940696716308594
+GPT3 175B,"bucketed(4L)
+500 us",EXPOSED_TOTAL,TP communication,148337.68530273438
+GPT3 175B,"bucketed(4L)
+500 us",EXPOSED_TOTAL,PP communication,770.2537708282471
+GPT3 175B,"bucketed(4L)
+500 us",EXPOSED_TOTAL,Other communication,37276.98476839065
+GPT3 175B,"bucketed(4L)
+500 us",EXPOSED_TOTAL,DP communication,304.91102457051545
+GPT3 175B,"bucketed(4L)
+500 us",EXPOSED_TOTAL,DP reconfiguration,0.0
+GPT3 175B,"bucketed(4L)
+500 us",DP_ONLY_RAW,TP communication,0.0
+GPT3 175B,"bucketed(4L)
+500 us",DP_ONLY_RAW,PP communication,0.0
+GPT3 175B,"bucketed(4L)
+500 us",DP_ONLY_RAW,Other communication,0.0
+GPT3 175B,"bucketed(4L)
+500 us",DP_ONLY_RAW,DP communication,7317.864589691164
+GPT3 175B,"bucketed(4L)
+500 us",DP_ONLY_RAW,DP reconfiguration,8.940696716308594
+GPT3 175B,"bucketed(4L)
+500 us",DP_ONLY_EXPOSED,TP communication,0.0
+GPT3 175B,"bucketed(4L)
+500 us",DP_ONLY_EXPOSED,PP communication,0.0
+GPT3 175B,"bucketed(4L)
+500 us",DP_ONLY_EXPOSED,Other communication,0.0
+GPT3 175B,"bucketed(4L)
+500 us",DP_ONLY_EXPOSED,DP communication,304.91102457051545
+GPT3 175B,"bucketed(4L)
+500 us",DP_ONLY_EXPOSED,DP reconfiguration,0.0
+Megatron 530B,"lump
+10 us",RAW_TOTAL,TP communication,201863.23334270055
+Megatron 530B,"lump
+10 us",RAW_TOTAL,PP communication,960.0633001327515
+Megatron 530B,"lump
+10 us",RAW_TOTAL,Other communication,50705.824160708326
+Megatron 530B,"lump
+10 us",RAW_TOTAL,DP communication,21049.81905619303
+Megatron 530B,"lump
+10 us",RAW_TOTAL,DP reconfiguration,18.77546310424805
+Megatron 530B,"lump
+10 us",EXPOSED_TOTAL,TP communication,201863.23334270055
+Megatron 530B,"lump
+10 us",EXPOSED_TOTAL,PP communication,960.0633001327515
+Megatron 530B,"lump
+10 us",EXPOSED_TOTAL,Other communication,50705.824160708326
+Megatron 530B,"lump
+10 us",EXPOSED_TOTAL,DP communication,21049.81905619303
+Megatron 530B,"lump
+10 us",EXPOSED_TOTAL,DP reconfiguration,18.77546310424805
+Megatron 530B,"lump
+10 us",DP_ONLY_RAW,TP communication,0.0
+Megatron 530B,"lump
+10 us",DP_ONLY_RAW,PP communication,0.0
+Megatron 530B,"lump
+10 us",DP_ONLY_RAW,Other communication,0.0
+Megatron 530B,"lump
+10 us",DP_ONLY_RAW,DP communication,21049.81905619303
+Megatron 530B,"lump
+10 us",DP_ONLY_RAW,DP reconfiguration,18.77546310424805
+Megatron 530B,"lump
+10 us",DP_ONLY_EXPOSED,TP communication,0.0
+Megatron 530B,"lump
+10 us",DP_ONLY_EXPOSED,PP communication,0.0
+Megatron 530B,"lump
+10 us",DP_ONLY_EXPOSED,Other communication,0.0
+Megatron 530B,"lump
+10 us",DP_ONLY_EXPOSED,DP communication,21049.81905619303
+Megatron 530B,"lump
+10 us",DP_ONLY_EXPOSED,DP reconfiguration,18.77546310424805
+Megatron 530B,"layerwise
+10 us",RAW_TOTAL,TP communication,201863.23334270055
+Megatron 530B,"layerwise
+10 us",RAW_TOTAL,PP communication,960.0633001327515
+Megatron 530B,"layerwise
+10 us",RAW_TOTAL,Other communication,50705.824160708326
+Megatron 530B,"layerwise
+10 us",RAW_TOTAL,DP communication,21049.819056193046
+Megatron 530B,"layerwise
+10 us",RAW_TOTAL,DP reconfiguration,0.1788139343261719
+Megatron 530B,"layerwise
+10 us",EXPOSED_TOTAL,TP communication,201863.23334270055
+Megatron 530B,"layerwise
+10 us",EXPOSED_TOTAL,PP communication,960.0633001327515
+Megatron 530B,"layerwise
+10 us",EXPOSED_TOTAL,Other communication,50705.824160708326
+Megatron 530B,"layerwise
+10 us",EXPOSED_TOTAL,DP communication,200.47446720185525
+Megatron 530B,"layerwise
+10 us",EXPOSED_TOTAL,DP reconfiguration,7.300434361277332e-15
+Megatron 530B,"layerwise
+10 us",DP_ONLY_RAW,TP communication,0.0
+Megatron 530B,"layerwise
+10 us",DP_ONLY_RAW,PP communication,0.0
+Megatron 530B,"layerwise
+10 us",DP_ONLY_RAW,Other communication,0.0
+Megatron 530B,"layerwise
+10 us",DP_ONLY_RAW,DP communication,21049.819056193046
+Megatron 530B,"layerwise
+10 us",DP_ONLY_RAW,DP reconfiguration,0.1788139343261719
+Megatron 530B,"layerwise
+10 us",DP_ONLY_EXPOSED,TP communication,0.0
+Megatron 530B,"layerwise
+10 us",DP_ONLY_EXPOSED,PP communication,0.0
+Megatron 530B,"layerwise
+10 us",DP_ONLY_EXPOSED,Other communication,0.0
+Megatron 530B,"layerwise
+10 us",DP_ONLY_EXPOSED,DP communication,200.47446720185525
+Megatron 530B,"layerwise
+10 us",DP_ONLY_EXPOSED,DP reconfiguration,7.300434361277332e-15
+Megatron 530B,"bucketed(4L)
+10 us",RAW_TOTAL,TP communication,201863.23334270055
+Megatron 530B,"bucketed(4L)
+10 us",RAW_TOTAL,PP communication,960.0633001327515
+Megatron 530B,"bucketed(4L)
+10 us",RAW_TOTAL,Other communication,50705.824160708326
+Megatron 530B,"bucketed(4L)
+10 us",RAW_TOTAL,DP communication,21044.016901652016
+Megatron 530B,"bucketed(4L)
+10 us",RAW_TOTAL,DP reconfiguration,0.1788139343261719
+Megatron 530B,"bucketed(4L)
+10 us",EXPOSED_TOTAL,TP communication,201863.23334270055
+Megatron 530B,"bucketed(4L)
+10 us",EXPOSED_TOTAL,PP communication,960.0633001327515
+Megatron 530B,"bucketed(4L)
+10 us",EXPOSED_TOTAL,Other communication,50705.824160708326
+Megatron 530B,"bucketed(4L)
+10 us",EXPOSED_TOTAL,DP communication,5315.938840583984
+Megatron 530B,"bucketed(4L)
+10 us",EXPOSED_TOTAL,DP reconfiguration,0.0
+Megatron 530B,"bucketed(4L)
+10 us",DP_ONLY_RAW,TP communication,0.0
+Megatron 530B,"bucketed(4L)
+10 us",DP_ONLY_RAW,PP communication,0.0
+Megatron 530B,"bucketed(4L)
+10 us",DP_ONLY_RAW,Other communication,0.0
+Megatron 530B,"bucketed(4L)
+10 us",DP_ONLY_RAW,DP communication,21044.016901652016
+Megatron 530B,"bucketed(4L)
+10 us",DP_ONLY_RAW,DP reconfiguration,0.1788139343261719
+Megatron 530B,"bucketed(4L)
+10 us",DP_ONLY_EXPOSED,TP communication,0.0
+Megatron 530B,"bucketed(4L)
+10 us",DP_ONLY_EXPOSED,PP communication,0.0
+Megatron 530B,"bucketed(4L)
+10 us",DP_ONLY_EXPOSED,Other communication,0.0
+Megatron 530B,"bucketed(4L)
+10 us",DP_ONLY_EXPOSED,DP communication,5315.938840583984
+Megatron 530B,"bucketed(4L)
+10 us",DP_ONLY_EXPOSED,DP reconfiguration,0.0
+Megatron 530B,"lump
+500 us",RAW_TOTAL,TP communication,202323.2321887546
+Megatron 530B,"lump
+500 us",RAW_TOTAL,PP communication,962.2537708282471
+Megatron 530B,"lump
+500 us",RAW_TOTAL,Other communication,50821.371489895726
+Megatron 530B,"lump
+500 us",RAW_TOTAL,DP communication,21049.81905619303
+Megatron 530B,"lump
+500 us",RAW_TOTAL,DP reconfiguration,938.7731552124023
+Megatron 530B,"lump
+500 us",EXPOSED_TOTAL,TP communication,202323.2321887546
+Megatron 530B,"lump
+500 us",EXPOSED_TOTAL,PP communication,962.2537708282471
+Megatron 530B,"lump
+500 us",EXPOSED_TOTAL,Other communication,50821.371489895726
+Megatron 530B,"lump
+500 us",EXPOSED_TOTAL,DP communication,21049.81905619303
+Megatron 530B,"lump
+500 us",EXPOSED_TOTAL,DP reconfiguration,938.7731552124023
+Megatron 530B,"lump
+500 us",DP_ONLY_RAW,TP communication,0.0
+Megatron 530B,"lump
+500 us",DP_ONLY_RAW,PP communication,0.0
+Megatron 530B,"lump
+500 us",DP_ONLY_RAW,Other communication,0.0
+Megatron 530B,"lump
+500 us",DP_ONLY_RAW,DP communication,21049.81905619303
+Megatron 530B,"lump
+500 us",DP_ONLY_RAW,DP reconfiguration,938.7731552124023
+Megatron 530B,"lump
+500 us",DP_ONLY_EXPOSED,TP communication,0.0
+Megatron 530B,"lump
+500 us",DP_ONLY_EXPOSED,PP communication,0.0
+Megatron 530B,"lump
+500 us",DP_ONLY_EXPOSED,Other communication,0.0
+Megatron 530B,"lump
+500 us",DP_ONLY_EXPOSED,DP communication,21049.81905619303
+Megatron 530B,"lump
+500 us",DP_ONLY_EXPOSED,DP reconfiguration,938.7731552124023
+Megatron 530B,"layerwise
+500 us",RAW_TOTAL,TP communication,202323.2321887546
+Megatron 530B,"layerwise
+500 us",RAW_TOTAL,PP communication,962.2537708282471
+Megatron 530B,"layerwise
+500 us",RAW_TOTAL,Other communication,50821.371489895726
+Megatron 530B,"layerwise
+500 us",RAW_TOTAL,DP communication,21049.819056193046
+Megatron 530B,"layerwise
+500 us",RAW_TOTAL,DP reconfiguration,8.940696716308594
+Megatron 530B,"layerwise
+500 us",EXPOSED_TOTAL,TP communication,202323.2321887546
+Megatron 530B,"layerwise
+500 us",EXPOSED_TOTAL,PP communication,962.2537708282471
+Megatron 530B,"layerwise
+500 us",EXPOSED_TOTAL,Other communication,50821.371489895726
+Megatron 530B,"layerwise
+500 us",EXPOSED_TOTAL,DP communication,200.4744672018541
+Megatron 530B,"layerwise
+500 us",EXPOSED_TOTAL,DP reconfiguration,0.0
+Megatron 530B,"layerwise
+500 us",DP_ONLY_RAW,TP communication,0.0
+Megatron 530B,"layerwise
+500 us",DP_ONLY_RAW,PP communication,0.0
+Megatron 530B,"layerwise
+500 us",DP_ONLY_RAW,Other communication,0.0
+Megatron 530B,"layerwise
+500 us",DP_ONLY_RAW,DP communication,21049.819056193046
+Megatron 530B,"layerwise
+500 us",DP_ONLY_RAW,DP reconfiguration,8.940696716308594
+Megatron 530B,"layerwise
+500 us",DP_ONLY_EXPOSED,TP communication,0.0
+Megatron 530B,"layerwise
+500 us",DP_ONLY_EXPOSED,PP communication,0.0
+Megatron 530B,"layerwise
+500 us",DP_ONLY_EXPOSED,Other communication,0.0
+Megatron 530B,"layerwise
+500 us",DP_ONLY_EXPOSED,DP communication,200.4744672018541
+Megatron 530B,"layerwise
+500 us",DP_ONLY_EXPOSED,DP reconfiguration,0.0
+Megatron 530B,"bucketed(4L)
+500 us",RAW_TOTAL,TP communication,202323.2321887546
+Megatron 530B,"bucketed(4L)
+500 us",RAW_TOTAL,PP communication,962.2537708282471
+Megatron 530B,"bucketed(4L)
+500 us",RAW_TOTAL,Other communication,50821.371489895726
+Megatron 530B,"bucketed(4L)
+500 us",RAW_TOTAL,DP communication,21044.016901652016
+Megatron 530B,"bucketed(4L)
+500 us",RAW_TOTAL,DP reconfiguration,8.940696716308594
+Megatron 530B,"bucketed(4L)
+500 us",EXPOSED_TOTAL,TP communication,202323.2321887546
+Megatron 530B,"bucketed(4L)
+500 us",EXPOSED_TOTAL,PP communication,962.2537708282471
+Megatron 530B,"bucketed(4L)
+500 us",EXPOSED_TOTAL,Other communication,50821.371489895726
+Megatron 530B,"bucketed(4L)
+500 us",EXPOSED_TOTAL,DP communication,5315.938840584
+Megatron 530B,"bucketed(4L)
+500 us",EXPOSED_TOTAL,DP reconfiguration,4.88553549289132e-13
+Megatron 530B,"bucketed(4L)
+500 us",DP_ONLY_RAW,TP communication,0.0
+Megatron 530B,"bucketed(4L)
+500 us",DP_ONLY_RAW,PP communication,0.0
+Megatron 530B,"bucketed(4L)
+500 us",DP_ONLY_RAW,Other communication,0.0
+Megatron 530B,"bucketed(4L)
+500 us",DP_ONLY_RAW,DP communication,21044.016901652016
+Megatron 530B,"bucketed(4L)
+500 us",DP_ONLY_RAW,DP reconfiguration,8.940696716308594
+Megatron 530B,"bucketed(4L)
+500 us",DP_ONLY_EXPOSED,TP communication,0.0
+Megatron 530B,"bucketed(4L)
+500 us",DP_ONLY_EXPOSED,PP communication,0.0
+Megatron 530B,"bucketed(4L)
+500 us",DP_ONLY_EXPOSED,Other communication,0.0
+Megatron 530B,"bucketed(4L)
+500 us",DP_ONLY_EXPOSED,DP communication,5315.938840584
+Megatron 530B,"bucketed(4L)
+500 us",DP_ONLY_EXPOSED,DP reconfiguration,4.88553549289132e-13
