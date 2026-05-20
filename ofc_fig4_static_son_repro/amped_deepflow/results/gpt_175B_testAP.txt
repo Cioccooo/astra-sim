@@ -1,0 +1,530 @@
+Stage : 0
+Compute time (s) : 0.01335089156626506
+Communication time (s) : 0.0001128
+Pipeline bubble time (s) : 0.0
+
+
+Stage : 1
+
+Compute time (s) : 0.00013427409638554216
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 2
+
+Compute time (s) : 0.00013427590361445783
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 3
+
+Compute time (s) : 0.0001342777108433735
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 4
+
+Compute time (s) : 0.00013427951807228918
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 5
+
+Compute time (s) : 0.00013428132530120482
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 6
+
+Compute time (s) : 0.0001342831325301205
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 7
+
+Compute time (s) : 0.00013428493975903614
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 8
+
+Compute time (s) : 0.0001342867469879518
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 9
+
+Compute time (s) : 0.00013428855421686748
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 10
+
+Compute time (s) : 0.00013429036144578312
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 11
+
+Compute time (s) : 0.0001342921686746988
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 12
+
+Compute time (s) : 0.00013429397590361444
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 13
+
+Compute time (s) : 0.0001342957831325301
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 14
+
+Compute time (s) : 0.00013429759036144578
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 15
+
+Compute time (s) : 0.00013429939759036145
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 16
+
+Compute time (s) : 0.00013430120481927713
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 17
+
+Compute time (s) : 0.00013430301204819277
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 18
+
+Compute time (s) : 0.00013430481927710844
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 19
+
+Compute time (s) : 0.0001343066265060241
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 20
+
+Compute time (s) : 0.00013430843373493976
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 21
+
+Compute time (s) : 0.00013431024096385543
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 22
+
+Compute time (s) : 0.0001343120481927711
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 23
+
+Compute time (s) : 0.00013431385542168677
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 24
+
+Compute time (s) : 0.00013431566265060242
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 25
+
+Compute time (s) : 0.0001343174698795181
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 26
+
+Compute time (s) : 0.00013431927710843373
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 27
+
+Compute time (s) : 0.0001343210843373494
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 28
+
+Compute time (s) : 0.00013432289156626505
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 29
+
+Compute time (s) : 0.00013432469879518072
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 30
+
+Compute time (s) : 0.00013432650602409636
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 31
+
+Compute time (s) : 0.00013432831325301204
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 32
+
+Compute time (s) : 0.0001343301204819277
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 33
+
+Compute time (s) : 0.00013433192771084338
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 34
+
+Compute time (s) : 0.00013433373493975905
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 35
+
+Compute time (s) : 0.0001343355421686747
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 36
+
+Compute time (s) : 0.00013433734939759037
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 37
+
+Compute time (s) : 0.000134339156626506
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 38
+
+Compute time (s) : 0.00013434096385542168
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 39
+
+Compute time (s) : 0.00013434277108433735
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 40
+
+Compute time (s) : 0.00013434457831325303
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 41
+
+Compute time (s) : 0.0001343463855421687
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 42
+
+Compute time (s) : 0.00013434819277108434
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 43
+
+Compute time (s) : 0.00013435
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 44
+
+Compute time (s) : 0.00013435180722891566
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 45
+
+Compute time (s) : 0.00013435361445783133
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 46
+
+Compute time (s) : 0.00013435542168674697
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 47
+
+Compute time (s) : 0.00013435722891566264
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 48
+
+Compute time (s) : 0.00013435903614457832
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 49
+
+Compute time (s) : 0.00013436084337349396
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 50
+
+Compute time (s) : 0.00013436265060240963
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 51
+
+Compute time (s) : 0.0001343644578313253
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 52
+
+Compute time (s) : 0.00013436626506024098
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 53
+
+Compute time (s) : 0.00013436807228915662
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 54
+
+Compute time (s) : 0.0001343698795180723
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 55
+
+Compute time (s) : 0.00013437168674698796
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 56
+
+Compute time (s) : 0.0001343734939759036
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 57
+
+Compute time (s) : 0.00013437530120481928
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 58
+
+Compute time (s) : 0.00013437710843373495
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 59
+
+Compute time (s) : 0.00013437891566265062
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 60
+
+Compute time (s) : 0.00013438072289156627
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 61
+
+Compute time (s) : 0.00013438253012048194
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 62
+
+Compute time (s) : 0.0001343843373493976
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 63
+
+Compute time (s) : 0.00013438614457831325
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 64
+
+Compute time (s) : 0.00013438795180722893
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 65
+
+Compute time (s) : 0.00013438975903614457
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 66
+
+Compute time (s) : 0.00013439156626506024
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 67
+
+Compute time (s) : 0.00013439337349397589
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 68
+
+Compute time (s) : 0.00013439518072289156
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 69
+
+Compute time (s) : 0.00013439698795180723
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 70
+
+Compute time (s) : 0.0001343987951807229
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 71
+
+Compute time (s) : 0.00013440060240963857
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 72
+
+Compute time (s) : 0.00013440240963855422
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 73
+
+Compute time (s) : 0.0001344042168674699
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 74
+
+Compute time (s) : 0.00013440602409638553
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 75
+
+Compute time (s) : 0.0001344078313253012
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 76
+
+Compute time (s) : 0.00013440963855421687
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 77
+
+Compute time (s) : 0.00013441144578313255
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 78
+
+Compute time (s) : 0.00013441325301204822
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 79
+
+Compute time (s) : 0.00013441506024096386
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 80
+
+Compute time (s) : 0.00013441686746987953
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 81
+
+Compute time (s) : 0.00013441867469879518
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 82
+
+Compute time (s) : 0.00013442048192771085
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 83
+
+Compute time (s) : 0.0001344222891566265
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 84
+
+Compute time (s) : 0.00013442409638554217
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 85
+
+Compute time (s) : 0.0001344259036144578
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 86
+
+Compute time (s) : 0.00013442771084337348
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 87
+
+Compute time (s) : 0.00013442951807228915
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 88
+
+Compute time (s) : 0.00013443132530120482
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 89
+
+Compute time (s) : 0.0001344331325301205
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 90
+
+Compute time (s) : 0.00013443493975903614
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 91
+
+Compute time (s) : 0.0001344367469879518
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 92
+
+Compute time (s) : 0.00013443855421686746
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 93
+
+Compute time (s) : 0.00013444036144578313
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 94
+
+Compute time (s) : 0.0001344421686746988
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 95
+
+Compute time (s) : 0.00013444397590361447
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 96
+
+Compute time (s) : 0.00013444578313253014
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 97
+
+Compute time (s) : 0.0001344475903614458
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 98
+
+Compute time (s) : 0.00013444939759036146
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 99
+
+Compute time (s) : 0.0001344512048192771
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+Stage : 100
+
+Compute time (s) : 0.00013445301204819277
+Communication time (s) : 3.6768e-05
+Pipeline bubble time (s) : 0.0
+
+
+Overall timings
+Compute time(s) : 0.026787246987951804
+Communication time (s) : 0.0037895999999999963
+Pipeline bubble time (s) : 0.0
+2023-10-05_12-09-49_config_summary.txt
+**** Creating GEMMs from AMPeD ****
+batch_size 1
+dimensionality 12288
+context 100
+summarization_len 100
+hidden_layer_dimension_for_attention_sublayers 128
+attention_heads 96
+hidden_layer_dimension_MLP_1 12288
+hidden_layer_dimension_MLP_2 49152
+data_parallel_degree 1
+pipeline_parallel_degree 1
+{'batch_size': ['1'], 'dimensionality': ['12288'], 'context': ['100'], 'summarization_len': ['100'], 'hidden_layer_dimension_for_attention_sublayers': ['128'], 'attention_heads': ['96'], 'hidden_layer_dimension_MLP_1': ['12288'], 'hidden_layer_dimension_MLP_2': ['49152'], 'data_parallel_degree': ['1'], 'pipeline_parallel_degree': ['1']}
+TP intra degree: 16
+Running cal_time.py to gather computation time from DeepFlow and communication time from AMPeD
+**** Computing GEMM timings using DeepFlow *****
+{'Total communication time forward pass (s)': ['0.0037895999999999963'], 'Total communication time backward pass (s)': ['0'], 'Computation time weight updates (s)': ['0'], 'Waiting Time due to pipeline bubbles (s)': ['0.0']}
+total time: 3.990887898347675
