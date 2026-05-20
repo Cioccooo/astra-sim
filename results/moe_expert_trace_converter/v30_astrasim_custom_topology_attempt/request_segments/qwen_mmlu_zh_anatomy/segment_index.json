@@ -1,0 +1,736 @@
+[
+  {
+    "chakra_written": true,
+    "combine_bytes": 71745536,
+    "combine_chakra_prefix": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v30_astrasim_custom_topology_attempt/request_segments/qwen_mmlu_zh_anatomy/114/combine_chakra/workload",
+    "dispatch_bytes": 71745536,
+    "dispatch_chakra_prefix": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v30_astrasim_custom_topology_attempt/request_segments/qwen_mmlu_zh_anatomy/114/dispatch_chakra/workload",
+    "request_id": "114"
+  },
+  {
+    "chakra_written": true,
+    "combine_bytes": 77717504,
+    "combine_chakra_prefix": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v30_astrasim_custom_topology_attempt/request_segments/qwen_mmlu_zh_anatomy/115/combine_chakra/workload",
+    "dispatch_bytes": 77717504,
+    "dispatch_chakra_prefix": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v30_astrasim_custom_topology_attempt/request_segments/qwen_mmlu_zh_anatomy/115/dispatch_chakra/workload",
+    "request_id": "115"
+  },
+  {
+    "chakra_written": true,
+    "combine_bytes": 59473920,
+    "combine_chakra_prefix": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v30_astrasim_custom_topology_attempt/request_segments/qwen_mmlu_zh_anatomy/116/combine_chakra/workload",
+    "dispatch_bytes": 59473920,
+    "dispatch_chakra_prefix": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v30_astrasim_custom_topology_attempt/request_segments/qwen_mmlu_zh_anatomy/116/dispatch_chakra/workload",
+    "request_id": "116"
+  },
+  {
+    "chakra_written": true,
+    "combine_bytes": 53796864,
+    "combine_chakra_prefix": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v30_astrasim_custom_topology_attempt/request_segments/qwen_mmlu_zh_anatomy/117/combine_chakra/workload",
+    "dispatch_bytes": 53796864,
+    "dispatch_chakra_prefix": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v30_astrasim_custom_topology_attempt/request_segments/qwen_mmlu_zh_anatomy/117/dispatch_chakra/workload",
+    "request_id": "117"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 65568768,
+    "dispatch_bytes": 65568768,
+    "request_id": "118"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 59777024,
+    "dispatch_bytes": 59777024,
+    "request_id": "119"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 41910272,
+    "dispatch_bytes": 41910272,
+    "request_id": "120"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 65798144,
+    "dispatch_bytes": 65798144,
+    "request_id": "121"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 53559296,
+    "dispatch_bytes": 53559296,
+    "request_id": "122"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 29687808,
+    "dispatch_bytes": 29687808,
+    "request_id": "123"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 35831808,
+    "dispatch_bytes": 35831808,
+    "request_id": "124"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 59793408,
+    "dispatch_bytes": 59793408,
+    "request_id": "125"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 42016768,
+    "dispatch_bytes": 42016768,
+    "request_id": "126"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 48521216,
+    "dispatch_bytes": 48521216,
+    "request_id": "127"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 144793600,
+    "dispatch_bytes": 144793600,
+    "request_id": "128"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 65716224,
+    "dispatch_bytes": 65716224,
+    "request_id": "129"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 78127104,
+    "dispatch_bytes": 78127104,
+    "request_id": "130"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 83640320,
+    "dispatch_bytes": 83640320,
+    "request_id": "131"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 60211200,
+    "dispatch_bytes": 60211200,
+    "request_id": "132"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 65626112,
+    "dispatch_bytes": 65626112,
+    "request_id": "133"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 47661056,
+    "dispatch_bytes": 47661056,
+    "request_id": "134"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 17588224,
+    "dispatch_bytes": 17588224,
+    "request_id": "135"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 94257152,
+    "dispatch_bytes": 94257152,
+    "request_id": "136"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 59449344,
+    "dispatch_bytes": 59449344,
+    "request_id": "137"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 47636480,
+    "dispatch_bytes": 47636480,
+    "request_id": "138"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 148389888,
+    "dispatch_bytes": 148389888,
+    "request_id": "139"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 70615040,
+    "dispatch_bytes": 70615040,
+    "request_id": "140"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 41459712,
+    "dispatch_bytes": 41459712,
+    "request_id": "141"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 77365248,
+    "dispatch_bytes": 77365248,
+    "request_id": "142"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 59613184,
+    "dispatch_bytes": 59613184,
+    "request_id": "143"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 47808512,
+    "dispatch_bytes": 47808512,
+    "request_id": "144"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 29769728,
+    "dispatch_bytes": 29769728,
+    "request_id": "145"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 153591808,
+    "dispatch_bytes": 153591808,
+    "request_id": "146"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 48005120,
+    "dispatch_bytes": 48005120,
+    "request_id": "147"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 30113792,
+    "dispatch_bytes": 30113792,
+    "request_id": "148"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 154443776,
+    "dispatch_bytes": 154443776,
+    "request_id": "149"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 66232320,
+    "dispatch_bytes": 66232320,
+    "request_id": "150"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 53567488,
+    "dispatch_bytes": 53567488,
+    "request_id": "151"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 35684352,
+    "dispatch_bytes": 35684352,
+    "request_id": "152"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 41213952,
+    "dispatch_bytes": 41213952,
+    "request_id": "153"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 17678336,
+    "dispatch_bytes": 17678336,
+    "request_id": "154"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 47259648,
+    "dispatch_bytes": 47259648,
+    "request_id": "155"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 17760256,
+    "dispatch_bytes": 17760256,
+    "request_id": "156"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 65347584,
+    "dispatch_bytes": 65347584,
+    "request_id": "157"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 96141312,
+    "dispatch_bytes": 96141312,
+    "request_id": "158"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 53837824,
+    "dispatch_bytes": 53837824,
+    "request_id": "159"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 72204288,
+    "dispatch_bytes": 72204288,
+    "request_id": "160"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 66183168,
+    "dispatch_bytes": 66183168,
+    "request_id": "161"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 71516160,
+    "dispatch_bytes": 71516160,
+    "request_id": "162"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 59932672,
+    "dispatch_bytes": 59932672,
+    "request_id": "163"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 143720448,
+    "dispatch_bytes": 143720448,
+    "request_id": "164"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 36036608,
+    "dispatch_bytes": 36036608,
+    "request_id": "165"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 47972352,
+    "dispatch_bytes": 47972352,
+    "request_id": "166"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 24018944,
+    "dispatch_bytes": 24018944,
+    "request_id": "167"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 59858944,
+    "dispatch_bytes": 59858944,
+    "request_id": "168"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 273268736,
+    "dispatch_bytes": 273268736,
+    "request_id": "169"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 78118912,
+    "dispatch_bytes": 78118912,
+    "request_id": "170"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 54050816,
+    "dispatch_bytes": 54050816,
+    "request_id": "171"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 59965440,
+    "dispatch_bytes": 59965440,
+    "request_id": "172"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 119971840,
+    "dispatch_bytes": 119971840,
+    "request_id": "173"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 119554048,
+    "dispatch_bytes": 119554048,
+    "request_id": "174"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 261767168,
+    "dispatch_bytes": 261767168,
+    "request_id": "175"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 154820608,
+    "dispatch_bytes": 154820608,
+    "request_id": "176"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 178503680,
+    "dispatch_bytes": 178503680,
+    "request_id": "177"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 58826752,
+    "dispatch_bytes": 58826752,
+    "request_id": "178"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 95936512,
+    "dispatch_bytes": 95936512,
+    "request_id": "179"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 59711488,
+    "dispatch_bytes": 59711488,
+    "request_id": "180"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 47595520,
+    "dispatch_bytes": 47595520,
+    "request_id": "181"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 35528704,
+    "dispatch_bytes": 35528704,
+    "request_id": "182"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 71319552,
+    "dispatch_bytes": 71319552,
+    "request_id": "183"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 107274240,
+    "dispatch_bytes": 107274240,
+    "request_id": "184"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 60129280,
+    "dispatch_bytes": 60129280,
+    "request_id": "185"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 83304448,
+    "dispatch_bytes": 83304448,
+    "request_id": "186"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 29982720,
+    "dispatch_bytes": 29982720,
+    "request_id": "187"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 48316416,
+    "dispatch_bytes": 48316416,
+    "request_id": "188"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 36052992,
+    "dispatch_bytes": 36052992,
+    "request_id": "189"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 23912448,
+    "dispatch_bytes": 23912448,
+    "request_id": "190"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 106299392,
+    "dispatch_bytes": 106299392,
+    "request_id": "191"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 70770688,
+    "dispatch_bytes": 70770688,
+    "request_id": "192"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 5890048,
+    "dispatch_bytes": 5890048,
+    "request_id": "193"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 83296256,
+    "dispatch_bytes": 83296256,
+    "request_id": "194"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 24076288,
+    "dispatch_bytes": 24076288,
+    "request_id": "195"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 60358656,
+    "dispatch_bytes": 60358656,
+    "request_id": "196"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 107372544,
+    "dispatch_bytes": 107372544,
+    "request_id": "197"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 29999104,
+    "dispatch_bytes": 29999104,
+    "request_id": "198"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 107790336,
+    "dispatch_bytes": 107790336,
+    "request_id": "199"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 17915904,
+    "dispatch_bytes": 17915904,
+    "request_id": "200"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 18022400,
+    "dispatch_bytes": 18022400,
+    "request_id": "201"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 47800320,
+    "dispatch_bytes": 47800320,
+    "request_id": "202"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 65585152,
+    "dispatch_bytes": 65585152,
+    "request_id": "203"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 23953408,
+    "dispatch_bytes": 23953408,
+    "request_id": "204"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 29777920,
+    "dispatch_bytes": 29777920,
+    "request_id": "205"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 47767552,
+    "dispatch_bytes": 47767552,
+    "request_id": "206"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 65560576,
+    "dispatch_bytes": 65560576,
+    "request_id": "207"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 78012416,
+    "dispatch_bytes": 78012416,
+    "request_id": "208"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 159776768,
+    "dispatch_bytes": 159776768,
+    "request_id": "209"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 23625728,
+    "dispatch_bytes": 23625728,
+    "request_id": "210"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 41705472,
+    "dispatch_bytes": 41705472,
+    "request_id": "211"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 54018048,
+    "dispatch_bytes": 54018048,
+    "request_id": "212"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 41598976,
+    "dispatch_bytes": 41598976,
+    "request_id": "213"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 132579328,
+    "dispatch_bytes": 132579328,
+    "request_id": "214"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 59564032,
+    "dispatch_bytes": 59564032,
+    "request_id": "215"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 29908992,
+    "dispatch_bytes": 29908992,
+    "request_id": "216"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 66191360,
+    "dispatch_bytes": 66191360,
+    "request_id": "217"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 89276416,
+    "dispatch_bytes": 89276416,
+    "request_id": "218"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 65904640,
+    "dispatch_bytes": 65904640,
+    "request_id": "219"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 24068096,
+    "dispatch_bytes": 24068096,
+    "request_id": "220"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 59572224,
+    "dispatch_bytes": 59572224,
+    "request_id": "221"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 77398016,
+    "dispatch_bytes": 77398016,
+    "request_id": "222"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 71000064,
+    "dispatch_bytes": 71000064,
+    "request_id": "223"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 41631744,
+    "dispatch_bytes": 41631744,
+    "request_id": "224"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 94953472,
+    "dispatch_bytes": 94953472,
+    "request_id": "225"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 41648128,
+    "dispatch_bytes": 41648128,
+    "request_id": "226"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 35602432,
+    "dispatch_bytes": 35602432,
+    "request_id": "227"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 82378752,
+    "dispatch_bytes": 82378752,
+    "request_id": "228"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 17702912,
+    "dispatch_bytes": 17702912,
+    "request_id": "229"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 47054848,
+    "dispatch_bytes": 47054848,
+    "request_id": "230"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 41787392,
+    "dispatch_bytes": 41787392,
+    "request_id": "231"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 77488128,
+    "dispatch_bytes": 77488128,
+    "request_id": "232"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 95617024,
+    "dispatch_bytes": 95617024,
+    "request_id": "233"
+  },
+  {
+    "chakra_written": false,
+    "combine_bytes": 89145344,
+    "dispatch_bytes": 89145344,
+    "request_id": "234"
+  }
+]
