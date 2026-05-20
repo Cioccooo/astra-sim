@@ -1,0 +1,25 @@
+{
+  "comm_groups": {
+    "ep_0": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  "forward_only": true,
+  "layers": 1,
+  "moe_limitations": [
+    "balanced all-to-all traffic",
+    "no dynamic router distribution",
+    "no imbalanced expert load"
+  ],
+  "nodes_per_rank": {
+    "0": 5,
+    "1": 5,
+    "2": 5,
+    "3": 5
+  },
+  "ranks": 4,
+  "trace_prefix": "tiny_moe_ep_forward_only"
+}

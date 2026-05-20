@@ -1,0 +1,7 @@
+{
+  "compute_divisor": 1.0,
+  "num_process_groups": 1,
+  "num_traces": 4,
+  "optimizer_ops_per_rank": 0.0,
+  "optimizer_tensor_size": 1
+}

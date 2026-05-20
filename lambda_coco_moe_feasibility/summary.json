@@ -1,0 +1,371 @@
+{
+  "approximations": [
+    "Chakra trace is true pairwise send/recv AllToAllv; it is not a single balanced ALL_TO_ALL collective.",
+    "Stock ASTRA-sim analytical backend is used only for the uniform Switch execution of the real trace.",
+    "Per-pair wavelength/circuit allocation is evaluated by a separate row/column-capacity model, then scaled to ASTRA uniform cycles.",
+    "Row and column sums of capacity are fixed, preserving per-rank injection and receive bandwidth.",
+    "Hot-pair and hot-expert allocations include a uniform overflow path."
+  ],
+  "args": {
+    "bandwidth_gbps": 800.0,
+    "bias_floor": 0.05,
+    "latency_ns": 100.0,
+    "output_dir": "/Users/dfx/Python/astra-sim/lambda_coco_moe_feasibility",
+    "overflow_fraction": 0.2,
+    "ranks": 16,
+    "seed": 20260514,
+    "total_mbytes": 256.0
+  },
+  "results": [
+    {
+      "all_ranks_finished": true,
+      "astra_uniform_cycles": 159240,
+      "case": "uniform",
+      "finished_ranks": 16,
+      "hot_expert": {
+        "cold_p95_model": 16777215.0,
+        "ep_time_model": 16777230.0,
+        "ep_time_scaled_cycles": 159240.0,
+        "hot_p95_model": 16777230.0,
+        "name": "hot_expert_only",
+        "overflow_capacity_share": 0.2,
+        "speedup_vs_uniform": 1.0
+      },
+      "hot_pair": {
+        "cold_p95_model": 16777216.47619032,
+        "ep_time_model": 16777224.639455453,
+        "ep_time_scaled_cycles": 159239.94912073604,
+        "hot_p95_model": 16777222.955781214,
+        "name": "hot_pair",
+        "overflow_capacity_share": 0.2,
+        "speedup_vs_uniform": 1.000000319513189
+      },
+      "matrix_kind": "uniform",
+      "max_dest_byte_share": 0.0625000074505806,
+      "max_source_byte_share": 0.06250002235174179,
+      "nonzero_pairs": 240,
+      "oracle": {
+        "cold_p95_model": 16777222.0,
+        "ep_time_model": 16777222.0,
+        "ep_time_scaled_cycles": 159239.9240685143,
+        "hot_p95_model": 16777222.0,
+        "name": "oracle",
+        "overflow_capacity_share": 0.0,
+        "speedup_vs_uniform": 1.0000004768369877
+      },
+      "skew": "none",
+      "top_1pct_byte_share": 0.012500010430812836,
+      "total_bytes": 268435456,
+      "true_pairwise_alltoallv": true,
+      "uniform": {
+        "cold_p95_model": 16777215.0,
+        "ep_time_model": 16777230.0,
+        "ep_time_scaled_cycles": 159240.0,
+        "hot_p95_model": 16777230.0,
+        "name": "uniform",
+        "overflow_capacity_share": 1.0,
+        "speedup_vs_uniform": 1.0
+      }
+    },
+    {
+      "all_ranks_finished": true,
+      "astra_uniform_cycles": 476071,
+      "case": "pair_zipf_0.8",
+      "finished_ranks": 16,
+      "hot_expert": {
+        "cold_p95_model": 7934816.250000002,
+        "ep_time_model": 382333274.99999994,
+        "ep_time_scaled_cycles": 476070.99999999994,
+        "hot_p95_model": 366059227.49999994,
+        "name": "hot_expert_only",
+        "overflow_capacity_share": 0.2,
+        "speedup_vs_uniform": 1.0000000000000002
+      },
+      "hot_pair": {
+        "cold_p95_model": 15879144.238456802,
+        "ep_time_model": 84770186.28187384,
+        "ep_time_scaled_cycles": 105553.53141417775,
+        "hot_p95_model": 83369878.92650126,
+        "name": "hot_pair",
+        "overflow_capacity_share": 0.2,
+        "speedup_vs_uniform": 4.510232804357458
+      },
+      "matrix_kind": "pair_zipf",
+      "max_dest_byte_share": 0.16688871383666992,
+      "max_source_byte_share": 0.18923142924904823,
+      "nonzero_pairs": 240,
+      "oracle": {
+        "cold_p95_model": 50796425.0,
+        "ep_time_model": 50796425.0,
+        "ep_time_scaled_cycles": 63250.32746933941,
+        "hot_p95_model": 50796425.0,
+        "name": "oracle",
+        "overflow_capacity_share": 0.0,
+        "speedup_vs_uniform": 7.52677526026684
+      },
+      "skew": "alpha=0.8",
+      "top_1pct_byte_share": 0.1889187917113304,
+      "total_bytes": 268435456,
+      "true_pairwise_alltoallv": true,
+      "uniform": {
+        "cold_p95_model": 7934816.25,
+        "ep_time_model": 382333275.0,
+        "ep_time_scaled_cycles": 476071.0,
+        "hot_p95_model": 366059227.5,
+        "name": "uniform",
+        "overflow_capacity_share": 1.0,
+        "speedup_vs_uniform": 1.0
+      }
+    },
+    {
+      "all_ranks_finished": true,
+      "astra_uniform_cycles": 858677,
+      "case": "pair_zipf_1.2",
+      "finished_ranks": 16,
+      "hot_expert": {
+        "cold_p95_model": 3069907.4999999995,
+        "ep_time_model": 1026792659.9999998,
+        "ep_time_scaled_cycles": 858676.9999999998,
+        "hot_p95_model": 968807140.4999998,
+        "name": "hot_expert_only",
+        "overflow_capacity_share": 0.2,
+        "speedup_vs_uniform": 1.0000000000000002
+      },
+      "hot_pair": {
+        "cold_p95_model": 8764002.70241286,
+        "ep_time_model": 220637229.07838607,
+        "ep_time_scaled_cycles": 184512.53240682624,
+        "hot_p95_model": 205915325.00972548,
+        "name": "hot_pair",
+        "overflow_capacity_share": 0.2,
+        "speedup_vs_uniform": 4.653759767963774
+      },
+      "matrix_kind": "pair_zipf",
+      "max_dest_byte_share": 0.3971020169556141,
+      "max_source_byte_share": 0.3422745503485203,
+      "nonzero_pairs": 240,
+      "oracle": {
+        "cold_p95_model": 106596261.0,
+        "ep_time_model": 106596261.0,
+        "ep_time_scaled_cycles": 89143.36961339107,
+        "hot_p95_model": 106596261.0,
+        "name": "oracle",
+        "overflow_capacity_share": 0.0,
+        "speedup_vs_uniform": 9.632539175084199
+      },
+      "skew": "alpha=1.2",
+      "top_1pct_byte_share": 0.4342396669089794,
+      "total_bytes": 268435456,
+      "true_pairwise_alltoallv": true,
+      "uniform": {
+        "cold_p95_model": 3069907.5,
+        "ep_time_model": 1026792660.0,
+        "ep_time_scaled_cycles": 858677.0,
+        "hot_p95_model": 968807140.5,
+        "name": "uniform",
+        "overflow_capacity_share": 1.0,
+        "speedup_vs_uniform": 1.0
+      }
+    },
+    {
+      "all_ranks_finished": true,
+      "astra_uniform_cycles": 1047732,
+      "case": "pair_zipf_1.5",
+      "finished_ranks": 16,
+      "hot_expert": {
+        "cold_p95_model": 1133535.7499999995,
+        "ep_time_model": 1621372004.9999998,
+        "ep_time_scaled_cycles": 1047731.9999999998,
+        "hot_p95_model": 1516558961.9999998,
+        "name": "hot_expert_only",
+        "overflow_capacity_share": 0.2,
+        "speedup_vs_uniform": 1.0000000000000002
+      },
+      "hot_pair": {
+        "cold_p95_model": 3568958.4694204754,
+        "ep_time_model": 177139484.5150251,
+        "ep_time_scaled_cycles": 114467.68898041772,
+        "hot_p95_model": 167290873.31374744,
+        "name": "hot_pair",
+        "overflow_capacity_share": 0.2,
+        "speedup_vs_uniform": 9.15308074560008
+      },
+      "matrix_kind": "pair_zipf",
+      "max_dest_byte_share": 0.4202461279928684,
+      "max_source_byte_share": 0.4178957901895046,
+      "nonzero_pairs": 240,
+      "oracle": {
+        "cold_p95_model": 112808961.0,
+        "ep_time_model": 112808961.0,
+        "ep_time_scaled_cycles": 72897.24872636616,
+        "hot_p95_model": 112808961.0,
+        "name": "oracle",
+        "overflow_capacity_share": 0.0,
+        "speedup_vs_uniform": 14.37272350199201
+      },
+      "skew": "alpha=1.5",
+      "top_1pct_byte_share": 0.622532457113266,
+      "total_bytes": 268435456,
+      "true_pairwise_alltoallv": true,
+      "uniform": {
+        "cold_p95_model": 1133535.75,
+        "ep_time_model": 1621372005.0,
+        "ep_time_scaled_cycles": 1047731.9999999999,
+        "hot_p95_model": 1516558962.0,
+        "name": "uniform",
+        "overflow_capacity_share": 1.0,
+        "speedup_vs_uniform": 1.0
+      }
+    },
+    {
+      "all_ranks_finished": true,
+      "astra_uniform_cycles": 159244,
+      "case": "expert_zipf_0.8",
+      "finished_ranks": 16,
+      "hot_expert": {
+        "cold_p95_model": 10732154.249999998,
+        "ep_time_model": 67152299.99999996,
+        "ep_time_scaled_cycles": 159243.9999999999,
+        "hot_p95_model": 66878812.499999955,
+        "name": "hot_expert_only",
+        "overflow_capacity_share": 0.2,
+        "speedup_vs_uniform": 1.0000000000000007
+      },
+      "hot_pair": {
+        "cold_p95_model": 10733023.47876417,
+        "ep_time_model": 66891900.554438986,
+        "ep_time_scaled_cycles": 158626.49249379517,
+        "hot_p95_model": 66631091.66834457,
+        "name": "hot_pair",
+        "overflow_capacity_share": 0.2,
+        "speedup_vs_uniform": 1.0038928396921403
+      },
+      "matrix_kind": "expert_zipf_sanity",
+      "max_dest_byte_share": 0.22886184975504875,
+      "max_source_byte_share": 0.0625000074505806,
+      "nonzero_pairs": 240,
+      "oracle": {
+        "cold_p95_model": 61434635.0,
+        "ep_time_model": 61434635.0,
+        "ep_time_scaled_cycles": 145685.21131725944,
+        "hot_p95_model": 61434635.0,
+        "name": "oracle",
+        "overflow_capacity_share": 0.0,
+        "speedup_vs_uniform": 1.0930690806578407
+      },
+      "skew": "alpha=0.8",
+      "top_1pct_byte_share": 0.04833182692527771,
+      "total_bytes": 268435456,
+      "true_pairwise_alltoallv": true,
+      "uniform": {
+        "cold_p95_model": 10732154.25,
+        "ep_time_model": 67152300.0,
+        "ep_time_scaled_cycles": 159244.0,
+        "hot_p95_model": 66878812.5,
+        "name": "uniform",
+        "overflow_capacity_share": 1.0,
+        "speedup_vs_uniform": 1.0
+      }
+    },
+    {
+      "all_ranks_finished": true,
+      "astra_uniform_cycles": 159244,
+      "case": "expert_zipf_1.2",
+      "finished_ranks": 16,
+      "hot_expert": {
+        "cold_p95_model": 7082571.749999998,
+        "ep_time_model": 109308014.99999994,
+        "ep_time_scaled_cycles": 159243.9999999999,
+        "hot_p95_model": 108565888.49999994,
+        "name": "hot_expert_only",
+        "overflow_capacity_share": 0.2,
+        "speedup_vs_uniform": 1.0000000000000004
+      },
+      "hot_pair": {
+        "cold_p95_model": 7084182.231393685,
+        "ep_time_model": 108271181.58609436,
+        "ep_time_scaled_cycles": 157733.50234652063,
+        "hot_p95_model": 107588386.31845169,
+        "name": "hot_pair",
+        "overflow_capacity_share": 0.2,
+        "speedup_vs_uniform": 1.009576263957932
+      },
+      "matrix_kind": "expert_zipf_sanity",
+      "max_dest_byte_share": 0.35822318866848946,
+      "max_source_byte_share": 0.0625000074505806,
+      "nonzero_pairs": 240,
+      "oracle": {
+        "cold_p95_model": 96159805.0,
+        "ep_time_model": 96159805.0,
+        "ep_time_scaled_cycles": 140089.1964548071,
+        "hot_p95_model": 96159805.0,
+        "name": "oracle",
+        "overflow_capacity_share": 0.0,
+        "speedup_vs_uniform": 1.1367329103880774
+      },
+      "skew": "alpha=1.2",
+      "top_1pct_byte_share": 0.0769789032638073,
+      "total_bytes": 268435456,
+      "true_pairwise_alltoallv": true,
+      "uniform": {
+        "cold_p95_model": 7082571.749999999,
+        "ep_time_model": 109308015.0,
+        "ep_time_scaled_cycles": 159244.0,
+        "hot_p95_model": 108565888.5,
+        "name": "uniform",
+        "overflow_capacity_share": 1.0,
+        "speedup_vs_uniform": 1.0
+      }
+    },
+    {
+      "all_ranks_finished": true,
+      "astra_uniform_cycles": 159244,
+      "case": "expert_zipf_1.5",
+      "finished_ranks": 16,
+      "hot_expert": {
+        "cold_p95_model": 4795596.749999998,
+        "ep_time_model": 142460489.99999994,
+        "ep_time_scaled_cycles": 159243.9999999999,
+        "hot_p95_model": 141269855.99999994,
+        "name": "hot_expert_only",
+        "overflow_capacity_share": 0.2,
+        "speedup_vs_uniform": 1.0000000000000004
+      },
+      "hot_pair": {
+        "cold_p95_model": 4842701.624202538,
+        "ep_time_model": 140172776.26753446,
+        "ep_time_scaled_cycles": 156686.7668639021,
+        "hot_p95_model": 139126289.06319094,
+        "name": "hot_pair",
+        "overflow_capacity_share": 0.2,
+        "speedup_vs_uniform": 1.0163206707706152
+      },
+      "matrix_kind": "expert_zipf_sanity",
+      "max_dest_byte_share": 0.45929067209362984,
+      "max_source_byte_share": 0.0625000111758709,
+      "nonzero_pairs": 240,
+      "oracle": {
+        "cold_p95_model": 123289901.0,
+        "ep_time_model": 123289901.0,
+        "ep_time_scaled_cycles": 137814.89165763784,
+        "hot_p95_model": 123289901.0,
+        "name": "oracle",
+        "overflow_capacity_share": 0.0,
+        "speedup_vs_uniform": 1.155491965234038
+      },
+      "skew": "alpha=1.5",
+      "top_1pct_byte_share": 0.09913120791316032,
+      "total_bytes": 268435456,
+      "true_pairwise_alltoallv": true,
+      "uniform": {
+        "cold_p95_model": 4795596.75,
+        "ep_time_model": 142460490.0,
+        "ep_time_scaled_cycles": 159244.0,
+        "hot_p95_model": 141269856.0,
+        "name": "uniform",
+        "overflow_capacity_share": 1.0,
+        "speedup_vs_uniform": 1.0
+      }
+    }
+  ]
+}
