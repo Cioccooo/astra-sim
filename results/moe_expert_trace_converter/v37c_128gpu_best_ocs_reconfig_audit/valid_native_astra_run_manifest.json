@@ -1,0 +1,25 @@
+{
+  "source_of_truth": "summary.json native_astra_representative",
+  "valid_run_files": [
+    "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v37c_128gpu_best_ocs_reconfig_audit/runs/qwen_mmlu_zh_cn_anatomy_dispatch_calibration_greedy.stdout.txt",
+    "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v37c_128gpu_best_ocs_reconfig_audit/runs/qwen_mmlu_zh_cn_anatomy_dispatch_calibration_greedy.stderr.txt",
+    "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v37c_128gpu_best_ocs_reconfig_audit/runs/qwen_mmlu_zh_cn_anatomy_combine_calibration_greedy.stdout.txt",
+    "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v37c_128gpu_best_ocs_reconfig_audit/runs/qwen_mmlu_zh_cn_anatomy_combine_calibration_greedy.stderr.txt",
+    "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v37c_128gpu_best_ocs_reconfig_audit/runs/qwen_mmlu_zh_cn_anatomy_dispatch_random_regular_seed_0.stdout.txt",
+    "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v37c_128gpu_best_ocs_reconfig_audit/runs/qwen_mmlu_zh_cn_anatomy_dispatch_random_regular_seed_0.stderr.txt",
+    "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v37c_128gpu_best_ocs_reconfig_audit/runs/qwen_mmlu_zh_cn_anatomy_combine_random_regular_seed_0.stdout.txt",
+    "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v37c_128gpu_best_ocs_reconfig_audit/runs/qwen_mmlu_zh_cn_anatomy_combine_random_regular_seed_0.stderr.txt",
+    "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v37c_128gpu_best_ocs_reconfig_audit/runs/qwen_mmlu_zh_cn_anatomy_dispatch_random_regular_seed_26.stdout.txt",
+    "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v37c_128gpu_best_ocs_reconfig_audit/runs/qwen_mmlu_zh_cn_anatomy_dispatch_random_regular_seed_26.stderr.txt",
+    "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v37c_128gpu_best_ocs_reconfig_audit/runs/qwen_mmlu_zh_cn_anatomy_combine_random_regular_seed_26.stdout.txt",
+    "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v37c_128gpu_best_ocs_reconfig_audit/runs/qwen_mmlu_zh_cn_anatomy_combine_random_regular_seed_26.stderr.txt",
+    "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v37c_128gpu_best_ocs_reconfig_audit/runs/qwen_mmlu_zh_cn_anatomy_dispatch_random_regular_seed_3.stdout.txt",
+    "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v37c_128gpu_best_ocs_reconfig_audit/runs/qwen_mmlu_zh_cn_anatomy_dispatch_random_regular_seed_3.stderr.txt",
+    "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v37c_128gpu_best_ocs_reconfig_audit/runs/qwen_mmlu_zh_cn_anatomy_combine_random_regular_seed_3.stdout.txt",
+    "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v37c_128gpu_best_ocs_reconfig_audit/runs/qwen_mmlu_zh_cn_anatomy_combine_random_regular_seed_3.stderr.txt",
+    "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v37c_128gpu_best_ocs_reconfig_audit/runs/qwen_mmlu_zh_cn_anatomy_dispatch_son_torus.stdout.txt",
+    "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v37c_128gpu_best_ocs_reconfig_audit/runs/qwen_mmlu_zh_cn_anatomy_dispatch_son_torus.stderr.txt",
+    "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v37c_128gpu_best_ocs_reconfig_audit/runs/qwen_mmlu_zh_cn_anatomy_combine_son_torus.stdout.txt",
+    "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v37c_128gpu_best_ocs_reconfig_audit/runs/qwen_mmlu_zh_cn_anatomy_combine_son_torus.stderr.txt"
+  ]
+}

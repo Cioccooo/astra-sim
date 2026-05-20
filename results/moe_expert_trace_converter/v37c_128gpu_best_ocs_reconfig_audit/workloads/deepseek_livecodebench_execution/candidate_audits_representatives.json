@@ -1,0 +1,134 @@
+{
+  "calibration_greedy": {
+    "component_sizes": [
+      128
+    ],
+    "connected_components": 1,
+    "degree_distribution": {
+      "4": 128
+    },
+    "degree_max": 4,
+    "degree_min": 4,
+    "duplicate_edges": 0,
+    "edge_circuit_count": 256,
+    "expected_edge_circuit_count": 256,
+    "gpu_count": 128,
+    "name": "ron_calibration_greedy_degree4",
+    "node_count": 128,
+    "per_gpu_optical_bandwidth_tbps": 1.6,
+    "per_link_bandwidth_gbps": 400,
+    "same_degree_bandwidth_budget_as_son": true,
+    "self_loops": 0,
+    "valid": true
+  },
+  "evaluation_greedy": {
+    "component_sizes": [
+      128
+    ],
+    "connected_components": 1,
+    "degree_distribution": {
+      "4": 128
+    },
+    "degree_max": 4,
+    "degree_min": 4,
+    "duplicate_edges": 0,
+    "edge_circuit_count": 256,
+    "expected_edge_circuit_count": 256,
+    "gpu_count": 128,
+    "name": "ron_evaluation_greedy_degree4",
+    "node_count": 128,
+    "per_gpu_optical_bandwidth_tbps": 1.6,
+    "per_link_bandwidth_gbps": 400,
+    "same_degree_bandwidth_budget_as_son": true,
+    "self_loops": 0,
+    "valid": true
+  },
+  "random_regular_seed_0": {
+    "component_sizes": [
+      128
+    ],
+    "connected_components": 1,
+    "degree_distribution": {
+      "4": 128
+    },
+    "degree_max": 4,
+    "degree_min": 4,
+    "duplicate_edges": 0,
+    "edge_circuit_count": 256,
+    "expected_edge_circuit_count": 256,
+    "gpu_count": 128,
+    "name": "ron_random_regular_seed_0",
+    "node_count": 128,
+    "per_gpu_optical_bandwidth_tbps": 1.6,
+    "per_link_bandwidth_gbps": 400,
+    "same_degree_bandwidth_budget_as_son": true,
+    "self_loops": 0,
+    "valid": true
+  },
+  "random_regular_seed_14": {
+    "component_sizes": [
+      128
+    ],
+    "connected_components": 1,
+    "degree_distribution": {
+      "4": 128
+    },
+    "degree_max": 4,
+    "degree_min": 4,
+    "duplicate_edges": 0,
+    "edge_circuit_count": 256,
+    "expected_edge_circuit_count": 256,
+    "gpu_count": 128,
+    "name": "ron_random_regular_seed_14",
+    "node_count": 128,
+    "per_gpu_optical_bandwidth_tbps": 1.6,
+    "per_link_bandwidth_gbps": 400,
+    "same_degree_bandwidth_budget_as_son": true,
+    "self_loops": 0,
+    "valid": true
+  },
+  "random_regular_seed_27": {
+    "component_sizes": [
+      128
+    ],
+    "connected_components": 1,
+    "degree_distribution": {
+      "4": 128
+    },
+    "degree_max": 4,
+    "degree_min": 4,
+    "duplicate_edges": 0,
+    "edge_circuit_count": 256,
+    "expected_edge_circuit_count": 256,
+    "gpu_count": 128,
+    "name": "ron_random_regular_seed_27",
+    "node_count": 128,
+    "per_gpu_optical_bandwidth_tbps": 1.6,
+    "per_link_bandwidth_gbps": 400,
+    "same_degree_bandwidth_budget_as_son": true,
+    "self_loops": 0,
+    "valid": true
+  },
+  "son_torus": {
+    "component_sizes": [
+      128
+    ],
+    "connected_components": 1,
+    "degree_distribution": {
+      "4": 128
+    },
+    "degree_max": 4,
+    "degree_min": 4,
+    "duplicate_edges": 0,
+    "edge_circuit_count": 256,
+    "expected_edge_circuit_count": 256,
+    "gpu_count": 128,
+    "name": "son_torus_8x16_128gpu",
+    "node_count": 128,
+    "per_gpu_optical_bandwidth_tbps": 1.6,
+    "per_link_bandwidth_gbps": 400,
+    "same_degree_bandwidth_budget_as_son": true,
+    "self_loops": 0,
+    "valid": true
+  }
+}

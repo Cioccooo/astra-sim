@@ -1,0 +1,177 @@
+[
+  {
+    "fluid_cycles": 34495684,
+    "name": "random_regular_seed_14",
+    "score_max_link_load_bytes": 1851972955
+  },
+  {
+    "fluid_cycles": 34605306,
+    "name": "calibration_greedy",
+    "score_max_link_load_bytes": 1857858220
+  },
+  {
+    "fluid_cycles": 34668108,
+    "name": "random_regular_seed_27",
+    "score_max_link_load_bytes": 1861229909
+  },
+  {
+    "fluid_cycles": 35656700,
+    "name": "random_regular_seed_26",
+    "score_max_link_load_bytes": 1914304517
+  },
+  {
+    "fluid_cycles": 35710487,
+    "name": "random_regular_seed_23",
+    "score_max_link_load_bytes": 1917192188
+  },
+  {
+    "fluid_cycles": 35923232,
+    "name": "random_regular_seed_8",
+    "score_max_link_load_bytes": 1928613886
+  },
+  {
+    "fluid_cycles": 36049079,
+    "name": "random_regular_seed_11",
+    "score_max_link_load_bytes": 1935370242
+  },
+  {
+    "fluid_cycles": 36426531,
+    "name": "random_regular_seed_0",
+    "score_max_link_load_bytes": 1955634523
+  },
+  {
+    "fluid_cycles": 36932945,
+    "name": "random_regular_seed_15",
+    "score_max_link_load_bytes": 1982822398
+  },
+  {
+    "fluid_cycles": 37144597,
+    "name": "evaluation_greedy",
+    "score_max_link_load_bytes": 1994185385
+  },
+  {
+    "fluid_cycles": 37160835,
+    "name": "random_regular_seed_28",
+    "score_max_link_load_bytes": 1995057159
+  },
+  {
+    "fluid_cycles": 37166557,
+    "name": "random_regular_seed_19",
+    "score_max_link_load_bytes": 1995364349
+  },
+  {
+    "fluid_cycles": 37479057,
+    "name": "random_regular_seed_2",
+    "score_max_link_load_bytes": 2012141565
+  },
+  {
+    "fluid_cycles": 37572288,
+    "name": "random_regular_seed_22",
+    "score_max_link_load_bytes": 2017146881
+  },
+  {
+    "fluid_cycles": 37625033,
+    "name": "random_regular_seed_30",
+    "score_max_link_load_bytes": 2019978579
+  },
+  {
+    "fluid_cycles": 37820701,
+    "name": "random_regular_seed_1",
+    "score_max_link_load_bytes": 2030483455
+  },
+  {
+    "fluid_cycles": 37909889,
+    "name": "random_regular_seed_5",
+    "score_max_link_load_bytes": 2035271679
+  },
+  {
+    "fluid_cycles": 38024851,
+    "name": "random_regular_seed_7",
+    "score_max_link_load_bytes": 2041443667
+  },
+  {
+    "fluid_cycles": 38076527,
+    "name": "random_regular_seed_25",
+    "score_max_link_load_bytes": 2044218027
+  },
+  {
+    "fluid_cycles": 38095525,
+    "name": "random_regular_seed_12",
+    "score_max_link_load_bytes": 2045237934
+  },
+  {
+    "fluid_cycles": 38196614,
+    "name": "random_regular_seed_3",
+    "score_max_link_load_bytes": 2050665133
+  },
+  {
+    "fluid_cycles": 38294588,
+    "name": "random_regular_seed_4",
+    "score_max_link_load_bytes": 2055925077
+  },
+  {
+    "fluid_cycles": 38370094,
+    "name": "random_regular_seed_24",
+    "score_max_link_load_bytes": 2059978746
+  },
+  {
+    "fluid_cycles": 38939895,
+    "name": "random_regular_seed_10",
+    "score_max_link_load_bytes": 2090569725
+  },
+  {
+    "fluid_cycles": 39448445,
+    "name": "random_regular_seed_20",
+    "score_max_link_load_bytes": 2117872292
+  },
+  {
+    "fluid_cycles": 39728228,
+    "name": "random_regular_seed_21",
+    "score_max_link_load_bytes": 2132893007
+  },
+  {
+    "fluid_cycles": 40070317,
+    "name": "random_regular_seed_13",
+    "score_max_link_load_bytes": 2151258794
+  },
+  {
+    "fluid_cycles": 40246798,
+    "name": "random_regular_seed_18",
+    "score_max_link_load_bytes": 2160733526
+  },
+  {
+    "fluid_cycles": 40337816,
+    "name": "random_regular_seed_9",
+    "score_max_link_load_bytes": 2165620055
+  },
+  {
+    "fluid_cycles": 40617968,
+    "name": "random_regular_seed_6",
+    "score_max_link_load_bytes": 2180660564
+  },
+  {
+    "fluid_cycles": 41642621,
+    "name": "random_regular_seed_17",
+    "score_max_link_load_bytes": 2235671209
+  },
+  {
+    "fluid_cycles": 43054173,
+    "name": "random_regular_seed_16",
+    "score_max_link_load_bytes": 2311453362
+  },
+  {
+    "fluid_cycles": 45710004,
+    "name": "random_regular_seed_31",
+    "score_max_link_load_bytes": 2454037158
+  },
+  {
+    "fluid_cycles": 48414993,
+    "name": "random_regular_seed_29",
+    "score_max_link_load_bytes": 2599260162
+  },
+  {
+    "fluid_cycles": 123122660,
+    "name": "son_torus",
+    "score_max_link_load_bytes": 6610097498
+  }
+]

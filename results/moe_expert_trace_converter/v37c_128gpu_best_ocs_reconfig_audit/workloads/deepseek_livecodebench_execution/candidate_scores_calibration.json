@@ -1,0 +1,172 @@
+[
+  {
+    "fluid_cycles": 3245722,
+    "name": "random_regular_seed_27",
+    "score_max_link_load_bytes": 174253405
+  },
+  {
+    "fluid_cycles": 3250274,
+    "name": "random_regular_seed_14",
+    "score_max_link_load_bytes": 174497789
+  },
+  {
+    "fluid_cycles": 3318163,
+    "name": "calibration_greedy",
+    "score_max_link_load_bytes": 178142547
+  },
+  {
+    "fluid_cycles": 3421656,
+    "name": "random_regular_seed_11",
+    "score_max_link_load_bytes": 183698774
+  },
+  {
+    "fluid_cycles": 3429056,
+    "name": "random_regular_seed_7",
+    "score_max_link_load_bytes": 184096086
+  },
+  {
+    "fluid_cycles": 3441556,
+    "name": "random_regular_seed_8",
+    "score_max_link_load_bytes": 184767142
+  },
+  {
+    "fluid_cycles": 3442573,
+    "name": "random_regular_seed_23",
+    "score_max_link_load_bytes": 184821768
+  },
+  {
+    "fluid_cycles": 3461888,
+    "name": "random_regular_seed_15",
+    "score_max_link_load_bytes": 185858730
+  },
+  {
+    "fluid_cycles": 3506050,
+    "name": "random_regular_seed_19",
+    "score_max_link_load_bytes": 188229636
+  },
+  {
+    "fluid_cycles": 3518129,
+    "name": "random_regular_seed_2",
+    "score_max_link_load_bytes": 188878164
+  },
+  {
+    "fluid_cycles": 3526166,
+    "name": "random_regular_seed_30",
+    "score_max_link_load_bytes": 189309611
+  },
+  {
+    "fluid_cycles": 3530934,
+    "name": "random_regular_seed_24",
+    "score_max_link_load_bytes": 189565613
+  },
+  {
+    "fluid_cycles": 3531811,
+    "name": "random_regular_seed_20",
+    "score_max_link_load_bytes": 189612711
+  },
+  {
+    "fluid_cycles": 3532562,
+    "name": "random_regular_seed_26",
+    "score_max_link_load_bytes": 189652993
+  },
+  {
+    "fluid_cycles": 3542327,
+    "name": "random_regular_seed_0",
+    "score_max_link_load_bytes": 190177282
+  },
+  {
+    "fluid_cycles": 3562215,
+    "name": "random_regular_seed_25",
+    "score_max_link_load_bytes": 191244972
+  },
+  {
+    "fluid_cycles": 3588943,
+    "name": "random_regular_seed_12",
+    "score_max_link_load_bytes": 192679934
+  },
+  {
+    "fluid_cycles": 3594347,
+    "name": "random_regular_seed_22",
+    "score_max_link_load_bytes": 192970072
+  },
+  {
+    "fluid_cycles": 3598505,
+    "name": "random_regular_seed_3",
+    "score_max_link_load_bytes": 193193304
+  },
+  {
+    "fluid_cycles": 3599230,
+    "name": "random_regular_seed_10",
+    "score_max_link_load_bytes": 193232206
+  },
+  {
+    "fluid_cycles": 3599891,
+    "name": "random_regular_seed_5",
+    "score_max_link_load_bytes": 193267713
+  },
+  {
+    "fluid_cycles": 3616943,
+    "name": "random_regular_seed_4",
+    "score_max_link_load_bytes": 194183165
+  },
+  {
+    "fluid_cycles": 3689295,
+    "name": "random_regular_seed_13",
+    "score_max_link_load_bytes": 198067535
+  },
+  {
+    "fluid_cycles": 3689702,
+    "name": "random_regular_seed_1",
+    "score_max_link_load_bytes": 198089393
+  },
+  {
+    "fluid_cycles": 3693250,
+    "name": "random_regular_seed_28",
+    "score_max_link_load_bytes": 198279853
+  },
+  {
+    "fluid_cycles": 3732961,
+    "name": "random_regular_seed_6",
+    "score_max_link_load_bytes": 200411818
+  },
+  {
+    "fluid_cycles": 3807296,
+    "name": "random_regular_seed_9",
+    "score_max_link_load_bytes": 204402687
+  },
+  {
+    "fluid_cycles": 3810666,
+    "name": "random_regular_seed_17",
+    "score_max_link_load_bytes": 204583590
+  },
+  {
+    "fluid_cycles": 3939107,
+    "name": "random_regular_seed_21",
+    "score_max_link_load_bytes": 211479218
+  },
+  {
+    "fluid_cycles": 3950004,
+    "name": "random_regular_seed_16",
+    "score_max_link_load_bytes": 212064261
+  },
+  {
+    "fluid_cycles": 3953514,
+    "name": "random_regular_seed_18",
+    "score_max_link_load_bytes": 212252670
+  },
+  {
+    "fluid_cycles": 4324696,
+    "name": "random_regular_seed_31",
+    "score_max_link_load_bytes": 232180385
+  },
+  {
+    "fluid_cycles": 4341341,
+    "name": "random_regular_seed_29",
+    "score_max_link_load_bytes": 233074005
+  },
+  {
+    "fluid_cycles": 12788988,
+    "name": "son_torus",
+    "score_max_link_load_bytes": 686603610
+  }
+]

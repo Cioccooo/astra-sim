@@ -1,0 +1,172 @@
+[
+  {
+    "fluid_cycles": 732370,
+    "name": "random_regular_seed_3",
+    "score_max_link_load_bytes": 39318868
+  },
+  {
+    "fluid_cycles": 736592,
+    "name": "random_regular_seed_20",
+    "score_max_link_load_bytes": 39545513
+  },
+  {
+    "fluid_cycles": 755195,
+    "name": "random_regular_seed_7",
+    "score_max_link_load_bytes": 40544255
+  },
+  {
+    "fluid_cycles": 779749,
+    "name": "random_regular_seed_27",
+    "score_max_link_load_bytes": 41862486
+  },
+  {
+    "fluid_cycles": 780766,
+    "name": "random_regular_seed_10",
+    "score_max_link_load_bytes": 41917098
+  },
+  {
+    "fluid_cycles": 826772,
+    "name": "random_regular_seed_28",
+    "score_max_link_load_bytes": 44386985
+  },
+  {
+    "fluid_cycles": 838559,
+    "name": "random_regular_seed_31",
+    "score_max_link_load_bytes": 45019818
+  },
+  {
+    "fluid_cycles": 844726,
+    "name": "random_regular_seed_24",
+    "score_max_link_load_bytes": 45350912
+  },
+  {
+    "fluid_cycles": 854009,
+    "name": "random_regular_seed_26",
+    "score_max_link_load_bytes": 45849260
+  },
+  {
+    "fluid_cycles": 857315,
+    "name": "random_regular_seed_2",
+    "score_max_link_load_bytes": 46026752
+  },
+  {
+    "fluid_cycles": 860150,
+    "name": "random_regular_seed_15",
+    "score_max_link_load_bytes": 46178987
+  },
+  {
+    "fluid_cycles": 862757,
+    "name": "random_regular_seed_13",
+    "score_max_link_load_bytes": 46318933
+  },
+  {
+    "fluid_cycles": 863431,
+    "name": "random_regular_seed_6",
+    "score_max_link_load_bytes": 46355113
+  },
+  {
+    "fluid_cycles": 872141,
+    "name": "random_regular_seed_22",
+    "score_max_link_load_bytes": 46822743
+  },
+  {
+    "fluid_cycles": 881423,
+    "name": "random_regular_seed_0",
+    "score_max_link_load_bytes": 47321087
+  },
+  {
+    "fluid_cycles": 923652,
+    "name": "random_regular_seed_12",
+    "score_max_link_load_bytes": 49588223
+  },
+  {
+    "fluid_cycles": 925827,
+    "name": "random_regular_seed_5",
+    "score_max_link_load_bytes": 49704960
+  },
+  {
+    "fluid_cycles": 931968,
+    "name": "random_regular_seed_19",
+    "score_max_link_load_bytes": 50034687
+  },
+  {
+    "fluid_cycles": 935414,
+    "name": "random_regular_seed_4",
+    "score_max_link_load_bytes": 50219694
+  },
+  {
+    "fluid_cycles": 941925,
+    "name": "random_regular_seed_9",
+    "score_max_link_load_bytes": 50569217
+  },
+  {
+    "fluid_cycles": 952034,
+    "name": "random_regular_seed_8",
+    "score_max_link_load_bytes": 51111937
+  },
+  {
+    "fluid_cycles": 963160,
+    "name": "random_regular_seed_30",
+    "score_max_link_load_bytes": 51709270
+  },
+  {
+    "fluid_cycles": 965728,
+    "name": "random_regular_seed_1",
+    "score_max_link_load_bytes": 51847169
+  },
+  {
+    "fluid_cycles": 986302,
+    "name": "random_regular_seed_11",
+    "score_max_link_load_bytes": 52951721
+  },
+  {
+    "fluid_cycles": 986849,
+    "name": "random_regular_seed_14",
+    "score_max_link_load_bytes": 52981077
+  },
+  {
+    "fluid_cycles": 1003189,
+    "name": "random_regular_seed_17",
+    "score_max_link_load_bytes": 53858303
+  },
+  {
+    "fluid_cycles": 1015205,
+    "name": "random_regular_seed_29",
+    "score_max_link_load_bytes": 54503424
+  },
+  {
+    "fluid_cycles": 1025772,
+    "name": "random_regular_seed_16",
+    "score_max_link_load_bytes": 55070718
+  },
+  {
+    "fluid_cycles": 1043535,
+    "name": "random_regular_seed_25",
+    "score_max_link_load_bytes": 56024404
+  },
+  {
+    "fluid_cycles": 1075464,
+    "name": "random_regular_seed_21",
+    "score_max_link_load_bytes": 57738581
+  },
+  {
+    "fluid_cycles": 1088422,
+    "name": "random_regular_seed_18",
+    "score_max_link_load_bytes": 58434217
+  },
+  {
+    "fluid_cycles": 1167360,
+    "name": "random_regular_seed_23",
+    "score_max_link_load_bytes": 62672210
+  },
+  {
+    "fluid_cycles": 2642326,
+    "name": "calibration_greedy",
+    "score_max_link_load_bytes": 141858808
+  },
+  {
+    "fluid_cycles": 3408737,
+    "name": "son_torus",
+    "score_max_link_load_bytes": 183005186
+  }
+]

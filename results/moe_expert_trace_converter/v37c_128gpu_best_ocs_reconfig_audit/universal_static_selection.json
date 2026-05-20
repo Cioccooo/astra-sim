@@ -1,0 +1,197 @@
+{
+  "best_universal_static_random": "random_regular_seed_11",
+  "ranking": [
+    {
+      "average_normalized_score_vs_son": 0.5327339624770417,
+      "average_rank": 1.75,
+      "max_normalized_score_vs_son": 0.7567781828554137,
+      "name": "random_regular_seed_11"
+    },
+    {
+      "average_normalized_score_vs_son": 0.538577944038289,
+      "average_rank": 3.75,
+      "max_normalized_score_vs_son": 0.7515729051521048,
+      "name": "random_regular_seed_27"
+    },
+    {
+      "average_normalized_score_vs_son": 0.541396274245247,
+      "average_rank": 4.25,
+      "max_normalized_score_vs_son": 0.7585947834828112,
+      "name": "random_regular_seed_26"
+    },
+    {
+      "average_normalized_score_vs_son": 0.5429887396642281,
+      "average_rank": 5.75,
+      "max_normalized_score_vs_son": 0.7627028576314614,
+      "name": "random_regular_seed_30"
+    },
+    {
+      "average_normalized_score_vs_son": 0.5439126113163744,
+      "average_rank": 8.75,
+      "max_normalized_score_vs_son": 0.7385281944212333,
+      "name": "random_regular_seed_8"
+    },
+    {
+      "average_normalized_score_vs_son": 0.5451152972828937,
+      "average_rank": 7.75,
+      "max_normalized_score_vs_son": 0.7599034866061631,
+      "name": "random_regular_seed_19"
+    },
+    {
+      "average_normalized_score_vs_son": 0.5459797398442634,
+      "average_rank": 7,
+      "max_normalized_score_vs_son": 0.7593219734576431,
+      "name": "random_regular_seed_5"
+    },
+    {
+      "average_normalized_score_vs_son": 0.5472055415906634,
+      "average_rank": 8.25,
+      "max_normalized_score_vs_son": 0.761283355293807,
+      "name": "random_regular_seed_10"
+    },
+    {
+      "average_normalized_score_vs_son": 0.5476269145694264,
+      "average_rank": 9.75,
+      "max_normalized_score_vs_son": 0.75311361439761,
+      "name": "random_regular_seed_3"
+    },
+    {
+      "average_normalized_score_vs_son": 0.547784760395383,
+      "average_rank": 9.25,
+      "max_normalized_score_vs_son": 0.7719774508620463,
+      "name": "random_regular_seed_22"
+    },
+    {
+      "average_normalized_score_vs_son": 0.5504599877320033,
+      "average_rank": 9.75,
+      "max_normalized_score_vs_son": 0.7618281378284989,
+      "name": "random_regular_seed_20"
+    },
+    {
+      "average_normalized_score_vs_son": 0.5514479261370835,
+      "average_rank": 10.5,
+      "max_normalized_score_vs_son": 0.7679823686465175,
+      "name": "random_regular_seed_15"
+    },
+    {
+      "average_normalized_score_vs_son": 0.5522686843461849,
+      "average_rank": 12,
+      "max_normalized_score_vs_son": 0.774273433354391,
+      "name": "random_regular_seed_2"
+    },
+    {
+      "average_normalized_score_vs_son": 0.5555204753526628,
+      "average_rank": 13.75,
+      "max_normalized_score_vs_son": 0.7704926816825561,
+      "name": "random_regular_seed_23"
+    },
+    {
+      "average_normalized_score_vs_son": 0.5581829360599948,
+      "average_rank": 16.75,
+      "max_normalized_score_vs_son": 0.7774794559232531,
+      "name": "random_regular_seed_0"
+    },
+    {
+      "average_normalized_score_vs_son": 0.5583757970927741,
+      "average_rank": 16.25,
+      "max_normalized_score_vs_son": 0.771449901244268,
+      "name": "random_regular_seed_1"
+    },
+    {
+      "average_normalized_score_vs_son": 0.55914017701209,
+      "average_rank": 17.75,
+      "max_normalized_score_vs_son": 0.7720206875711488,
+      "name": "random_regular_seed_18"
+    },
+    {
+      "average_normalized_score_vs_son": 0.5604176217612378,
+      "average_rank": 18.25,
+      "max_normalized_score_vs_son": 0.7710464615705233,
+      "name": "random_regular_seed_12"
+    },
+    {
+      "average_normalized_score_vs_son": 0.5626966101121219,
+      "average_rank": 19.75,
+      "max_normalized_score_vs_son": 0.7796078344010982,
+      "name": "random_regular_seed_7"
+    },
+    {
+      "average_normalized_score_vs_son": 0.5631240251822673,
+      "average_rank": 21.25,
+      "max_normalized_score_vs_son": 0.7747776042658902,
+      "name": "random_regular_seed_6"
+    },
+    {
+      "average_normalized_score_vs_son": 0.5653702710828612,
+      "average_rank": 22.5,
+      "max_normalized_score_vs_son": 0.7607606028918482,
+      "name": "random_regular_seed_24"
+    },
+    {
+      "average_normalized_score_vs_son": 0.5659846839919846,
+      "average_rank": 23.75,
+      "max_normalized_score_vs_son": 0.7811856654497042,
+      "name": "random_regular_seed_16"
+    },
+    {
+      "average_normalized_score_vs_son": 0.5660666158029872,
+      "average_rank": 24.25,
+      "max_normalized_score_vs_son": 0.7836215495793594,
+      "name": "random_regular_seed_9"
+    },
+    {
+      "average_normalized_score_vs_son": 0.5675880785128301,
+      "average_rank": 25,
+      "max_normalized_score_vs_son": 0.7828531714918799,
+      "name": "random_regular_seed_14"
+    },
+    {
+      "average_normalized_score_vs_son": 0.5676149059696015,
+      "average_rank": 25,
+      "max_normalized_score_vs_son": 0.7841108038262181,
+      "name": "random_regular_seed_21"
+    },
+    {
+      "average_normalized_score_vs_son": 0.5683516779106406,
+      "average_rank": 24.25,
+      "max_normalized_score_vs_son": 0.7708593186812911,
+      "name": "random_regular_seed_29"
+    },
+    {
+      "average_normalized_score_vs_son": 0.5684566480400532,
+      "average_rank": 24.75,
+      "max_normalized_score_vs_son": 0.7824164498465808,
+      "name": "random_regular_seed_4"
+    },
+    {
+      "average_normalized_score_vs_son": 0.570214362230471,
+      "average_rank": 25.75,
+      "max_normalized_score_vs_son": 0.7909844111280665,
+      "name": "random_regular_seed_13"
+    },
+    {
+      "average_normalized_score_vs_son": 0.571938114505381,
+      "average_rank": 26.75,
+      "max_normalized_score_vs_son": 0.7761531801659873,
+      "name": "random_regular_seed_25"
+    },
+    {
+      "average_normalized_score_vs_son": 0.5738012213806534,
+      "average_rank": 28.5,
+      "max_normalized_score_vs_son": 0.7804163711557701,
+      "name": "random_regular_seed_17"
+    },
+    {
+      "average_normalized_score_vs_son": 0.5779394382378974,
+      "average_rank": 30.75,
+      "max_normalized_score_vs_son": 0.7858534593865959,
+      "name": "random_regular_seed_31"
+    },
+    {
+      "average_normalized_score_vs_son": 0.5814038569748284,
+      "average_rank": 30,
+      "max_normalized_score_vs_son": 0.7794892628736118,
+      "name": "random_regular_seed_28"
+    }
+  ]
+}
