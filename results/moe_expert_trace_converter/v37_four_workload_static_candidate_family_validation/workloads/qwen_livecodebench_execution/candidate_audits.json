@@ -1,0 +1,422 @@
+{
+  "calibration_greedy": {
+    "connected_components": 1,
+    "degree_distribution": {
+      "4": 32
+    },
+    "duplicate_edges": 0,
+    "edge_circuit_count": 64,
+    "name": "ron_calibration_greedy_degree4",
+    "same_degree_bandwidth_budget_as_son": true,
+    "self_loops": 0,
+    "valid": true
+  },
+  "evaluation_greedy": {
+    "connected_components": 1,
+    "degree_distribution": {
+      "4": 32
+    },
+    "duplicate_edges": 0,
+    "edge_circuit_count": 64,
+    "name": "ron_evaluation_greedy_degree4",
+    "same_degree_bandwidth_budget_as_son": true,
+    "self_loops": 0,
+    "valid": true
+  },
+  "random_regular_seed_0": {
+    "connected_components": 1,
+    "degree_distribution": {
+      "4": 32
+    },
+    "duplicate_edges": 0,
+    "edge_circuit_count": 64,
+    "name": "ron_random_regular_seed_0",
+    "same_degree_bandwidth_budget_as_son": true,
+    "self_loops": 0,
+    "valid": true
+  },
+  "random_regular_seed_1": {
+    "connected_components": 1,
+    "degree_distribution": {
+      "4": 32
+    },
+    "duplicate_edges": 0,
+    "edge_circuit_count": 64,
+    "name": "ron_random_regular_seed_1",
+    "same_degree_bandwidth_budget_as_son": true,
+    "self_loops": 0,
+    "valid": true
+  },
+  "random_regular_seed_10": {
+    "connected_components": 1,
+    "degree_distribution": {
+      "4": 32
+    },
+    "duplicate_edges": 0,
+    "edge_circuit_count": 64,
+    "name": "ron_random_regular_seed_10",
+    "same_degree_bandwidth_budget_as_son": true,
+    "self_loops": 0,
+    "valid": true
+  },
+  "random_regular_seed_11": {
+    "connected_components": 1,
+    "degree_distribution": {
+      "4": 32
+    },
+    "duplicate_edges": 0,
+    "edge_circuit_count": 64,
+    "name": "ron_random_regular_seed_11",
+    "same_degree_bandwidth_budget_as_son": true,
+    "self_loops": 0,
+    "valid": true
+  },
+  "random_regular_seed_12": {
+    "connected_components": 1,
+    "degree_distribution": {
+      "4": 32
+    },
+    "duplicate_edges": 0,
+    "edge_circuit_count": 64,
+    "name": "ron_random_regular_seed_12",
+    "same_degree_bandwidth_budget_as_son": true,
+    "self_loops": 0,
+    "valid": true
+  },
+  "random_regular_seed_13": {
+    "connected_components": 1,
+    "degree_distribution": {
+      "4": 32
+    },
+    "duplicate_edges": 0,
+    "edge_circuit_count": 64,
+    "name": "ron_random_regular_seed_13",
+    "same_degree_bandwidth_budget_as_son": true,
+    "self_loops": 0,
+    "valid": true
+  },
+  "random_regular_seed_14": {
+    "connected_components": 1,
+    "degree_distribution": {
+      "4": 32
+    },
+    "duplicate_edges": 0,
+    "edge_circuit_count": 64,
+    "name": "ron_random_regular_seed_14",
+    "same_degree_bandwidth_budget_as_son": true,
+    "self_loops": 0,
+    "valid": true
+  },
+  "random_regular_seed_15": {
+    "connected_components": 1,
+    "degree_distribution": {
+      "4": 32
+    },
+    "duplicate_edges": 0,
+    "edge_circuit_count": 64,
+    "name": "ron_random_regular_seed_15",
+    "same_degree_bandwidth_budget_as_son": true,
+    "self_loops": 0,
+    "valid": true
+  },
+  "random_regular_seed_16": {
+    "connected_components": 1,
+    "degree_distribution": {
+      "4": 32
+    },
+    "duplicate_edges": 0,
+    "edge_circuit_count": 64,
+    "name": "ron_random_regular_seed_16",
+    "same_degree_bandwidth_budget_as_son": true,
+    "self_loops": 0,
+    "valid": true
+  },
+  "random_regular_seed_17": {
+    "connected_components": 1,
+    "degree_distribution": {
+      "4": 32
+    },
+    "duplicate_edges": 0,
+    "edge_circuit_count": 64,
+    "name": "ron_random_regular_seed_17",
+    "same_degree_bandwidth_budget_as_son": true,
+    "self_loops": 0,
+    "valid": true
+  },
+  "random_regular_seed_18": {
+    "connected_components": 1,
+    "degree_distribution": {
+      "4": 32
+    },
+    "duplicate_edges": 0,
+    "edge_circuit_count": 64,
+    "name": "ron_random_regular_seed_18",
+    "same_degree_bandwidth_budget_as_son": true,
+    "self_loops": 0,
+    "valid": true
+  },
+  "random_regular_seed_19": {
+    "connected_components": 1,
+    "degree_distribution": {
+      "4": 32
+    },
+    "duplicate_edges": 0,
+    "edge_circuit_count": 64,
+    "name": "ron_random_regular_seed_19",
+    "same_degree_bandwidth_budget_as_son": true,
+    "self_loops": 0,
+    "valid": true
+  },
+  "random_regular_seed_2": {
+    "connected_components": 1,
+    "degree_distribution": {
+      "4": 32
+    },
+    "duplicate_edges": 0,
+    "edge_circuit_count": 64,
+    "name": "ron_random_regular_seed_2",
+    "same_degree_bandwidth_budget_as_son": true,
+    "self_loops": 0,
+    "valid": true
+  },
+  "random_regular_seed_20": {
+    "connected_components": 1,
+    "degree_distribution": {
+      "4": 32
+    },
+    "duplicate_edges": 0,
+    "edge_circuit_count": 64,
+    "name": "ron_random_regular_seed_20",
+    "same_degree_bandwidth_budget_as_son": true,
+    "self_loops": 0,
+    "valid": true
+  },
+  "random_regular_seed_21": {
+    "connected_components": 1,
+    "degree_distribution": {
+      "4": 32
+    },
+    "duplicate_edges": 0,
+    "edge_circuit_count": 64,
+    "name": "ron_random_regular_seed_21",
+    "same_degree_bandwidth_budget_as_son": true,
+    "self_loops": 0,
+    "valid": true
+  },
+  "random_regular_seed_22": {
+    "connected_components": 1,
+    "degree_distribution": {
+      "4": 32
+    },
+    "duplicate_edges": 0,
+    "edge_circuit_count": 64,
+    "name": "ron_random_regular_seed_22",
+    "same_degree_bandwidth_budget_as_son": true,
+    "self_loops": 0,
+    "valid": true
+  },
+  "random_regular_seed_23": {
+    "connected_components": 1,
+    "degree_distribution": {
+      "4": 32
+    },
+    "duplicate_edges": 0,
+    "edge_circuit_count": 64,
+    "name": "ron_random_regular_seed_23",
+    "same_degree_bandwidth_budget_as_son": true,
+    "self_loops": 0,
+    "valid": true
+  },
+  "random_regular_seed_24": {
+    "connected_components": 1,
+    "degree_distribution": {
+      "4": 32
+    },
+    "duplicate_edges": 0,
+    "edge_circuit_count": 64,
+    "name": "ron_random_regular_seed_24",
+    "same_degree_bandwidth_budget_as_son": true,
+    "self_loops": 0,
+    "valid": true
+  },
+  "random_regular_seed_25": {
+    "connected_components": 1,
+    "degree_distribution": {
+      "4": 32
+    },
+    "duplicate_edges": 0,
+    "edge_circuit_count": 64,
+    "name": "ron_random_regular_seed_25",
+    "same_degree_bandwidth_budget_as_son": true,
+    "self_loops": 0,
+    "valid": true
+  },
+  "random_regular_seed_26": {
+    "connected_components": 1,
+    "degree_distribution": {
+      "4": 32
+    },
+    "duplicate_edges": 0,
+    "edge_circuit_count": 64,
+    "name": "ron_random_regular_seed_26",
+    "same_degree_bandwidth_budget_as_son": true,
+    "self_loops": 0,
+    "valid": true
+  },
+  "random_regular_seed_27": {
+    "connected_components": 1,
+    "degree_distribution": {
+      "4": 32
+    },
+    "duplicate_edges": 0,
+    "edge_circuit_count": 64,
+    "name": "ron_random_regular_seed_27",
+    "same_degree_bandwidth_budget_as_son": true,
+    "self_loops": 0,
+    "valid": true
+  },
+  "random_regular_seed_28": {
+    "connected_components": 1,
+    "degree_distribution": {
+      "4": 32
+    },
+    "duplicate_edges": 0,
+    "edge_circuit_count": 64,
+    "name": "ron_random_regular_seed_28",
+    "same_degree_bandwidth_budget_as_son": true,
+    "self_loops": 0,
+    "valid": true
+  },
+  "random_regular_seed_29": {
+    "connected_components": 1,
+    "degree_distribution": {
+      "4": 32
+    },
+    "duplicate_edges": 0,
+    "edge_circuit_count": 64,
+    "name": "ron_random_regular_seed_29",
+    "same_degree_bandwidth_budget_as_son": true,
+    "self_loops": 0,
+    "valid": true
+  },
+  "random_regular_seed_3": {
+    "connected_components": 1,
+    "degree_distribution": {
+      "4": 32
+    },
+    "duplicate_edges": 0,
+    "edge_circuit_count": 64,
+    "name": "ron_random_regular_seed_3",
+    "same_degree_bandwidth_budget_as_son": true,
+    "self_loops": 0,
+    "valid": true
+  },
+  "random_regular_seed_30": {
+    "connected_components": 1,
+    "degree_distribution": {
+      "4": 32
+    },
+    "duplicate_edges": 0,
+    "edge_circuit_count": 64,
+    "name": "ron_random_regular_seed_30",
+    "same_degree_bandwidth_budget_as_son": true,
+    "self_loops": 0,
+    "valid": true
+  },
+  "random_regular_seed_31": {
+    "connected_components": 1,
+    "degree_distribution": {
+      "4": 32
+    },
+    "duplicate_edges": 0,
+    "edge_circuit_count": 64,
+    "name": "ron_random_regular_seed_31",
+    "same_degree_bandwidth_budget_as_son": true,
+    "self_loops": 0,
+    "valid": true
+  },
+  "random_regular_seed_4": {
+    "connected_components": 1,
+    "degree_distribution": {
+      "4": 32
+    },
+    "duplicate_edges": 0,
+    "edge_circuit_count": 64,
+    "name": "ron_random_regular_seed_4",
+    "same_degree_bandwidth_budget_as_son": true,
+    "self_loops": 0,
+    "valid": true
+  },
+  "random_regular_seed_5": {
+    "connected_components": 1,
+    "degree_distribution": {
+      "4": 32
+    },
+    "duplicate_edges": 0,
+    "edge_circuit_count": 64,
+    "name": "ron_random_regular_seed_5",
+    "same_degree_bandwidth_budget_as_son": true,
+    "self_loops": 0,
+    "valid": true
+  },
+  "random_regular_seed_6": {
+    "connected_components": 1,
+    "degree_distribution": {
+      "4": 32
+    },
+    "duplicate_edges": 0,
+    "edge_circuit_count": 64,
+    "name": "ron_random_regular_seed_6",
+    "same_degree_bandwidth_budget_as_son": true,
+    "self_loops": 0,
+    "valid": true
+  },
+  "random_regular_seed_7": {
+    "connected_components": 1,
+    "degree_distribution": {
+      "4": 32
+    },
+    "duplicate_edges": 0,
+    "edge_circuit_count": 64,
+    "name": "ron_random_regular_seed_7",
+    "same_degree_bandwidth_budget_as_son": true,
+    "self_loops": 0,
+    "valid": true
+  },
+  "random_regular_seed_8": {
+    "connected_components": 1,
+    "degree_distribution": {
+      "4": 32
+    },
+    "duplicate_edges": 0,
+    "edge_circuit_count": 64,
+    "name": "ron_random_regular_seed_8",
+    "same_degree_bandwidth_budget_as_son": true,
+    "self_loops": 0,
+    "valid": true
+  },
+  "random_regular_seed_9": {
+    "connected_components": 1,
+    "degree_distribution": {
+      "4": 32
+    },
+    "duplicate_edges": 0,
+    "edge_circuit_count": 64,
+    "name": "ron_random_regular_seed_9",
+    "same_degree_bandwidth_budget_as_son": true,
+    "self_loops": 0,
+    "valid": true
+  },
+  "son_torus": {
+    "connected_components": 1,
+    "degree_distribution": {
+      "4": 32
+    },
+    "duplicate_edges": 0,
+    "edge_circuit_count": 64,
+    "name": "son_torus_4x8_32gpu",
+    "same_degree_bandwidth_budget_as_son": true,
+    "self_loops": 0,
+    "valid": true
+  }
+}

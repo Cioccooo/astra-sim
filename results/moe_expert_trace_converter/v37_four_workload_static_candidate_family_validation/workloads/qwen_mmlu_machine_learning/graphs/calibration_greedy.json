@@ -1,0 +1,401 @@
+{
+  "directed": false,
+  "edges": [
+    {
+      "bandwidth_gbps": 400,
+      "dst": 1,
+      "latency_ns": 0,
+      "src": 0
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 7,
+      "latency_ns": 0,
+      "src": 0
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 16,
+      "latency_ns": 0,
+      "src": 0
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 31,
+      "latency_ns": 0,
+      "src": 0
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 2,
+      "latency_ns": 0,
+      "src": 1
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 3,
+      "latency_ns": 0,
+      "src": 1
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 25,
+      "latency_ns": 0,
+      "src": 1
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 3,
+      "latency_ns": 0,
+      "src": 2
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 11,
+      "latency_ns": 0,
+      "src": 2
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 15,
+      "latency_ns": 0,
+      "src": 2
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 4,
+      "latency_ns": 0,
+      "src": 3
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 5,
+      "latency_ns": 0,
+      "src": 3
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 5,
+      "latency_ns": 0,
+      "src": 4
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 16,
+      "latency_ns": 0,
+      "src": 4
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 17,
+      "latency_ns": 0,
+      "src": 4
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 6,
+      "latency_ns": 0,
+      "src": 5
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 19,
+      "latency_ns": 0,
+      "src": 5
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 7,
+      "latency_ns": 0,
+      "src": 6
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 26,
+      "latency_ns": 0,
+      "src": 6
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 29,
+      "latency_ns": 0,
+      "src": 6
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 8,
+      "latency_ns": 0,
+      "src": 7
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 12,
+      "latency_ns": 0,
+      "src": 7
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 9,
+      "latency_ns": 0,
+      "src": 8
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 13,
+      "latency_ns": 0,
+      "src": 8
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 19,
+      "latency_ns": 0,
+      "src": 8
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 10,
+      "latency_ns": 0,
+      "src": 9
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 18,
+      "latency_ns": 0,
+      "src": 9
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 23,
+      "latency_ns": 0,
+      "src": 9
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 11,
+      "latency_ns": 0,
+      "src": 10
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 18,
+      "latency_ns": 0,
+      "src": 10
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 21,
+      "latency_ns": 0,
+      "src": 10
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 12,
+      "latency_ns": 0,
+      "src": 11
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 22,
+      "latency_ns": 0,
+      "src": 11
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 13,
+      "latency_ns": 0,
+      "src": 12
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 14,
+      "latency_ns": 0,
+      "src": 12
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 14,
+      "latency_ns": 0,
+      "src": 13
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 20,
+      "latency_ns": 0,
+      "src": 13
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 15,
+      "latency_ns": 0,
+      "src": 14
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 23,
+      "latency_ns": 0,
+      "src": 14
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 16,
+      "latency_ns": 0,
+      "src": 15
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 21,
+      "latency_ns": 0,
+      "src": 15
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 17,
+      "latency_ns": 0,
+      "src": 16
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 18,
+      "latency_ns": 0,
+      "src": 17
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 25,
+      "latency_ns": 0,
+      "src": 17
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 19,
+      "latency_ns": 0,
+      "src": 18
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 20,
+      "latency_ns": 0,
+      "src": 19
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 21,
+      "latency_ns": 0,
+      "src": 20
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 24,
+      "latency_ns": 0,
+      "src": 20
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 22,
+      "latency_ns": 0,
+      "src": 21
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 23,
+      "latency_ns": 0,
+      "src": 22
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 24,
+      "latency_ns": 0,
+      "src": 22
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 24,
+      "latency_ns": 0,
+      "src": 23
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 25,
+      "latency_ns": 0,
+      "src": 24
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 26,
+      "latency_ns": 0,
+      "src": 25
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 27,
+      "latency_ns": 0,
+      "src": 26
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 29,
+      "latency_ns": 0,
+      "src": 26
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 28,
+      "latency_ns": 0,
+      "src": 27
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 30,
+      "latency_ns": 0,
+      "src": 27
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 31,
+      "latency_ns": 0,
+      "src": 27
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 29,
+      "latency_ns": 0,
+      "src": 28
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 30,
+      "latency_ns": 0,
+      "src": 28
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 31,
+      "latency_ns": 0,
+      "src": 28
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 30,
+      "latency_ns": 0,
+      "src": 29
+    },
+    {
+      "bandwidth_gbps": 400,
+      "dst": 31,
+      "latency_ns": 0,
+      "src": 30
+    }
+  ],
+  "gpu_count": 32,
+  "metadata": {
+    "construction": "strict_greedy_demand_graph",
+    "degree": 4,
+    "per_gpu_optical_bandwidth_tbps": 1.6,
+    "per_link_bandwidth_gbps": 400,
+    "repair": "edge-swap to enforce exact degree-4 if greedy fill stalls",
+    "seed_edges": "ring_degree2",
+    "traffic_source": "calibration_dispatch_plus_combine"
+  },
+  "name": "ron_calibration_greedy_degree4",
+  "node_count": 32
+}

@@ -1,0 +1,9 @@
+topology: [ Graph ]
+npus_count: [ 32 ]
+bandwidth: [ 50.0 ]
+latency: [ 0.0 ]
+graph_file: /Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v37_four_workload_static_candidate_family_validation/workloads/qwen_livecodebench_execution/graphs/evaluation_greedy.json
+routing: ecmp
+ecmp_split: equal_bytes
+ecmp_max_paths: 4
+ecmp_log: false

@@ -1,0 +1,177 @@
+[
+  {
+    "candidate_type": "random_regular",
+    "name": "random_regular_seed_16",
+    "score_max_link_load_bytes": 237959850
+  },
+  {
+    "candidate_type": "random_regular",
+    "name": "random_regular_seed_22",
+    "score_max_link_load_bytes": 238675286
+  },
+  {
+    "candidate_type": "random_regular",
+    "name": "random_regular_seed_3",
+    "score_max_link_load_bytes": 253990913
+  },
+  {
+    "candidate_type": "random_regular",
+    "name": "random_regular_seed_30",
+    "score_max_link_load_bytes": 256699734
+  },
+  {
+    "candidate_type": "random_regular",
+    "name": "random_regular_seed_20",
+    "score_max_link_load_bytes": 257002156
+  },
+  {
+    "candidate_type": "random_regular",
+    "name": "random_regular_seed_27",
+    "score_max_link_load_bytes": 260126721
+  },
+  {
+    "candidate_type": "random_regular",
+    "name": "random_regular_seed_29",
+    "score_max_link_load_bytes": 266767701
+  },
+  {
+    "candidate_type": "random_regular",
+    "name": "random_regular_seed_25",
+    "score_max_link_load_bytes": 267553449
+  },
+  {
+    "candidate_type": "random_regular",
+    "name": "random_regular_seed_31",
+    "score_max_link_load_bytes": 268281856
+  },
+  {
+    "candidate_type": "random_regular",
+    "name": "random_regular_seed_17",
+    "score_max_link_load_bytes": 268953600
+  },
+  {
+    "candidate_type": "random_regular",
+    "name": "random_regular_seed_13",
+    "score_max_link_load_bytes": 269387774
+  },
+  {
+    "candidate_type": "random_regular",
+    "name": "random_regular_seed_9",
+    "score_max_link_load_bytes": 270213804
+  },
+  {
+    "candidate_type": "random_regular",
+    "name": "random_regular_seed_24",
+    "score_max_link_load_bytes": 272990209
+  },
+  {
+    "candidate_type": "random_regular",
+    "name": "random_regular_seed_1",
+    "score_max_link_load_bytes": 275732478
+  },
+  {
+    "candidate_type": "random_regular",
+    "name": "random_regular_seed_11",
+    "score_max_link_load_bytes": 277121024
+  },
+  {
+    "candidate_type": "random_regular",
+    "name": "random_regular_seed_18",
+    "score_max_link_load_bytes": 279583403
+  },
+  {
+    "candidate_type": "random_regular",
+    "name": "random_regular_seed_14",
+    "score_max_link_load_bytes": 285455019
+  },
+  {
+    "candidate_type": "random_regular",
+    "name": "random_regular_seed_19",
+    "score_max_link_load_bytes": 286421673
+  },
+  {
+    "candidate_type": "random_regular",
+    "name": "random_regular_seed_2",
+    "score_max_link_load_bytes": 288204117
+  },
+  {
+    "candidate_type": "random_regular",
+    "name": "random_regular_seed_23",
+    "score_max_link_load_bytes": 289599490
+  },
+  {
+    "candidate_type": "random_regular",
+    "name": "random_regular_seed_0",
+    "score_max_link_load_bytes": 292528129
+  },
+  {
+    "candidate_type": "random_regular",
+    "name": "random_regular_seed_12",
+    "score_max_link_load_bytes": 295677951
+  },
+  {
+    "candidate_type": "random_regular",
+    "name": "random_regular_seed_4",
+    "score_max_link_load_bytes": 298975233
+  },
+  {
+    "candidate_type": "random_regular",
+    "name": "random_regular_seed_8",
+    "score_max_link_load_bytes": 301636265
+  },
+  {
+    "candidate_type": "random_regular",
+    "name": "random_regular_seed_15",
+    "score_max_link_load_bytes": 303289684
+  },
+  {
+    "candidate_type": "random_regular",
+    "name": "random_regular_seed_5",
+    "score_max_link_load_bytes": 313035437
+  },
+  {
+    "candidate_type": "random_regular",
+    "name": "random_regular_seed_21",
+    "score_max_link_load_bytes": 313687381
+  },
+  {
+    "candidate_type": "random_regular",
+    "name": "random_regular_seed_7",
+    "score_max_link_load_bytes": 317853013
+  },
+  {
+    "candidate_type": "random_regular",
+    "name": "random_regular_seed_6",
+    "score_max_link_load_bytes": 322643968
+  },
+  {
+    "candidate_type": "random_regular",
+    "name": "random_regular_seed_10",
+    "score_max_link_load_bytes": 342915071
+  },
+  {
+    "candidate_type": "random_regular",
+    "name": "random_regular_seed_28",
+    "score_max_link_load_bytes": 351398571
+  },
+  {
+    "candidate_type": "random_regular",
+    "name": "random_regular_seed_26",
+    "score_max_link_load_bytes": 367877462
+  },
+  {
+    "candidate_type": "torus",
+    "name": "son_torus",
+    "score_max_link_load_bytes": 472693422
+  },
+  {
+    "candidate_type": "greedy_evaluation",
+    "name": "evaluation_greedy",
+    "score_max_link_load_bytes": 483956735
+  },
+  {
+    "candidate_type": "greedy_calibration",
+    "name": "calibration_greedy",
+    "score_max_link_load_bytes": 531868331
+  }
+]
