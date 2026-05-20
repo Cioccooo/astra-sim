@@ -1,0 +1,13 @@
+workload,penalty_us,best_non_oracle_method,best_non_oracle_normalised,beats_fair_static,best_non_oracle_gain_percent
+qwen_mmlu_machine_learning,0,prefill-warmup OCS,1.1422403135728316,False,-14.224031357283156
+qwen_mmlu_machine_learning,1,prefill-warmup OCS,1.142262084384056,False,-14.226208438405617
+qwen_mmlu_machine_learning,10,prefill-warmup OCS,1.1424580216850777,False,-14.245802168507778
+qwen_mmlu_machine_learning,25000,prefill-warmup OCS,1.686510594188356,False,-68.6510594188356
+deepseek_mmlu_machine_learning,0,phase-warmup OCS,1.086889633837248,False,-8.688963383724804
+deepseek_mmlu_machine_learning,1,phase-warmup OCS,1.0869668483395214,False,-8.696684833952144
+deepseek_mmlu_machine_learning,10,phase-warmup OCS,1.0876617788599818,False,-8.766177885998193
+deepseek_mmlu_machine_learning,25000,prefill-warmup OCS,2.134888176027445,False,-113.48881760274452
+qwen_livecodebench_execution,0,prefill-warmup OCS,0.982059093746307,True,1.7940906253693059
+qwen_livecodebench_execution,1,prefill-warmup OCS,0.9820622057369703,True,1.7937794263029652
+qwen_livecodebench_execution,10,prefill-warmup OCS,0.982090213652941,True,1.7909786347059002
+qwen_livecodebench_execution,25000,prefill-warmup OCS,1.0598588603314472,False,-5.985886033144723

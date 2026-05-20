@@ -1,0 +1,137 @@
+[
+  {
+    "candidate": "son_torus",
+    "leakage_free_non_oracle": true,
+    "method": "SON / torus",
+    "oracle_upper_bound": false,
+    "selection_signal": "static/leave-one-out no target decode",
+    "uses_target_decode_for_selection": false,
+    "workload": "qwen_mmlu_machine_learning"
+  },
+  {
+    "candidate": "random_regular_seed_0",
+    "leakage_free_non_oracle": true,
+    "method": "fixed random",
+    "oracle_upper_bound": false,
+    "selection_signal": "static/leave-one-out no target decode",
+    "uses_target_decode_for_selection": false,
+    "workload": "qwen_mmlu_machine_learning"
+  },
+  {
+    "candidate": "random_regular_seed_11",
+    "leakage_free_non_oracle": true,
+    "method": "fair universal static",
+    "oracle_upper_bound": false,
+    "selection_signal": "static/leave-one-out no target decode",
+    "uses_target_decode_for_selection": false,
+    "workload": "qwen_mmlu_machine_learning"
+  },
+  {
+    "candidate": "random_regular_seed_11",
+    "leakage_free_non_oracle": true,
+    "method": "prefill-informed OCS",
+    "oracle_upper_bound": false,
+    "selection_signal": "target prefill only",
+    "uses_target_decode_for_selection": false,
+    "workload": "qwen_mmlu_machine_learning"
+  },
+  {
+    "candidate": "random_regular_seed_11",
+    "leakage_free_non_oracle": false,
+    "method": "oracle",
+    "oracle_upper_bound": true,
+    "selection_signal": "target decode/evaluation",
+    "uses_target_decode_for_selection": true,
+    "workload": "qwen_mmlu_machine_learning"
+  },
+  {
+    "candidate": "son_torus",
+    "leakage_free_non_oracle": true,
+    "method": "SON / torus",
+    "oracle_upper_bound": false,
+    "selection_signal": "static/leave-one-out no target decode",
+    "uses_target_decode_for_selection": false,
+    "workload": "deepseek_mmlu_machine_learning"
+  },
+  {
+    "candidate": "random_regular_seed_0",
+    "leakage_free_non_oracle": true,
+    "method": "fixed random",
+    "oracle_upper_bound": false,
+    "selection_signal": "static/leave-one-out no target decode",
+    "uses_target_decode_for_selection": false,
+    "workload": "deepseek_mmlu_machine_learning"
+  },
+  {
+    "candidate": "random_regular_seed_11",
+    "leakage_free_non_oracle": true,
+    "method": "fair universal static",
+    "oracle_upper_bound": false,
+    "selection_signal": "static/leave-one-out no target decode",
+    "uses_target_decode_for_selection": false,
+    "workload": "deepseek_mmlu_machine_learning"
+  },
+  {
+    "candidate": "random_regular_seed_27",
+    "leakage_free_non_oracle": true,
+    "method": "prefill-informed OCS",
+    "oracle_upper_bound": false,
+    "selection_signal": "target prefill only",
+    "uses_target_decode_for_selection": false,
+    "workload": "deepseek_mmlu_machine_learning"
+  },
+  {
+    "candidate": "random_regular_seed_27",
+    "leakage_free_non_oracle": false,
+    "method": "oracle",
+    "oracle_upper_bound": true,
+    "selection_signal": "target decode/evaluation",
+    "uses_target_decode_for_selection": true,
+    "workload": "deepseek_mmlu_machine_learning"
+  },
+  {
+    "candidate": "son_torus",
+    "leakage_free_non_oracle": true,
+    "method": "SON / torus",
+    "oracle_upper_bound": false,
+    "selection_signal": "static/leave-one-out no target decode",
+    "uses_target_decode_for_selection": false,
+    "workload": "qwen_livecodebench_execution"
+  },
+  {
+    "candidate": "random_regular_seed_0",
+    "leakage_free_non_oracle": true,
+    "method": "fixed random",
+    "oracle_upper_bound": false,
+    "selection_signal": "static/leave-one-out no target decode",
+    "uses_target_decode_for_selection": false,
+    "workload": "qwen_livecodebench_execution"
+  },
+  {
+    "candidate": "random_regular_seed_11",
+    "leakage_free_non_oracle": true,
+    "method": "fair universal static",
+    "oracle_upper_bound": false,
+    "selection_signal": "static/leave-one-out no target decode",
+    "uses_target_decode_for_selection": false,
+    "workload": "qwen_livecodebench_execution"
+  },
+  {
+    "candidate": "random_regular_seed_2",
+    "leakage_free_non_oracle": true,
+    "method": "prefill-informed OCS",
+    "oracle_upper_bound": false,
+    "selection_signal": "target prefill only",
+    "uses_target_decode_for_selection": false,
+    "workload": "qwen_livecodebench_execution"
+  },
+  {
+    "candidate": "random_regular_seed_8",
+    "leakage_free_non_oracle": false,
+    "method": "oracle",
+    "oracle_upper_bound": true,
+    "selection_signal": "target decode/evaluation",
+    "uses_target_decode_for_selection": true,
+    "workload": "qwen_livecodebench_execution"
+  }
+]

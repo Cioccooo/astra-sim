@@ -1,0 +1,56 @@
+[
+  {
+    "note": "defensible default used by V39",
+    "plot_label": "ECMP-4",
+    "production_default": true,
+    "routing_rule": "ecmp4",
+    "son_over_fair_static_ratio": 3.4901827936033483,
+    "workload": "qwen_mmlu_machine_learning",
+    "workload_label": "Qwen MMLU ML"
+  },
+  {
+    "note": "all-shortest is optimistic sensitivity only",
+    "plot_label": "all-shortest optimistic",
+    "production_default": false,
+    "routing_rule": "all_shortest",
+    "son_over_fair_static_ratio": 1.6735579792151778,
+    "workload": "qwen_mmlu_machine_learning",
+    "workload_label": "Qwen MMLU ML"
+  },
+  {
+    "note": "defensible default used by V39",
+    "plot_label": "ECMP-4",
+    "production_default": true,
+    "routing_rule": "ecmp4",
+    "son_over_fair_static_ratio": 3.6563431632884806,
+    "workload": "deepseek_mmlu_machine_learning",
+    "workload_label": "DeepSeek MMLU ML"
+  },
+  {
+    "note": "all-shortest is optimistic sensitivity only",
+    "plot_label": "all-shortest optimistic",
+    "production_default": false,
+    "routing_rule": "all_shortest",
+    "son_over_fair_static_ratio": 1.5930798092837946,
+    "workload": "deepseek_mmlu_machine_learning",
+    "workload_label": "DeepSeek MMLU ML"
+  },
+  {
+    "note": "defensible default used by V39",
+    "plot_label": "ECMP-4",
+    "production_default": true,
+    "routing_rule": "ecmp4",
+    "son_over_fair_static_ratio": 3.505988883738431,
+    "workload": "qwen_livecodebench_execution",
+    "workload_label": "Qwen LiveCodeBench"
+  },
+  {
+    "note": "all-shortest is optimistic sensitivity only",
+    "plot_label": "all-shortest optimistic",
+    "production_default": false,
+    "routing_rule": "all_shortest",
+    "son_over_fair_static_ratio": 1.7120120909261936,
+    "workload": "qwen_livecodebench_execution",
+    "workload_label": "Qwen LiveCodeBench"
+  }
+]

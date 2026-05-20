@@ -1,0 +1,98 @@
+[
+  {
+    "beats_fair_static": false,
+    "best_non_oracle_gain_percent": 0.0,
+    "best_non_oracle_method": "full-prefill-informed decode OCS",
+    "best_non_oracle_normalised": 1.0,
+    "penalty_us": 0,
+    "workload": "qwen_mmlu_machine_learning"
+  },
+  {
+    "beats_fair_static": false,
+    "best_non_oracle_gain_percent": -0.002168535076488569,
+    "best_non_oracle_method": "full-prefill-informed decode OCS",
+    "best_non_oracle_normalised": 1.0000216853507649,
+    "penalty_us": 1,
+    "workload": "qwen_mmlu_machine_learning"
+  },
+  {
+    "beats_fair_static": false,
+    "best_non_oracle_gain_percent": -0.021685350764885692,
+    "best_non_oracle_method": "full-prefill-informed decode OCS",
+    "best_non_oracle_normalised": 1.0002168535076488,
+    "penalty_us": 10,
+    "workload": "qwen_mmlu_machine_learning"
+  },
+  {
+    "beats_fair_static": false,
+    "best_non_oracle_gain_percent": -54.21337691221423,
+    "best_non_oracle_method": "full-prefill-informed decode OCS",
+    "best_non_oracle_normalised": 1.5421337691221424,
+    "penalty_us": 25000,
+    "workload": "qwen_mmlu_machine_learning"
+  },
+  {
+    "beats_fair_static": true,
+    "best_non_oracle_gain_percent": 1.1642263876833032,
+    "best_non_oracle_method": "full-prefill-informed decode OCS",
+    "best_non_oracle_normalised": 0.988357736123167,
+    "penalty_us": 0,
+    "workload": "deepseek_mmlu_machine_learning"
+  },
+  {
+    "beats_fair_static": true,
+    "best_non_oracle_gain_percent": 1.1604486028788459,
+    "best_non_oracle_method": "full-prefill-informed decode OCS",
+    "best_non_oracle_normalised": 0.9883955139712115,
+    "penalty_us": 1,
+    "workload": "deepseek_mmlu_machine_learning"
+  },
+  {
+    "beats_fair_static": true,
+    "best_non_oracle_gain_percent": 1.1264485396387283,
+    "best_non_oracle_method": "full-prefill-informed decode OCS",
+    "best_non_oracle_normalised": 0.9887355146036128,
+    "penalty_us": 10,
+    "workload": "deepseek_mmlu_machine_learning"
+  },
+  {
+    "beats_fair_static": false,
+    "best_non_oracle_gain_percent": -93.28039372375454,
+    "best_non_oracle_method": "full-prefill-informed decode OCS",
+    "best_non_oracle_normalised": 1.9328039372375454,
+    "penalty_us": 25000,
+    "workload": "deepseek_mmlu_machine_learning"
+  },
+  {
+    "beats_fair_static": true,
+    "best_non_oracle_gain_percent": 0.9567323629889156,
+    "best_non_oracle_method": "prefill10-warmup OCS",
+    "best_non_oracle_normalised": 0.9904326763701109,
+    "penalty_us": 0,
+    "workload": "qwen_livecodebench_execution"
+  },
+  {
+    "beats_fair_static": true,
+    "best_non_oracle_gain_percent": 0.9564211639216067,
+    "best_non_oracle_method": "prefill10-warmup OCS",
+    "best_non_oracle_normalised": 0.9904357883607839,
+    "penalty_us": 1,
+    "workload": "qwen_livecodebench_execution"
+  },
+  {
+    "beats_fair_static": true,
+    "best_non_oracle_gain_percent": 0.9536203723158255,
+    "best_non_oracle_method": "prefill10-warmup OCS",
+    "best_non_oracle_normalised": 0.9904637962768418,
+    "penalty_us": 10,
+    "workload": "qwen_livecodebench_execution"
+  },
+  {
+    "beats_fair_static": false,
+    "best_non_oracle_gain_percent": -6.823244319736328,
+    "best_non_oracle_method": "prefill10-warmup OCS",
+    "best_non_oracle_normalised": 1.0682324431973633,
+    "penalty_us": 25000,
+    "workload": "qwen_livecodebench_execution"
+  }
+]

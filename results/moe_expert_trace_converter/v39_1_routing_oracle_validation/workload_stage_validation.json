@@ -1,0 +1,58 @@
+[
+  {
+    "decode_exists_non_empty": true,
+    "decode_token_count_trace1_plus": 14336,
+    "evaluation_signal": "decode trace[1:] only",
+    "figure_A_evaluates": "decode trace[1:]",
+    "included_in_v39_figures": true,
+    "label": "Qwen MMLU ML",
+    "note": "required workload",
+    "prefill_token_count_trace0": 3812,
+    "request_count": 112,
+    "topology_selection_signal": "prefill trace[0] only for prefill-informed OCS",
+    "trace_path": "/Users/dfx/Python/trace/Qwen/Qwen3-235B-A22B-FP8/mmlu/machine_learning",
+    "workload": "qwen_mmlu_machine_learning"
+  },
+  {
+    "decode_exists_non_empty": true,
+    "decode_token_count_trace1_plus": 13729,
+    "evaluation_signal": "decode trace[1:] only",
+    "figure_A_evaluates": "decode trace[1:]",
+    "included_in_v39_figures": true,
+    "label": "DeepSeek MMLU ML",
+    "note": "required workload",
+    "prefill_token_count_trace0": 3710,
+    "request_count": 112,
+    "topology_selection_signal": "prefill trace[0] only for prefill-informed OCS",
+    "trace_path": "/Users/dfx/Python/trace/cognitivecomputations/DeepSeek-R1-AWQ/mmlu/machine_learning",
+    "workload": "deepseek_mmlu_machine_learning"
+  },
+  {
+    "decode_exists_non_empty": true,
+    "decode_token_count_trace1_plus": 61312,
+    "evaluation_signal": "decode trace[1:] only",
+    "figure_A_evaluates": "decode trace[1:]",
+    "included_in_v39_figures": true,
+    "label": "Qwen LiveCodeBench",
+    "note": "required workload",
+    "prefill_token_count_trace0": 52341,
+    "request_count": 479,
+    "topology_selection_signal": "prefill trace[0] only for prefill-informed OCS",
+    "trace_path": "/Users/dfx/Python/trace/Qwen/Qwen3-235B-A22B-FP8/livecodebench/execution",
+    "workload": "qwen_livecodebench_execution"
+  },
+  {
+    "decode_exists_non_empty": true,
+    "decode_token_count_trace1_plus": 17280,
+    "evaluation_signal": "decode trace[1:] only",
+    "figure_A_evaluates": "decode trace[1:]",
+    "included_in_v39_figures": false,
+    "label": "Qwen MMLU_ZH_CN anatomy optional",
+    "note": "optional check only; cheap to include in future but omitted from V39 to keep required set fixed",
+    "prefill_token_count_trace0": 1569,
+    "request_count": 135,
+    "topology_selection_signal": "prefill trace[0] only for prefill-informed OCS",
+    "trace_path": "/Users/dfx/Python/trace/Qwen/Qwen3-235B-A22B-FP8/mmlu_ZH_CN/anatomy",
+    "workload": "qwen_mmlu_zh_cn_anatomy_optional"
+  }
+]

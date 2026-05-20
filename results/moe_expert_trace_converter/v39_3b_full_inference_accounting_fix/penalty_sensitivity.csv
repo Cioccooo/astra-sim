@@ -1,0 +1,13 @@
+workload,penalty_us,best_non_oracle_method,best_non_oracle_normalised,beats_fair_static,best_non_oracle_gain_percent
+qwen_mmlu_machine_learning,0,full-prefill-informed decode OCS,1.0,False,0.0
+qwen_mmlu_machine_learning,1,full-prefill-informed decode OCS,1.0000216853507649,False,-0.002168535076488569
+qwen_mmlu_machine_learning,10,full-prefill-informed decode OCS,1.0002168535076488,False,-0.021685350764885692
+qwen_mmlu_machine_learning,25000,full-prefill-informed decode OCS,1.5421337691221424,False,-54.21337691221423
+deepseek_mmlu_machine_learning,0,full-prefill-informed decode OCS,0.988357736123167,True,1.1642263876833032
+deepseek_mmlu_machine_learning,1,full-prefill-informed decode OCS,0.9883955139712115,True,1.1604486028788459
+deepseek_mmlu_machine_learning,10,full-prefill-informed decode OCS,0.9887355146036128,True,1.1264485396387283
+deepseek_mmlu_machine_learning,25000,full-prefill-informed decode OCS,1.9328039372375454,False,-93.28039372375454
+qwen_livecodebench_execution,0,prefill10-warmup OCS,0.9904326763701109,True,0.9567323629889156
+qwen_livecodebench_execution,1,prefill10-warmup OCS,0.9904357883607839,True,0.9564211639216067
+qwen_livecodebench_execution,10,prefill10-warmup OCS,0.9904637962768418,True,0.9536203723158255
+qwen_livecodebench_execution,25000,prefill10-warmup OCS,1.0682324431973633,False,-6.823244319736328

@@ -1,0 +1,107 @@
+[
+  {
+    "leakage_free_if_non_oracle": true,
+    "method": "SON / torus",
+    "selection_signal": "static or leave-one-out no target decode",
+    "uses_decode_for_selection": false,
+    "workload": "qwen_mmlu_machine_learning"
+  },
+  {
+    "leakage_free_if_non_oracle": true,
+    "method": "fixed random",
+    "selection_signal": "static or leave-one-out no target decode",
+    "uses_decode_for_selection": false,
+    "workload": "qwen_mmlu_machine_learning"
+  },
+  {
+    "leakage_free_if_non_oracle": true,
+    "method": "fair universal static",
+    "selection_signal": "static or leave-one-out no target decode",
+    "uses_decode_for_selection": false,
+    "workload": "qwen_mmlu_machine_learning"
+  },
+  {
+    "leakage_free_if_non_oracle": true,
+    "method": "prefill-informed OCS",
+    "selection_signal": "prefill trace[0] only",
+    "uses_decode_for_selection": false,
+    "workload": "qwen_mmlu_machine_learning"
+  },
+  {
+    "leakage_free_if_non_oracle": false,
+    "method": "oracle",
+    "selection_signal": "decode/evaluation",
+    "uses_decode_for_selection": true,
+    "workload": "qwen_mmlu_machine_learning"
+  },
+  {
+    "leakage_free_if_non_oracle": true,
+    "method": "SON / torus",
+    "selection_signal": "static or leave-one-out no target decode",
+    "uses_decode_for_selection": false,
+    "workload": "deepseek_mmlu_machine_learning"
+  },
+  {
+    "leakage_free_if_non_oracle": true,
+    "method": "fixed random",
+    "selection_signal": "static or leave-one-out no target decode",
+    "uses_decode_for_selection": false,
+    "workload": "deepseek_mmlu_machine_learning"
+  },
+  {
+    "leakage_free_if_non_oracle": true,
+    "method": "fair universal static",
+    "selection_signal": "static or leave-one-out no target decode",
+    "uses_decode_for_selection": false,
+    "workload": "deepseek_mmlu_machine_learning"
+  },
+  {
+    "leakage_free_if_non_oracle": true,
+    "method": "prefill-informed OCS",
+    "selection_signal": "prefill trace[0] only",
+    "uses_decode_for_selection": false,
+    "workload": "deepseek_mmlu_machine_learning"
+  },
+  {
+    "leakage_free_if_non_oracle": false,
+    "method": "oracle",
+    "selection_signal": "decode/evaluation",
+    "uses_decode_for_selection": true,
+    "workload": "deepseek_mmlu_machine_learning"
+  },
+  {
+    "leakage_free_if_non_oracle": true,
+    "method": "SON / torus",
+    "selection_signal": "static or leave-one-out no target decode",
+    "uses_decode_for_selection": false,
+    "workload": "qwen_livecodebench_execution"
+  },
+  {
+    "leakage_free_if_non_oracle": true,
+    "method": "fixed random",
+    "selection_signal": "static or leave-one-out no target decode",
+    "uses_decode_for_selection": false,
+    "workload": "qwen_livecodebench_execution"
+  },
+  {
+    "leakage_free_if_non_oracle": true,
+    "method": "fair universal static",
+    "selection_signal": "static or leave-one-out no target decode",
+    "uses_decode_for_selection": false,
+    "workload": "qwen_livecodebench_execution"
+  },
+  {
+    "leakage_free_if_non_oracle": true,
+    "method": "prefill-informed OCS",
+    "selection_signal": "prefill trace[0] only",
+    "uses_decode_for_selection": false,
+    "workload": "qwen_livecodebench_execution"
+  },
+  {
+    "leakage_free_if_non_oracle": false,
+    "method": "oracle",
+    "selection_signal": "decode/evaluation",
+    "uses_decode_for_selection": true,
+    "workload": "qwen_livecodebench_execution"
+  }
+]

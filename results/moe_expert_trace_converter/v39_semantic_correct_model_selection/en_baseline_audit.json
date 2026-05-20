@@ -1,0 +1,152 @@
+[
+  {
+    "astra_command_if_native_run": "AstraSim_Analytical_Congestion_Aware --workload-configuration=<dispatch/combine prefix> --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/network_configs/qwen_mmlu_machine_learning__EN__en_folded_clos.yml",
+    "average_route_hop_count": 3.59748427672956,
+    "combine_cycles": "73942494",
+    "component_sizes": [
+      160
+    ],
+    "connected_components": 1,
+    "degree_distribution_all_nodes": {
+      "1": 128,
+      "16": 16,
+      "24": 16
+    },
+    "degree_distribution_gpu_nodes": {
+      "1": 128
+    },
+    "diameter": 4,
+    "dispatch_cycles": "65033936",
+    "duplicate_edges": 0,
+    "ecmp_path_count_distribution_cap4": {
+      "1": 3072,
+      "4": 17280
+    },
+    "edge_or_circuit_count": 384,
+    "gpu_count": 128,
+    "graph_file": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/graphs/qwen_mmlu_machine_learning__EN__en_folded_clos.json",
+    "graph_hash": "7ecec181fc19d9ae8e85534189ab47be4746dec7109d0ea547deedebd45b4644",
+    "graph_name": "en_folded_clos_128gpu_16leaf_16spine",
+    "intermediate_gpu_appears_on_any_route": false,
+    "intermediate_gpu_route_pair_count": 0,
+    "link_bandwidth_gbps": 400,
+    "method": "EN",
+    "model_semantics": "native ASTRA GraphTopology packet/store-and-forward",
+    "network_config_path": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/network_configs/qwen_mmlu_machine_learning__EN__en_folded_clos.yml",
+    "node_count": 160,
+    "non_gpu_switch_nodes": 32,
+    "per_gpu_or_server_bandwidth_tbps": 0.4,
+    "route_hop_distribution": {
+      "1": 128,
+      "2": 2944,
+      "3": 1920,
+      "4": 15360
+    },
+    "same_optical_budget_check": false,
+    "selected_candidate_name": "en_folded_clos",
+    "self_loops": 0,
+    "topology_type": "folded_clos_eps_reference",
+    "total_cycles": "138976430",
+    "workload": "qwen_mmlu_machine_learning"
+  },
+  {
+    "astra_command_if_native_run": "AstraSim_Analytical_Congestion_Aware --workload-configuration=<dispatch/combine prefix> --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/network_configs/deepseek_mmlu_machine_learning__EN__en_folded_clos.yml",
+    "average_route_hop_count": 3.59748427672956,
+    "combine_cycles": "40005660",
+    "component_sizes": [
+      160
+    ],
+    "connected_components": 1,
+    "degree_distribution_all_nodes": {
+      "1": 128,
+      "16": 16,
+      "24": 16
+    },
+    "degree_distribution_gpu_nodes": {
+      "1": 128
+    },
+    "diameter": 4,
+    "dispatch_cycles": "38586080",
+    "duplicate_edges": 0,
+    "ecmp_path_count_distribution_cap4": {
+      "1": 3072,
+      "4": 17280
+    },
+    "edge_or_circuit_count": 384,
+    "gpu_count": 128,
+    "graph_file": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/graphs/deepseek_mmlu_machine_learning__EN__en_folded_clos.json",
+    "graph_hash": "7ecec181fc19d9ae8e85534189ab47be4746dec7109d0ea547deedebd45b4644",
+    "graph_name": "en_folded_clos_128gpu_16leaf_16spine",
+    "intermediate_gpu_appears_on_any_route": false,
+    "intermediate_gpu_route_pair_count": 0,
+    "link_bandwidth_gbps": 400,
+    "method": "EN",
+    "model_semantics": "native ASTRA GraphTopology packet/store-and-forward",
+    "network_config_path": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/network_configs/deepseek_mmlu_machine_learning__EN__en_folded_clos.yml",
+    "node_count": 160,
+    "non_gpu_switch_nodes": 32,
+    "per_gpu_or_server_bandwidth_tbps": 0.4,
+    "route_hop_distribution": {
+      "1": 128,
+      "2": 2944,
+      "3": 1920,
+      "4": 15360
+    },
+    "same_optical_budget_check": false,
+    "selected_candidate_name": "en_folded_clos",
+    "self_loops": 0,
+    "topology_type": "folded_clos_eps_reference",
+    "total_cycles": "78591740",
+    "workload": "deepseek_mmlu_machine_learning"
+  },
+  {
+    "astra_command_if_native_run": "AstraSim_Analytical_Congestion_Aware --workload-configuration=<dispatch/combine prefix> --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/network_configs/qwen_livecodebench_execution__EN__en_folded_clos.yml",
+    "average_route_hop_count": 3.59748427672956,
+    "combine_cycles": "334629942",
+    "component_sizes": [
+      160
+    ],
+    "connected_components": 1,
+    "degree_distribution_all_nodes": {
+      "1": 128,
+      "16": 16,
+      "24": 16
+    },
+    "degree_distribution_gpu_nodes": {
+      "1": 128
+    },
+    "diameter": 4,
+    "dispatch_cycles": "277254368",
+    "duplicate_edges": 0,
+    "ecmp_path_count_distribution_cap4": {
+      "1": 3072,
+      "4": 17280
+    },
+    "edge_or_circuit_count": 384,
+    "gpu_count": 128,
+    "graph_file": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/graphs/qwen_livecodebench_execution__EN__en_folded_clos.json",
+    "graph_hash": "7ecec181fc19d9ae8e85534189ab47be4746dec7109d0ea547deedebd45b4644",
+    "graph_name": "en_folded_clos_128gpu_16leaf_16spine",
+    "intermediate_gpu_appears_on_any_route": false,
+    "intermediate_gpu_route_pair_count": 0,
+    "link_bandwidth_gbps": 400,
+    "method": "EN",
+    "model_semantics": "native ASTRA GraphTopology packet/store-and-forward",
+    "network_config_path": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/network_configs/qwen_livecodebench_execution__EN__en_folded_clos.yml",
+    "node_count": 160,
+    "non_gpu_switch_nodes": 32,
+    "per_gpu_or_server_bandwidth_tbps": 0.4,
+    "route_hop_distribution": {
+      "1": 128,
+      "2": 2944,
+      "3": 1920,
+      "4": 15360
+    },
+    "same_optical_budget_check": false,
+    "selected_candidate_name": "en_folded_clos",
+    "self_loops": 0,
+    "topology_type": "folded_clos_eps_reference",
+    "total_cycles": "611884310",
+    "workload": "qwen_livecodebench_execution"
+  }
+]

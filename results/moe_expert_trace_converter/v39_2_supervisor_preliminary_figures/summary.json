@@ -1,0 +1,15 @@
+{
+  "all_figures_generated": true,
+  "caveat": "These are optical circuit reference results, not native ASTRA optical results; current ASTRA GraphTopology is packet-routing sensitivity only.",
+  "first_figure_to_show": "Figure 1: OCS vs strong static optical baseline",
+  "prefill_ocs_vs_fair_static": {
+    "DeepSeek MMLU ML": true,
+    "Qwen LiveCodeBench": false,
+    "Qwen MMLU ML": false
+  },
+  "torus_gap_survives_ecmp4": {
+    "DeepSeek MMLU ML": 3.6563431632884806,
+    "Qwen LiveCodeBench": 3.505988883738431,
+    "Qwen MMLU ML": 3.4901827936033483
+  }
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "best_w": 16,
+    "byte_conservation_pass": true,
+    "decode_token_count": 14336,
+    "fair_universal_static_candidate": "random_regular_seed_11",
+    "fair_universal_static_cycles_merged_wrong": 45933061,
+    "fair_universal_static_cycles_sequential": 46114080,
+    "merged_underestimates_by_percent": 0.3925460510108843,
+    "prefill_token_count": 3812,
+    "request_count": 112,
+    "shuffled_order": false,
+    "total_decode_remote_bytes_dispatch_plus_combine": 175274983424,
+    "total_full_inference_remote_bytes": 221875322880,
+    "total_prefill_remote_bytes_dispatch_plus_combine": 46600339456,
+    "workload": "qwen_mmlu_machine_learning"
+  },
+  {
+    "best_w": 16,
+    "byte_conservation_pass": true,
+    "decode_token_count": 13729,
+    "fair_universal_static_candidate": "random_regular_seed_11",
+    "fair_universal_static_cycles_merged_wrong": 25901870,
+    "fair_universal_static_cycles_sequential": 26470539,
+    "merged_underestimates_by_percent": 2.14830910696605,
+    "prefill_token_count": 3710,
+    "request_count": 112,
+    "shuffled_order": false,
+    "total_decode_remote_bytes_dispatch_plus_combine": 103554482176,
+    "total_full_inference_remote_bytes": 131539206144,
+    "total_prefill_remote_bytes_dispatch_plus_combine": 27984723968,
+    "workload": "deepseek_mmlu_machine_learning"
+  },
+  {
+    "best_w": 16,
+    "byte_conservation_pass": true,
+    "decode_token_count": 61312,
+    "fair_universal_static_candidate": "random_regular_seed_11",
+    "fair_universal_static_cycles_merged_wrong": 321337725,
+    "fair_universal_static_cycles_sequential": 321337724,
+    "merged_underestimates_by_percent": -3.111990673090098e-07,
+    "prefill_token_count": 52341,
+    "request_count": 479,
+    "shuffled_order": false,
+    "total_decode_remote_bytes_dispatch_plus_combine": 749582761984,
+    "total_full_inference_remote_bytes": 1389438582784,
+    "total_prefill_remote_bytes_dispatch_plus_combine": 639855820800,
+    "workload": "qwen_livecodebench_execution"
+  }
+]

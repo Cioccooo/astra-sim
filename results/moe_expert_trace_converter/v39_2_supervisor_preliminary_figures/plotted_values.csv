@@ -1,0 +1,16 @@
+workload,workload_label,method,candidate,optical_reference_ms,normalised_to_fair_universal_static,normalised_to_son_torus,model
+qwen_mmlu_machine_learning,Qwen MMLU ML,SON / torus,son_torus,126.775016,3.4901827936033483,1.0,optical circuit/capacity reference
+qwen_mmlu_machine_learning,Qwen MMLU ML,fixed random,random_regular_seed_0,36.548983,1.0062127035369595,0.2882979955608919,optical circuit/capacity reference
+qwen_mmlu_machine_learning,Qwen MMLU ML,fair universal static,random_regular_seed_11,36.323317,1.0,0.2865179445136099,optical circuit/capacity reference
+qwen_mmlu_machine_learning,Qwen MMLU ML,prefill-informed OCS,random_regular_seed_11,36.323317,1.0,0.2865179445136099,optical circuit/capacity reference
+qwen_mmlu_machine_learning,Qwen MMLU ML,oracle,random_regular_seed_11,36.323317,1.0,0.2865179445136099,optical circuit/capacity reference
+deepseek_mmlu_machine_learning,DeepSeek MMLU ML,SON / torus,son_torus,73.912403,3.6563431632884806,1.0,optical circuit/capacity reference
+deepseek_mmlu_machine_learning,DeepSeek MMLU ML,fixed random,random_regular_seed_0,20.949478,1.036341365599525,0.28343657017889134,optical circuit/capacity reference
+deepseek_mmlu_machine_learning,DeepSeek MMLU ML,fair universal static,random_regular_seed_11,20.214843,1.0,0.27349730464046745,optical circuit/capacity reference
+deepseek_mmlu_machine_learning,DeepSeek MMLU ML,prefill-informed OCS,random_regular_seed_27,19.906666,0.9847549149899409,0.2693278149812015,optical circuit/capacity reference
+deepseek_mmlu_machine_learning,DeepSeek MMLU ML,oracle,random_regular_seed_27,19.906666,0.9847549149899409,0.2693278149812015,optical circuit/capacity reference
+qwen_livecodebench_execution,Qwen LiveCodeBench,SON / torus,son_torus,586.609165,3.505988883738431,1.0,optical circuit/capacity reference
+qwen_livecodebench_execution,Qwen LiveCodeBench,fixed random,random_regular_seed_0,182.290114,1.0894939108212047,0.3107522433612165,optical circuit/capacity reference
+qwen_livecodebench_execution,Qwen LiveCodeBench,fair universal static,random_regular_seed_11,167.316322,1.0,0.2852262323586438,optical circuit/capacity reference
+qwen_livecodebench_execution,Qwen LiveCodeBench,prefill-informed OCS,random_regular_seed_2,168.399111,1.0064715084999298,0.2870720763457557,optical circuit/capacity reference
+qwen_livecodebench_execution,Qwen LiveCodeBench,oracle,random_regular_seed_8,164.40216,0.9825829185989398,0.2802584238519356,optical circuit/capacity reference

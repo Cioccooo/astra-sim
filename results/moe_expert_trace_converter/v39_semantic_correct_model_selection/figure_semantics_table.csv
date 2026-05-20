@@ -1,0 +1,5 @@
+figure,title,model,role
+A,Optical-only controlled comparison,optical circuit/capacity reference,main optical result
+B,EN electrical reference vs optical methods,EN native ASTRA GraphTopology; optical methods optical circuit reference,reference with explicitly mixed semantics
+C,Packet-routing ASTRA GraphTopology sensitivity,native ASTRA GraphTopology packet/store-and-forward,"sensitivity, not main optical OCS result"
+D,Prefill-to-decode predictability,trace statistics only,diagnostic

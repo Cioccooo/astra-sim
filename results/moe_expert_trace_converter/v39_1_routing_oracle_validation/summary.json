@@ -1,0 +1,171 @@
+{
+  "final": {
+    "figure_A_evaluates": "decode trace[1:]",
+    "optional_qwen_zh_status": {
+      "decode_exists_non_empty": true,
+      "decode_token_count_trace1_plus": 17280,
+      "evaluation_signal": "decode trace[1:] only",
+      "figure_A_evaluates": "decode trace[1:]",
+      "included_in_v39_figures": false,
+      "label": "Qwen MMLU_ZH_CN anatomy optional",
+      "note": "optional check only; cheap to include in future but omitted from V39 to keep required set fixed",
+      "prefill_token_count_trace0": 1569,
+      "request_count": 135,
+      "topology_selection_signal": "prefill trace[0] only for prefill-informed OCS",
+      "trace_path": "/Users/dfx/Python/trace/Qwen/Qwen3-235B-A22B-FP8/mmlu_ZH_CN/anatomy",
+      "workload": "qwen_mmlu_zh_cn_anatomy_optional"
+    },
+    "oracle_and_fair_close_reason": "dominant bottleneck is optical_resource, and the random-regular candidate pool contains many near-equivalent expander-like graphs",
+    "prefill_ocs_beats_fair_static": {
+      "deepseek_mmlu_machine_learning": true,
+      "qwen_livecodebench_execution": false,
+      "qwen_mmlu_machine_learning": false
+    },
+    "routing_rule_used_for_v39_son": "ECMP-4 over equal-cost shortest paths; current == ecmp4",
+    "safe_supervisor_figures": {
+      "Figure A": "safe as preliminary optical-only controlled comparison",
+      "Figure B": "safe only as clearly labelled EN electrical reference vs optical reference",
+      "Figure C": "safe only as packet-routing sensitivity, not optical main result",
+      "Figure D": "safe as trace predictability diagnostic"
+    },
+    "topology_selection": "prefill trace[0] only for prefill-informed OCS",
+    "torus_gap_survives_ecmp4": {
+      "deepseek_mmlu_machine_learning": 3.6563431632884806,
+      "qwen_livecodebench_execution": 3.505988883738431,
+      "qwen_mmlu_machine_learning": 3.4901827936033483
+    }
+  },
+  "oracle_checks": [
+    {
+      "oracle_fair_gap_percent": 0.0,
+      "oracle_lte_fair": true,
+      "oracle_lte_prefill": true,
+      "why_close": "Optical resource bottleneck dominates and many degree-4 expander-like random graphs are near-saturated/near-optimal.",
+      "workload": "qwen_mmlu_machine_learning"
+    },
+    {
+      "oracle_fair_gap_percent": 1.5245085010059047,
+      "oracle_lte_fair": true,
+      "oracle_lte_prefill": true,
+      "why_close": "Optical resource bottleneck dominates and many degree-4 expander-like random graphs are near-saturated/near-optimal.",
+      "workload": "deepseek_mmlu_machine_learning"
+    },
+    {
+      "oracle_fair_gap_percent": 1.7417081401060228,
+      "oracle_lte_fair": true,
+      "oracle_lte_prefill": true,
+      "why_close": "Optical resource bottleneck dominates and many degree-4 expander-like random graphs are near-saturated/near-optimal.",
+      "workload": "qwen_livecodebench_execution"
+    }
+  ],
+  "torus_rows": [
+    {
+      "fair_universal_static_time_ms": 36.323317,
+      "oracle_time_ms": 36.323317,
+      "prefill_informed_ocs_time_ms": 36.323317,
+      "production_recommended": false,
+      "routing_rule": "current",
+      "routing_semantics": "ECMP-4 over equal-cost shortest paths",
+      "son_over_fair_static_ratio": 3.4901827936033483,
+      "son_time_ms": 126.775016,
+      "torus_3p5x_slower_claim_survives": false,
+      "workload": "qwen_mmlu_machine_learning"
+    },
+    {
+      "fair_universal_static_time_ms": 36.323317,
+      "oracle_time_ms": 36.323317,
+      "prefill_informed_ocs_time_ms": 36.323317,
+      "production_recommended": true,
+      "routing_rule": "ecmp4",
+      "routing_semantics": "ECMP-4 over equal-cost shortest paths",
+      "son_over_fair_static_ratio": 3.4901827936033483,
+      "son_time_ms": 126.775016,
+      "torus_3p5x_slower_claim_survives": false,
+      "workload": "qwen_mmlu_machine_learning"
+    },
+    {
+      "fair_universal_static_time_ms": 36.416188,
+      "oracle_time_ms": 36.416188,
+      "prefill_informed_ocs_time_ms": 36.416188,
+      "production_recommended": false,
+      "routing_rule": "all_shortest",
+      "routing_semantics": "all equal shortest paths, optimistic sensitivity",
+      "son_over_fair_static_ratio": 1.6735579792151778,
+      "son_time_ms": 60.944602,
+      "torus_3p5x_slower_claim_survives": false,
+      "workload": "qwen_mmlu_machine_learning"
+    },
+    {
+      "fair_universal_static_time_ms": 20.214843,
+      "oracle_time_ms": 19.906666,
+      "prefill_informed_ocs_time_ms": 19.906666,
+      "production_recommended": false,
+      "routing_rule": "current",
+      "routing_semantics": "ECMP-4 over equal-cost shortest paths",
+      "son_over_fair_static_ratio": 3.6563431632884806,
+      "son_time_ms": 73.912403,
+      "torus_3p5x_slower_claim_survives": true,
+      "workload": "deepseek_mmlu_machine_learning"
+    },
+    {
+      "fair_universal_static_time_ms": 20.214843,
+      "oracle_time_ms": 19.906666,
+      "prefill_informed_ocs_time_ms": 19.906666,
+      "production_recommended": true,
+      "routing_rule": "ecmp4",
+      "routing_semantics": "ECMP-4 over equal-cost shortest paths",
+      "son_over_fair_static_ratio": 3.6563431632884806,
+      "son_time_ms": 73.912403,
+      "torus_3p5x_slower_claim_survives": true,
+      "workload": "deepseek_mmlu_machine_learning"
+    },
+    {
+      "fair_universal_static_time_ms": 20.168606,
+      "oracle_time_ms": 20.015034,
+      "prefill_informed_ocs_time_ms": 20.015034,
+      "production_recommended": false,
+      "routing_rule": "all_shortest",
+      "routing_semantics": "all equal shortest paths, optimistic sensitivity",
+      "son_over_fair_static_ratio": 1.5930798092837946,
+      "son_time_ms": 32.130199,
+      "torus_3p5x_slower_claim_survives": false,
+      "workload": "deepseek_mmlu_machine_learning"
+    },
+    {
+      "fair_universal_static_time_ms": 167.316322,
+      "oracle_time_ms": 164.40216,
+      "prefill_informed_ocs_time_ms": 168.399111,
+      "production_recommended": false,
+      "routing_rule": "current",
+      "routing_semantics": "ECMP-4 over equal-cost shortest paths",
+      "son_over_fair_static_ratio": 3.505988883738431,
+      "son_time_ms": 586.609165,
+      "torus_3p5x_slower_claim_survives": true,
+      "workload": "qwen_livecodebench_execution"
+    },
+    {
+      "fair_universal_static_time_ms": 167.316322,
+      "oracle_time_ms": 164.40216,
+      "prefill_informed_ocs_time_ms": 168.399111,
+      "production_recommended": true,
+      "routing_rule": "ecmp4",
+      "routing_semantics": "ECMP-4 over equal-cost shortest paths",
+      "son_over_fair_static_ratio": 3.505988883738431,
+      "son_time_ms": 586.609165,
+      "torus_3p5x_slower_claim_survives": true,
+      "workload": "qwen_livecodebench_execution"
+    },
+    {
+      "fair_universal_static_time_ms": 165.504608,
+      "oracle_time_ms": 164.54116,
+      "prefill_informed_ocs_time_ms": 169.001938,
+      "production_recommended": false,
+      "routing_rule": "all_shortest",
+      "routing_semantics": "all equal shortest paths, optimistic sensitivity",
+      "son_over_fair_static_ratio": 1.7120120909261936,
+      "son_time_ms": 283.34589,
+      "torus_3p5x_slower_claim_survives": false,
+      "workload": "qwen_livecodebench_execution"
+    }
+  ]
+}

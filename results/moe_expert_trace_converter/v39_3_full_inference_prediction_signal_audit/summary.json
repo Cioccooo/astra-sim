@@ -1,0 +1,150 @@
+{
+  "best_summary": {
+    "deepseek_mmlu_machine_learning": {
+      "best_non_oracle_beats_fair_static": false,
+      "best_non_oracle_method": "phase-warmup OCS",
+      "best_non_oracle_normalised": 1.0869668483395214,
+      "oracle_normalised": 0.9782666270813651
+    },
+    "qwen_livecodebench_execution": {
+      "best_non_oracle_beats_fair_static": true,
+      "best_non_oracle_method": "prefill-warmup OCS",
+      "best_non_oracle_normalised": 0.9820622057369703,
+      "oracle_normalised": 0.9704197196267572
+    },
+    "qwen_mmlu_machine_learning": {
+      "best_non_oracle_beats_fair_static": false,
+      "best_non_oracle_method": "prefill-warmup OCS",
+      "best_non_oracle_normalised": 1.142262084384056,
+      "oracle_normalised": 1.0
+    }
+  },
+  "best_w_by_workload": {
+    "deepseek_mmlu_machine_learning": 16,
+    "qwen_livecodebench_execution": 16,
+    "qwen_mmlu_machine_learning": 16
+  },
+  "fair_universal_static_selection": {
+    "deepseek_mmlu_machine_learning": "random_regular_seed_11",
+    "qwen_livecodebench_execution": "random_regular_seed_11",
+    "qwen_mmlu_machine_learning": "random_regular_seed_11"
+  },
+  "final_answers": {
+    "changes_v39_2_conclusion": "Yes: once full inference warm-up/default traffic is included, non-oracle OCS gains are much smaller and often vanish.",
+    "does_any_non_oracle_beat_fair_static": {
+      "deepseek_mmlu_machine_learning": false,
+      "qwen_livecodebench_execution": true,
+      "qwen_mmlu_machine_learning": false
+    },
+    "gain_after_warmup_and_penalty": {
+      "deepseek_mmlu_machine_learning": 1.0869668483395214,
+      "qwen_livecodebench_execution": 0.9820622057369703,
+      "qwen_mmlu_machine_learning": 1.142262084384056
+    },
+    "most_defensible": "phase-warmup if an online decode warm-up is acceptable; otherwise prefill-warmup is weaker but simpler. Previous-request is reported with shuffled control.",
+    "which_method_best_full_inference": {
+      "deepseek_mmlu_machine_learning": {
+        "best_non_oracle_beats_fair_static": false,
+        "best_non_oracle_method": "phase-warmup OCS",
+        "best_non_oracle_normalised": 1.0869668483395214,
+        "oracle_normalised": 0.9782666270813651
+      },
+      "qwen_livecodebench_execution": {
+        "best_non_oracle_beats_fair_static": true,
+        "best_non_oracle_method": "prefill-warmup OCS",
+        "best_non_oracle_normalised": 0.9820622057369703,
+        "oracle_normalised": 0.9704197196267572
+      },
+      "qwen_mmlu_machine_learning": {
+        "best_non_oracle_beats_fair_static": false,
+        "best_non_oracle_method": "prefill-warmup OCS",
+        "best_non_oracle_normalised": 1.142262084384056,
+        "oracle_normalised": 1.0
+      }
+    }
+  },
+  "main_penalty_us": 1,
+  "model": "optical circuit/capacity reference",
+  "optional_qwen_zh_status": {
+    "decode_token_count": 17280,
+    "included_in_main_figures": false,
+    "prefill_token_count": 1569,
+    "reason": "optional; omitted to keep V39.3 required workload set fixed",
+    "request_count": 135,
+    "workload": "qwen_mmlu_zh_cn_anatomy_optional"
+  },
+  "shuffled_previous_request_rows": [
+    {
+      "byte_conservation": true,
+      "dominant_bottleneck": "optical_resource",
+      "evaluated_bytes": 221875322880,
+      "evaluation_target": "full inference prefill+decode including warm-up/default phases",
+      "gain_vs_fair_static_percent": -35.780567726588046,
+      "graph_hash": "window_dynamic",
+      "method": "previous-request OCS W=16",
+      "no_leakage": true,
+      "normalised_to_fair_universal_static": 1.3578056772658804,
+      "number_of_reconfigurations": 6,
+      "observed_bytes": 32663453696,
+      "optical_resource_bottleneck_time_ms": 5.186615,
+      "penalty_us": 1,
+      "receiver_bottleneck_time_ms": 1.993141,
+      "same_budget_check": true,
+      "selected_candidate_name": "window_selected_counts={'random_regular_seed_14': 2, 'random_regular_seed_26': 1, 'random_regular_seed_7': 1, 'random_regular_seed_27': 1, 'random_regular_seed_11': 1}",
+      "selection_signal": "previous non-overlapping W=16 requests select next W requests",
+      "sender_bottleneck_time_ms": 0.882301,
+      "shuffled_order_control": true,
+      "total_cycles": 62368171,
+      "total_ms": 62.368171,
+      "workload": "qwen_mmlu_machine_learning"
+    },
+    {
+      "byte_conservation": true,
+      "dominant_bottleneck": "optical_resource",
+      "evaluated_bytes": 131539206144,
+      "evaluation_target": "full inference prefill+decode including warm-up/default phases",
+      "gain_vs_fair_static_percent": -59.12341464149114,
+      "graph_hash": "window_dynamic",
+      "method": "previous-request OCS W=16",
+      "no_leakage": true,
+      "normalised_to_fair_universal_static": 1.5912341464149113,
+      "number_of_reconfigurations": 6,
+      "observed_bytes": 18759663616,
+      "optical_resource_bottleneck_time_ms": 4.174906,
+      "penalty_us": 1,
+      "receiver_bottleneck_time_ms": 1.668624,
+      "same_budget_check": true,
+      "selected_candidate_name": "window_selected_counts={'random_regular_seed_27': 3, 'random_regular_seed_1': 1, 'random_regular_seed_26': 1, 'random_regular_seed_24': 1}",
+      "selection_signal": "previous non-overlapping W=16 requests select next W requests",
+      "sender_bottleneck_time_ms": 0.445899,
+      "shuffled_order_control": true,
+      "total_cycles": 41215940,
+      "total_ms": 41.21594,
+      "workload": "deepseek_mmlu_machine_learning"
+    },
+    {
+      "byte_conservation": true,
+      "dominant_bottleneck": "optical_resource",
+      "evaluated_bytes": 1389438582784,
+      "evaluation_target": "full inference prefill+decode including warm-up/default phases",
+      "gain_vs_fair_static_percent": -26.496388807134302,
+      "graph_hash": "window_dynamic",
+      "method": "previous-request OCS W=16",
+      "no_leakage": true,
+      "normalised_to_fair_universal_static": 1.264963888071343,
+      "number_of_reconfigurations": 29,
+      "observed_bytes": 47403909120,
+      "optical_resource_bottleneck_time_ms": 8.088111,
+      "penalty_us": 1,
+      "receiver_bottleneck_time_ms": 2.634468,
+      "same_budget_check": true,
+      "selected_candidate_name": "window_selected_counts={'random_regular_seed_8': 6, 'random_regular_seed_27': 4, 'random_regular_seed_26': 3, 'random_regular_seed_4': 1, 'random_regular_seed_11': 5, 'random_regular_seed_1': 1, 'random_regular_seed_24': 1, 'random_regular_seed_14': 3, 'random_regular_seed_0': 2, 'random_regular_seed_2': 2, 'random_regular_seed_3': 1}",
+      "selection_signal": "previous non-overlapping W=16 requests select next W requests",
+      "sender_bottleneck_time_ms": 3.194465,
+      "shuffled_order_control": true,
+      "total_cycles": 406480618,
+      "total_ms": 406.480618,
+      "workload": "qwen_livecodebench_execution"
+    }
+  ]
+}

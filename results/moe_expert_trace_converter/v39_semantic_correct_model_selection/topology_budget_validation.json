@@ -1,0 +1,699 @@
+[
+  {
+    "average_route_hop_count": 6.047244094488189,
+    "component_sizes": [
+      128
+    ],
+    "connected_components": 1,
+    "degree_distribution_all_nodes": {
+      "4": 128
+    },
+    "degree_distribution_gpu_nodes": {
+      "4": 128
+    },
+    "diameter": 12,
+    "duplicate_edges": 0,
+    "ecmp_path_count_distribution_cap4": {
+      "1": 2560,
+      "2": 768,
+      "3": 1024,
+      "4": 11904
+    },
+    "edge_or_circuit_count": 256,
+    "gpu_count": 128,
+    "graph_hash": "c4e5cfbd019d5a9529a3d3c3229dfbca4ba9ab035a4ab8014f11713b7272ab1b",
+    "graph_name": "son_torus_8x16_128gpu",
+    "intermediate_gpu_appears_on_any_route": true,
+    "intermediate_gpu_route_pair_count": 15744,
+    "link_bandwidth_gbps": 400,
+    "method": "SON / torus",
+    "model_semantics": "optical circuit/capacity reference",
+    "node_count": 128,
+    "non_gpu_switch_nodes": 0,
+    "per_gpu_or_server_bandwidth_tbps": 1.6,
+    "route_hop_distribution": {
+      "1": 512,
+      "2": 1024,
+      "3": 1536,
+      "4": 1920,
+      "5": 2048,
+      "6": 2048,
+      "7": 2048,
+      "8": 1920,
+      "9": 1536,
+      "10": 1024,
+      "11": 512,
+      "12": 128
+    },
+    "same_optical_budget_check": true,
+    "self_loops": 0,
+    "topology_type": "static_2d_torus",
+    "workload": "qwen_mmlu_machine_learning"
+  },
+  {
+    "average_route_hop_count": 3.791830708661417,
+    "component_sizes": [
+      128
+    ],
+    "connected_components": 1,
+    "degree_distribution_all_nodes": {
+      "4": 128
+    },
+    "degree_distribution_gpu_nodes": {
+      "4": 128
+    },
+    "diameter": 7,
+    "duplicate_edges": 0,
+    "ecmp_path_count_distribution_cap4": {
+      "1": 9804,
+      "2": 3330,
+      "3": 1472,
+      "4": 1650
+    },
+    "edge_or_circuit_count": 256,
+    "gpu_count": 128,
+    "graph_hash": "66bad8e9ac7a641b0749cd59ae1237ec3c2df767a1b8ae205e1452b14f4773df",
+    "graph_name": "ron_random_regular_seed_0",
+    "intermediate_gpu_appears_on_any_route": true,
+    "intermediate_gpu_route_pair_count": 15744,
+    "link_bandwidth_gbps": 400,
+    "method": "fixed random",
+    "model_semantics": "optical circuit/capacity reference",
+    "node_count": 128,
+    "non_gpu_switch_nodes": 0,
+    "per_gpu_or_server_bandwidth_tbps": 1.6,
+    "route_hop_distribution": {
+      "1": 512,
+      "2": 1450,
+      "3": 3666,
+      "4": 6274,
+      "5": 3992,
+      "6": 360,
+      "7": 2
+    },
+    "same_optical_budget_check": true,
+    "self_loops": 0,
+    "topology_type": "random_regular_degree4",
+    "workload": "qwen_mmlu_machine_learning"
+  },
+  {
+    "average_route_hop_count": 3.75369094488189,
+    "component_sizes": [
+      128
+    ],
+    "connected_components": 1,
+    "degree_distribution_all_nodes": {
+      "4": 128
+    },
+    "degree_distribution_gpu_nodes": {
+      "4": 128
+    },
+    "diameter": 6,
+    "duplicate_edges": 0,
+    "ecmp_path_count_distribution_cap4": {
+      "1": 9844,
+      "2": 3294,
+      "3": 1482,
+      "4": 1636
+    },
+    "edge_or_circuit_count": 256,
+    "gpu_count": 128,
+    "graph_hash": "bf8048120d2c00d0a25647cb479254cb38e3dd34754b774a69dc310eaf2e7444",
+    "graph_name": "ron_random_regular_seed_11",
+    "intermediate_gpu_appears_on_any_route": true,
+    "intermediate_gpu_route_pair_count": 15744,
+    "link_bandwidth_gbps": 400,
+    "method": "fair universal static",
+    "model_semantics": "optical circuit/capacity reference",
+    "node_count": 128,
+    "non_gpu_switch_nodes": 0,
+    "per_gpu_or_server_bandwidth_tbps": 1.6,
+    "route_hop_distribution": {
+      "1": 512,
+      "2": 1480,
+      "3": 3744,
+      "4": 6476,
+      "5": 3852,
+      "6": 192
+    },
+    "same_optical_budget_check": true,
+    "self_loops": 0,
+    "topology_type": "random_regular_degree4",
+    "workload": "qwen_mmlu_machine_learning"
+  },
+  {
+    "average_route_hop_count": 3.75369094488189,
+    "component_sizes": [
+      128
+    ],
+    "connected_components": 1,
+    "degree_distribution_all_nodes": {
+      "4": 128
+    },
+    "degree_distribution_gpu_nodes": {
+      "4": 128
+    },
+    "diameter": 6,
+    "duplicate_edges": 0,
+    "ecmp_path_count_distribution_cap4": {
+      "1": 9844,
+      "2": 3294,
+      "3": 1482,
+      "4": 1636
+    },
+    "edge_or_circuit_count": 256,
+    "gpu_count": 128,
+    "graph_hash": "bf8048120d2c00d0a25647cb479254cb38e3dd34754b774a69dc310eaf2e7444",
+    "graph_name": "ron_random_regular_seed_11",
+    "intermediate_gpu_appears_on_any_route": true,
+    "intermediate_gpu_route_pair_count": 15744,
+    "link_bandwidth_gbps": 400,
+    "method": "prefill-informed OCS",
+    "model_semantics": "optical circuit/capacity reference",
+    "node_count": 128,
+    "non_gpu_switch_nodes": 0,
+    "per_gpu_or_server_bandwidth_tbps": 1.6,
+    "route_hop_distribution": {
+      "1": 512,
+      "2": 1480,
+      "3": 3744,
+      "4": 6476,
+      "5": 3852,
+      "6": 192
+    },
+    "same_optical_budget_check": true,
+    "self_loops": 0,
+    "topology_type": "random_regular_degree4",
+    "workload": "qwen_mmlu_machine_learning"
+  },
+  {
+    "average_route_hop_count": 3.75369094488189,
+    "component_sizes": [
+      128
+    ],
+    "connected_components": 1,
+    "degree_distribution_all_nodes": {
+      "4": 128
+    },
+    "degree_distribution_gpu_nodes": {
+      "4": 128
+    },
+    "diameter": 6,
+    "duplicate_edges": 0,
+    "ecmp_path_count_distribution_cap4": {
+      "1": 9844,
+      "2": 3294,
+      "3": 1482,
+      "4": 1636
+    },
+    "edge_or_circuit_count": 256,
+    "gpu_count": 128,
+    "graph_hash": "bf8048120d2c00d0a25647cb479254cb38e3dd34754b774a69dc310eaf2e7444",
+    "graph_name": "ron_random_regular_seed_11",
+    "intermediate_gpu_appears_on_any_route": true,
+    "intermediate_gpu_route_pair_count": 15744,
+    "link_bandwidth_gbps": 400,
+    "method": "oracle",
+    "model_semantics": "optical circuit/capacity reference",
+    "node_count": 128,
+    "non_gpu_switch_nodes": 0,
+    "per_gpu_or_server_bandwidth_tbps": 1.6,
+    "route_hop_distribution": {
+      "1": 512,
+      "2": 1480,
+      "3": 3744,
+      "4": 6476,
+      "5": 3852,
+      "6": 192
+    },
+    "same_optical_budget_check": true,
+    "self_loops": 0,
+    "topology_type": "random_regular_degree4",
+    "workload": "qwen_mmlu_machine_learning"
+  },
+  {
+    "average_route_hop_count": 6.047244094488189,
+    "component_sizes": [
+      128
+    ],
+    "connected_components": 1,
+    "degree_distribution_all_nodes": {
+      "4": 128
+    },
+    "degree_distribution_gpu_nodes": {
+      "4": 128
+    },
+    "diameter": 12,
+    "duplicate_edges": 0,
+    "ecmp_path_count_distribution_cap4": {
+      "1": 2560,
+      "2": 768,
+      "3": 1024,
+      "4": 11904
+    },
+    "edge_or_circuit_count": 256,
+    "gpu_count": 128,
+    "graph_hash": "c4e5cfbd019d5a9529a3d3c3229dfbca4ba9ab035a4ab8014f11713b7272ab1b",
+    "graph_name": "son_torus_8x16_128gpu",
+    "intermediate_gpu_appears_on_any_route": true,
+    "intermediate_gpu_route_pair_count": 15744,
+    "link_bandwidth_gbps": 400,
+    "method": "SON / torus",
+    "model_semantics": "optical circuit/capacity reference",
+    "node_count": 128,
+    "non_gpu_switch_nodes": 0,
+    "per_gpu_or_server_bandwidth_tbps": 1.6,
+    "route_hop_distribution": {
+      "1": 512,
+      "2": 1024,
+      "3": 1536,
+      "4": 1920,
+      "5": 2048,
+      "6": 2048,
+      "7": 2048,
+      "8": 1920,
+      "9": 1536,
+      "10": 1024,
+      "11": 512,
+      "12": 128
+    },
+    "same_optical_budget_check": true,
+    "self_loops": 0,
+    "topology_type": "static_2d_torus",
+    "workload": "deepseek_mmlu_machine_learning"
+  },
+  {
+    "average_route_hop_count": 3.791830708661417,
+    "component_sizes": [
+      128
+    ],
+    "connected_components": 1,
+    "degree_distribution_all_nodes": {
+      "4": 128
+    },
+    "degree_distribution_gpu_nodes": {
+      "4": 128
+    },
+    "diameter": 7,
+    "duplicate_edges": 0,
+    "ecmp_path_count_distribution_cap4": {
+      "1": 9804,
+      "2": 3330,
+      "3": 1472,
+      "4": 1650
+    },
+    "edge_or_circuit_count": 256,
+    "gpu_count": 128,
+    "graph_hash": "66bad8e9ac7a641b0749cd59ae1237ec3c2df767a1b8ae205e1452b14f4773df",
+    "graph_name": "ron_random_regular_seed_0",
+    "intermediate_gpu_appears_on_any_route": true,
+    "intermediate_gpu_route_pair_count": 15744,
+    "link_bandwidth_gbps": 400,
+    "method": "fixed random",
+    "model_semantics": "optical circuit/capacity reference",
+    "node_count": 128,
+    "non_gpu_switch_nodes": 0,
+    "per_gpu_or_server_bandwidth_tbps": 1.6,
+    "route_hop_distribution": {
+      "1": 512,
+      "2": 1450,
+      "3": 3666,
+      "4": 6274,
+      "5": 3992,
+      "6": 360,
+      "7": 2
+    },
+    "same_optical_budget_check": true,
+    "self_loops": 0,
+    "topology_type": "random_regular_degree4",
+    "workload": "deepseek_mmlu_machine_learning"
+  },
+  {
+    "average_route_hop_count": 3.75369094488189,
+    "component_sizes": [
+      128
+    ],
+    "connected_components": 1,
+    "degree_distribution_all_nodes": {
+      "4": 128
+    },
+    "degree_distribution_gpu_nodes": {
+      "4": 128
+    },
+    "diameter": 6,
+    "duplicate_edges": 0,
+    "ecmp_path_count_distribution_cap4": {
+      "1": 9844,
+      "2": 3294,
+      "3": 1482,
+      "4": 1636
+    },
+    "edge_or_circuit_count": 256,
+    "gpu_count": 128,
+    "graph_hash": "bf8048120d2c00d0a25647cb479254cb38e3dd34754b774a69dc310eaf2e7444",
+    "graph_name": "ron_random_regular_seed_11",
+    "intermediate_gpu_appears_on_any_route": true,
+    "intermediate_gpu_route_pair_count": 15744,
+    "link_bandwidth_gbps": 400,
+    "method": "fair universal static",
+    "model_semantics": "optical circuit/capacity reference",
+    "node_count": 128,
+    "non_gpu_switch_nodes": 0,
+    "per_gpu_or_server_bandwidth_tbps": 1.6,
+    "route_hop_distribution": {
+      "1": 512,
+      "2": 1480,
+      "3": 3744,
+      "4": 6476,
+      "5": 3852,
+      "6": 192
+    },
+    "same_optical_budget_check": true,
+    "self_loops": 0,
+    "topology_type": "random_regular_degree4",
+    "workload": "deepseek_mmlu_machine_learning"
+  },
+  {
+    "average_route_hop_count": 3.744955708661417,
+    "component_sizes": [
+      128
+    ],
+    "connected_components": 1,
+    "degree_distribution_all_nodes": {
+      "4": 128
+    },
+    "degree_distribution_gpu_nodes": {
+      "4": 128
+    },
+    "diameter": 6,
+    "duplicate_edges": 0,
+    "ecmp_path_count_distribution_cap4": {
+      "1": 10044,
+      "2": 3212,
+      "3": 1450,
+      "4": 1550
+    },
+    "edge_or_circuit_count": 256,
+    "gpu_count": 128,
+    "graph_hash": "1976e348a1f7084da14c994d5af718e06ff4238c528669842f88a59559e7870e",
+    "graph_name": "ron_random_regular_seed_27",
+    "intermediate_gpu_appears_on_any_route": true,
+    "intermediate_gpu_route_pair_count": 15744,
+    "link_bandwidth_gbps": 400,
+    "method": "prefill-informed OCS",
+    "model_semantics": "optical circuit/capacity reference",
+    "node_count": 128,
+    "non_gpu_switch_nodes": 0,
+    "per_gpu_or_server_bandwidth_tbps": 1.6,
+    "route_hop_distribution": {
+      "1": 512,
+      "2": 1482,
+      "3": 3810,
+      "4": 6468,
+      "5": 3804,
+      "6": 180
+    },
+    "same_optical_budget_check": true,
+    "self_loops": 0,
+    "topology_type": "random_regular_degree4",
+    "workload": "deepseek_mmlu_machine_learning"
+  },
+  {
+    "average_route_hop_count": 3.744955708661417,
+    "component_sizes": [
+      128
+    ],
+    "connected_components": 1,
+    "degree_distribution_all_nodes": {
+      "4": 128
+    },
+    "degree_distribution_gpu_nodes": {
+      "4": 128
+    },
+    "diameter": 6,
+    "duplicate_edges": 0,
+    "ecmp_path_count_distribution_cap4": {
+      "1": 10044,
+      "2": 3212,
+      "3": 1450,
+      "4": 1550
+    },
+    "edge_or_circuit_count": 256,
+    "gpu_count": 128,
+    "graph_hash": "1976e348a1f7084da14c994d5af718e06ff4238c528669842f88a59559e7870e",
+    "graph_name": "ron_random_regular_seed_27",
+    "intermediate_gpu_appears_on_any_route": true,
+    "intermediate_gpu_route_pair_count": 15744,
+    "link_bandwidth_gbps": 400,
+    "method": "oracle",
+    "model_semantics": "optical circuit/capacity reference",
+    "node_count": 128,
+    "non_gpu_switch_nodes": 0,
+    "per_gpu_or_server_bandwidth_tbps": 1.6,
+    "route_hop_distribution": {
+      "1": 512,
+      "2": 1482,
+      "3": 3810,
+      "4": 6468,
+      "5": 3804,
+      "6": 180
+    },
+    "same_optical_budget_check": true,
+    "self_loops": 0,
+    "topology_type": "random_regular_degree4",
+    "workload": "deepseek_mmlu_machine_learning"
+  },
+  {
+    "average_route_hop_count": 6.047244094488189,
+    "component_sizes": [
+      128
+    ],
+    "connected_components": 1,
+    "degree_distribution_all_nodes": {
+      "4": 128
+    },
+    "degree_distribution_gpu_nodes": {
+      "4": 128
+    },
+    "diameter": 12,
+    "duplicate_edges": 0,
+    "ecmp_path_count_distribution_cap4": {
+      "1": 2560,
+      "2": 768,
+      "3": 1024,
+      "4": 11904
+    },
+    "edge_or_circuit_count": 256,
+    "gpu_count": 128,
+    "graph_hash": "c4e5cfbd019d5a9529a3d3c3229dfbca4ba9ab035a4ab8014f11713b7272ab1b",
+    "graph_name": "son_torus_8x16_128gpu",
+    "intermediate_gpu_appears_on_any_route": true,
+    "intermediate_gpu_route_pair_count": 15744,
+    "link_bandwidth_gbps": 400,
+    "method": "SON / torus",
+    "model_semantics": "optical circuit/capacity reference",
+    "node_count": 128,
+    "non_gpu_switch_nodes": 0,
+    "per_gpu_or_server_bandwidth_tbps": 1.6,
+    "route_hop_distribution": {
+      "1": 512,
+      "2": 1024,
+      "3": 1536,
+      "4": 1920,
+      "5": 2048,
+      "6": 2048,
+      "7": 2048,
+      "8": 1920,
+      "9": 1536,
+      "10": 1024,
+      "11": 512,
+      "12": 128
+    },
+    "same_optical_budget_check": true,
+    "self_loops": 0,
+    "topology_type": "static_2d_torus",
+    "workload": "qwen_livecodebench_execution"
+  },
+  {
+    "average_route_hop_count": 3.791830708661417,
+    "component_sizes": [
+      128
+    ],
+    "connected_components": 1,
+    "degree_distribution_all_nodes": {
+      "4": 128
+    },
+    "degree_distribution_gpu_nodes": {
+      "4": 128
+    },
+    "diameter": 7,
+    "duplicate_edges": 0,
+    "ecmp_path_count_distribution_cap4": {
+      "1": 9804,
+      "2": 3330,
+      "3": 1472,
+      "4": 1650
+    },
+    "edge_or_circuit_count": 256,
+    "gpu_count": 128,
+    "graph_hash": "66bad8e9ac7a641b0749cd59ae1237ec3c2df767a1b8ae205e1452b14f4773df",
+    "graph_name": "ron_random_regular_seed_0",
+    "intermediate_gpu_appears_on_any_route": true,
+    "intermediate_gpu_route_pair_count": 15744,
+    "link_bandwidth_gbps": 400,
+    "method": "fixed random",
+    "model_semantics": "optical circuit/capacity reference",
+    "node_count": 128,
+    "non_gpu_switch_nodes": 0,
+    "per_gpu_or_server_bandwidth_tbps": 1.6,
+    "route_hop_distribution": {
+      "1": 512,
+      "2": 1450,
+      "3": 3666,
+      "4": 6274,
+      "5": 3992,
+      "6": 360,
+      "7": 2
+    },
+    "same_optical_budget_check": true,
+    "self_loops": 0,
+    "topology_type": "random_regular_degree4",
+    "workload": "qwen_livecodebench_execution"
+  },
+  {
+    "average_route_hop_count": 3.75369094488189,
+    "component_sizes": [
+      128
+    ],
+    "connected_components": 1,
+    "degree_distribution_all_nodes": {
+      "4": 128
+    },
+    "degree_distribution_gpu_nodes": {
+      "4": 128
+    },
+    "diameter": 6,
+    "duplicate_edges": 0,
+    "ecmp_path_count_distribution_cap4": {
+      "1": 9844,
+      "2": 3294,
+      "3": 1482,
+      "4": 1636
+    },
+    "edge_or_circuit_count": 256,
+    "gpu_count": 128,
+    "graph_hash": "bf8048120d2c00d0a25647cb479254cb38e3dd34754b774a69dc310eaf2e7444",
+    "graph_name": "ron_random_regular_seed_11",
+    "intermediate_gpu_appears_on_any_route": true,
+    "intermediate_gpu_route_pair_count": 15744,
+    "link_bandwidth_gbps": 400,
+    "method": "fair universal static",
+    "model_semantics": "optical circuit/capacity reference",
+    "node_count": 128,
+    "non_gpu_switch_nodes": 0,
+    "per_gpu_or_server_bandwidth_tbps": 1.6,
+    "route_hop_distribution": {
+      "1": 512,
+      "2": 1480,
+      "3": 3744,
+      "4": 6476,
+      "5": 3852,
+      "6": 192
+    },
+    "same_optical_budget_check": true,
+    "self_loops": 0,
+    "topology_type": "random_regular_degree4",
+    "workload": "qwen_livecodebench_execution"
+  },
+  {
+    "average_route_hop_count": 3.829232283464567,
+    "component_sizes": [
+      128
+    ],
+    "connected_components": 1,
+    "degree_distribution_all_nodes": {
+      "4": 128
+    },
+    "degree_distribution_gpu_nodes": {
+      "4": 128
+    },
+    "diameter": 7,
+    "duplicate_edges": 0,
+    "ecmp_path_count_distribution_cap4": {
+      "1": 9672,
+      "2": 3308,
+      "3": 1474,
+      "4": 1802
+    },
+    "edge_or_circuit_count": 256,
+    "gpu_count": 128,
+    "graph_hash": "22090398f38a3a41f32d9023f12e58e35133ffc55af596b2423b18e4e9ecd62d",
+    "graph_name": "ron_random_regular_seed_2",
+    "intermediate_gpu_appears_on_any_route": true,
+    "intermediate_gpu_route_pair_count": 15744,
+    "link_bandwidth_gbps": 400,
+    "method": "prefill-informed OCS",
+    "model_semantics": "optical circuit/capacity reference",
+    "node_count": 128,
+    "non_gpu_switch_nodes": 0,
+    "per_gpu_or_server_bandwidth_tbps": 1.6,
+    "route_hop_distribution": {
+      "1": 512,
+      "2": 1454,
+      "3": 3504,
+      "4": 6076,
+      "5": 4250,
+      "6": 458,
+      "7": 2
+    },
+    "same_optical_budget_check": true,
+    "self_loops": 0,
+    "topology_type": "random_regular_degree4",
+    "workload": "qwen_livecodebench_execution"
+  },
+  {
+    "average_route_hop_count": 3.7595964566929134,
+    "component_sizes": [
+      128
+    ],
+    "connected_components": 1,
+    "degree_distribution_all_nodes": {
+      "4": 128
+    },
+    "degree_distribution_gpu_nodes": {
+      "4": 128
+    },
+    "diameter": 6,
+    "duplicate_edges": 0,
+    "ecmp_path_count_distribution_cap4": {
+      "1": 10148,
+      "2": 3292,
+      "3": 1480,
+      "4": 1336
+    },
+    "edge_or_circuit_count": 256,
+    "gpu_count": 128,
+    "graph_hash": "d2514c6e39d92a4f70baf7f285f6c12208981ff903ccc52b8b43280853220db3",
+    "graph_name": "ron_random_regular_seed_8",
+    "intermediate_gpu_appears_on_any_route": true,
+    "intermediate_gpu_route_pair_count": 15744,
+    "link_bandwidth_gbps": 400,
+    "method": "oracle",
+    "model_semantics": "optical circuit/capacity reference",
+    "node_count": 128,
+    "non_gpu_switch_nodes": 0,
+    "per_gpu_or_server_bandwidth_tbps": 1.6,
+    "route_hop_distribution": {
+      "1": 512,
+      "2": 1470,
+      "3": 3718,
+      "4": 6470,
+      "5": 3886,
+      "6": 200
+    },
+    "same_optical_budget_check": true,
+    "self_loops": 0,
+    "topology_type": "random_regular_degree4",
+    "workload": "qwen_livecodebench_execution"
+  }
+]

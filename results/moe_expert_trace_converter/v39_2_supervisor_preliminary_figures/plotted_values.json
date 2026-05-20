@@ -1,0 +1,152 @@
+[
+  {
+    "candidate": "son_torus",
+    "method": "SON / torus",
+    "model": "optical circuit/capacity reference",
+    "normalised_to_fair_universal_static": 3.4901827936033483,
+    "normalised_to_son_torus": 1.0,
+    "optical_reference_ms": 126.775016,
+    "workload": "qwen_mmlu_machine_learning",
+    "workload_label": "Qwen MMLU ML"
+  },
+  {
+    "candidate": "random_regular_seed_0",
+    "method": "fixed random",
+    "model": "optical circuit/capacity reference",
+    "normalised_to_fair_universal_static": 1.0062127035369595,
+    "normalised_to_son_torus": 0.2882979955608919,
+    "optical_reference_ms": 36.548983,
+    "workload": "qwen_mmlu_machine_learning",
+    "workload_label": "Qwen MMLU ML"
+  },
+  {
+    "candidate": "random_regular_seed_11",
+    "method": "fair universal static",
+    "model": "optical circuit/capacity reference",
+    "normalised_to_fair_universal_static": 1.0,
+    "normalised_to_son_torus": 0.2865179445136099,
+    "optical_reference_ms": 36.323317,
+    "workload": "qwen_mmlu_machine_learning",
+    "workload_label": "Qwen MMLU ML"
+  },
+  {
+    "candidate": "random_regular_seed_11",
+    "method": "prefill-informed OCS",
+    "model": "optical circuit/capacity reference",
+    "normalised_to_fair_universal_static": 1.0,
+    "normalised_to_son_torus": 0.2865179445136099,
+    "optical_reference_ms": 36.323317,
+    "workload": "qwen_mmlu_machine_learning",
+    "workload_label": "Qwen MMLU ML"
+  },
+  {
+    "candidate": "random_regular_seed_11",
+    "method": "oracle",
+    "model": "optical circuit/capacity reference",
+    "normalised_to_fair_universal_static": 1.0,
+    "normalised_to_son_torus": 0.2865179445136099,
+    "optical_reference_ms": 36.323317,
+    "workload": "qwen_mmlu_machine_learning",
+    "workload_label": "Qwen MMLU ML"
+  },
+  {
+    "candidate": "son_torus",
+    "method": "SON / torus",
+    "model": "optical circuit/capacity reference",
+    "normalised_to_fair_universal_static": 3.6563431632884806,
+    "normalised_to_son_torus": 1.0,
+    "optical_reference_ms": 73.912403,
+    "workload": "deepseek_mmlu_machine_learning",
+    "workload_label": "DeepSeek MMLU ML"
+  },
+  {
+    "candidate": "random_regular_seed_0",
+    "method": "fixed random",
+    "model": "optical circuit/capacity reference",
+    "normalised_to_fair_universal_static": 1.036341365599525,
+    "normalised_to_son_torus": 0.28343657017889134,
+    "optical_reference_ms": 20.949478,
+    "workload": "deepseek_mmlu_machine_learning",
+    "workload_label": "DeepSeek MMLU ML"
+  },
+  {
+    "candidate": "random_regular_seed_11",
+    "method": "fair universal static",
+    "model": "optical circuit/capacity reference",
+    "normalised_to_fair_universal_static": 1.0,
+    "normalised_to_son_torus": 0.27349730464046745,
+    "optical_reference_ms": 20.214843,
+    "workload": "deepseek_mmlu_machine_learning",
+    "workload_label": "DeepSeek MMLU ML"
+  },
+  {
+    "candidate": "random_regular_seed_27",
+    "method": "prefill-informed OCS",
+    "model": "optical circuit/capacity reference",
+    "normalised_to_fair_universal_static": 0.9847549149899409,
+    "normalised_to_son_torus": 0.2693278149812015,
+    "optical_reference_ms": 19.906666,
+    "workload": "deepseek_mmlu_machine_learning",
+    "workload_label": "DeepSeek MMLU ML"
+  },
+  {
+    "candidate": "random_regular_seed_27",
+    "method": "oracle",
+    "model": "optical circuit/capacity reference",
+    "normalised_to_fair_universal_static": 0.9847549149899409,
+    "normalised_to_son_torus": 0.2693278149812015,
+    "optical_reference_ms": 19.906666,
+    "workload": "deepseek_mmlu_machine_learning",
+    "workload_label": "DeepSeek MMLU ML"
+  },
+  {
+    "candidate": "son_torus",
+    "method": "SON / torus",
+    "model": "optical circuit/capacity reference",
+    "normalised_to_fair_universal_static": 3.505988883738431,
+    "normalised_to_son_torus": 1.0,
+    "optical_reference_ms": 586.609165,
+    "workload": "qwen_livecodebench_execution",
+    "workload_label": "Qwen LiveCodeBench"
+  },
+  {
+    "candidate": "random_regular_seed_0",
+    "method": "fixed random",
+    "model": "optical circuit/capacity reference",
+    "normalised_to_fair_universal_static": 1.0894939108212047,
+    "normalised_to_son_torus": 0.3107522433612165,
+    "optical_reference_ms": 182.290114,
+    "workload": "qwen_livecodebench_execution",
+    "workload_label": "Qwen LiveCodeBench"
+  },
+  {
+    "candidate": "random_regular_seed_11",
+    "method": "fair universal static",
+    "model": "optical circuit/capacity reference",
+    "normalised_to_fair_universal_static": 1.0,
+    "normalised_to_son_torus": 0.2852262323586438,
+    "optical_reference_ms": 167.316322,
+    "workload": "qwen_livecodebench_execution",
+    "workload_label": "Qwen LiveCodeBench"
+  },
+  {
+    "candidate": "random_regular_seed_2",
+    "method": "prefill-informed OCS",
+    "model": "optical circuit/capacity reference",
+    "normalised_to_fair_universal_static": 1.0064715084999298,
+    "normalised_to_son_torus": 0.2870720763457557,
+    "optical_reference_ms": 168.399111,
+    "workload": "qwen_livecodebench_execution",
+    "workload_label": "Qwen LiveCodeBench"
+  },
+  {
+    "candidate": "random_regular_seed_8",
+    "method": "oracle",
+    "model": "optical circuit/capacity reference",
+    "normalised_to_fair_universal_static": 0.9825829185989398,
+    "normalised_to_son_torus": 0.2802584238519356,
+    "optical_reference_ms": 164.40216,
+    "workload": "qwen_livecodebench_execution",
+    "workload_label": "Qwen LiveCodeBench"
+  }
+]

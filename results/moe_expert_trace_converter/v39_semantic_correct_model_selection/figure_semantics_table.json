@@ -1,0 +1,26 @@
+[
+  {
+    "figure": "A",
+    "model": "optical circuit/capacity reference",
+    "role": "main optical result",
+    "title": "Optical-only controlled comparison"
+  },
+  {
+    "figure": "B",
+    "model": "EN native ASTRA GraphTopology; optical methods optical circuit reference",
+    "role": "reference with explicitly mixed semantics",
+    "title": "EN electrical reference vs optical methods"
+  },
+  {
+    "figure": "C",
+    "model": "native ASTRA GraphTopology packet/store-and-forward",
+    "role": "sensitivity, not main optical OCS result",
+    "title": "Packet-routing ASTRA GraphTopology sensitivity"
+  },
+  {
+    "figure": "D",
+    "model": "trace statistics only",
+    "role": "diagnostic",
+    "title": "Prefill-to-decode predictability"
+  }
+]

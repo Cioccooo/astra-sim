@@ -1,0 +1,955 @@
+[
+  {
+    "astra_command_if_native_run": "AstraSim_Analytical_Congestion_Aware --workload-configuration=<dispatch/combine prefix> --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/network_configs/qwen_mmlu_machine_learning__EN__en_folded_clos.yml",
+    "average_route_hop_count": 3.59748427672956,
+    "combine_cycles": "73942494",
+    "component_sizes": [
+      160
+    ],
+    "connected_components": 1,
+    "degree_distribution_all_nodes": {
+      "1": 128,
+      "16": 16,
+      "24": 16
+    },
+    "degree_distribution_gpu_nodes": {
+      "1": 128
+    },
+    "diameter": 4,
+    "dispatch_cycles": "65033936",
+    "duplicate_edges": 0,
+    "ecmp_path_count_distribution_cap4": {
+      "1": 3072,
+      "4": 17280
+    },
+    "edge_or_circuit_count": 384,
+    "gpu_count": 128,
+    "graph_file": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/graphs/qwen_mmlu_machine_learning__EN__en_folded_clos.json",
+    "graph_hash": "7ecec181fc19d9ae8e85534189ab47be4746dec7109d0ea547deedebd45b4644",
+    "graph_name": "en_folded_clos_128gpu_16leaf_16spine",
+    "intermediate_gpu_appears_on_any_route": false,
+    "intermediate_gpu_route_pair_count": 0,
+    "link_bandwidth_gbps": 400,
+    "method": "EN",
+    "model_semantics": "native ASTRA GraphTopology packet/store-and-forward",
+    "network_config_path": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/network_configs/qwen_mmlu_machine_learning__EN__en_folded_clos.yml",
+    "node_count": 160,
+    "non_gpu_switch_nodes": 32,
+    "per_gpu_or_server_bandwidth_tbps": 0.4,
+    "route_hop_distribution": {
+      "1": 128,
+      "2": 2944,
+      "3": 1920,
+      "4": 15360
+    },
+    "same_optical_budget_check": false,
+    "selected_candidate_name": "en_folded_clos",
+    "self_loops": 0,
+    "topology_type": "folded_clos_eps_reference",
+    "total_cycles": "138976430",
+    "workload": "qwen_mmlu_machine_learning"
+  },
+  {
+    "astra_command_if_native_run": "AstraSim_Analytical_Congestion_Aware --workload-configuration=<dispatch/combine prefix> --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/network_configs/qwen_mmlu_machine_learning__native_prefill_select_son_torus__son_torus.yml",
+    "average_route_hop_count": 6.047244094488189,
+    "combine_cycles": "100121335",
+    "component_sizes": [
+      128
+    ],
+    "connected_components": 1,
+    "degree_distribution_all_nodes": {
+      "4": 128
+    },
+    "degree_distribution_gpu_nodes": {
+      "4": 128
+    },
+    "diameter": 12,
+    "dispatch_cycles": "95775725",
+    "duplicate_edges": 0,
+    "ecmp_path_count_distribution_cap4": {
+      "1": 2560,
+      "2": 768,
+      "3": 1024,
+      "4": 11904
+    },
+    "edge_or_circuit_count": 256,
+    "gpu_count": 128,
+    "graph_file": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/graphs/qwen_mmlu_machine_learning__SON_torus__son_torus.json",
+    "graph_hash": "c4e5cfbd019d5a9529a3d3c3229dfbca4ba9ab035a4ab8014f11713b7272ab1b",
+    "graph_name": "son_torus_8x16_128gpu",
+    "intermediate_gpu_appears_on_any_route": true,
+    "intermediate_gpu_route_pair_count": 15744,
+    "link_bandwidth_gbps": 400,
+    "method": "SON / torus",
+    "model_semantics": "native ASTRA GraphTopology packet/store-and-forward",
+    "network_config_path": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/network_configs/qwen_mmlu_machine_learning__native_prefill_select_son_torus__son_torus.yml",
+    "node_count": 128,
+    "non_gpu_switch_nodes": 0,
+    "per_gpu_or_server_bandwidth_tbps": 1.6,
+    "route_hop_distribution": {
+      "1": 512,
+      "2": 1024,
+      "3": 1536,
+      "4": 1920,
+      "5": 2048,
+      "6": 2048,
+      "7": 2048,
+      "8": 1920,
+      "9": 1536,
+      "10": 1024,
+      "11": 512,
+      "12": 128
+    },
+    "same_optical_budget_check": true,
+    "selected_candidate_name": "son_torus",
+    "self_loops": 0,
+    "topology_type": "static_2d_torus",
+    "total_cycles": "195897060",
+    "workload": "qwen_mmlu_machine_learning"
+  },
+  {
+    "astra_command_if_native_run": "AstraSim_Analytical_Congestion_Aware --workload-configuration=<dispatch/combine prefix> --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/network_configs/qwen_mmlu_machine_learning__native_prefill_select_random_regular_seed_0__random_regular_seed_0.yml",
+    "average_route_hop_count": 3.791830708661417,
+    "combine_cycles": "67975185",
+    "component_sizes": [
+      128
+    ],
+    "connected_components": 1,
+    "degree_distribution_all_nodes": {
+      "4": 128
+    },
+    "degree_distribution_gpu_nodes": {
+      "4": 128
+    },
+    "diameter": 7,
+    "dispatch_cycles": "58850615",
+    "duplicate_edges": 0,
+    "ecmp_path_count_distribution_cap4": {
+      "1": 9804,
+      "2": 3330,
+      "3": 1472,
+      "4": 1650
+    },
+    "edge_or_circuit_count": 256,
+    "gpu_count": 128,
+    "graph_file": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/graphs/qwen_mmlu_machine_learning__fixed_random__random_regular_seed_0.json",
+    "graph_hash": "66bad8e9ac7a641b0749cd59ae1237ec3c2df767a1b8ae205e1452b14f4773df",
+    "graph_name": "ron_random_regular_seed_0",
+    "intermediate_gpu_appears_on_any_route": true,
+    "intermediate_gpu_route_pair_count": 15744,
+    "link_bandwidth_gbps": 400,
+    "method": "fixed random",
+    "model_semantics": "native ASTRA GraphTopology packet/store-and-forward",
+    "network_config_path": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/network_configs/qwen_mmlu_machine_learning__native_prefill_select_random_regular_seed_0__random_regular_seed_0.yml",
+    "node_count": 128,
+    "non_gpu_switch_nodes": 0,
+    "per_gpu_or_server_bandwidth_tbps": 1.6,
+    "route_hop_distribution": {
+      "1": 512,
+      "2": 1450,
+      "3": 3666,
+      "4": 6274,
+      "5": 3992,
+      "6": 360,
+      "7": 2
+    },
+    "same_optical_budget_check": true,
+    "selected_candidate_name": "random_regular_seed_0",
+    "self_loops": 0,
+    "topology_type": "random_regular_degree4",
+    "total_cycles": "126825800",
+    "workload": "qwen_mmlu_machine_learning"
+  },
+  {
+    "astra_command_if_native_run": "AstraSim_Analytical_Congestion_Aware --workload-configuration=<dispatch/combine prefix> --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/network_configs/qwen_mmlu_machine_learning__native_prefill_select_random_regular_seed_11__random_regular_seed_11.yml",
+    "average_route_hop_count": 3.75369094488189,
+    "combine_cycles": "69769891",
+    "component_sizes": [
+      128
+    ],
+    "connected_components": 1,
+    "degree_distribution_all_nodes": {
+      "4": 128
+    },
+    "degree_distribution_gpu_nodes": {
+      "4": 128
+    },
+    "diameter": 6,
+    "dispatch_cycles": "56828432",
+    "duplicate_edges": 0,
+    "ecmp_path_count_distribution_cap4": {
+      "1": 9844,
+      "2": 3294,
+      "3": 1482,
+      "4": 1636
+    },
+    "edge_or_circuit_count": 256,
+    "gpu_count": 128,
+    "graph_file": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/graphs/qwen_mmlu_machine_learning__fair_universal_static__random_regular_seed_11.json",
+    "graph_hash": "bf8048120d2c00d0a25647cb479254cb38e3dd34754b774a69dc310eaf2e7444",
+    "graph_name": "ron_random_regular_seed_11",
+    "intermediate_gpu_appears_on_any_route": true,
+    "intermediate_gpu_route_pair_count": 15744,
+    "link_bandwidth_gbps": 400,
+    "method": "fair universal static",
+    "model_semantics": "native ASTRA GraphTopology packet/store-and-forward",
+    "network_config_path": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/network_configs/qwen_mmlu_machine_learning__native_prefill_select_random_regular_seed_11__random_regular_seed_11.yml",
+    "node_count": 128,
+    "non_gpu_switch_nodes": 0,
+    "per_gpu_or_server_bandwidth_tbps": 1.6,
+    "route_hop_distribution": {
+      "1": 512,
+      "2": 1480,
+      "3": 3744,
+      "4": 6476,
+      "5": 3852,
+      "6": 192
+    },
+    "same_optical_budget_check": true,
+    "selected_candidate_name": "random_regular_seed_11",
+    "self_loops": 0,
+    "topology_type": "random_regular_degree4",
+    "total_cycles": "126598323",
+    "workload": "qwen_mmlu_machine_learning"
+  },
+  {
+    "astra_command_if_native_run": "AstraSim_Analytical_Congestion_Aware --workload-configuration=<dispatch/combine prefix> --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/network_configs/qwen_mmlu_machine_learning__native_prefill_select_random_regular_seed_11__random_regular_seed_11.yml",
+    "average_route_hop_count": 3.75369094488189,
+    "combine_cycles": "69769891",
+    "component_sizes": [
+      128
+    ],
+    "connected_components": 1,
+    "degree_distribution_all_nodes": {
+      "4": 128
+    },
+    "degree_distribution_gpu_nodes": {
+      "4": 128
+    },
+    "diameter": 6,
+    "dispatch_cycles": "56828432",
+    "duplicate_edges": 0,
+    "ecmp_path_count_distribution_cap4": {
+      "1": 9844,
+      "2": 3294,
+      "3": 1482,
+      "4": 1636
+    },
+    "edge_or_circuit_count": 256,
+    "gpu_count": 128,
+    "graph_file": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/graphs/qwen_mmlu_machine_learning__native_decode_select_random_regular_seed_11__random_regular_seed_11.json",
+    "graph_hash": "bf8048120d2c00d0a25647cb479254cb38e3dd34754b774a69dc310eaf2e7444",
+    "graph_name": "ron_random_regular_seed_11",
+    "intermediate_gpu_appears_on_any_route": true,
+    "intermediate_gpu_route_pair_count": 15744,
+    "link_bandwidth_gbps": 400,
+    "method": "prefill-informed OCS",
+    "model_semantics": "native ASTRA GraphTopology packet/store-and-forward",
+    "network_config_path": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/network_configs/qwen_mmlu_machine_learning__native_prefill_select_random_regular_seed_11__random_regular_seed_11.yml",
+    "node_count": 128,
+    "non_gpu_switch_nodes": 0,
+    "per_gpu_or_server_bandwidth_tbps": 1.6,
+    "route_hop_distribution": {
+      "1": 512,
+      "2": 1480,
+      "3": 3744,
+      "4": 6476,
+      "5": 3852,
+      "6": 192
+    },
+    "same_optical_budget_check": true,
+    "selected_candidate_name": "random_regular_seed_11",
+    "self_loops": 0,
+    "topology_type": "random_regular_degree4",
+    "total_cycles": "126598323",
+    "workload": "qwen_mmlu_machine_learning"
+  },
+  {
+    "astra_command_if_native_run": "AstraSim_Analytical_Congestion_Aware --workload-configuration=<dispatch/combine prefix> --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/network_configs/qwen_mmlu_machine_learning__native_decode_select_random_regular_seed_24__random_regular_seed_24.yml",
+    "average_route_hop_count": 3.781003937007874,
+    "combine_cycles": "66958115",
+    "component_sizes": [
+      128
+    ],
+    "connected_components": 1,
+    "degree_distribution_all_nodes": {
+      "4": 128
+    },
+    "degree_distribution_gpu_nodes": {
+      "4": 128
+    },
+    "diameter": 6,
+    "dispatch_cycles": "59308619",
+    "duplicate_edges": 0,
+    "ecmp_path_count_distribution_cap4": {
+      "1": 9970,
+      "2": 3250,
+      "3": 1502,
+      "4": 1534
+    },
+    "edge_or_circuit_count": 256,
+    "gpu_count": 128,
+    "graph_file": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/graphs/qwen_mmlu_machine_learning__native_decode_select_random_regular_seed_24__random_regular_seed_24.json",
+    "graph_hash": "e6adf16e6d662ab53573532f6fb9a6ddcf19509cc3adfedfff89d8b7d079e7cc",
+    "graph_name": "ron_random_regular_seed_24",
+    "intermediate_gpu_appears_on_any_route": true,
+    "intermediate_gpu_route_pair_count": 15744,
+    "link_bandwidth_gbps": 400,
+    "method": "oracle",
+    "model_semantics": "native ASTRA GraphTopology packet/store-and-forward",
+    "network_config_path": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/network_configs/qwen_mmlu_machine_learning__native_decode_select_random_regular_seed_24__random_regular_seed_24.yml",
+    "node_count": 128,
+    "non_gpu_switch_nodes": 0,
+    "per_gpu_or_server_bandwidth_tbps": 1.6,
+    "route_hop_distribution": {
+      "1": 512,
+      "2": 1456,
+      "3": 3658,
+      "4": 6372,
+      "5": 3970,
+      "6": 288
+    },
+    "same_optical_budget_check": true,
+    "selected_candidate_name": "random_regular_seed_24",
+    "self_loops": 0,
+    "topology_type": "random_regular_degree4",
+    "total_cycles": "126266734",
+    "workload": "qwen_mmlu_machine_learning"
+  },
+  {
+    "astra_command_if_native_run": "AstraSim_Analytical_Congestion_Aware --workload-configuration=<dispatch/combine prefix> --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/network_configs/deepseek_mmlu_machine_learning__EN__en_folded_clos.yml",
+    "average_route_hop_count": 3.59748427672956,
+    "combine_cycles": "40005660",
+    "component_sizes": [
+      160
+    ],
+    "connected_components": 1,
+    "degree_distribution_all_nodes": {
+      "1": 128,
+      "16": 16,
+      "24": 16
+    },
+    "degree_distribution_gpu_nodes": {
+      "1": 128
+    },
+    "diameter": 4,
+    "dispatch_cycles": "38586080",
+    "duplicate_edges": 0,
+    "ecmp_path_count_distribution_cap4": {
+      "1": 3072,
+      "4": 17280
+    },
+    "edge_or_circuit_count": 384,
+    "gpu_count": 128,
+    "graph_file": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/graphs/deepseek_mmlu_machine_learning__EN__en_folded_clos.json",
+    "graph_hash": "7ecec181fc19d9ae8e85534189ab47be4746dec7109d0ea547deedebd45b4644",
+    "graph_name": "en_folded_clos_128gpu_16leaf_16spine",
+    "intermediate_gpu_appears_on_any_route": false,
+    "intermediate_gpu_route_pair_count": 0,
+    "link_bandwidth_gbps": 400,
+    "method": "EN",
+    "model_semantics": "native ASTRA GraphTopology packet/store-and-forward",
+    "network_config_path": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/network_configs/deepseek_mmlu_machine_learning__EN__en_folded_clos.yml",
+    "node_count": 160,
+    "non_gpu_switch_nodes": 32,
+    "per_gpu_or_server_bandwidth_tbps": 0.4,
+    "route_hop_distribution": {
+      "1": 128,
+      "2": 2944,
+      "3": 1920,
+      "4": 15360
+    },
+    "same_optical_budget_check": false,
+    "selected_candidate_name": "en_folded_clos",
+    "self_loops": 0,
+    "topology_type": "folded_clos_eps_reference",
+    "total_cycles": "78591740",
+    "workload": "deepseek_mmlu_machine_learning"
+  },
+  {
+    "astra_command_if_native_run": "AstraSim_Analytical_Congestion_Aware --workload-configuration=<dispatch/combine prefix> --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/network_configs/deepseek_mmlu_machine_learning__native_prefill_select_son_torus__son_torus.yml",
+    "average_route_hop_count": 6.047244094488189,
+    "combine_cycles": "57284740",
+    "component_sizes": [
+      128
+    ],
+    "connected_components": 1,
+    "degree_distribution_all_nodes": {
+      "4": 128
+    },
+    "degree_distribution_gpu_nodes": {
+      "4": 128
+    },
+    "diameter": 12,
+    "dispatch_cycles": "59470581",
+    "duplicate_edges": 0,
+    "ecmp_path_count_distribution_cap4": {
+      "1": 2560,
+      "2": 768,
+      "3": 1024,
+      "4": 11904
+    },
+    "edge_or_circuit_count": 256,
+    "gpu_count": 128,
+    "graph_file": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/graphs/deepseek_mmlu_machine_learning__SON_torus__son_torus.json",
+    "graph_hash": "c4e5cfbd019d5a9529a3d3c3229dfbca4ba9ab035a4ab8014f11713b7272ab1b",
+    "graph_name": "son_torus_8x16_128gpu",
+    "intermediate_gpu_appears_on_any_route": true,
+    "intermediate_gpu_route_pair_count": 15744,
+    "link_bandwidth_gbps": 400,
+    "method": "SON / torus",
+    "model_semantics": "native ASTRA GraphTopology packet/store-and-forward",
+    "network_config_path": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/network_configs/deepseek_mmlu_machine_learning__native_prefill_select_son_torus__son_torus.yml",
+    "node_count": 128,
+    "non_gpu_switch_nodes": 0,
+    "per_gpu_or_server_bandwidth_tbps": 1.6,
+    "route_hop_distribution": {
+      "1": 512,
+      "2": 1024,
+      "3": 1536,
+      "4": 1920,
+      "5": 2048,
+      "6": 2048,
+      "7": 2048,
+      "8": 1920,
+      "9": 1536,
+      "10": 1024,
+      "11": 512,
+      "12": 128
+    },
+    "same_optical_budget_check": true,
+    "selected_candidate_name": "son_torus",
+    "self_loops": 0,
+    "topology_type": "static_2d_torus",
+    "total_cycles": "116755321",
+    "workload": "deepseek_mmlu_machine_learning"
+  },
+  {
+    "astra_command_if_native_run": "AstraSim_Analytical_Congestion_Aware --workload-configuration=<dispatch/combine prefix> --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/network_configs/deepseek_mmlu_machine_learning__native_prefill_select_random_regular_seed_0__random_regular_seed_0.yml",
+    "average_route_hop_count": 3.791830708661417,
+    "combine_cycles": "34726650",
+    "component_sizes": [
+      128
+    ],
+    "connected_components": 1,
+    "degree_distribution_all_nodes": {
+      "4": 128
+    },
+    "degree_distribution_gpu_nodes": {
+      "4": 128
+    },
+    "diameter": 7,
+    "dispatch_cycles": "34218566",
+    "duplicate_edges": 0,
+    "ecmp_path_count_distribution_cap4": {
+      "1": 9804,
+      "2": 3330,
+      "3": 1472,
+      "4": 1650
+    },
+    "edge_or_circuit_count": 256,
+    "gpu_count": 128,
+    "graph_file": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/graphs/deepseek_mmlu_machine_learning__fixed_random__random_regular_seed_0.json",
+    "graph_hash": "66bad8e9ac7a641b0749cd59ae1237ec3c2df767a1b8ae205e1452b14f4773df",
+    "graph_name": "ron_random_regular_seed_0",
+    "intermediate_gpu_appears_on_any_route": true,
+    "intermediate_gpu_route_pair_count": 15744,
+    "link_bandwidth_gbps": 400,
+    "method": "fixed random",
+    "model_semantics": "native ASTRA GraphTopology packet/store-and-forward",
+    "network_config_path": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/network_configs/deepseek_mmlu_machine_learning__native_prefill_select_random_regular_seed_0__random_regular_seed_0.yml",
+    "node_count": 128,
+    "non_gpu_switch_nodes": 0,
+    "per_gpu_or_server_bandwidth_tbps": 1.6,
+    "route_hop_distribution": {
+      "1": 512,
+      "2": 1450,
+      "3": 3666,
+      "4": 6274,
+      "5": 3992,
+      "6": 360,
+      "7": 2
+    },
+    "same_optical_budget_check": true,
+    "selected_candidate_name": "random_regular_seed_0",
+    "self_loops": 0,
+    "topology_type": "random_regular_degree4",
+    "total_cycles": "68945216",
+    "workload": "deepseek_mmlu_machine_learning"
+  },
+  {
+    "astra_command_if_native_run": "AstraSim_Analytical_Congestion_Aware --workload-configuration=<dispatch/combine prefix> --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/network_configs/deepseek_mmlu_machine_learning__fair_universal_static__random_regular_seed_11.yml",
+    "average_route_hop_count": 3.75369094488189,
+    "combine_cycles": "33786333",
+    "component_sizes": [
+      128
+    ],
+    "connected_components": 1,
+    "degree_distribution_all_nodes": {
+      "4": 128
+    },
+    "degree_distribution_gpu_nodes": {
+      "4": 128
+    },
+    "diameter": 6,
+    "dispatch_cycles": "33161276",
+    "duplicate_edges": 0,
+    "ecmp_path_count_distribution_cap4": {
+      "1": 9844,
+      "2": 3294,
+      "3": 1482,
+      "4": 1636
+    },
+    "edge_or_circuit_count": 256,
+    "gpu_count": 128,
+    "graph_file": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/graphs/deepseek_mmlu_machine_learning__fair_universal_static__random_regular_seed_11.json",
+    "graph_hash": "bf8048120d2c00d0a25647cb479254cb38e3dd34754b774a69dc310eaf2e7444",
+    "graph_name": "ron_random_regular_seed_11",
+    "intermediate_gpu_appears_on_any_route": true,
+    "intermediate_gpu_route_pair_count": 15744,
+    "link_bandwidth_gbps": 400,
+    "method": "fair universal static",
+    "model_semantics": "native ASTRA GraphTopology packet/store-and-forward",
+    "network_config_path": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/network_configs/deepseek_mmlu_machine_learning__fair_universal_static__random_regular_seed_11.yml",
+    "node_count": 128,
+    "non_gpu_switch_nodes": 0,
+    "per_gpu_or_server_bandwidth_tbps": 1.6,
+    "route_hop_distribution": {
+      "1": 512,
+      "2": 1480,
+      "3": 3744,
+      "4": 6476,
+      "5": 3852,
+      "6": 192
+    },
+    "same_optical_budget_check": true,
+    "selected_candidate_name": "random_regular_seed_11",
+    "self_loops": 0,
+    "topology_type": "random_regular_degree4",
+    "total_cycles": "66947609",
+    "workload": "deepseek_mmlu_machine_learning"
+  },
+  {
+    "astra_command_if_native_run": "AstraSim_Analytical_Congestion_Aware --workload-configuration=<dispatch/combine prefix> --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/network_configs/deepseek_mmlu_machine_learning__fair_universal_static__random_regular_seed_11.yml",
+    "average_route_hop_count": 3.75369094488189,
+    "combine_cycles": "33786333",
+    "component_sizes": [
+      128
+    ],
+    "connected_components": 1,
+    "degree_distribution_all_nodes": {
+      "4": 128
+    },
+    "degree_distribution_gpu_nodes": {
+      "4": 128
+    },
+    "diameter": 6,
+    "dispatch_cycles": "33161276",
+    "duplicate_edges": 0,
+    "ecmp_path_count_distribution_cap4": {
+      "1": 9844,
+      "2": 3294,
+      "3": 1482,
+      "4": 1636
+    },
+    "edge_or_circuit_count": 256,
+    "gpu_count": 128,
+    "graph_file": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/graphs/deepseek_mmlu_machine_learning__native_decode_select_random_regular_seed_11__random_regular_seed_11.json",
+    "graph_hash": "bf8048120d2c00d0a25647cb479254cb38e3dd34754b774a69dc310eaf2e7444",
+    "graph_name": "ron_random_regular_seed_11",
+    "intermediate_gpu_appears_on_any_route": true,
+    "intermediate_gpu_route_pair_count": 15744,
+    "link_bandwidth_gbps": 400,
+    "method": "prefill-informed OCS",
+    "model_semantics": "native ASTRA GraphTopology packet/store-and-forward",
+    "network_config_path": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/network_configs/deepseek_mmlu_machine_learning__fair_universal_static__random_regular_seed_11.yml",
+    "node_count": 128,
+    "non_gpu_switch_nodes": 0,
+    "per_gpu_or_server_bandwidth_tbps": 1.6,
+    "route_hop_distribution": {
+      "1": 512,
+      "2": 1480,
+      "3": 3744,
+      "4": 6476,
+      "5": 3852,
+      "6": 192
+    },
+    "same_optical_budget_check": true,
+    "selected_candidate_name": "random_regular_seed_11",
+    "self_loops": 0,
+    "topology_type": "random_regular_degree4",
+    "total_cycles": "66947609",
+    "workload": "deepseek_mmlu_machine_learning"
+  },
+  {
+    "astra_command_if_native_run": "AstraSim_Analytical_Congestion_Aware --workload-configuration=<dispatch/combine prefix> --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/network_configs/deepseek_mmlu_machine_learning__fair_universal_static__random_regular_seed_11.yml",
+    "average_route_hop_count": 3.75369094488189,
+    "combine_cycles": "33786333",
+    "component_sizes": [
+      128
+    ],
+    "connected_components": 1,
+    "degree_distribution_all_nodes": {
+      "4": 128
+    },
+    "degree_distribution_gpu_nodes": {
+      "4": 128
+    },
+    "diameter": 6,
+    "dispatch_cycles": "33161276",
+    "duplicate_edges": 0,
+    "ecmp_path_count_distribution_cap4": {
+      "1": 9844,
+      "2": 3294,
+      "3": 1482,
+      "4": 1636
+    },
+    "edge_or_circuit_count": 256,
+    "gpu_count": 128,
+    "graph_file": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/graphs/deepseek_mmlu_machine_learning__native_decode_select_random_regular_seed_11__random_regular_seed_11.json",
+    "graph_hash": "bf8048120d2c00d0a25647cb479254cb38e3dd34754b774a69dc310eaf2e7444",
+    "graph_name": "ron_random_regular_seed_11",
+    "intermediate_gpu_appears_on_any_route": true,
+    "intermediate_gpu_route_pair_count": 15744,
+    "link_bandwidth_gbps": 400,
+    "method": "oracle",
+    "model_semantics": "native ASTRA GraphTopology packet/store-and-forward",
+    "network_config_path": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/network_configs/deepseek_mmlu_machine_learning__fair_universal_static__random_regular_seed_11.yml",
+    "node_count": 128,
+    "non_gpu_switch_nodes": 0,
+    "per_gpu_or_server_bandwidth_tbps": 1.6,
+    "route_hop_distribution": {
+      "1": 512,
+      "2": 1480,
+      "3": 3744,
+      "4": 6476,
+      "5": 3852,
+      "6": 192
+    },
+    "same_optical_budget_check": true,
+    "selected_candidate_name": "random_regular_seed_11",
+    "self_loops": 0,
+    "topology_type": "random_regular_degree4",
+    "total_cycles": "66947609",
+    "workload": "deepseek_mmlu_machine_learning"
+  },
+  {
+    "astra_command_if_native_run": "AstraSim_Analytical_Congestion_Aware --workload-configuration=<dispatch/combine prefix> --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/network_configs/qwen_livecodebench_execution__EN__en_folded_clos.yml",
+    "average_route_hop_count": 3.59748427672956,
+    "combine_cycles": "334629942",
+    "component_sizes": [
+      160
+    ],
+    "connected_components": 1,
+    "degree_distribution_all_nodes": {
+      "1": 128,
+      "16": 16,
+      "24": 16
+    },
+    "degree_distribution_gpu_nodes": {
+      "1": 128
+    },
+    "diameter": 4,
+    "dispatch_cycles": "277254368",
+    "duplicate_edges": 0,
+    "ecmp_path_count_distribution_cap4": {
+      "1": 3072,
+      "4": 17280
+    },
+    "edge_or_circuit_count": 384,
+    "gpu_count": 128,
+    "graph_file": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/graphs/qwen_livecodebench_execution__EN__en_folded_clos.json",
+    "graph_hash": "7ecec181fc19d9ae8e85534189ab47be4746dec7109d0ea547deedebd45b4644",
+    "graph_name": "en_folded_clos_128gpu_16leaf_16spine",
+    "intermediate_gpu_appears_on_any_route": false,
+    "intermediate_gpu_route_pair_count": 0,
+    "link_bandwidth_gbps": 400,
+    "method": "EN",
+    "model_semantics": "native ASTRA GraphTopology packet/store-and-forward",
+    "network_config_path": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/network_configs/qwen_livecodebench_execution__EN__en_folded_clos.yml",
+    "node_count": 160,
+    "non_gpu_switch_nodes": 32,
+    "per_gpu_or_server_bandwidth_tbps": 0.4,
+    "route_hop_distribution": {
+      "1": 128,
+      "2": 2944,
+      "3": 1920,
+      "4": 15360
+    },
+    "same_optical_budget_check": false,
+    "selected_candidate_name": "en_folded_clos",
+    "self_loops": 0,
+    "topology_type": "folded_clos_eps_reference",
+    "total_cycles": "611884310",
+    "workload": "qwen_livecodebench_execution"
+  },
+  {
+    "astra_command_if_native_run": "AstraSim_Analytical_Congestion_Aware --workload-configuration=<dispatch/combine prefix> --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/network_configs/qwen_livecodebench_execution__native_prefill_select_son_torus__son_torus.yml",
+    "average_route_hop_count": 6.047244094488189,
+    "combine_cycles": "524552534",
+    "component_sizes": [
+      128
+    ],
+    "connected_components": 1,
+    "degree_distribution_all_nodes": {
+      "4": 128
+    },
+    "degree_distribution_gpu_nodes": {
+      "4": 128
+    },
+    "diameter": 12,
+    "dispatch_cycles": "417601671",
+    "duplicate_edges": 0,
+    "ecmp_path_count_distribution_cap4": {
+      "1": 2560,
+      "2": 768,
+      "3": 1024,
+      "4": 11904
+    },
+    "edge_or_circuit_count": 256,
+    "gpu_count": 128,
+    "graph_file": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/graphs/qwen_livecodebench_execution__SON_torus__son_torus.json",
+    "graph_hash": "c4e5cfbd019d5a9529a3d3c3229dfbca4ba9ab035a4ab8014f11713b7272ab1b",
+    "graph_name": "son_torus_8x16_128gpu",
+    "intermediate_gpu_appears_on_any_route": true,
+    "intermediate_gpu_route_pair_count": 15744,
+    "link_bandwidth_gbps": 400,
+    "method": "SON / torus",
+    "model_semantics": "native ASTRA GraphTopology packet/store-and-forward",
+    "network_config_path": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/network_configs/qwen_livecodebench_execution__native_prefill_select_son_torus__son_torus.yml",
+    "node_count": 128,
+    "non_gpu_switch_nodes": 0,
+    "per_gpu_or_server_bandwidth_tbps": 1.6,
+    "route_hop_distribution": {
+      "1": 512,
+      "2": 1024,
+      "3": 1536,
+      "4": 1920,
+      "5": 2048,
+      "6": 2048,
+      "7": 2048,
+      "8": 1920,
+      "9": 1536,
+      "10": 1024,
+      "11": 512,
+      "12": 128
+    },
+    "same_optical_budget_check": true,
+    "selected_candidate_name": "son_torus",
+    "self_loops": 0,
+    "topology_type": "static_2d_torus",
+    "total_cycles": "942154205",
+    "workload": "qwen_livecodebench_execution"
+  },
+  {
+    "astra_command_if_native_run": "AstraSim_Analytical_Congestion_Aware --workload-configuration=<dispatch/combine prefix> --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/network_configs/qwen_livecodebench_execution__fixed_random__random_regular_seed_0.yml",
+    "average_route_hop_count": 3.791830708661417,
+    "combine_cycles": "438348471",
+    "component_sizes": [
+      128
+    ],
+    "connected_components": 1,
+    "degree_distribution_all_nodes": {
+      "4": 128
+    },
+    "degree_distribution_gpu_nodes": {
+      "4": 128
+    },
+    "diameter": 7,
+    "dispatch_cycles": "250781132",
+    "duplicate_edges": 0,
+    "ecmp_path_count_distribution_cap4": {
+      "1": 9804,
+      "2": 3330,
+      "3": 1472,
+      "4": 1650
+    },
+    "edge_or_circuit_count": 256,
+    "gpu_count": 128,
+    "graph_file": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/graphs/qwen_livecodebench_execution__fixed_random__random_regular_seed_0.json",
+    "graph_hash": "66bad8e9ac7a641b0749cd59ae1237ec3c2df767a1b8ae205e1452b14f4773df",
+    "graph_name": "ron_random_regular_seed_0",
+    "intermediate_gpu_appears_on_any_route": true,
+    "intermediate_gpu_route_pair_count": 15744,
+    "link_bandwidth_gbps": 400,
+    "method": "fixed random",
+    "model_semantics": "native ASTRA GraphTopology packet/store-and-forward",
+    "network_config_path": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/network_configs/qwen_livecodebench_execution__fixed_random__random_regular_seed_0.yml",
+    "node_count": 128,
+    "non_gpu_switch_nodes": 0,
+    "per_gpu_or_server_bandwidth_tbps": 1.6,
+    "route_hop_distribution": {
+      "1": 512,
+      "2": 1450,
+      "3": 3666,
+      "4": 6274,
+      "5": 3992,
+      "6": 360,
+      "7": 2
+    },
+    "same_optical_budget_check": true,
+    "selected_candidate_name": "random_regular_seed_0",
+    "self_loops": 0,
+    "topology_type": "random_regular_degree4",
+    "total_cycles": "689129603",
+    "workload": "qwen_livecodebench_execution"
+  },
+  {
+    "astra_command_if_native_run": "AstraSim_Analytical_Congestion_Aware --workload-configuration=<dispatch/combine prefix> --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/network_configs/qwen_livecodebench_execution__fair_universal_static__random_regular_seed_11.yml",
+    "average_route_hop_count": 3.75369094488189,
+    "combine_cycles": "444630678",
+    "component_sizes": [
+      128
+    ],
+    "connected_components": 1,
+    "degree_distribution_all_nodes": {
+      "4": 128
+    },
+    "degree_distribution_gpu_nodes": {
+      "4": 128
+    },
+    "diameter": 6,
+    "dispatch_cycles": "246011444",
+    "duplicate_edges": 0,
+    "ecmp_path_count_distribution_cap4": {
+      "1": 9844,
+      "2": 3294,
+      "3": 1482,
+      "4": 1636
+    },
+    "edge_or_circuit_count": 256,
+    "gpu_count": 128,
+    "graph_file": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/graphs/qwen_livecodebench_execution__fair_universal_static__random_regular_seed_11.json",
+    "graph_hash": "bf8048120d2c00d0a25647cb479254cb38e3dd34754b774a69dc310eaf2e7444",
+    "graph_name": "ron_random_regular_seed_11",
+    "intermediate_gpu_appears_on_any_route": true,
+    "intermediate_gpu_route_pair_count": 15744,
+    "link_bandwidth_gbps": 400,
+    "method": "fair universal static",
+    "model_semantics": "native ASTRA GraphTopology packet/store-and-forward",
+    "network_config_path": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/network_configs/qwen_livecodebench_execution__fair_universal_static__random_regular_seed_11.yml",
+    "node_count": 128,
+    "non_gpu_switch_nodes": 0,
+    "per_gpu_or_server_bandwidth_tbps": 1.6,
+    "route_hop_distribution": {
+      "1": 512,
+      "2": 1480,
+      "3": 3744,
+      "4": 6476,
+      "5": 3852,
+      "6": 192
+    },
+    "same_optical_budget_check": true,
+    "selected_candidate_name": "random_regular_seed_11",
+    "self_loops": 0,
+    "topology_type": "random_regular_degree4",
+    "total_cycles": "690642122",
+    "workload": "qwen_livecodebench_execution"
+  },
+  {
+    "astra_command_if_native_run": "AstraSim_Analytical_Congestion_Aware --workload-configuration=<dispatch/combine prefix> --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/network_configs/qwen_livecodebench_execution__native_prefill_select_random_regular_seed_4__random_regular_seed_4.yml",
+    "average_route_hop_count": 3.786294291338583,
+    "combine_cycles": "435617865",
+    "component_sizes": [
+      128
+    ],
+    "connected_components": 1,
+    "degree_distribution_all_nodes": {
+      "4": 128
+    },
+    "degree_distribution_gpu_nodes": {
+      "4": 128
+    },
+    "diameter": 7,
+    "dispatch_cycles": "258274340",
+    "duplicate_edges": 0,
+    "ecmp_path_count_distribution_cap4": {
+      "1": 9954,
+      "2": 3312,
+      "3": 1466,
+      "4": 1524
+    },
+    "edge_or_circuit_count": 256,
+    "gpu_count": 128,
+    "graph_file": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/graphs/qwen_livecodebench_execution__native_prefill_select_random_regular_seed_4__random_regular_seed_4.json",
+    "graph_hash": "dbc6542d06026689cc93876e3d64428cee15ad683024f399373b9598af58acf4",
+    "graph_name": "ron_random_regular_seed_4",
+    "intermediate_gpu_appears_on_any_route": true,
+    "intermediate_gpu_route_pair_count": 15744,
+    "link_bandwidth_gbps": 400,
+    "method": "prefill-informed OCS",
+    "model_semantics": "native ASTRA GraphTopology packet/store-and-forward",
+    "network_config_path": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/network_configs/qwen_livecodebench_execution__native_prefill_select_random_regular_seed_4__random_regular_seed_4.yml",
+    "node_count": 128,
+    "non_gpu_switch_nodes": 0,
+    "per_gpu_or_server_bandwidth_tbps": 1.6,
+    "route_hop_distribution": {
+      "1": 512,
+      "2": 1482,
+      "3": 3722,
+      "4": 6180,
+      "5": 3974,
+      "6": 384,
+      "7": 2
+    },
+    "same_optical_budget_check": true,
+    "selected_candidate_name": "random_regular_seed_4",
+    "self_loops": 0,
+    "topology_type": "random_regular_degree4",
+    "total_cycles": "693892205",
+    "workload": "qwen_livecodebench_execution"
+  },
+  {
+    "astra_command_if_native_run": "AstraSim_Analytical_Congestion_Aware --workload-configuration=<dispatch/combine prefix> --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/network_configs/qwen_livecodebench_execution__fixed_random__random_regular_seed_0.yml",
+    "average_route_hop_count": 3.791830708661417,
+    "combine_cycles": "438348471",
+    "component_sizes": [
+      128
+    ],
+    "connected_components": 1,
+    "degree_distribution_all_nodes": {
+      "4": 128
+    },
+    "degree_distribution_gpu_nodes": {
+      "4": 128
+    },
+    "diameter": 7,
+    "dispatch_cycles": "250781132",
+    "duplicate_edges": 0,
+    "ecmp_path_count_distribution_cap4": {
+      "1": 9804,
+      "2": 3330,
+      "3": 1472,
+      "4": 1650
+    },
+    "edge_or_circuit_count": 256,
+    "gpu_count": 128,
+    "graph_file": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/graphs/qwen_livecodebench_execution__fixed_random__random_regular_seed_0.json",
+    "graph_hash": "66bad8e9ac7a641b0749cd59ae1237ec3c2df767a1b8ae205e1452b14f4773df",
+    "graph_name": "ron_random_regular_seed_0",
+    "intermediate_gpu_appears_on_any_route": true,
+    "intermediate_gpu_route_pair_count": 15744,
+    "link_bandwidth_gbps": 400,
+    "method": "oracle",
+    "model_semantics": "native ASTRA GraphTopology packet/store-and-forward",
+    "network_config_path": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/network_configs/qwen_livecodebench_execution__fixed_random__random_regular_seed_0.yml",
+    "node_count": 128,
+    "non_gpu_switch_nodes": 0,
+    "per_gpu_or_server_bandwidth_tbps": 1.6,
+    "route_hop_distribution": {
+      "1": 512,
+      "2": 1450,
+      "3": 3666,
+      "4": 6274,
+      "5": 3992,
+      "6": 360,
+      "7": 2
+    },
+    "same_optical_budget_check": true,
+    "selected_candidate_name": "random_regular_seed_0",
+    "self_loops": 0,
+    "topology_type": "random_regular_degree4",
+    "total_cycles": "689129603",
+    "workload": "qwen_livecodebench_execution"
+  }
+]

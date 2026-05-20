@@ -1,0 +1,16 @@
+workload,method,selection_signal,uses_decode_for_selection,leakage_free_if_non_oracle
+qwen_mmlu_machine_learning,SON / torus,static or leave-one-out no target decode,False,True
+qwen_mmlu_machine_learning,fixed random,static or leave-one-out no target decode,False,True
+qwen_mmlu_machine_learning,fair universal static,static or leave-one-out no target decode,False,True
+qwen_mmlu_machine_learning,prefill-informed OCS,prefill trace[0] only,False,True
+qwen_mmlu_machine_learning,oracle,decode/evaluation,True,False
+deepseek_mmlu_machine_learning,SON / torus,static or leave-one-out no target decode,False,True
+deepseek_mmlu_machine_learning,fixed random,static or leave-one-out no target decode,False,True
+deepseek_mmlu_machine_learning,fair universal static,static or leave-one-out no target decode,False,True
+deepseek_mmlu_machine_learning,prefill-informed OCS,prefill trace[0] only,False,True
+deepseek_mmlu_machine_learning,oracle,decode/evaluation,True,False
+qwen_livecodebench_execution,SON / torus,static or leave-one-out no target decode,False,True
+qwen_livecodebench_execution,fixed random,static or leave-one-out no target decode,False,True
+qwen_livecodebench_execution,fair universal static,static or leave-one-out no target decode,False,True
+qwen_livecodebench_execution,prefill-informed OCS,prefill trace[0] only,False,True
+qwen_livecodebench_execution,oracle,decode/evaluation,True,False

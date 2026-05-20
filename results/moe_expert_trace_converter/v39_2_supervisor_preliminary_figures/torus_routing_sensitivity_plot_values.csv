@@ -1,0 +1,7 @@
+workload,workload_label,routing_rule,plot_label,son_over_fair_static_ratio,production_default,note
+qwen_mmlu_machine_learning,Qwen MMLU ML,ecmp4,ECMP-4,3.4901827936033483,True,defensible default used by V39
+qwen_mmlu_machine_learning,Qwen MMLU ML,all_shortest,all-shortest optimistic,1.6735579792151778,False,all-shortest is optimistic sensitivity only
+deepseek_mmlu_machine_learning,DeepSeek MMLU ML,ecmp4,ECMP-4,3.6563431632884806,True,defensible default used by V39
+deepseek_mmlu_machine_learning,DeepSeek MMLU ML,all_shortest,all-shortest optimistic,1.5930798092837946,False,all-shortest is optimistic sensitivity only
+qwen_livecodebench_execution,Qwen LiveCodeBench,ecmp4,ECMP-4,3.505988883738431,True,defensible default used by V39
+qwen_livecodebench_execution,Qwen LiveCodeBench,all_shortest,all-shortest optimistic,1.7120120909261936,False,all-shortest is optimistic sensitivity only

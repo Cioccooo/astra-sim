@@ -1,0 +1,10 @@
+workload,routing_rule,routing_semantics,son_time_ms,fair_universal_static_time_ms,prefill_informed_ocs_time_ms,oracle_time_ms,son_over_fair_static_ratio,torus_3p5x_slower_claim_survives,production_recommended
+qwen_mmlu_machine_learning,current,ECMP-4 over equal-cost shortest paths,126.775016,36.323317,36.323317,36.323317,3.4901827936033483,False,False
+qwen_mmlu_machine_learning,ecmp4,ECMP-4 over equal-cost shortest paths,126.775016,36.323317,36.323317,36.323317,3.4901827936033483,False,True
+qwen_mmlu_machine_learning,all_shortest,"all equal shortest paths, optimistic sensitivity",60.944602,36.416188,36.416188,36.416188,1.6735579792151778,False,False
+deepseek_mmlu_machine_learning,current,ECMP-4 over equal-cost shortest paths,73.912403,20.214843,19.906666,19.906666,3.6563431632884806,True,False
+deepseek_mmlu_machine_learning,ecmp4,ECMP-4 over equal-cost shortest paths,73.912403,20.214843,19.906666,19.906666,3.6563431632884806,True,True
+deepseek_mmlu_machine_learning,all_shortest,"all equal shortest paths, optimistic sensitivity",32.130199,20.168606,20.015034,20.015034,1.5930798092837946,False,False
+qwen_livecodebench_execution,current,ECMP-4 over equal-cost shortest paths,586.609165,167.316322,168.399111,164.40216,3.505988883738431,True,False
+qwen_livecodebench_execution,ecmp4,ECMP-4 over equal-cost shortest paths,586.609165,167.316322,168.399111,164.40216,3.505988883738431,True,True
+qwen_livecodebench_execution,all_shortest,"all equal shortest paths, optimistic sensitivity",283.34589,165.504608,169.001938,164.54116,1.7120120909261936,False,False

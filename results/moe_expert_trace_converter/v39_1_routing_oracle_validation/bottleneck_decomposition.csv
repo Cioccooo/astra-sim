@@ -1,0 +1,10 @@
+workload,method,candidate,dominant_phase,dominant_bottleneck,sender_ms,receiver_ms,optical_resource_ms,max_src_out_bytes,max_dst_in_bytes,max_optical_resource_load_bytes
+qwen_mmlu_machine_learning,fair universal static,random_regular_seed_11,dispatch,optical_resource,3.199424,5.295944,18.198966,687071232,1137295360,977049596
+qwen_mmlu_machine_learning,prefill-informed OCS,random_regular_seed_11,dispatch,optical_resource,3.199424,5.295944,18.198966,687071232,1137295360,977049596
+qwen_mmlu_machine_learning,oracle,random_regular_seed_11,dispatch,optical_resource,3.199424,5.295944,18.198966,687071232,1137295360,977049596
+deepseek_mmlu_machine_learning,fair universal static,random_regular_seed_11,combine,optical_resource,2.359161,1.971282,10.108566,506626048,423329792,542699523
+deepseek_mmlu_machine_learning,prefill-informed OCS,random_regular_seed_27,combine,optical_resource,2.359161,1.971282,9.961458,506626048,423329792,534801743
+deepseek_mmlu_machine_learning,oracle,random_regular_seed_27,combine,optical_resource,2.359161,1.971282,9.961458,506626048,423329792,534801743
+qwen_livecodebench_execution,fair universal static,random_regular_seed_11,dispatch,optical_resource,13.721466,37.66056,85.172882,2946662400,8087543808,4572684292
+qwen_livecodebench_execution,prefill-informed OCS,random_regular_seed_2,combine,optical_resource,37.66056,13.721466,84.320844,8087543808,2946662400,4526940842
+qwen_livecodebench_execution,oracle,random_regular_seed_8,combine,optical_resource,37.66056,13.721466,82.749214,8087543808,2946662400,4442564606

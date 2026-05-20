@@ -1,0 +1,182 @@
+[
+  {
+    "method_v39_3": "",
+    "method_v39_3b": "static SON / torus",
+    "normalised_delta_v39_3b_minus_v39_3": "",
+    "v39_3_gain_percent": "",
+    "v39_3_normalised": "",
+    "v39_3b_gain_percent": -247.0392036445268,
+    "v39_3b_normalised": 3.470392036445268,
+    "workload": "qwen_mmlu_machine_learning"
+  },
+  {
+    "method_v39_3": "",
+    "method_v39_3b": "full-prefill-informed decode OCS",
+    "normalised_delta_v39_3b_minus_v39_3": "",
+    "v39_3_gain_percent": "",
+    "v39_3_normalised": "",
+    "v39_3b_gain_percent": -0.002168535076488569,
+    "v39_3b_normalised": 1.0000216853507649,
+    "workload": "qwen_mmlu_machine_learning"
+  },
+  {
+    "method_v39_3": "prefill-warmup OCS",
+    "method_v39_3b": "prefill10-warmup OCS",
+    "normalised_delta_v39_3b_minus_v39_3": -0.0031443572169955747,
+    "v39_3_gain_percent": "-14.226208438405617",
+    "v39_3_normalised": "1.142262084384056",
+    "v39_3b_gain_percent": -13.911772716706047,
+    "v39_3b_normalised": 1.1391177271670605,
+    "workload": "qwen_mmlu_machine_learning"
+  },
+  {
+    "method_v39_3": "phase-warmup OCS",
+    "method_v39_3b": "phase-warmup OCS",
+    "normalised_delta_v39_3b_minus_v39_3": -0.004624662525572143,
+    "v39_3_gain_percent": "-17.81197425531906",
+    "v39_3_normalised": "1.1781197425531906",
+    "v39_3b_gain_percent": -17.349508002761848,
+    "v39_3b_normalised": 1.1734950800276185,
+    "workload": "qwen_mmlu_machine_learning"
+  },
+  {
+    "method_v39_3": "oracle",
+    "method_v39_3b": "oracle",
+    "normalised_delta_v39_3b_minus_v39_3": 0.0,
+    "v39_3_gain_percent": "0.0",
+    "v39_3_normalised": "1.0",
+    "v39_3b_gain_percent": 0.0,
+    "v39_3b_normalised": 1.0,
+    "workload": "qwen_mmlu_machine_learning"
+  },
+  {
+    "method_v39_3": "previous-request OCS W=16",
+    "method_v39_3b": "previous-request OCS W=16",
+    "normalised_delta_v39_3b_minus_v39_3": 0.04805368646872421,
+    "v39_3_gain_percent": "-23.60385257146263",
+    "v39_3_normalised": "1.2360385257146262",
+    "v39_3b_gain_percent": -28.409221218335052,
+    "v39_3b_normalised": 1.2840922121833505,
+    "workload": "qwen_mmlu_machine_learning"
+  },
+  {
+    "method_v39_3": "",
+    "method_v39_3b": "static SON / torus",
+    "normalised_delta_v39_3b_minus_v39_3": "",
+    "v39_3_gain_percent": "",
+    "v39_3_normalised": "",
+    "v39_3b_gain_percent": -254.56540193609206,
+    "v39_3b_normalised": 3.5456540193609203,
+    "workload": "deepseek_mmlu_machine_learning"
+  },
+  {
+    "method_v39_3": "",
+    "method_v39_3b": "full-prefill-informed decode OCS",
+    "normalised_delta_v39_3b_minus_v39_3": "",
+    "v39_3_gain_percent": "",
+    "v39_3_normalised": "",
+    "v39_3b_gain_percent": 1.1604486028788459,
+    "v39_3b_normalised": 0.9883955139712115,
+    "workload": "deepseek_mmlu_machine_learning"
+  },
+  {
+    "method_v39_3": "prefill-warmup OCS",
+    "method_v39_3b": "prefill10-warmup OCS",
+    "normalised_delta_v39_3b_minus_v39_3": -0.025129824764955844,
+    "v39_3_gain_percent": "-16.974550486123203",
+    "v39_3_normalised": "1.169745504861232",
+    "v39_3b_gain_percent": -14.461568009627609,
+    "v39_3b_normalised": 1.1446156800962761,
+    "workload": "deepseek_mmlu_machine_learning"
+  },
+  {
+    "method_v39_3": "phase-warmup OCS",
+    "method_v39_3b": "phase-warmup OCS",
+    "normalised_delta_v39_3b_minus_v39_3": -0.023351407792579826,
+    "v39_3_gain_percent": "-8.696684833952144",
+    "v39_3_normalised": "1.0869668483395214",
+    "v39_3b_gain_percent": -6.361544054694164,
+    "v39_3b_normalised": 1.0636154405469416,
+    "workload": "deepseek_mmlu_machine_learning"
+  },
+  {
+    "method_v39_3": "oracle",
+    "method_v39_3b": "oracle",
+    "normalised_delta_v39_3b_minus_v39_3": -0.038014598212591455,
+    "v39_3_gain_percent": "2.1733372918634832",
+    "v39_3_normalised": "0.9782666270813651",
+    "v39_3b_gain_percent": 5.97479711312263,
+    "v39_3b_normalised": 0.9402520288687737,
+    "workload": "deepseek_mmlu_machine_learning"
+  },
+  {
+    "method_v39_3": "previous-request OCS W=16",
+    "method_v39_3b": "previous-request OCS W=16",
+    "normalised_delta_v39_3b_minus_v39_3": 0.05178818051978351,
+    "v39_3_gain_percent": "-17.844642104990875",
+    "v39_3_normalised": "1.1784464210499088",
+    "v39_3b_gain_percent": -23.023460156969225,
+    "v39_3b_normalised": 1.2302346015696923,
+    "workload": "deepseek_mmlu_machine_learning"
+  },
+  {
+    "method_v39_3": "",
+    "method_v39_3b": "static SON / torus",
+    "normalised_delta_v39_3b_minus_v39_3": "",
+    "v39_3_gain_percent": "",
+    "v39_3_normalised": "",
+    "v39_3b_gain_percent": -241.413331539001,
+    "v39_3b_normalised": 3.41413331539001,
+    "workload": "qwen_livecodebench_execution"
+  },
+  {
+    "method_v39_3": "",
+    "method_v39_3b": "full-prefill-informed decode OCS",
+    "normalised_delta_v39_3b_minus_v39_3": "",
+    "v39_3_gain_percent": "",
+    "v39_3_normalised": "",
+    "v39_3b_gain_percent": -0.33727412595976436,
+    "v39_3b_normalised": 1.0033727412595976,
+    "workload": "qwen_livecodebench_execution"
+  },
+  {
+    "method_v39_3": "prefill-warmup OCS",
+    "method_v39_3b": "prefill10-warmup OCS",
+    "normalised_delta_v39_3b_minus_v39_3": 0.008373582623813602,
+    "v39_3_gain_percent": "1.7937794263029652",
+    "v39_3_normalised": "0.9820622057369703",
+    "v39_3b_gain_percent": 0.9564211639216067,
+    "v39_3b_normalised": 0.9904357883607839,
+    "workload": "qwen_livecodebench_execution"
+  },
+  {
+    "method_v39_3": "phase-warmup OCS",
+    "method_v39_3b": "phase-warmup OCS",
+    "normalised_delta_v39_3b_minus_v39_3": 3.0833021691378804e-09,
+    "v39_3_gain_percent": "0.9218699734057058",
+    "v39_3_normalised": "0.9907813002659429",
+    "v39_3b_gain_percent": 0.9218696650754893,
+    "v39_3b_normalised": 0.9907813033492451,
+    "workload": "qwen_livecodebench_execution"
+  },
+  {
+    "method_v39_3": "oracle",
+    "method_v39_3b": "oracle",
+    "normalised_delta_v39_3b_minus_v39_3": 0.0127401629645566,
+    "v39_3_gain_percent": "2.9580280373242824",
+    "v39_3_normalised": "0.9704197196267572",
+    "v39_3b_gain_percent": 1.6840117408686195,
+    "v39_3b_normalised": 0.9831598825913138,
+    "workload": "qwen_livecodebench_execution"
+  },
+  {
+    "method_v39_3": "previous-request OCS W=16",
+    "method_v39_3b": "previous-request OCS W=16",
+    "normalised_delta_v39_3b_minus_v39_3": 0.019415205766755816,
+    "v39_3_gain_percent": "-3.2080939142766383",
+    "v39_3_normalised": "1.0320809391427663",
+    "v39_3b_gain_percent": -5.149614490952205,
+    "v39_3b_normalised": 1.0514961449095221,
+    "workload": "qwen_livecodebench_execution"
+  }
+]

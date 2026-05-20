@@ -1,0 +1,134 @@
+[
+  {
+    "signal": "prefill10 -> remaining prefill",
+    "source_pair_gini": 0.2521226092484417,
+    "source_top16_pair_share": 0.00744220987159164,
+    "spearman_expert": 0.9644435924716028,
+    "target_pair_gini": 0.17405191229536754,
+    "target_top16_pair_share": 0.0022406184723558903,
+    "top16_expert_overlap": 0.8125,
+    "top8_expert_overlap": 0.875,
+    "workload": "qwen_mmlu_machine_learning"
+  },
+  {
+    "signal": "decode10 -> remaining decode",
+    "source_pair_gini": 0.24746989621446483,
+    "source_top16_pair_share": 0.0026894078504888126,
+    "spearman_expert": 0.9630790007524971,
+    "target_pair_gini": 0.09846759760155502,
+    "target_top16_pair_share": 0.0016573162135255638,
+    "top16_expert_overlap": 0.875,
+    "top8_expert_overlap": 0.75,
+    "workload": "qwen_mmlu_machine_learning"
+  },
+  {
+    "signal": "prefill10 -> remaining prefill+decode",
+    "source_pair_gini": 0.2521226092484417,
+    "source_top16_pair_share": 0.00744220987159164,
+    "spearman_expert": 0.8672621824005265,
+    "target_pair_gini": 0.09536703115408605,
+    "target_top16_pair_share": 0.001673490428401303,
+    "top16_expert_overlap": 0.625,
+    "top8_expert_overlap": 0.5,
+    "workload": "qwen_mmlu_machine_learning"
+  },
+  {
+    "signal": "previous W=16 requests -> next W=16 requests",
+    "source_pair_gini": "",
+    "source_top16_pair_share": "",
+    "spearman_expert": 0.9374231094965896,
+    "target_pair_gini": "",
+    "target_top16_pair_share": "",
+    "top16_expert_overlap": "",
+    "top8_expert_overlap": "",
+    "workload": "qwen_mmlu_machine_learning"
+  },
+  {
+    "signal": "prefill10 -> remaining prefill",
+    "source_pair_gini": 0.18668715199277214,
+    "source_top16_pair_share": 0.007183651145913313,
+    "spearman_expert": 0.9312120633930691,
+    "target_pair_gini": 0.14272952415245854,
+    "target_top16_pair_share": 0.0017669171446302715,
+    "top16_expert_overlap": 0.8125,
+    "top8_expert_overlap": 0.75,
+    "workload": "deepseek_mmlu_machine_learning"
+  },
+  {
+    "signal": "decode10 -> remaining decode",
+    "source_pair_gini": 0.20827400344162175,
+    "source_top16_pair_share": 0.0020885839634089422,
+    "spearman_expert": 0.8937439481404674,
+    "target_pair_gini": 0.04300113661068089,
+    "target_top16_pair_share": 0.0012829131374280547,
+    "top16_expert_overlap": 0.6875,
+    "top8_expert_overlap": 0.875,
+    "workload": "deepseek_mmlu_machine_learning"
+  },
+  {
+    "signal": "prefill10 -> remaining prefill+decode",
+    "source_pair_gini": 0.18668715199277214,
+    "source_top16_pair_share": 0.007183651145913313,
+    "spearman_expert": 0.7933800386315769,
+    "target_pair_gini": 0.05387383409023025,
+    "target_top16_pair_share": 0.0013181325384053453,
+    "top16_expert_overlap": 0.625,
+    "top8_expert_overlap": 0.375,
+    "workload": "deepseek_mmlu_machine_learning"
+  },
+  {
+    "signal": "previous W=16 requests -> next W=16 requests",
+    "source_pair_gini": "",
+    "source_top16_pair_share": "",
+    "spearman_expert": 0.8601129006823212,
+    "target_pair_gini": "",
+    "target_top16_pair_share": "",
+    "top16_expert_overlap": "",
+    "top8_expert_overlap": "",
+    "workload": "deepseek_mmlu_machine_learning"
+  },
+  {
+    "signal": "prefill10 -> remaining prefill",
+    "source_pair_gini": 0.15796939292792492,
+    "source_top16_pair_share": 0.0027579012003744316,
+    "spearman_expert": 0.9855795641823841,
+    "target_pair_gini": 0.13159362300151506,
+    "target_top16_pair_share": 0.0023806884829702395,
+    "top16_expert_overlap": 0.8125,
+    "top8_expert_overlap": 0.875,
+    "workload": "qwen_livecodebench_execution"
+  },
+  {
+    "signal": "decode10 -> remaining decode",
+    "source_pair_gini": 0.12878282883899925,
+    "source_top16_pair_share": 0.0023510077726349938,
+    "spearman_expert": 0.9890988372093024,
+    "target_pair_gini": 0.11311721280001225,
+    "target_top16_pair_share": 0.00219355629205545,
+    "top16_expert_overlap": 0.9375,
+    "top8_expert_overlap": 0.875,
+    "workload": "qwen_livecodebench_execution"
+  },
+  {
+    "signal": "prefill10 -> remaining prefill+decode",
+    "source_pair_gini": 0.15796939292792492,
+    "source_top16_pair_share": 0.0027579012003744316,
+    "spearman_expert": 0.8632233107489471,
+    "target_pair_gini": 0.10724045077049131,
+    "target_top16_pair_share": 0.0022200595171368693,
+    "top16_expert_overlap": 0.5625,
+    "top8_expert_overlap": 0.75,
+    "workload": "qwen_livecodebench_execution"
+  },
+  {
+    "signal": "previous W=16 requests -> next W=16 requests",
+    "source_pair_gini": "",
+    "source_top16_pair_share": "",
+    "spearman_expert": 0.9556831474414811,
+    "target_pair_gini": "",
+    "target_top16_pair_share": "",
+    "top16_expert_overlap": "",
+    "top8_expert_overlap": "",
+    "workload": "qwen_livecodebench_execution"
+  }
+]
