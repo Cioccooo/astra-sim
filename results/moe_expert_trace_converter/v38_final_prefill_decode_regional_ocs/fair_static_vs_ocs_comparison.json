@@ -1,0 +1,40 @@
+[
+  {
+    "architecture": "gpu_level_prefill_informed_ocs",
+    "astra_validated": "no",
+    "batch_size": "all_requests",
+    "best_ocs_method": "gpu_level_prefill_informed_ocs",
+    "best_ocs_time": 84320844,
+    "best_static_method": "fair_universal_static",
+    "best_static_time": 90156923,
+    "expert_placement": "block",
+    "interpretation": "fluid-only inference decode audit",
+    "ocs_gain_vs_fair_static": 6.473245543218018,
+    "ocs_gain_vs_son": 71.46853914640509,
+    "oracle_gap": 1.8638689147845817,
+    "reconfiguration_penalty": "0us in ranking; see penalty table",
+    "selection_signal": "prefill only",
+    "source_policy": "block_by_token",
+    "stage_evaluated": "decode",
+    "workload": "qwen_livecodebench_execution"
+  },
+  {
+    "architecture": "gpu_level_prefill_informed_ocs",
+    "astra_validated": "no",
+    "batch_size": "all_requests",
+    "best_ocs_method": "gpu_level_prefill_informed_ocs",
+    "best_ocs_time": 22276026,
+    "best_static_method": "fair_universal_static",
+    "best_static_time": 23484280,
+    "expert_placement": "block",
+    "interpretation": "fluid-only inference decode audit",
+    "ocs_gain_vs_fair_static": 5.144948024806381,
+    "ocs_gain_vs_son": 72.42900970269741,
+    "oracle_gap": 0.0,
+    "reconfiguration_penalty": "0us in ranking; see penalty table",
+    "selection_signal": "prefill only",
+    "source_policy": "block_by_token",
+    "stage_evaluated": "decode",
+    "workload": "qwen_mmlu_zh_cn_anatomy"
+  }
+]

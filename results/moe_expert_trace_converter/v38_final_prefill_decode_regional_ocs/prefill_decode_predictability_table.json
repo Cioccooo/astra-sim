@@ -1,0 +1,24 @@
+[
+  {
+    "decode_tokens": 61312,
+    "decode_top1": 0.021571369007628925,
+    "prefill_tokens": 52341,
+    "prefill_top1": 0.02485706965817855,
+    "request_count": 479,
+    "spearman": 0.5421969419520234,
+    "top16_overlap": 0.4375,
+    "top8_overlap": 0.375,
+    "workload": "qwen_livecodebench_execution"
+  },
+  {
+    "decode_tokens": 17280,
+    "decode_top1": 0.014795960771276595,
+    "prefill_tokens": 1569,
+    "prefill_top1": 0.018690757088808428,
+    "request_count": 135,
+    "spearman": 0.9138150064090825,
+    "top16_overlap": 0.75,
+    "top8_overlap": 0.625,
+    "workload": "qwen_mmlu_zh_cn_anatomy"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "gpu_level_beats_fair_static": true,
+    "gpu_level_prefill_ocs_cycles": 84320844,
+    "penalty_us": 0,
+    "server_level_beats_fair_static": false,
+    "server_level_best_method": "fixed_random_server",
+    "server_level_cycles": 1085963134,
+    "workload": "qwen_livecodebench_execution"
+  },
+  {
+    "gpu_level_beats_fair_static": true,
+    "gpu_level_prefill_ocs_cycles": 84321844,
+    "penalty_us": 1,
+    "server_level_beats_fair_static": false,
+    "server_level_best_method": "fixed_random_server",
+    "server_level_cycles": 1085964134,
+    "workload": "qwen_livecodebench_execution"
+  },
+  {
+    "gpu_level_beats_fair_static": true,
+    "gpu_level_prefill_ocs_cycles": 84330844,
+    "penalty_us": 10,
+    "server_level_beats_fair_static": false,
+    "server_level_best_method": "fixed_random_server",
+    "server_level_cycles": 1085973134,
+    "workload": "qwen_livecodebench_execution"
+  },
+  {
+    "gpu_level_beats_fair_static": false,
+    "gpu_level_prefill_ocs_cycles": 109320844,
+    "penalty_us": 25000,
+    "server_level_beats_fair_static": false,
+    "server_level_best_method": "fixed_random_server",
+    "server_level_cycles": 1110963134,
+    "workload": "qwen_livecodebench_execution"
+  },
+  {
+    "gpu_level_beats_fair_static": true,
+    "gpu_level_prefill_ocs_cycles": 22276026,
+    "penalty_us": 0,
+    "server_level_beats_fair_static": false,
+    "server_level_best_method": "son_server_torus",
+    "server_level_cycles": 315164184,
+    "workload": "qwen_mmlu_zh_cn_anatomy"
+  },
+  {
+    "gpu_level_beats_fair_static": true,
+    "gpu_level_prefill_ocs_cycles": 22277026,
+    "penalty_us": 1,
+    "server_level_beats_fair_static": false,
+    "server_level_best_method": "son_server_torus",
+    "server_level_cycles": 315165184,
+    "workload": "qwen_mmlu_zh_cn_anatomy"
+  },
+  {
+    "gpu_level_beats_fair_static": true,
+    "gpu_level_prefill_ocs_cycles": 22286026,
+    "penalty_us": 10,
+    "server_level_beats_fair_static": false,
+    "server_level_best_method": "son_server_torus",
+    "server_level_cycles": 315174184,
+    "workload": "qwen_mmlu_zh_cn_anatomy"
+  },
+  {
+    "gpu_level_beats_fair_static": false,
+    "gpu_level_prefill_ocs_cycles": 47276026,
+    "penalty_us": 25000,
+    "server_level_beats_fair_static": false,
+    "server_level_best_method": "son_server_torus",
+    "server_level_cycles": 340164184,
+    "workload": "qwen_mmlu_zh_cn_anatomy"
+  }
+]
