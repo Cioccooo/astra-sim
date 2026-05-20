@@ -1,0 +1,563 @@
+{
+    "neural_network_training_parameters": {
+        "lookup_config": {
+            "lookup_table_name": "transformer_network_parameters", 
+            "lookup_table_row": "Megatron 310B"
+        }, 
+        "parameters": {
+            "weight_precision": {
+                "value": 16, 
+                "description": "(bits)"
+            }, 
+            "activation_precision": {
+                "value": 16, 
+                "description": "(bits)"
+            }, 
+            "gradient_precision": {
+                "value": 16, 
+                "description": "(bits)"
+            }, 
+            "batch_size": {
+                "value": 4096, 
+                "description": "[B]"
+            }, 
+            "minibatch_size": {
+                "value": 256, 
+                "calculated": true, 
+                "description": "[mb]"
+            }, 
+            "microbatch_size": {
+                "value": 8, 
+                "calculated": true, 
+                "description": "[ub]"
+            }, 
+            "context": {
+                "value": 2048, 
+                "from_lookup_table": true, 
+                "description": "[s] sequence length"
+            }, 
+            "summarization_len": {
+                "value": 128, 
+                "from_lookup_table": true, 
+                "lookup_name": "value_length", 
+                "description": "[x] Summarization length for inference default is seqLen"
+            }, 
+            "hidden_layer_dimension_for_attention_sublayers": {
+                "value": 128, 
+                "from_lookup_table": true, 
+                "lookup_name": "value_length", 
+                "description": "[h]"
+            }, 
+            "hidden_layer_dimension_MLP_1": {
+                "value": null, 
+                "calculated": true, 
+                "description": "[h_MLP1]"
+            }, 
+            "hidden_layer_dimension_MLP_2": {
+                "value": 65536, 
+                "from_lookup_table": true, 
+                "lookup_name": "hidden_layer_size", 
+                "description": "[h_MLP2]"
+            }, 
+            "activations_volume_per_layer_batch": {
+                "value": null, 
+                "calculated": true, 
+                "description": "[N_act]"
+            }, 
+            "number_of_batches": {
+                "value": null, 
+                "calculated": true, 
+                "description": "[N_batch]"
+            }, 
+            "layers": {
+                "value": 96, 
+                "from_lookup_table": true, 
+                "description": "[N_L]"
+            }, 
+            "tokens_to_train": {
+                "value": "300 G", 
+                "from_lookup_table": true, 
+                "description": "number of tokens to train"
+            }, 
+            "samples": {
+                "value": null, 
+                "calculated": true, 
+                "description": "number of sequences to train"
+            }, 
+            "attention_heads": {
+                "value": 128, 
+                "from_lookup_table": true, 
+                "description": "number of attention heads"
+            }, 
+            "dimensionality": {
+                "value": 16384, 
+                "from_lookup_table": true
+            }, 
+            "query_MAC_operations": {
+                "value": null, 
+                "calculated": true
+            }, 
+            "key_MAC_operations": {
+                "value": null, 
+                "calculated": true
+            }, 
+            "value_MAC_operations": {
+                "value": null, 
+                "calculated": true
+            }, 
+            "self_attention_MAC_operations": {
+                "value": null, 
+                "calculated": true
+            }, 
+            "multihead_MAC_operations": {
+                "value": null, 
+                "calculated": true
+            }, 
+            "attention_sublayer_output_MAC_operations": {
+                "value": null, 
+                "calculated": true
+            }, 
+            "total_attention_sublayer_MAC_operations": {
+                "value": null, 
+                "calculated": true
+            }, 
+            "total_MLP_sublayer_MAC_operations": {
+                "value": null, 
+                "calculated": true
+            }, 
+            "non_linear_operations_for_attention_sublayer": {
+                "value": null, 
+                "calculated": true
+            }, 
+            "non_linear_operations_for_MLP_sublayer": {
+                "value": null, 
+                "calculated": true
+            }, 
+            "error_volume_per_layer_batch": {
+                "value": null, 
+                "calculated": true, 
+                "description": "[N_err]"
+            }, 
+            "dim_query_weight": {
+                "value": null, 
+                "calculated": true
+            }, 
+            "dim_key_weight": {
+                "value": null, 
+                "calculated": true
+            }, 
+            "dim_value_weight": {
+                "value": null, 
+                "calculated": true
+            }, 
+            "projection_weight": {
+                "value": null, 
+                "calculated": true
+            }, 
+            "feedforward_bias_1": {
+                "value": null, 
+                "calculated": true
+            }, 
+            "feedforward_bias_2": {
+                "value": null, 
+                "calculated": true
+            }, 
+            "feedforward_scale_1": {
+                "value": null, 
+                "calculated": true
+            }, 
+            "feedforward_scale_2": {
+                "value": null, 
+                "calculated": true
+            }, 
+            "number_of_parameters_per_layer": {
+                "value": null, 
+                "calculated": true
+            }, 
+            "number_of_parameters_per_expert": {
+                "value": null, 
+                "calculated": true
+            }, 
+            "optimizer_state_precision": {
+                "value": 16
+            }, 
+            "number_of_MoE_layers": {
+                "value": null, 
+                "calculated": true
+            }, 
+            "expert_flag": {
+                "value": 0, 
+                "calculated": true
+            }, 
+            "number_of_experts": {
+                "value": 1, 
+                "from_lookup_table": true
+            }, 
+            "number_of_gating_parameters": {
+                "value": null, 
+                "calculated": true
+            }, 
+            "number_of_expert_parameters": {
+                "value": null, 
+                "calculated": true
+            }, 
+            "gating_MAC_operations": {
+                "value": null, 
+                "calculated": true
+            }, 
+            "total_number_of_parameters_without_embedding": {
+                "value": null, 
+                "calculated": true
+            }, 
+            "key_query_value_length": {
+                "value": 128, 
+                "from_lookup_table": true, 
+                "lookup_name": "query/key_length", 
+                "description": "Key/Query/Value length"
+            }, 
+            "number_of_tokens_in_vocabulary": {
+                "value": 51200, 
+                "from_lookup_table": true, 
+                "lookup_name": "tokens"
+            }, 
+            "embedding_layer_parameters": {
+                "value": null, 
+                "calculated": true
+            }, 
+            "decoder_NMACs": {
+                "value": null, 
+                "calculated": true
+            }, 
+            "decoder_flag": {
+                "value": 0
+            }, 
+            "act_gradient_precision": {
+                "value": 16
+            }, 
+            "fw_pass_precision": {
+                "value": 16
+            }
+        }
+    }, 
+    "mapping_parameters": {
+        "parameters": {
+            "number_of_microbatches_per_minibatch": {
+                "value": null, 
+                "calculated": true, 
+                "description": "[N_ubatch]"
+            }, 
+            "intra_node_data_parallel_degree": {
+                "value": 1, 
+                "description": "[N_DP_intra]"
+            }, 
+            "intra_node_tensor_parallel_degree": {
+                "value": 8, 
+                "description": "[N_TP_intra]"
+            }, 
+            "intra_node_pipeline_parallel_degree": {
+                "value": 1, 
+                "description": "[N_PP_intra]"
+            }, 
+            "accelerators_per_node_required": {
+                "value": null, 
+                "calculated": true, 
+                "description": "[R_acc_node]"
+            }, 
+            "inter_node_data_parallel_degree": {
+                "value": 15, 
+                "description": "[N_DP_inter]"
+            }, 
+            "inter_node_tensor_parallel_degree": {
+                "value": 1, 
+                "description": "[N_TP_inter]"
+            }, 
+            "inter_node_pipeline_parallel_degree": {
+                "value": 16, 
+                "description": "[N_PP_inter]"
+            }, 
+            "data_parallel_degree": {
+                "value": null, 
+                "calculated": true, 
+                "description": "[N_DP]"
+            }, 
+            "tensor_parallel_degree": {
+                "value": null, 
+                "calculated": true, 
+                "description": "[N_TP]"
+            }, 
+            "pipeline_parallel_degree": {
+                "value": null, 
+                "calculated": true, 
+                "description": "[N_PP]"
+            }, 
+            "number_of_accelerators_required": {
+                "value": null, 
+                "calculated": true, 
+                "description": "[R_acc_total]"
+            }, 
+            "number_of_nodes_required": {
+                "value": null, 
+                "calculated": true, 
+                "description": "[R_nodes_total]"
+            }, 
+            "required_memory_per_accelerator_weights": {
+                "value": null, 
+                "calculated": true, 
+                "description": "Required memory per accelerator due to weights (GB)"
+            }, 
+            "required_memory_per_accelerator_activations": {
+                "value": null, 
+                "calculated": true, 
+                "description": "Required memory per accelerator due to activations (GB)"
+            }, 
+            "total_required_memory_per_accelerator": {
+                "value": null, 
+                "calculated": true, 
+                "description": "(GB)"
+            }, 
+            "min_required_memory_per_accelerator": {
+                "value": null, 
+                "calculated": true, 
+                "description": "(GB)"
+            }, 
+            "tile_block_size": {
+                "value": 128, 
+                "description": "Tile/Block size"
+            }, 
+            "bigger_tile_block_size": {
+                "value": 128, 
+                "description": "Bigger Tile/Block size"
+            }
+        }
+    }, 
+    "system_architecture_parameters": {
+        "parameters": {
+            "dp_inter_algo": {
+                "value": 1, 
+                "description": "Rabenseifner + OCS 分支（步数 2·ceil(log2 P)）"
+            }, 
+            "tp_inter_algo": {
+                "value": 1
+            }, 
+            "pp_inter_use_ocs": {
+                "value": 1
+            }, 
+            "number_of_network_cards_per_node": {
+                "value": 8, 
+                "description": "每个节点参与“跨节点通信”的有效端口数量（可理解成“聚合到节点级的链路条数”）[这个值会被accelerators_per_node_required自动改了]"
+            }, 
+            "bandwidth_per_network_card": {
+                "value": "200 Gbps", 
+                "description": "每条端口的线速.number_of_network_cards_per_node*bandwidth_per_network_card=节点级聚合的“跨节点总带宽”"
+            }, 
+            "inter_node_latency": {
+                "value": "260 ns", 
+                "description": "仅 ring 兜底；也可填 260/200 ns"
+            }, 
+            "inter_node_latency_OCS": {
+                "value": "260 ns", 
+                "description": "OCS 直达端到端 α（200–260 ns）"
+            }, 
+            "ocs_reconf_per_round": {
+                "value": "1000000 ns", 
+                "description": "纳秒级重构；按微批摊销"
+            }, 
+            "ocs_slot_microbatches": {
+                "value": 16, 
+                "description": "重构摊销窗口"
+            }, 
+            "ocs_parallel_circuits_per_node": {
+                "value": 1, 
+                "description": "方案A下固定为1，避免与1.6T重复放大"
+            }, 
+            "ocs_wdm_lanes": {
+                "value": 1, 
+                "description": "常规 NIC/WDM 不可用时置 1"
+            }, 
+            "inter_node_bandwidth": {
+                "value": null, 
+                "calculated": true, 
+                "description": "[BW_inter] (bits/s)"
+            }, 
+            "inter_node_topology_factor": {
+                "value": 0
+            }, 
+            "number_of_accelerators_per_node": {
+                "value": 8, 
+                "description": "[N_acc_node]"
+            }, 
+            "total_intra_node_bandwidth": {
+                "value": null, 
+                "calculated": true
+            }, 
+            "intra_node_topology_factor": {
+                "value": 0
+            }, 
+            "number_of_nodes": {
+                "value": 1, 
+                "calculated": true
+            }, 
+            "total_number_of_accelerators": {
+                "value": null, 
+                "calculated": true, 
+                "description": "[N_acc_total]"
+            }, 
+            "compute_intensity_K_Q_V": {
+                "value": null, 
+                "calculated": true, 
+                "description": "[I_Q] Compute intensity for K/Q/V (MACs/Byte)"
+            }, 
+            "compute_intensity_self_attention": {
+                "value": null, 
+                "calculated": true, 
+                "description": "[I_Att] Compute intensity for self-attention (MACs/Byte)"
+            }, 
+            "compute_intensity_attention_output": {
+                "value": null, 
+                "calculated": true, 
+                "description": "[I_out] Compute intensity for attention output (MACs/Byte)"
+            }, 
+            "compute_intensity_MLP": {
+                "value": null, 
+                "calculated": true, 
+                "description": "[I_mlp] Compute intensity for MLP (MACs/Byte)"
+            }, 
+            "main_mem_bw_A100": {
+                "value": 3350, 
+                "description": "Main memory bandwidth for A100 (A100: 2000, H100 SXM5:3350)[new]"
+            }, 
+            "compute_intensity_weight_updates": {
+                "value": 0.3333333333333333, 
+                "description": "Compute Intensity for weight updates (FLOPs/Byte)"
+            }, 
+            "compute_intensity_NonLin_ops": {
+                "value": 0.25, 
+                "description": "Compute Intensity for NonLin ops (FLOPs/Byte)"
+            }, 
+            "parallelization_degree_K_Q_V": {
+                "value": 0.25, 
+                "calculated": true, 
+                "description": "Parallelization degree for K/Q/V"
+            }, 
+            "parallelization_degree_attention": {
+                "value": 0.25, 
+                "calculated": true, 
+                "description": "Parallelization degree for attention"
+            }, 
+            "parallelization_degree_output": {
+                "value": 164, 
+                "calculated": true, 
+                "description": "Parallelization degree for output"
+            }, 
+            "parallelization_degree_MLP": {
+                "value": 164, 
+                "calculated": true, 
+                "description": "Parallelization degree for MLP"
+            }, 
+            "effective_perf_perc_K_Q_V": {
+                "value": 0.7, 
+                "calculated": false, 
+                "description": "Effective performance percentage for K/Q/V"
+            }, 
+            "effective_perf_perc_attention": {
+                "value": 0.7, 
+                "calculated": false, 
+                "description": "Effective performance percentage for attention"
+            }, 
+            "effective_perf_perc_output": {
+                "value": 0.7, 
+                "calculated": false, 
+                "description": "Effective performance percentage for output"
+            }, 
+            "effective_perf_perc_MLP": {
+                "value": 0.7, 
+                "calculated": false, 
+                "description": "Effective performance percentage for MLP"
+            }
+        }
+    }, 
+    "accelerator_architecture_parameters": {
+        "lookup_config": {
+            "lookup_table_name": "accelerator_specifications", 
+            "lookup_table_row": "H100 SXM5"
+        }, 
+        "parameters": {
+            "frequency": {
+                "value": 1.22, 
+                "from_lookup_table": true, 
+                "description": "[f] (cycles/s)"
+            }, 
+            "number_of_cores": {
+                "value": 108, 
+                "from_lookup_table": true, 
+                "description": "[N_cores]"
+            }, 
+            "functional_units_per_core": {
+                "value": 4, 
+                "from_lookup_table": true, 
+                "description": "[N_FU] number of functional units per core"
+            }, 
+            "functional_unit_hardware_8bit_MAC_per_cycle": {
+                "value": 512, 
+                "from_lookup_table": true, 
+                "description": "[W_FU]"
+            }, 
+            "peak_compute_8bit_MACs": {
+                "value": null, 
+                "calculated": true, 
+                "description": "(MACs/s)"
+            }, 
+            "OPS_per_MAC": {
+                "value": 2
+            }, 
+            "peak_compute_8bit_OPS": {
+                "value": null, 
+                "calculated": true, 
+                "description": "(OPS/s)"
+            }, 
+            "non_linear_functional_units_per_core": {
+                "value": null, 
+                "from_lookup_table": true, 
+                "description": "number of non-linear functional units per core"
+            }, 
+            "non_linear_functional_unit_hardware_8bit_NLIN_per_cycle": {
+                "value": 4, 
+                "from_lookup_table": true
+            }, 
+            "peak_compute_8bit_NLINs": {
+                "value": null, 
+                "calculated": true, 
+                "description": "(NLIN/s)"
+            }, 
+            "inter_accelerator_latency": {
+                "value": "10 ns", 
+                "from_lookup_table": true, 
+                "lookup_name": "intra_node_latency", 
+                "description": "[C_intra]"
+            }, 
+            "inter_accelerator_bandwidth": {
+                "value": "3.6 Tbps", 
+                "from_lookup_table": true, 
+                "lookup_name": "intra_node_bandwidth", 
+                "description": "[BW_intra] (bits/s)"
+            }, 
+            "memory_capacity_per_accelerator": {
+                "value": "80 GB", 
+                "from_lookup_table": true, 
+                "lookup_name": "local_dram_memory", 
+                "description": "(bytes)"
+            }, 
+            "accelerator_TDP": {
+                "value": 400, 
+                "from_lookup_table": true, 
+                "lookup_name": "tdp"
+            }, 
+            "accelerator_frequency_at_TDP": {
+                "value": null, 
+                "from_lookup_table": true, 
+                "lookup_name": "frequency", 
+                "description": "(cycles/s)"
+            }
+        }
+    }
+}

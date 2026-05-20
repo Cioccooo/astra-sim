@@ -1,0 +1,124 @@
+FULL CONFIGURATION
+
+Transformer: GPT-3 175B aka "GPT-3" | Accelerator: V100
+
+1: NEURAL NETWORK TRAINING PARAMETERS
+weight_precision                               :                 16  # (bits)
+activation_precision                           :                 16  # (bits)
+gradient_precision                             :                 16  # (bits)
+batch_size                                     :               4096  # [B]
+minibatch_size                                 :             4096.0  # [mb]
+microbatch_size                                :             4096.0  # [ub]
+context                                        :               2048  # [s] sequence length
+summarization_len                              :                128  # [x] Summarization length for inference default is sqeLen
+hidden_layer_dimension_for_attention_sublayers :                128  # [h]
+hidden_layer_dimension_MLP_1                   :              12288  # [h_MLP1] hidden layer dimension for the 1st MLP sublayer
+hidden_layer_dimension_MLP_2                   :              49152  # [h_MLP2] hidden layer dimension for the 2nd MLP sublayer
+activations_volume_per_layer_batch             :         1073741824  # [N_act] activations volume per layer per batch
+number_of_batches                              : 35762.786865234375  # [N_batch]
+layers                                         :                 96  # [N_L] number of layers
+tokens_to_train                                :       300000000000  # number of tokens to train
+samples                                        :        146484375.0  # number of sequences to train
+attention_heads                                :                 96  # number of attention heads
+dimensionality                                 :              12288
+query_MAC_operations                           :     13194139533312
+key_MAC_operations                             :     13194139533312
+value_MAC_operations                           :     13194139533312
+self_attention_MAC_operations                  :       274877906944
+multihead_MAC_operations                       :   3826300464660480
+attention_sublayer_output_MAC_operations       :   1266637395197952
+total_attention_sublayer_MAC_operations        :   5092937859858432
+total_MLP_sublayer_MAC_operations              :  10133099161583616
+non_linear_operations_for_attention_sublayer   :       103079215104
+non_linear_operations_for_MLP_sublayer         :          503316480
+error_volume_per_layer_batch                   :         1073741824  # [N_err]
+dim_query_weight                               :              12288
+dim_key_weight                                 :              12288
+dim_value_weight                               :              12288
+projection_weight                              :              12288
+feedforward_bias_1                             :              12288
+feedforward_bias_2                             :              12288
+feedforward_scale_1                            :              12288
+feedforward_scale_2                            :              12288
+number_of_parameters_per_layer                 :       1818421376.0
+number_of_parameters_per_expert                :     174568452096.0
+optimizer_state_precision                      :                 16
+number_of_MoE_layers                           :                 48
+expert_flag                                    :                  0
+number_of_experts                              :                  1
+number_of_gating_parameters                    :                  0
+number_of_expert_parameters                    :                  0
+gating_MAC_operations                          :                  0
+total_number_of_parameters_without_embedding   :     174568452096.0
+key_query_value_length                         :                128  # Key/Query/Value length
+number_of_tokens_in_vocabulary                 :              50257
+embedding_layer_parameters                     :          617558016
+decoder_NMACs                                  :                  0
+decoder_flag                                   :                  0
+act_gradient_precision                         :                 16
+fw_pass_precision                              :                 16
+
+2: MAPPING PARAMETERS
+number_of_microbatches_per_minibatch        :              1  # [N_ubatch]
+intra_node_data_parallel_degree             :              1  # [N_DP_intra]
+intra_node_tensor_parallel_degree           :              4  # [N_TP_intra]
+intra_node_pipeline_parallel_degree         :              1  # [N_PP_intra]
+accelerators_per_node_required              :              4  # [R_acc_node]
+inter_node_data_parallel_degree             :              1  # [N_DP_inter]
+inter_node_tensor_parallel_degree           :              1  # [N_TP_inter]
+inter_node_pipeline_parallel_degree         :              1  # [N_PP_inter]
+data_parallel_degree                        :              1  # [N_DP]
+tensor_parallel_degree                      :              4  # [N_TP]
+pipeline_parallel_degree                    :              1  # [N_PP]
+number_of_accelerators_required             :              4  # [R_acc_total]
+number_of_nodes_required                    :              1  # [R_nodes_total]
+required_memory_per_accelerator_weights     :   436.42113024  # Required memory per accelerator due to weights (GB)
+required_memory_per_accelerator_activations : 5075.040731136  # Required memory per accelerator due to activations (GB)
+total_required_memory_per_accelerator       : 5511.461861376  # (GB)
+min_required_memory_per_accelerator         : 5205.967070208  # (GB)
+tile_block_size                             :            128  # Tile/Block size
+bigger_tile_block_size                      :            128  # Bigger Tile/Block size
+
+3: SYSTEM ARCHITECTURE PARAMETERS
+inter_node_latency                 :              1e-07  # [C_inter] (seconds)
+number_of_network_cards_per_node   :                  4
+bandwidth_per_network_card         :       200000000000  # (bits/s)
+inter_node_bandwidth               :       800000000000  # [BW_inter] (bits/s)
+inter_node_topology_factor         :                  0
+number_of_accelerators_per_node    :                  4  # [N_acc_node]
+total_intra_node_bandwidth         :      4800000000000
+intra_node_topology_factor         :                  0
+number_of_nodes                    :                1.0
+total_number_of_accelerators       :                4.0  # [N_acc_total]
+compute_intensity_K_Q_V            :  63.34020618556701  # [I_Q] Compute intensity for K/Q/V (MACs/Byte)
+compute_intensity_self_attention   : 63.999023452400934  # [I_Att] Compute intensity for self-attention (MACs/Byte)
+compute_intensity_attention_output :  63.34020618556701  # [I_out] Compute intensity for attention output (MACs/Byte)
+compute_intensity_MLP              :  63.34020618556701  # [I_mlp] Compute intensity for MLP (MACs/Byte)
+main_mem_bw_A100                   :               2000  # Main memory bandwidth for A100
+compute_intensity_weight_updates   : 0.3333333333333333  # Compute Intensity for weight updates (FLOPs/Byte)
+compute_intensity_NonLin_ops       :               0.25  # Compute Intensity for NonLin ops (FLOPs/Byte)
+parallelization_degree_K_Q_V       :            65536.0  # Parallelization degree for K/Q/V
+parallelization_degree_attention   :            65536.0  # Parallelization degree for attention
+parallelization_degree_output      :          6291456.0  # Parallelization degree for output
+parallelization_degree_MLP         :         25165824.0  # Parallelization degree for MLP
+effective_perf_perc_K_Q_V          :                  1  # Effective performance percentage for K/Q/V
+effective_perf_perc_attention      :                  1  # Effective performance percentage for attention
+effective_perf_perc_output         :                  1  # Effective performance percentage for output
+effective_perf_perc_MLP            :                  1  # Effective performance percentage for MLP
+
+4: ACCELERATOR ARCHITECTURE PARAMETERS
+frequency                                               :      1245000000  # [f] (cycles/s)
+number_of_cores                                         :              80  # [N_cores]
+functional_units_per_core                               :               8  # [N_FU] number of functional units per core
+functional_unit_hardware_8bit_MAC_per_cycle             :             128  # [W_FU]
+peak_compute_8bit_MACs                                  : 101990400000000  # (MACs/s)
+OPS_per_MAC                                             :               2
+peak_compute_8bit_OPS                                   : 203980800000000  # (OPS/s)
+non_linear_functional_units_per_core                    :             192  # number of non-linear functional units per core
+non_linear_functional_unit_hardware_8bit_NLIN_per_cycle :               4
+peak_compute_8bit_NLINs                                 :  76492800000000  # (NLIN/s)
+inter_accelerator_latency                               :           1e-08  # [C_intra]
+inter_accelerator_bandwidth                             :   1200000000000  # [BW_intra] (bits/s)
+memory_capacity_per_accelerator                         :     32000000000  # (bytes)
+accelerator_TDP                                         :             300
+accelerator_frequency_at_TDP                            :      1245000000  # (cycles/s)

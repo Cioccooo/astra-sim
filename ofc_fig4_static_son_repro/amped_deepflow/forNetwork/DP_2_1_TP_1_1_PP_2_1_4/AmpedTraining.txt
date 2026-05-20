@@ -1,0 +1,2 @@
+Stage,0,Compute time (s),1005264913.1821404,Communication time (s), 84520.79416799545,Pipeline bubble time (s),2618759.5189622724
+Stage,Z,Compute time (s),1005264913.1821404,Communication time (s), 84520.79416799545,Pipeline bubble time (s),2618759.5189622724
