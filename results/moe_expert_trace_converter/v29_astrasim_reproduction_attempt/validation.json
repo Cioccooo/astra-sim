@@ -1,0 +1,22 @@
+{
+  "astra_sim_actually_used": true,
+  "byte_conservation_all_passed": true,
+  "dispatch_combine_sequential": "ASTRA proxy runs dispatch and combine as separate phases and sums them.",
+  "dispatch_equals_combine_all_passed": true,
+  "en_400gbps_settings": true,
+  "expert_placement": "block",
+  "full_reproduction_feasible": false,
+  "local_traffic_excluded": true,
+  "only_four_specified_workloads": [
+    "qwen_mmlu_ml",
+    "qwen_livecode",
+    "qwen_mmlu_zh_anatomy",
+    "deepseek_livecode"
+  ],
+  "prefill_only_trace0": true,
+  "ron_calibrated_first_10pct": "Parsed and counted; topology choice not modeled in ASTRA.",
+  "ron_w4_previous4_plus_1us": "Available only in V2.8 reference; not modeled in ASTRA proxy.",
+  "son_ron_degree4_1p6tbps": "Not faithfully modeled by ASTRA; ASTRA proxy is 1D Switch at 1.6Tbps.",
+  "son_ron_pure_optical_no_eps_fallback": "Not faithfully modeled by ASTRA; preserved only in V2.8 reference rows.",
+  "source_policy": "block_by_token"
+}

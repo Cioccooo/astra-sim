@@ -1,0 +1,222 @@
+[
+  {
+    "analytical_v28_ms": 408.08053145604174,
+    "astra_proxy_ms": 106.7914484,
+    "astra_proxy_name": "ASTRA congestion-aware 1D Switch 400Gbps x 1.3",
+    "dataset_id": "qwen_mmlu_ml",
+    "dataset_label": "Qwen MMLU ML",
+    "network_mode": "EN ECMP-imbalance 1.3x",
+    "notes": "Not folded-Clos ECMP; 1.3x imbalance applied externally.",
+    "relative_difference_vs_v28": -0.7383079069737403,
+    "support_status": "approximation"
+  },
+  {
+    "analytical_v28_ms": 201.300131840001,
+    "astra_proxy_ms": 20.536755,
+    "astra_proxy_name": "ASTRA congestion-aware 1D Switch 1.6Tbps",
+    "dataset_id": "qwen_mmlu_ml",
+    "dataset_label": "Qwen MMLU ML",
+    "network_mode": "SON torus ECMP",
+    "notes": "Proxy only. Does not model degree-4 torus ECMP or RON custom topology/reconfiguration.",
+    "relative_difference_vs_v28": -0.8979794259830729,
+    "support_status": "unsupported_target_topology"
+  },
+  {
+    "analytical_v28_ms": 167.6804096000024,
+    "astra_proxy_ms": 20.536755,
+    "astra_proxy_name": "ASTRA congestion-aware 1D Switch 1.6Tbps",
+    "dataset_id": "qwen_mmlu_ml",
+    "dataset_label": "Qwen MMLU ML",
+    "network_mode": "RON calibrated",
+    "notes": "Proxy only. Does not model degree-4 torus ECMP or RON custom topology/reconfiguration.",
+    "relative_difference_vs_v28": -0.8775244225071376,
+    "support_status": "unsupported_target_topology"
+  },
+  {
+    "analytical_v28_ms": 166.2411328,
+    "astra_proxy_ms": 20.536755,
+    "astra_proxy_name": "ASTRA congestion-aware 1D Switch 1.6Tbps",
+    "dataset_id": "qwen_mmlu_ml",
+    "dataset_label": "Qwen MMLU ML",
+    "network_mode": "RON W=4 1us",
+    "notes": "Proxy only. Does not model degree-4 torus ECMP or RON custom topology/reconfiguration. V2.8 includes per-request 1us reconfiguration externally; ASTRA proxy does not.",
+    "relative_difference_vs_v28": -0.8764640576366428,
+    "support_status": "unsupported_target_topology"
+  },
+  {
+    "analytical_v28_ms": 142.11973120000002,
+    "astra_proxy_ms": 20.536755,
+    "astra_proxy_name": "ASTRA congestion-aware 1D Switch 1.6Tbps",
+    "dataset_id": "qwen_mmlu_ml",
+    "dataset_label": "Qwen MMLU ML",
+    "network_mode": "RON oracle",
+    "notes": "Proxy only. Does not model degree-4 torus ECMP or RON custom topology/reconfiguration.",
+    "relative_difference_vs_v28": -0.8554968066249763,
+    "support_status": "unsupported_target_topology"
+  },
+  {
+    "analytical_v28_ms": 2529.6412344332066,
+    "astra_proxy_ms": 1521.4335188,
+    "astra_proxy_name": "ASTRA congestion-aware 1D Switch 400Gbps x 1.3",
+    "dataset_id": "qwen_livecode",
+    "dataset_label": "Qwen LiveCodeBench",
+    "network_mode": "EN ECMP-imbalance 1.3x",
+    "notes": "Not folded-Clos ECMP; 1.3x imbalance applied externally.",
+    "relative_difference_vs_v28": -0.39855759066131224,
+    "support_status": "approximation"
+  },
+  {
+    "analytical_v28_ms": 1979.799060480006,
+    "astra_proxy_ms": 292.583302,
+    "astra_proxy_name": "ASTRA congestion-aware 1D Switch 1.6Tbps",
+    "dataset_id": "qwen_livecode",
+    "dataset_label": "Qwen LiveCodeBench",
+    "network_mode": "SON torus ECMP",
+    "notes": "Proxy only. Does not model degree-4 torus ECMP or RON custom topology/reconfiguration.",
+    "relative_difference_vs_v28": -0.8522156577197978,
+    "support_status": "unsupported_target_topology"
+  },
+  {
+    "analytical_v28_ms": 1410.5151078400215,
+    "astra_proxy_ms": 292.583302,
+    "astra_proxy_name": "ASTRA congestion-aware 1D Switch 1.6Tbps",
+    "dataset_id": "qwen_livecode",
+    "dataset_label": "Qwen LiveCodeBench",
+    "network_mode": "RON calibrated",
+    "notes": "Proxy only. Does not model degree-4 torus ECMP or RON custom topology/reconfiguration.",
+    "relative_difference_vs_v28": -0.7925698914008482,
+    "support_status": "unsupported_target_topology"
+  },
+  {
+    "analytical_v28_ms": 1426.10311008,
+    "astra_proxy_ms": 292.583302,
+    "astra_proxy_name": "ASTRA congestion-aware 1D Switch 1.6Tbps",
+    "dataset_id": "qwen_livecode",
+    "dataset_label": "Qwen LiveCodeBench",
+    "network_mode": "RON W=4 1us",
+    "notes": "Proxy only. Does not model degree-4 torus ECMP or RON custom topology/reconfiguration. V2.8 includes per-request 1us reconfiguration externally; ASTRA proxy does not.",
+    "relative_difference_vs_v28": -0.7948372036131476,
+    "support_status": "unsupported_target_topology"
+  },
+  {
+    "analytical_v28_ms": 1286.85801472,
+    "astra_proxy_ms": 292.583302,
+    "astra_proxy_name": "ASTRA congestion-aware 1D Switch 1.6Tbps",
+    "dataset_id": "qwen_livecode",
+    "dataset_label": "Qwen LiveCodeBench",
+    "network_mode": "RON oracle",
+    "notes": "Proxy only. Does not model degree-4 torus ECMP or RON custom topology/reconfiguration.",
+    "relative_difference_vs_v28": -0.7726374637658363,
+    "support_status": "unsupported_target_topology"
+  },
+  {
+    "analytical_v28_ms": 333.1399352319975,
+    "astra_proxy_ms": 47.6489481,
+    "astra_proxy_name": "ASTRA congestion-aware 1D Switch 400Gbps x 1.3",
+    "dataset_id": "qwen_mmlu_zh_anatomy",
+    "dataset_label": "Qwen ZH Anatomy",
+    "network_mode": "EN ECMP-imbalance 1.3x",
+    "notes": "Not folded-Clos ECMP; 1.3x imbalance applied externally.",
+    "relative_difference_vs_v28": -0.8569701706076834,
+    "support_status": "approximation"
+  },
+  {
+    "analytical_v28_ms": 106.60036607999925,
+    "astra_proxy_ms": 9.163198,
+    "astra_proxy_name": "ASTRA congestion-aware 1D Switch 1.6Tbps",
+    "dataset_id": "qwen_mmlu_zh_anatomy",
+    "dataset_label": "Qwen ZH Anatomy",
+    "network_mode": "SON torus ECMP",
+    "notes": "Proxy only. Does not model degree-4 torus ECMP or RON custom topology/reconfiguration.",
+    "relative_difference_vs_v28": -0.914041589752859,
+    "support_status": "unsupported_target_topology"
+  },
+  {
+    "analytical_v28_ms": 111.22917376000075,
+    "astra_proxy_ms": 9.163198,
+    "astra_proxy_name": "ASTRA congestion-aware 1D Switch 1.6Tbps",
+    "dataset_id": "qwen_mmlu_zh_anatomy",
+    "dataset_label": "Qwen ZH Anatomy",
+    "network_mode": "RON calibrated",
+    "notes": "Proxy only. Does not model degree-4 torus ECMP or RON custom topology/reconfiguration.",
+    "relative_difference_vs_v28": -0.9176187533338023,
+    "support_status": "unsupported_target_topology"
+  },
+  {
+    "analytical_v28_ms": 113.89133216,
+    "astra_proxy_ms": 9.163198,
+    "astra_proxy_name": "ASTRA congestion-aware 1D Switch 1.6Tbps",
+    "dataset_id": "qwen_mmlu_zh_anatomy",
+    "dataset_label": "Qwen ZH Anatomy",
+    "network_mode": "RON W=4 1us",
+    "notes": "Proxy only. Does not model degree-4 torus ECMP or RON custom topology/reconfiguration. V2.8 includes per-request 1us reconfiguration externally; ASTRA proxy does not.",
+    "relative_difference_vs_v28": -0.9195443777308084,
+    "support_status": "unsupported_target_topology"
+  },
+  {
+    "analytical_v28_ms": 103.66730240000001,
+    "astra_proxy_ms": 9.163198,
+    "astra_proxy_name": "ASTRA congestion-aware 1D Switch 1.6Tbps",
+    "dataset_id": "qwen_mmlu_zh_anatomy",
+    "dataset_label": "Qwen ZH Anatomy",
+    "network_mode": "RON oracle",
+    "notes": "Proxy only. Does not model degree-4 torus ECMP or RON custom topology/reconfiguration.",
+    "relative_difference_vs_v28": -0.9116095645602523,
+    "support_status": "unsupported_target_topology"
+  },
+  {
+    "analytical_v28_ms": 1422.0136120320196,
+    "astra_proxy_ms": 807.398358,
+    "astra_proxy_name": "ASTRA congestion-aware 1D Switch 400Gbps x 1.3",
+    "dataset_id": "deepseek_livecode",
+    "dataset_label": "DeepSeek LiveCodeBench",
+    "network_mode": "EN ECMP-imbalance 1.3x",
+    "notes": "Not folded-Clos ECMP; 1.3x imbalance applied externally.",
+    "relative_difference_vs_v28": -0.43221474733547083,
+    "support_status": "approximation"
+  },
+  {
+    "analytical_v28_ms": 1123.326689280027,
+    "astra_proxy_ms": 155.268842,
+    "astra_proxy_name": "ASTRA congestion-aware 1D Switch 1.6Tbps",
+    "dataset_id": "deepseek_livecode",
+    "dataset_label": "DeepSeek LiveCodeBench",
+    "network_mode": "SON torus ECMP",
+    "notes": "Proxy only. Does not model degree-4 torus ECMP or RON custom topology/reconfiguration.",
+    "relative_difference_vs_v28": -0.8617776614036329,
+    "support_status": "unsupported_target_topology"
+  },
+  {
+    "analytical_v28_ms": 770.5975193599974,
+    "astra_proxy_ms": 155.268842,
+    "astra_proxy_name": "ASTRA congestion-aware 1D Switch 1.6Tbps",
+    "dataset_id": "deepseek_livecode",
+    "dataset_label": "DeepSeek LiveCodeBench",
+    "network_mode": "RON calibrated",
+    "notes": "Proxy only. Does not model degree-4 torus ECMP or RON custom topology/reconfiguration.",
+    "relative_difference_vs_v28": -0.7985085104751503,
+    "support_status": "unsupported_target_topology"
+  },
+  {
+    "analytical_v28_ms": 779.0164364799999,
+    "astra_proxy_ms": 155.268842,
+    "astra_proxy_name": "ASTRA congestion-aware 1D Switch 1.6Tbps",
+    "dataset_id": "deepseek_livecode",
+    "dataset_label": "DeepSeek LiveCodeBench",
+    "network_mode": "RON W=4 1us",
+    "notes": "Proxy only. Does not model degree-4 torus ECMP or RON custom topology/reconfiguration. V2.8 includes per-request 1us reconfiguration externally; ASTRA proxy does not.",
+    "relative_difference_vs_v28": -0.8006860513732096,
+    "support_status": "unsupported_target_topology"
+  },
+  {
+    "analytical_v28_ms": 692.7613952,
+    "astra_proxy_ms": 155.268842,
+    "astra_proxy_name": "ASTRA congestion-aware 1D Switch 1.6Tbps",
+    "dataset_id": "deepseek_livecode",
+    "dataset_label": "DeepSeek LiveCodeBench",
+    "network_mode": "RON oracle",
+    "notes": "Proxy only. Does not model degree-4 torus ECMP or RON custom topology/reconfiguration.",
+    "relative_difference_vs_v28": -0.7758696672825223,
+    "support_status": "unsupported_target_topology"
+  }
+]
