@@ -1,0 +1,6 @@
+strategy	status	finished	cycles	exposed_comm	et_files	comm_groups
+transformer_1dp_1pp_4tp_8B_16S_32000V_128d_2b_1scale	PASS	4	491232	491200	4	1
+transformer_1dp_2pp_2tp_8B_16S_32000V_128d_2b_1scale	PASS	4	107030	107014	4	2
+transformer_2dp_1pp_2tp_8B_16S_32000V_128d_2b_1scale	FAIL	2	176157	176125	4	4
+transformer_2dp_2pp_1tp_8B_16S_32000V_128d_2b_1scale	PASS	4	13349	13333	4	2
+transformer_4dp_1pp_1tp_8B_16S_32000V_128d_2b_1scale	PASS	4	18907	18875	4	0

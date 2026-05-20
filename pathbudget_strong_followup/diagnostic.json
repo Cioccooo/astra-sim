@@ -1,0 +1,4934 @@
+[
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 664,
+      "reach": 990,
+      "resource": 0
+    },
+    "loss_budget": "strict",
+    "oracle": {
+      "depth_budget": "D(TP1,PP1,DP3) U(TP8,PP1,DP3)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "strict",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 5.6,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.18550171367999999,
+      "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP1,DP3) U(TP8,PP1,DP3)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "strict",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 5.6,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.18550171367999999,
+      "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+    },
+    "port_budget": "low",
+    "regime": "reach_only_depth_is_costly",
+    "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 664,
+      "reach": 1155,
+      "resource": 0
+    },
+    "loss_budget": "strict",
+    "oracle": {
+      "depth_budget": "D(TP1,PP2,DP3) U(TP9,PP1,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "strict",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 5.1,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.712309253352,
+      "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP2,DP3) U(TP9,PP1,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "strict",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 5.1,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.712309253352,
+      "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+    },
+    "port_budget": "low",
+    "regime": "reach_only_depth_is_costly",
+    "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 664,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "strict",
+    "oracle": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP8,PP2,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "strict",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 6.0,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.9635087908319999,
+      "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP8,PP2,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "strict",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 6.0,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.9635087908319999,
+      "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+    },
+    "port_budget": "low",
+    "regime": "reach_only_depth_is_costly",
+    "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 664,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "strict",
+    "oracle": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP8,PP2,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "strict",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 6.0,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 1.3322827964000001,
+      "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP8,PP2,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "strict",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 6.0,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 1.3322827964000001,
+      "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+    },
+    "port_budget": "low",
+    "regime": "reach_only_depth_is_costly",
+    "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 224,
+      "reach": 990,
+      "resource": 0
+    },
+    "loss_budget": "strict",
+    "oracle": {
+      "depth_budget": "D(TP1,PP1,DP3) U(TP8,PP1,DP3)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "strict",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 5.6,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.18550171367999999,
+      "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP1,DP3) U(TP8,PP1,DP3)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "strict",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 5.6,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.18550171367999999,
+      "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+    },
+    "port_budget": "medium",
+    "regime": "reach_only_depth_is_costly",
+    "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 224,
+      "reach": 1155,
+      "resource": 0
+    },
+    "loss_budget": "strict",
+    "oracle": {
+      "depth_budget": "D(TP1,PP2,DP3) U(TP9,PP1,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "strict",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 5.1,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.712309253352,
+      "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP2,DP3) U(TP9,PP1,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "strict",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 5.1,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.712309253352,
+      "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+    },
+    "port_budget": "medium",
+    "regime": "reach_only_depth_is_costly",
+    "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 224,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "strict",
+    "oracle": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP8,PP2,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "strict",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 6.0,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.9635087908319999,
+      "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP8,PP2,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "strict",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 6.0,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.9635087908319999,
+      "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+    },
+    "port_budget": "medium",
+    "regime": "reach_only_depth_is_costly",
+    "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 224,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "strict",
+    "oracle": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP8,PP2,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "strict",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 6.0,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 1.3322827964000001,
+      "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP8,PP2,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "strict",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 6.0,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 1.3322827964000001,
+      "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+    },
+    "port_budget": "medium",
+    "regime": "reach_only_depth_is_costly",
+    "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 0,
+      "reach": 990,
+      "resource": 0
+    },
+    "loss_budget": "strict",
+    "oracle": {
+      "depth_budget": "D(TP1,PP1,DP3) U(TP8,PP1,DP3)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "strict",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 5.6,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.18550171367999999,
+      "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP1,DP3) U(TP8,PP1,DP3)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "strict",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 5.6,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.18550171367999999,
+      "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+    },
+    "port_budget": "high",
+    "regime": "reach_only_depth_is_costly",
+    "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 0,
+      "reach": 1155,
+      "resource": 0
+    },
+    "loss_budget": "strict",
+    "oracle": {
+      "depth_budget": "D(TP1,PP2,DP3) U(TP9,PP1,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "strict",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 5.1,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.712309253352,
+      "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP2,DP3) U(TP9,PP1,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "strict",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 5.1,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.712309253352,
+      "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+    },
+    "port_budget": "high",
+    "regime": "reach_only_depth_is_costly",
+    "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 0,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "strict",
+    "oracle": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP8,PP2,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "strict",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 6.0,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.9635087908319999,
+      "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP8,PP2,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "strict",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 6.0,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.9635087908319999,
+      "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+    },
+    "port_budget": "high",
+    "regime": "reach_only_depth_is_costly",
+    "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 0,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "strict",
+    "oracle": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP8,PP2,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "strict",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 6.0,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 1.3322827964000001,
+      "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP8,PP2,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "strict",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 6.0,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 1.3322827964000001,
+      "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+    },
+    "port_budget": "high",
+    "regime": "reach_only_depth_is_costly",
+    "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 664,
+      "reach": 990,
+      "resource": 0
+    },
+    "loss_budget": "medium",
+    "oracle": {
+      "depth_budget": "D(TP1,PP1,DP3) U(TP8,PP1,DP3)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 5.6,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.18550171367999999,
+      "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP1,DP3) U(TP8,PP1,DP3)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 5.6,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.18550171367999999,
+      "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+    },
+    "port_budget": "low",
+    "regime": "reach_only_depth_is_costly",
+    "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 664,
+      "reach": 1155,
+      "resource": 0
+    },
+    "loss_budget": "medium",
+    "oracle": {
+      "depth_budget": "D(TP1,PP2,DP3) U(TP9,PP1,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 5.1,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.712309253352,
+      "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP2,DP3) U(TP9,PP1,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 5.1,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.712309253352,
+      "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+    },
+    "port_budget": "low",
+    "regime": "reach_only_depth_is_costly",
+    "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 664,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "medium",
+    "oracle": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP8,PP2,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 6.0,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.9635087908319999,
+      "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP8,PP2,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 6.0,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.9635087908319999,
+      "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+    },
+    "port_budget": "low",
+    "regime": "reach_only_depth_is_costly",
+    "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 664,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "medium",
+    "oracle": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP8,PP2,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 6.0,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 1.3322827964000001,
+      "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP8,PP2,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 6.0,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 1.3322827964000001,
+      "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+    },
+    "port_budget": "low",
+    "regime": "reach_only_depth_is_costly",
+    "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 224,
+      "reach": 990,
+      "resource": 0
+    },
+    "loss_budget": "medium",
+    "oracle": {
+      "depth_budget": "D(TP1,PP1,DP3) U(TP8,PP1,DP3)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 5.6,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.18550171367999999,
+      "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP1,DP3) U(TP8,PP1,DP3)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 5.6,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.18550171367999999,
+      "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+    },
+    "port_budget": "medium",
+    "regime": "reach_only_depth_is_costly",
+    "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 224,
+      "reach": 1155,
+      "resource": 0
+    },
+    "loss_budget": "medium",
+    "oracle": {
+      "depth_budget": "D(TP1,PP2,DP3) U(TP9,PP1,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 5.1,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.712309253352,
+      "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP2,DP3) U(TP9,PP1,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 5.1,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.712309253352,
+      "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+    },
+    "port_budget": "medium",
+    "regime": "reach_only_depth_is_costly",
+    "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 224,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "medium",
+    "oracle": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP8,PP2,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 6.0,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.9635087908319999,
+      "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP8,PP2,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 6.0,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.9635087908319999,
+      "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+    },
+    "port_budget": "medium",
+    "regime": "reach_only_depth_is_costly",
+    "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 224,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "medium",
+    "oracle": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP8,PP2,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 6.0,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 1.3322827964000001,
+      "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP8,PP2,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 6.0,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 1.3322827964000001,
+      "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+    },
+    "port_budget": "medium",
+    "regime": "reach_only_depth_is_costly",
+    "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 0,
+      "reach": 990,
+      "resource": 0
+    },
+    "loss_budget": "medium",
+    "oracle": {
+      "depth_budget": "D(TP1,PP1,DP3) U(TP8,PP1,DP3)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 5.6,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.18550171367999999,
+      "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP1,DP3) U(TP8,PP1,DP3)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 5.6,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.18550171367999999,
+      "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+    },
+    "port_budget": "high",
+    "regime": "reach_only_depth_is_costly",
+    "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 0,
+      "reach": 1155,
+      "resource": 0
+    },
+    "loss_budget": "medium",
+    "oracle": {
+      "depth_budget": "D(TP1,PP2,DP3) U(TP9,PP1,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 5.1,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.712309253352,
+      "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP2,DP3) U(TP9,PP1,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 5.1,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.712309253352,
+      "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+    },
+    "port_budget": "high",
+    "regime": "reach_only_depth_is_costly",
+    "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 0,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "medium",
+    "oracle": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP8,PP2,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 6.0,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.9635087908319999,
+      "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP8,PP2,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 6.0,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.9635087908319999,
+      "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+    },
+    "port_budget": "high",
+    "regime": "reach_only_depth_is_costly",
+    "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 0,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "medium",
+    "oracle": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP8,PP2,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 6.0,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 1.3322827964000001,
+      "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP8,PP2,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 6.0,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 1.3322827964000001,
+      "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+    },
+    "port_budget": "high",
+    "regime": "reach_only_depth_is_costly",
+    "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 664,
+      "reach": 990,
+      "resource": 0
+    },
+    "loss_budget": "relaxed",
+    "oracle": {
+      "depth_budget": "D(TP1,PP1,DP3) U(TP8,PP1,DP3)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 5.6,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.18550171367999999,
+      "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP1,DP3) U(TP8,PP1,DP3)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 5.6,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.18550171367999999,
+      "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+    },
+    "port_budget": "low",
+    "regime": "reach_only_depth_is_costly",
+    "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 664,
+      "reach": 1155,
+      "resource": 0
+    },
+    "loss_budget": "relaxed",
+    "oracle": {
+      "depth_budget": "D(TP1,PP2,DP3) U(TP9,PP1,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 5.1,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.712309253352,
+      "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP2,DP3) U(TP9,PP1,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 5.1,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.712309253352,
+      "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+    },
+    "port_budget": "low",
+    "regime": "reach_only_depth_is_costly",
+    "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 664,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "relaxed",
+    "oracle": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP8,PP2,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 6.0,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.9635087908319999,
+      "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP8,PP2,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 6.0,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.9635087908319999,
+      "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+    },
+    "port_budget": "low",
+    "regime": "reach_only_depth_is_costly",
+    "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 664,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "relaxed",
+    "oracle": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP8,PP2,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 6.0,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 1.3322827964000001,
+      "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP8,PP2,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 6.0,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 1.3322827964000001,
+      "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+    },
+    "port_budget": "low",
+    "regime": "reach_only_depth_is_costly",
+    "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 224,
+      "reach": 990,
+      "resource": 0
+    },
+    "loss_budget": "relaxed",
+    "oracle": {
+      "depth_budget": "D(TP1,PP1,DP3) U(TP8,PP1,DP3)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 5.6,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.18550171367999999,
+      "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP1,DP3) U(TP8,PP1,DP3)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 5.6,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.18550171367999999,
+      "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+    },
+    "port_budget": "medium",
+    "regime": "reach_only_depth_is_costly",
+    "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 224,
+      "reach": 1155,
+      "resource": 0
+    },
+    "loss_budget": "relaxed",
+    "oracle": {
+      "depth_budget": "D(TP1,PP2,DP3) U(TP9,PP1,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 5.1,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.712309253352,
+      "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP2,DP3) U(TP9,PP1,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 5.1,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.712309253352,
+      "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+    },
+    "port_budget": "medium",
+    "regime": "reach_only_depth_is_costly",
+    "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 224,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "relaxed",
+    "oracle": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP8,PP2,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 6.0,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.9635087908319999,
+      "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP8,PP2,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 6.0,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.9635087908319999,
+      "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+    },
+    "port_budget": "medium",
+    "regime": "reach_only_depth_is_costly",
+    "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 224,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "relaxed",
+    "oracle": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP8,PP2,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 6.0,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 1.3322827964000001,
+      "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP8,PP2,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 6.0,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 1.3322827964000001,
+      "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+    },
+    "port_budget": "medium",
+    "regime": "reach_only_depth_is_costly",
+    "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 0,
+      "reach": 990,
+      "resource": 0
+    },
+    "loss_budget": "relaxed",
+    "oracle": {
+      "depth_budget": "D(TP1,PP1,DP3) U(TP8,PP1,DP3)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 5.6,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.18550171367999999,
+      "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP1,DP3) U(TP8,PP1,DP3)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 5.6,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.18550171367999999,
+      "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+    },
+    "port_budget": "high",
+    "regime": "reach_only_depth_is_costly",
+    "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 0,
+      "reach": 1155,
+      "resource": 0
+    },
+    "loss_budget": "relaxed",
+    "oracle": {
+      "depth_budget": "D(TP1,PP2,DP3) U(TP9,PP1,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 5.1,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.712309253352,
+      "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP2,DP3) U(TP9,PP1,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 5.1,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.712309253352,
+      "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+    },
+    "port_budget": "high",
+    "regime": "reach_only_depth_is_costly",
+    "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 0,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "relaxed",
+    "oracle": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP8,PP2,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 6.0,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.9635087908319999,
+      "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP8,PP2,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 6.0,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 0.9635087908319999,
+      "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+    },
+    "port_budget": "high",
+    "regime": "reach_only_depth_is_costly",
+    "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 0,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "relaxed",
+    "oracle": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP8,PP2,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 6.0,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 1.3322827964000001,
+      "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP8,PP2,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 10.0,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 6.0,
+      "regime": "reach_only_depth_is_costly",
+      "time_s": 1.3322827964000001,
+      "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+    },
+    "port_budget": "high",
+    "regime": "reach_only_depth_is_costly",
+    "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": null,
+    "feasibility_failures": {
+      "loss": 1045,
+      "port": 1065,
+      "reach": 990,
+      "resource": 0
+    },
+    "loss_budget": "strict",
+    "oracle": {
+      "depth_budget": "D(TP2,PP3,DP3) U(TP9,PP1,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "strict",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 12.3,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 0.18112168812617283,
+      "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+    },
+    "pathbudget": null,
+    "port_budget": "low",
+    "regime": "extra_parallelism_bandwidth_steering",
+    "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+  },
+  {
+    "best_static_suite_policy": null,
+    "feasibility_failures": {
+      "loss": 1045,
+      "port": 1065,
+      "reach": 1155,
+      "resource": 0
+    },
+    "loss_budget": "strict",
+    "oracle": {
+      "depth_budget": "D(TP2,PP3,DP3) U(TP9,PP1,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "strict",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 12.3,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 0.6691061797853333,
+      "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+    },
+    "pathbudget": null,
+    "port_budget": "low",
+    "regime": "extra_parallelism_bandwidth_steering",
+    "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+  },
+  {
+    "best_static_suite_policy": null,
+    "feasibility_failures": {
+      "loss": 1045,
+      "port": 1065,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "strict",
+    "oracle": {
+      "depth_budget": "D(TP2,PP3,DP3) U(TP9,PP2,DP1)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "strict",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 12.0,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 0.8401640119472593,
+      "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": null,
+    "port_budget": "low",
+    "regime": "extra_parallelism_bandwidth_steering",
+    "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": null,
+    "feasibility_failures": {
+      "loss": 1045,
+      "port": 1065,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "strict",
+    "oracle": {
+      "depth_budget": "D(TP2,PP3,DP3) U(TP8,PP2,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "strict",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 12.6,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 1.1376314783333334,
+      "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": null,
+    "port_budget": "low",
+    "regime": "extra_parallelism_bandwidth_steering",
+    "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": null,
+    "feasibility_failures": {
+      "loss": 1045,
+      "port": 688,
+      "reach": 990,
+      "resource": 0
+    },
+    "loss_budget": "strict",
+    "oracle": {
+      "depth_budget": "D(TP2,PP3,DP3) U(TP9,PP1,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "strict",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 12.3,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 0.18112168812617283,
+      "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+    },
+    "pathbudget": null,
+    "port_budget": "medium",
+    "regime": "extra_parallelism_bandwidth_steering",
+    "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+  },
+  {
+    "best_static_suite_policy": null,
+    "feasibility_failures": {
+      "loss": 1045,
+      "port": 688,
+      "reach": 1155,
+      "resource": 0
+    },
+    "loss_budget": "strict",
+    "oracle": {
+      "depth_budget": "D(TP2,PP3,DP3) U(TP9,PP1,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "strict",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 12.3,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 0.6691061797853333,
+      "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+    },
+    "pathbudget": null,
+    "port_budget": "medium",
+    "regime": "extra_parallelism_bandwidth_steering",
+    "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+  },
+  {
+    "best_static_suite_policy": null,
+    "feasibility_failures": {
+      "loss": 1045,
+      "port": 688,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "strict",
+    "oracle": {
+      "depth_budget": "D(TP2,PP3,DP3) U(TP9,PP2,DP1)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "strict",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 12.0,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 0.8401640119472593,
+      "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": null,
+    "port_budget": "medium",
+    "regime": "extra_parallelism_bandwidth_steering",
+    "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": null,
+    "feasibility_failures": {
+      "loss": 1045,
+      "port": 688,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "strict",
+    "oracle": {
+      "depth_budget": "D(TP2,PP3,DP3) U(TP8,PP2,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "strict",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 12.6,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 1.1376314783333334,
+      "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": null,
+    "port_budget": "medium",
+    "regime": "extra_parallelism_bandwidth_steering",
+    "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": null,
+    "feasibility_failures": {
+      "loss": 1045,
+      "port": 157,
+      "reach": 990,
+      "resource": 0
+    },
+    "loss_budget": "strict",
+    "oracle": {
+      "depth_budget": "D(TP2,PP3,DP3) U(TP9,PP1,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "strict",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 12.3,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 0.18112168812617283,
+      "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+    },
+    "pathbudget": null,
+    "port_budget": "high",
+    "regime": "extra_parallelism_bandwidth_steering",
+    "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+  },
+  {
+    "best_static_suite_policy": null,
+    "feasibility_failures": {
+      "loss": 1045,
+      "port": 157,
+      "reach": 1155,
+      "resource": 0
+    },
+    "loss_budget": "strict",
+    "oracle": {
+      "depth_budget": "D(TP2,PP3,DP3) U(TP9,PP1,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "strict",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 12.3,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 0.6691061797853333,
+      "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+    },
+    "pathbudget": null,
+    "port_budget": "high",
+    "regime": "extra_parallelism_bandwidth_steering",
+    "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+  },
+  {
+    "best_static_suite_policy": null,
+    "feasibility_failures": {
+      "loss": 1045,
+      "port": 157,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "strict",
+    "oracle": {
+      "depth_budget": "D(TP2,PP3,DP3) U(TP9,PP2,DP1)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "strict",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 12.0,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 0.8401640119472593,
+      "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": null,
+    "port_budget": "high",
+    "regime": "extra_parallelism_bandwidth_steering",
+    "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": null,
+    "feasibility_failures": {
+      "loss": 1045,
+      "port": 157,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "strict",
+    "oracle": {
+      "depth_budget": "D(TP2,PP3,DP3) U(TP8,PP2,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "strict",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 12.6,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 1.1376314783333334,
+      "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": null,
+    "port_budget": "high",
+    "regime": "extra_parallelism_bandwidth_steering",
+    "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 1,
+        "PP": 1,
+        "TP": 10
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 1065,
+      "reach": 990,
+      "resource": 0
+    },
+    "loss_budget": "medium",
+    "oracle": {
+      "depth_budget": "D(TP2,PP3,DP3) U(TP9,PP1,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 12.3,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 0.18112168812617283,
+      "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP9,PP1,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 6.9,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 0.19752076494592594,
+      "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+    },
+    "port_budget": "low",
+    "regime": "extra_parallelism_bandwidth_steering",
+    "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 1,
+        "PP": 1,
+        "TP": 10
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 1065,
+      "reach": 1155,
+      "resource": 0
+    },
+    "loss_budget": "medium",
+    "oracle": {
+      "depth_budget": "D(TP2,PP3,DP3) U(TP9,PP1,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 12.3,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 0.6691061797853333,
+      "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP9,PP1,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 6.9,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 0.756181186932,
+      "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+    },
+    "port_budget": "low",
+    "regime": "extra_parallelism_bandwidth_steering",
+    "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 1,
+        "PP": 1,
+        "TP": 10
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 1065,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "medium",
+    "oracle": {
+      "depth_budget": "D(TP2,PP3,DP3) U(TP9,PP2,DP1)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 12.0,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 0.8401640119472593,
+      "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP9,PP2,DP1)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 6.6,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 0.9837905808408887,
+      "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+    },
+    "port_budget": "low",
+    "regime": "extra_parallelism_bandwidth_steering",
+    "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 1,
+        "PP": 1,
+        "TP": 10
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 1065,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "medium",
+    "oracle": {
+      "depth_budget": "D(TP2,PP3,DP3) U(TP8,PP2,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 12.6,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 1.1376314783333334,
+      "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP9,PP2,DP1)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 6.6,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 1.3646255405777776,
+      "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+    },
+    "port_budget": "low",
+    "regime": "extra_parallelism_bandwidth_steering",
+    "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 1,
+        "PP": 1,
+        "TP": 10
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 688,
+      "reach": 990,
+      "resource": 0
+    },
+    "loss_budget": "medium",
+    "oracle": {
+      "depth_budget": "D(TP2,PP3,DP3) U(TP9,PP1,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 12.3,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 0.18112168812617283,
+      "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP9,PP1,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 6.9,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 0.19752076494592594,
+      "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+    },
+    "port_budget": "medium",
+    "regime": "extra_parallelism_bandwidth_steering",
+    "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 1,
+        "PP": 1,
+        "TP": 10
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 688,
+      "reach": 1155,
+      "resource": 0
+    },
+    "loss_budget": "medium",
+    "oracle": {
+      "depth_budget": "D(TP2,PP3,DP3) U(TP9,PP1,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 12.3,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 0.6691061797853333,
+      "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP9,PP1,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 6.9,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 0.756181186932,
+      "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+    },
+    "port_budget": "medium",
+    "regime": "extra_parallelism_bandwidth_steering",
+    "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 1,
+        "PP": 1,
+        "TP": 10
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 688,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "medium",
+    "oracle": {
+      "depth_budget": "D(TP2,PP3,DP3) U(TP9,PP2,DP1)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 12.0,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 0.8401640119472593,
+      "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP9,PP2,DP1)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 6.6,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 0.9837905808408887,
+      "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+    },
+    "port_budget": "medium",
+    "regime": "extra_parallelism_bandwidth_steering",
+    "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 1,
+        "PP": 1,
+        "TP": 10
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 688,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "medium",
+    "oracle": {
+      "depth_budget": "D(TP2,PP3,DP3) U(TP8,PP2,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 12.6,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 1.1376314783333334,
+      "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP9,PP2,DP1)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 6.6,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 1.3646255405777776,
+      "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+    },
+    "port_budget": "medium",
+    "regime": "extra_parallelism_bandwidth_steering",
+    "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 2
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 157,
+      "reach": 990,
+      "resource": 0
+    },
+    "loss_budget": "medium",
+    "oracle": {
+      "depth_budget": "D(TP2,PP3,DP3) U(TP9,PP1,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 12.3,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 0.18112168812617283,
+      "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP2,PP3,DP3) U(TP9,PP1,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 12.3,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 0.18112168812617283,
+      "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+    },
+    "port_budget": "high",
+    "regime": "extra_parallelism_bandwidth_steering",
+    "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 2
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 157,
+      "reach": 1155,
+      "resource": 0
+    },
+    "loss_budget": "medium",
+    "oracle": {
+      "depth_budget": "D(TP2,PP3,DP3) U(TP9,PP1,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 12.3,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 0.6691061797853333,
+      "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP2,PP3,DP3) U(TP9,PP1,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 12.3,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 0.6691061797853333,
+      "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+    },
+    "port_budget": "high",
+    "regime": "extra_parallelism_bandwidth_steering",
+    "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 2
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 157,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "medium",
+    "oracle": {
+      "depth_budget": "D(TP2,PP3,DP3) U(TP9,PP2,DP1)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 12.0,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 0.8401640119472593,
+      "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP2,PP3,DP3) U(TP9,PP2,DP1)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 12.0,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 0.8401640119472593,
+      "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+    },
+    "port_budget": "high",
+    "regime": "extra_parallelism_bandwidth_steering",
+    "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 2
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 157,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "medium",
+    "oracle": {
+      "depth_budget": "D(TP2,PP3,DP3) U(TP8,PP2,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 12.6,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 1.1376314783333334,
+      "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP2,PP3,DP3) U(TP8,PP2,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 12.6,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 1.1376314783333334,
+      "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+    },
+    "port_budget": "high",
+    "regime": "extra_parallelism_bandwidth_steering",
+    "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 1,
+        "PP": 1,
+        "TP": 10
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 1065,
+      "reach": 990,
+      "resource": 0
+    },
+    "loss_budget": "relaxed",
+    "oracle": {
+      "depth_budget": "D(TP2,PP3,DP3) U(TP9,PP1,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 12.3,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 0.18112168812617283,
+      "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP9,PP1,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 6.9,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 0.19752076494592594,
+      "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+    },
+    "port_budget": "low",
+    "regime": "extra_parallelism_bandwidth_steering",
+    "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 1,
+        "PP": 1,
+        "TP": 10
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 1065,
+      "reach": 1155,
+      "resource": 0
+    },
+    "loss_budget": "relaxed",
+    "oracle": {
+      "depth_budget": "D(TP2,PP3,DP3) U(TP9,PP1,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 12.3,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 0.6691061797853333,
+      "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP9,PP1,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 6.9,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 0.756181186932,
+      "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+    },
+    "port_budget": "low",
+    "regime": "extra_parallelism_bandwidth_steering",
+    "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 1,
+        "PP": 1,
+        "TP": 10
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 1065,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "relaxed",
+    "oracle": {
+      "depth_budget": "D(TP2,PP3,DP3) U(TP9,PP2,DP1)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 12.0,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 0.8401640119472593,
+      "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP9,PP2,DP1)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 6.6,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 0.9837905808408887,
+      "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+    },
+    "port_budget": "low",
+    "regime": "extra_parallelism_bandwidth_steering",
+    "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 1,
+        "PP": 1,
+        "TP": 10
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 1065,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "relaxed",
+    "oracle": {
+      "depth_budget": "D(TP2,PP3,DP3) U(TP8,PP2,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 12.6,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 1.1376314783333334,
+      "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP9,PP2,DP1)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 6.6,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 1.3646255405777776,
+      "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+    },
+    "port_budget": "low",
+    "regime": "extra_parallelism_bandwidth_steering",
+    "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 1,
+        "PP": 1,
+        "TP": 10
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 688,
+      "reach": 990,
+      "resource": 0
+    },
+    "loss_budget": "relaxed",
+    "oracle": {
+      "depth_budget": "D(TP2,PP3,DP3) U(TP9,PP1,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 12.3,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 0.18112168812617283,
+      "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP9,PP1,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 6.9,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 0.19752076494592594,
+      "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+    },
+    "port_budget": "medium",
+    "regime": "extra_parallelism_bandwidth_steering",
+    "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 1,
+        "PP": 1,
+        "TP": 10
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 688,
+      "reach": 1155,
+      "resource": 0
+    },
+    "loss_budget": "relaxed",
+    "oracle": {
+      "depth_budget": "D(TP2,PP3,DP3) U(TP9,PP1,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 12.3,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 0.6691061797853333,
+      "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP9,PP1,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 6.9,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 0.756181186932,
+      "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+    },
+    "port_budget": "medium",
+    "regime": "extra_parallelism_bandwidth_steering",
+    "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 1,
+        "PP": 1,
+        "TP": 10
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 688,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "relaxed",
+    "oracle": {
+      "depth_budget": "D(TP2,PP3,DP3) U(TP9,PP2,DP1)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 12.0,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 0.8401640119472593,
+      "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP9,PP2,DP1)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 6.6,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 0.9837905808408887,
+      "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+    },
+    "port_budget": "medium",
+    "regime": "extra_parallelism_bandwidth_steering",
+    "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 1,
+        "PP": 1,
+        "TP": 10
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 688,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "relaxed",
+    "oracle": {
+      "depth_budget": "D(TP2,PP3,DP3) U(TP8,PP2,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 12.6,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 1.1376314783333334,
+      "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP9,PP2,DP1)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 6.6,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 1.3646255405777776,
+      "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+    },
+    "port_budget": "medium",
+    "regime": "extra_parallelism_bandwidth_steering",
+    "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 2
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 157,
+      "reach": 990,
+      "resource": 0
+    },
+    "loss_budget": "relaxed",
+    "oracle": {
+      "depth_budget": "D(TP2,PP3,DP3) U(TP9,PP1,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 12.3,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 0.18112168812617283,
+      "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP2,PP3,DP3) U(TP9,PP1,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 12.3,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 0.18112168812617283,
+      "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+    },
+    "port_budget": "high",
+    "regime": "extra_parallelism_bandwidth_steering",
+    "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 2
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 157,
+      "reach": 1155,
+      "resource": 0
+    },
+    "loss_budget": "relaxed",
+    "oracle": {
+      "depth_budget": "D(TP2,PP3,DP3) U(TP9,PP1,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 12.3,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 0.6691061797853333,
+      "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP2,PP3,DP3) U(TP9,PP1,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 12.3,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 0.6691061797853333,
+      "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+    },
+    "port_budget": "high",
+    "regime": "extra_parallelism_bandwidth_steering",
+    "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 2
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 157,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "relaxed",
+    "oracle": {
+      "depth_budget": "D(TP2,PP3,DP3) U(TP9,PP2,DP1)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 12.0,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 0.8401640119472593,
+      "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP2,PP3,DP3) U(TP9,PP2,DP1)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 12.0,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 0.8401640119472593,
+      "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+    },
+    "port_budget": "high",
+    "regime": "extra_parallelism_bandwidth_steering",
+    "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 2
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 157,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "relaxed",
+    "oracle": {
+      "depth_budget": "D(TP2,PP3,DP3) U(TP8,PP2,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 12.6,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 1.1376314783333334,
+      "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP2,PP3,DP3) U(TP8,PP2,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 10.5,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 12.6,
+      "regime": "extra_parallelism_bandwidth_steering",
+      "time_s": 1.1376314783333334,
+      "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+    },
+    "port_budget": "high",
+    "regime": "extra_parallelism_bandwidth_steering",
+    "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": null,
+    "feasibility_failures": {
+      "loss": 1045,
+      "port": 888,
+      "reach": 990,
+      "resource": 0
+    },
+    "loss_budget": "strict",
+    "oracle": {
+      "depth_budget": "D(TP1,PP1,DP3) U(TP7,PP1,DP4)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "strict",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 7.300000000000001,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 0.22541977628,
+      "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+    },
+    "pathbudget": null,
+    "port_budget": "low",
+    "regime": "deep_oversubscribed_global_bottleneck",
+    "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+  },
+  {
+    "best_static_suite_policy": null,
+    "feasibility_failures": {
+      "loss": 1045,
+      "port": 888,
+      "reach": 1155,
+      "resource": 0
+    },
+    "loss_budget": "strict",
+    "oracle": {
+      "depth_budget": "D(TP1,PP2,DP3) U(TP8,PP1,DP3)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "strict",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 6.63,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 0.8330153111573333,
+      "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+    },
+    "pathbudget": null,
+    "port_budget": "low",
+    "regime": "deep_oversubscribed_global_bottleneck",
+    "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+  },
+  {
+    "best_static_suite_policy": null,
+    "feasibility_failures": {
+      "loss": 1045,
+      "port": 888,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "strict",
+    "oracle": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP7,PP3,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "strict",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 7.6000000000000005,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 1.221239563488,
+      "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": null,
+    "port_budget": "low",
+    "regime": "deep_oversubscribed_global_bottleneck",
+    "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": null,
+    "feasibility_failures": {
+      "loss": 1045,
+      "port": 888,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "strict",
+    "oracle": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP7,PP3,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "strict",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 7.6000000000000005,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 1.7159834950666668,
+      "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": null,
+    "port_budget": "low",
+    "regime": "deep_oversubscribed_global_bottleneck",
+    "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": null,
+    "feasibility_failures": {
+      "loss": 1045,
+      "port": 470,
+      "reach": 990,
+      "resource": 0
+    },
+    "loss_budget": "strict",
+    "oracle": {
+      "depth_budget": "D(TP1,PP1,DP3) U(TP7,PP1,DP4)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "strict",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 7.300000000000001,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 0.22541977628,
+      "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+    },
+    "pathbudget": null,
+    "port_budget": "medium",
+    "regime": "deep_oversubscribed_global_bottleneck",
+    "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+  },
+  {
+    "best_static_suite_policy": null,
+    "feasibility_failures": {
+      "loss": 1045,
+      "port": 470,
+      "reach": 1155,
+      "resource": 0
+    },
+    "loss_budget": "strict",
+    "oracle": {
+      "depth_budget": "D(TP1,PP2,DP3) U(TP8,PP1,DP3)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "strict",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 6.63,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 0.8330153111573333,
+      "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+    },
+    "pathbudget": null,
+    "port_budget": "medium",
+    "regime": "deep_oversubscribed_global_bottleneck",
+    "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+  },
+  {
+    "best_static_suite_policy": null,
+    "feasibility_failures": {
+      "loss": 1045,
+      "port": 470,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "strict",
+    "oracle": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP7,PP3,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "strict",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 7.6000000000000005,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 1.221239563488,
+      "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": null,
+    "port_budget": "medium",
+    "regime": "deep_oversubscribed_global_bottleneck",
+    "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": null,
+    "feasibility_failures": {
+      "loss": 1045,
+      "port": 470,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "strict",
+    "oracle": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP7,PP3,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "strict",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 7.6000000000000005,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 1.7159834950666668,
+      "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": null,
+    "port_budget": "medium",
+    "regime": "deep_oversubscribed_global_bottleneck",
+    "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": null,
+    "feasibility_failures": {
+      "loss": 1045,
+      "port": 18,
+      "reach": 990,
+      "resource": 0
+    },
+    "loss_budget": "strict",
+    "oracle": {
+      "depth_budget": "D(TP1,PP1,DP3) U(TP7,PP1,DP4)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "strict",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 7.300000000000001,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 0.22541977628,
+      "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+    },
+    "pathbudget": null,
+    "port_budget": "high",
+    "regime": "deep_oversubscribed_global_bottleneck",
+    "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+  },
+  {
+    "best_static_suite_policy": null,
+    "feasibility_failures": {
+      "loss": 1045,
+      "port": 18,
+      "reach": 1155,
+      "resource": 0
+    },
+    "loss_budget": "strict",
+    "oracle": {
+      "depth_budget": "D(TP1,PP2,DP3) U(TP8,PP1,DP3)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "strict",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 6.63,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 0.8330153111573333,
+      "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+    },
+    "pathbudget": null,
+    "port_budget": "high",
+    "regime": "deep_oversubscribed_global_bottleneck",
+    "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+  },
+  {
+    "best_static_suite_policy": null,
+    "feasibility_failures": {
+      "loss": 1045,
+      "port": 18,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "strict",
+    "oracle": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP7,PP3,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "strict",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 7.6000000000000005,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 1.221239563488,
+      "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": null,
+    "port_budget": "high",
+    "regime": "deep_oversubscribed_global_bottleneck",
+    "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": null,
+    "feasibility_failures": {
+      "loss": 1045,
+      "port": 18,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "strict",
+    "oracle": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP7,PP3,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "strict",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 7.6000000000000005,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 1.7159834950666668,
+      "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": null,
+    "port_budget": "high",
+    "regime": "deep_oversubscribed_global_bottleneck",
+    "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 888,
+      "reach": 990,
+      "resource": 0
+    },
+    "loss_budget": "medium",
+    "oracle": {
+      "depth_budget": "D(TP1,PP1,DP3) U(TP7,PP1,DP4)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 7.300000000000001,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 0.22541977628,
+      "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP1,DP3) U(TP8,PP1,DP3)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 6.35,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 0.22829296368,
+      "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+    },
+    "port_budget": "low",
+    "regime": "deep_oversubscribed_global_bottleneck",
+    "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 888,
+      "reach": 1155,
+      "resource": 0
+    },
+    "loss_budget": "medium",
+    "oracle": {
+      "depth_budget": "D(TP1,PP2,DP3) U(TP8,PP1,DP3)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 6.63,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 0.8330153111573333,
+      "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP2,DP3) U(TP8,PP1,DP3)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 6.63,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 0.8330153111573333,
+      "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+    },
+    "port_budget": "low",
+    "regime": "deep_oversubscribed_global_bottleneck",
+    "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 888,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "medium",
+    "oracle": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP7,PP3,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 7.6000000000000005,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 1.221239563488,
+      "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP8,PP2,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 6.9,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 1.259894269152,
+      "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+    },
+    "port_budget": "low",
+    "regime": "deep_oversubscribed_global_bottleneck",
+    "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 888,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "medium",
+    "oracle": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP7,PP3,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 7.6000000000000005,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 1.7159834950666668,
+      "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP8,PP2,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 6.9,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 1.7626800796,
+      "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+    },
+    "port_budget": "low",
+    "regime": "deep_oversubscribed_global_bottleneck",
+    "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 3,
+        "TP": 7
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 470,
+      "reach": 990,
+      "resource": 0
+    },
+    "loss_budget": "medium",
+    "oracle": {
+      "depth_budget": "D(TP1,PP1,DP3) U(TP7,PP1,DP4)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 7.300000000000001,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 0.22541977628,
+      "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP1,DP3) U(TP7,PP1,DP4)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 7.300000000000001,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 0.22541977628,
+      "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+    },
+    "port_budget": "medium",
+    "regime": "deep_oversubscribed_global_bottleneck",
+    "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 3,
+        "TP": 7
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 470,
+      "reach": 1155,
+      "resource": 0
+    },
+    "loss_budget": "medium",
+    "oracle": {
+      "depth_budget": "D(TP1,PP2,DP3) U(TP8,PP1,DP3)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 6.63,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 0.8330153111573333,
+      "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP2,DP3) U(TP8,PP1,DP3)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 6.63,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 0.8330153111573333,
+      "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+    },
+    "port_budget": "medium",
+    "regime": "deep_oversubscribed_global_bottleneck",
+    "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 3,
+        "TP": 7
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 470,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "medium",
+    "oracle": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP7,PP3,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 7.6000000000000005,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 1.221239563488,
+      "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP7,PP3,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 7.6000000000000005,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 1.221239563488,
+      "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+    },
+    "port_budget": "medium",
+    "regime": "deep_oversubscribed_global_bottleneck",
+    "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 3,
+        "TP": 7
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 470,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "medium",
+    "oracle": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP7,PP3,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 7.6000000000000005,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 1.7159834950666668,
+      "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP7,PP3,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 7.6000000000000005,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 1.7159834950666668,
+      "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+    },
+    "port_budget": "medium",
+    "regime": "deep_oversubscribed_global_bottleneck",
+    "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 3,
+        "TP": 7
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 18,
+      "reach": 990,
+      "resource": 0
+    },
+    "loss_budget": "medium",
+    "oracle": {
+      "depth_budget": "D(TP1,PP1,DP3) U(TP7,PP1,DP4)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 7.300000000000001,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 0.22541977628,
+      "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP1,DP3) U(TP7,PP1,DP4)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 7.300000000000001,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 0.22541977628,
+      "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+    },
+    "port_budget": "high",
+    "regime": "deep_oversubscribed_global_bottleneck",
+    "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 3,
+        "TP": 7
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 18,
+      "reach": 1155,
+      "resource": 0
+    },
+    "loss_budget": "medium",
+    "oracle": {
+      "depth_budget": "D(TP1,PP2,DP3) U(TP8,PP1,DP3)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 6.63,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 0.8330153111573333,
+      "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP2,DP3) U(TP8,PP1,DP3)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 6.63,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 0.8330153111573333,
+      "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+    },
+    "port_budget": "high",
+    "regime": "deep_oversubscribed_global_bottleneck",
+    "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 3,
+        "TP": 7
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 18,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "medium",
+    "oracle": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP7,PP3,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 7.6000000000000005,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 1.221239563488,
+      "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP7,PP3,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 7.6000000000000005,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 1.221239563488,
+      "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+    },
+    "port_budget": "high",
+    "regime": "deep_oversubscribed_global_bottleneck",
+    "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 3,
+        "TP": 7
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 18,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "medium",
+    "oracle": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP7,PP3,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 7.6000000000000005,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 1.7159834950666668,
+      "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP7,PP3,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "medium",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 7.6000000000000005,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 1.7159834950666668,
+      "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+    },
+    "port_budget": "high",
+    "regime": "deep_oversubscribed_global_bottleneck",
+    "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 888,
+      "reach": 990,
+      "resource": 0
+    },
+    "loss_budget": "relaxed",
+    "oracle": {
+      "depth_budget": "D(TP1,PP1,DP3) U(TP7,PP1,DP4)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 7.300000000000001,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 0.22541977628,
+      "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP1,DP3) U(TP8,PP1,DP3)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 6.35,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 0.22829296368,
+      "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+    },
+    "port_budget": "low",
+    "regime": "deep_oversubscribed_global_bottleneck",
+    "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 888,
+      "reach": 1155,
+      "resource": 0
+    },
+    "loss_budget": "relaxed",
+    "oracle": {
+      "depth_budget": "D(TP1,PP2,DP3) U(TP8,PP1,DP3)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 6.63,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 0.8330153111573333,
+      "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP2,DP3) U(TP8,PP1,DP3)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 6.63,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 0.8330153111573333,
+      "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+    },
+    "port_budget": "low",
+    "regime": "deep_oversubscribed_global_bottleneck",
+    "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 888,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "relaxed",
+    "oracle": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP7,PP3,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 7.6000000000000005,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 1.221239563488,
+      "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP8,PP2,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 6.9,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 1.259894269152,
+      "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+    },
+    "port_budget": "low",
+    "regime": "deep_oversubscribed_global_bottleneck",
+    "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 2,
+        "TP": 8
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 888,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "relaxed",
+    "oracle": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP7,PP3,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 7.6000000000000005,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 1.7159834950666668,
+      "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP8,PP2,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "low",
+      "port_usage": 6.9,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 1.7626800796,
+      "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+    },
+    "port_budget": "low",
+    "regime": "deep_oversubscribed_global_bottleneck",
+    "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 3,
+        "TP": 7
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 470,
+      "reach": 990,
+      "resource": 0
+    },
+    "loss_budget": "relaxed",
+    "oracle": {
+      "depth_budget": "D(TP1,PP1,DP3) U(TP7,PP1,DP4)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 7.300000000000001,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 0.22541977628,
+      "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP1,DP3) U(TP7,PP1,DP4)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 7.300000000000001,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 0.22541977628,
+      "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+    },
+    "port_budget": "medium",
+    "regime": "deep_oversubscribed_global_bottleneck",
+    "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 3,
+        "TP": 7
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 470,
+      "reach": 1155,
+      "resource": 0
+    },
+    "loss_budget": "relaxed",
+    "oracle": {
+      "depth_budget": "D(TP1,PP2,DP3) U(TP8,PP1,DP3)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 6.63,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 0.8330153111573333,
+      "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP2,DP3) U(TP8,PP1,DP3)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 6.63,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 0.8330153111573333,
+      "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+    },
+    "port_budget": "medium",
+    "regime": "deep_oversubscribed_global_bottleneck",
+    "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 3,
+        "TP": 7
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 470,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "relaxed",
+    "oracle": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP7,PP3,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 7.6000000000000005,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 1.221239563488,
+      "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP7,PP3,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 7.6000000000000005,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 1.221239563488,
+      "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+    },
+    "port_budget": "medium",
+    "regime": "deep_oversubscribed_global_bottleneck",
+    "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 3,
+        "TP": 7
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 470,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "relaxed",
+    "oracle": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP7,PP3,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 7.6000000000000005,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 1.7159834950666668,
+      "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP7,PP3,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "medium",
+      "port_usage": 7.6000000000000005,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 1.7159834950666668,
+      "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+    },
+    "port_budget": "medium",
+    "regime": "deep_oversubscribed_global_bottleneck",
+    "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 3,
+        "TP": 7
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 18,
+      "reach": 990,
+      "resource": 0
+    },
+    "loss_budget": "relaxed",
+    "oracle": {
+      "depth_budget": "D(TP1,PP1,DP3) U(TP7,PP1,DP4)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 7.300000000000001,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 0.22541977628,
+      "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP1,DP3) U(TP7,PP1,DP4)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 7.300000000000001,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 0.22541977628,
+      "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+    },
+    "port_budget": "high",
+    "regime": "deep_oversubscribed_global_bottleneck",
+    "workload": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 3,
+        "TP": 7
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 18,
+      "reach": 1155,
+      "resource": 0
+    },
+    "loss_budget": "relaxed",
+    "oracle": {
+      "depth_budget": "D(TP1,PP2,DP3) U(TP8,PP1,DP3)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 6.63,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 0.8330153111573333,
+      "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP2,DP3) U(TP8,PP1,DP3)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 6.63,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 0.8330153111573333,
+      "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+    },
+    "port_budget": "high",
+    "regime": "deep_oversubscribed_global_bottleneck",
+    "workload": "GPT-3-175B-like_mixed_TP8_PP8_DP16"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 3,
+        "TP": 7
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 18,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "relaxed",
+    "oracle": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP7,PP3,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 7.6000000000000005,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 1.221239563488,
+      "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP7,PP3,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 7.6000000000000005,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 1.221239563488,
+      "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+    },
+    "port_budget": "high",
+    "regime": "deep_oversubscribed_global_bottleneck",
+    "workload": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8"
+  },
+  {
+    "best_static_suite_policy": {
+      "depths": {
+        "DP": 3,
+        "PP": 3,
+        "TP": 1
+      },
+      "name": "best_static_locality_aware",
+      "units": {
+        "DP": 2,
+        "PP": 3,
+        "TP": 7
+      }
+    },
+    "feasibility_failures": {
+      "loss": 0,
+      "port": 18,
+      "reach": 1320,
+      "resource": 0
+    },
+    "loss_budget": "relaxed",
+    "oracle": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP7,PP3,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 7.6000000000000005,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 1.7159834950666668,
+      "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+    },
+    "pathbudget": {
+      "depth_budget": "D(TP1,PP3,DP3) U(TP7,PP3,DP2)",
+      "failure_reason": "",
+      "feasible": true,
+      "loss_budget": "relaxed",
+      "max_loss_db": 11.0,
+      "policy": "pathbudget",
+      "port_budget": "high",
+      "port_usage": 7.6000000000000005,
+      "regime": "deep_oversubscribed_global_bottleneck",
+      "time_s": 1.7159834950666668,
+      "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+    },
+    "port_budget": "high",
+    "regime": "deep_oversubscribed_global_bottleneck",
+    "workload": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8"
+  }
+]

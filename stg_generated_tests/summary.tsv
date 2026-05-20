@@ -1,0 +1,12 @@
+strategy	trace_generation	astra_unaware	finished_ranks	cycles_first_finished	exposed_comm_first_finished	et_files	comm_groups
+dp8	PASS	PASS	8	619605	619345	8	17
+tp8	PASS	PASS	8	1503476	1503216	8	17
+sp8	PASS	PASS	8	1085879	1085619	8	17
+pp8	PASS	PASS	8	7364	7292	8	24
+fsdp8	PASS	PASS	8	759953	759693	8	17
+dp2_pp4	PASS	PASS	8	105988	105916	8	20
+dp2_tp4	PASS	FAIL	7	1479494	1479234	8	14
+dp2_tp2_sp2	PASS	FAIL	7	1318983	1318723	8	12
+dp2_tp2_4npu	PASS	FAIL	2	533776	533636	4	8
+dp2_sp2_4npu	PASS	FAIL	2	490524	490384	4	8
+moe_dp2_tp2_ep2	FAIL	NOT_RUN	-	-	-	0	20

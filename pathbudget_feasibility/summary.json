@@ -1,0 +1,15 @@
+{
+  "average_oracle_gap_pct": 0.0,
+  "average_speedup_all_feasible": 2.0060616638192226,
+  "average_speedup_medium_nonoptimistic": 1.9080615305792015,
+  "num_feasible_pathbudget_rows": 64,
+  "num_rows": 108,
+  "selected_assignment_histogram": {
+    "TP1-PP1-DP3": 8,
+    "TP1-PP2-DP3": 8,
+    "TP1-PP3-DP3": 16,
+    "TP2-PP2-DP3": 2,
+    "TP2-PP3-DP3": 6
+  },
+  "worst_case_speedup_all_feasible": 1.1790981055974863
+}

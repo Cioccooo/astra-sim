@@ -1,0 +1,7 @@
+strategy	status	cycles	exposed_comm
+dp8	PASS	619605	619345
+tp8	PASS	1503476	1503216
+dp2_tp4	FAIL	-	-
+dp2_pp4	PASS	105988	105916
+dp2_tp2_sp2	FAIL	-	-
+fsdp8	PASS	759953	759693

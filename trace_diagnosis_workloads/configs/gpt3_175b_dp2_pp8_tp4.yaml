@@ -1,0 +1,15 @@
+model:
+  name: "gpt3_175b_diag"
+  num_layers: 96
+  sequence_len: 2048
+  vocab_size: 50257
+  hidden_size: 12288
+  batch_size: 128
+  num_microbatches: 16
+  bytes_per_val: 2
+  scale: 1.0
+
+parallelism:
+  dp_size: 2
+  pp_size: 8
+  tp_size: 4

@@ -1,0 +1,11 @@
+strategy	nodes	pg_membership_errors
+dp8	2160	0
+tp8	2736	0
+sp8	2416	0
+pp8	556	0
+fsdp8	2288	0
+dp2_pp4	588	0
+dp2_tp4	2816	0
+dp2_tp2_sp2	3152	0
+dp2_tp2_4npu	752	0
+dp2_sp2_4npu	672	0

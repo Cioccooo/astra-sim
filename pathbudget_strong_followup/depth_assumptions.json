@@ -1,0 +1,161 @@
+{
+  "budgets": [
+    {
+      "loss_db": 10.0,
+      "loss_name": "strict",
+      "port_name": "low",
+      "port_units": 7.0
+    },
+    {
+      "loss_db": 10.0,
+      "loss_name": "strict",
+      "port_name": "medium",
+      "port_units": 10.0
+    },
+    {
+      "loss_db": 10.0,
+      "loss_name": "strict",
+      "port_name": "high",
+      "port_units": 16.0
+    },
+    {
+      "loss_db": 14.0,
+      "loss_name": "medium",
+      "port_name": "low",
+      "port_units": 7.0
+    },
+    {
+      "loss_db": 14.0,
+      "loss_name": "medium",
+      "port_name": "medium",
+      "port_units": 10.0
+    },
+    {
+      "loss_db": 14.0,
+      "loss_name": "medium",
+      "port_name": "high",
+      "port_units": 16.0
+    },
+    {
+      "loss_db": 20.0,
+      "loss_name": "relaxed",
+      "port_name": "low",
+      "port_units": 7.0
+    },
+    {
+      "loss_db": 20.0,
+      "loss_name": "relaxed",
+      "port_name": "medium",
+      "port_units": 10.0
+    },
+    {
+      "loss_db": 20.0,
+      "loss_name": "relaxed",
+      "port_name": "high",
+      "port_units": 16.0
+    }
+  ],
+  "injection_cap_gbps": 2400.0,
+  "regimes": [
+    {
+      "depths": {
+        "1": {
+          "bandwidth_per_unit_gbps": 200,
+          "depth": 1,
+          "latency_us": 0.45,
+          "loss_db": 2.5,
+          "port_cost_per_unit": 0.25,
+          "reach": 16,
+          "reconfig_us": 0
+        },
+        "2": {
+          "bandwidth_per_unit_gbps": 175,
+          "depth": 2,
+          "latency_us": 1.5,
+          "loss_db": 6.0,
+          "port_cost_per_unit": 0.5,
+          "reach": 64,
+          "reconfig_us": 1
+        },
+        "3": {
+          "bandwidth_per_unit_gbps": 150,
+          "depth": 3,
+          "latency_us": 5.0,
+          "loss_db": 10.0,
+          "port_cost_per_unit": 1.0,
+          "reach": 1024,
+          "reconfig_us": 10
+        }
+      },
+      "description": "deeper depth gives reach but not extra bandwidth per circuit",
+      "name": "reach_only_depth_is_costly"
+    },
+    {
+      "depths": {
+        "1": {
+          "bandwidth_per_unit_gbps": 150,
+          "depth": 1,
+          "latency_us": 0.45,
+          "loss_db": 2.5,
+          "port_cost_per_unit": 0.25,
+          "reach": 16,
+          "reconfig_us": 0
+        },
+        "2": {
+          "bandwidth_per_unit_gbps": 225,
+          "depth": 2,
+          "latency_us": 1.5,
+          "loss_db": 6.5,
+          "port_cost_per_unit": 0.75,
+          "reach": 64,
+          "reconfig_us": 1
+        },
+        "3": {
+          "bandwidth_per_unit_gbps": 300,
+          "depth": 3,
+          "latency_us": 5.0,
+          "loss_db": 10.5,
+          "port_cost_per_unit": 1.5,
+          "reach": 1024,
+          "reconfig_us": 10
+        }
+      },
+      "description": "deeper tiers can get more bandwidth per circuit but consume more port budget",
+      "name": "extra_parallelism_bandwidth_steering"
+    },
+    {
+      "depths": {
+        "1": {
+          "bandwidth_per_unit_gbps": 200,
+          "depth": 1,
+          "latency_us": 0.45,
+          "loss_db": 2.5,
+          "port_cost_per_unit": 0.25,
+          "reach": 16,
+          "reconfig_us": 0
+        },
+        "2": {
+          "bandwidth_per_unit_gbps": 150,
+          "depth": 2,
+          "latency_us": 1.8,
+          "loss_db": 6.5,
+          "port_cost_per_unit": 0.6,
+          "reach": 64,
+          "reconfig_us": 1
+        },
+        "3": {
+          "bandwidth_per_unit_gbps": 75,
+          "depth": 3,
+          "latency_us": 6.5,
+          "loss_db": 11.0,
+          "port_cost_per_unit": 1.25,
+          "reach": 1024,
+          "reconfig_us": 10
+        }
+      },
+      "description": "global depth has reach but lower per-circuit bandwidth due to shared OCS contention",
+      "name": "deep_oversubscribed_global_bottleneck"
+    }
+  ],
+  "total_resource_units": 12
+}

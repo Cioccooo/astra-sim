@@ -1,0 +1,57 @@
+[
+  {
+    "config": "/Users/dfx/Python/astra-sim/stratocs_feasibility/smoke_configs/Ring_Ring.yml",
+    "exit_code": 0,
+    "finished_ranks": 4,
+    "log": "/Users/dfx/Python/astra-sim/stratocs_feasibility/smoke_logs/Ring_Ring.log",
+    "max_cycles": 1914,
+    "topology": [
+      "Ring",
+      "Ring"
+    ]
+  },
+  {
+    "config": "/Users/dfx/Python/astra-sim/stratocs_feasibility/smoke_configs/Switch_Switch.yml",
+    "exit_code": 0,
+    "finished_ranks": 4,
+    "log": "/Users/dfx/Python/astra-sim/stratocs_feasibility/smoke_logs/Switch_Switch.log",
+    "max_cycles": 2314,
+    "topology": [
+      "Switch",
+      "Switch"
+    ]
+  },
+  {
+    "config": "/Users/dfx/Python/astra-sim/stratocs_feasibility/smoke_configs/Switch_Ring.yml",
+    "exit_code": 0,
+    "finished_ranks": 4,
+    "log": "/Users/dfx/Python/astra-sim/stratocs_feasibility/smoke_logs/Switch_Ring.log",
+    "max_cycles": 2314,
+    "topology": [
+      "Switch",
+      "Ring"
+    ]
+  },
+  {
+    "config": "/Users/dfx/Python/astra-sim/stratocs_feasibility/smoke_configs/Switch_FullyConnected.yml",
+    "exit_code": 0,
+    "finished_ranks": 4,
+    "log": "/Users/dfx/Python/astra-sim/stratocs_feasibility/smoke_logs/Switch_FullyConnected.log",
+    "max_cycles": 2314,
+    "topology": [
+      "Switch",
+      "FullyConnected"
+    ]
+  },
+  {
+    "config": "/Users/dfx/Python/astra-sim/stratocs_feasibility/smoke_configs/FullyConnected_Switch.yml",
+    "exit_code": 0,
+    "finished_ranks": 4,
+    "log": "/Users/dfx/Python/astra-sim/stratocs_feasibility/smoke_logs/FullyConnected_Switch.log",
+    "max_cycles": 1914,
+    "topology": [
+      "FullyConnected",
+      "Switch"
+    ]
+  }
+]

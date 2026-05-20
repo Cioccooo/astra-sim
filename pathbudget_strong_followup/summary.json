@@ -1,0 +1,11 @@
+{
+  "average_oracle_gap_pct": 2.9855533487758494,
+  "average_speedup_vs_best_static_all_feasible": 1.0543489050478392,
+  "average_speedup_vs_best_static_medium_budget": 1.0620619649773928,
+  "average_speedup_vs_best_static_medium_nonoptimistic": 1.0358873404375812,
+  "injection_cap_gbps": 2400.0,
+  "num_best_static_feasible_speedups": 84,
+  "num_best_static_rows": 108,
+  "total_resource_units": 12,
+  "worst_case_speedup_vs_best_static": 1.0
+}

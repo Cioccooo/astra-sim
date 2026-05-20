@@ -1,0 +1,142 @@
+[
+  {
+    "axes": {
+      "DP": {
+        "axis": "DP",
+        "critical_weight": 0.75,
+        "events": 10,
+        "frequency": "bucketed global gradient sync",
+        "group_size": 64,
+        "min_depth": 3,
+        "payload_gb": 3.19921875
+      },
+      "PP": {
+        "axis": "PP",
+        "critical_weight": 0.35,
+        "events": 64,
+        "frequency": "microbatch pipeline boundary",
+        "group_size": 16,
+        "min_depth": 1,
+        "payload_gb": 0.33554432
+      },
+      "TP": {
+        "axis": "TP",
+        "critical_weight": 0.55,
+        "events": 5120,
+        "frequency": "layer/microbatch frequent",
+        "group_size": 8,
+        "min_depth": 1,
+        "payload_gb": 46.9762048
+      }
+    },
+    "dp": 64,
+    "name": "LLaMA-13B-like_DP-heavy_TP8_PP2_DP64",
+    "pp": 2,
+    "tp": 8
+  },
+  {
+    "axes": {
+      "DP": {
+        "axis": "DP",
+        "critical_weight": 0.55,
+        "events": 24,
+        "frequency": "bucketed global gradient sync",
+        "group_size": 16,
+        "min_depth": 3,
+        "payload_gb": 10.25390625
+      },
+      "PP": {
+        "axis": "PP",
+        "critical_weight": 0.65,
+        "events": 448,
+        "frequency": "microbatch pipeline boundary",
+        "group_size": 64,
+        "min_depth": 2,
+        "payload_gb": 2.818572288
+      },
+      "TP": {
+        "axis": "TP",
+        "critical_weight": 0.75,
+        "events": 12288,
+        "frequency": "layer/microbatch frequent",
+        "group_size": 8,
+        "min_depth": 1,
+        "payload_gb": 135.291469824
+      }
+    },
+    "dp": 16,
+    "name": "GPT-3-175B-like_mixed_TP8_PP8_DP16",
+    "pp": 8,
+    "tp": 8
+  },
+  {
+    "axes": {
+      "DP": {
+        "axis": "DP",
+        "critical_weight": 0.45,
+        "events": 24,
+        "frequency": "bucketed global gradient sync",
+        "group_size": 8,
+        "min_depth": 3,
+        "payload_gb": 8.4765625
+      },
+      "PP": {
+        "axis": "PP",
+        "critical_weight": 0.9,
+        "events": 960,
+        "frequency": "microbatch pipeline boundary",
+        "group_size": 128,
+        "min_depth": 3,
+        "payload_gb": 8.05306368
+      },
+      "TP": {
+        "axis": "TP",
+        "critical_weight": 0.7,
+        "events": 12288,
+        "frequency": "layer/microbatch frequent",
+        "group_size": 8,
+        "min_depth": 1,
+        "payload_gb": 180.388626432
+      }
+    },
+    "dp": 8,
+    "name": "Megatron-310B-like_PP-heavy_TP8_PP16_DP8",
+    "pp": 16,
+    "tp": 8
+  },
+  {
+    "axes": {
+      "DP": {
+        "axis": "DP",
+        "critical_weight": 0.45,
+        "events": 27,
+        "frequency": "bucketed global gradient sync",
+        "group_size": 8,
+        "min_depth": 3,
+        "payload_gb": 14.4921875
+      },
+      "PP": {
+        "axis": "PP",
+        "critical_weight": 0.95,
+        "events": 960,
+        "frequency": "microbatch pipeline boundary",
+        "group_size": 128,
+        "min_depth": 3,
+        "payload_gb": 10.0663296
+      },
+      "TP": {
+        "axis": "TP",
+        "critical_weight": 0.7,
+        "events": 13440,
+        "frequency": "layer/microbatch frequent",
+        "group_size": 8,
+        "min_depth": 1,
+        "payload_gb": 246.6250752
+      }
+    },
+    "dp": 8,
+    "name": "Megatron-530B-like_large_PP-heavy_TP8_PP16_DP8",
+    "pp": 16,
+    "tp": 8
+  }
+]

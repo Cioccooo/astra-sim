@@ -1,0 +1,144 @@
+[
+  {
+    "exit_code": 0,
+    "finished_ranks": 16,
+    "log": "/Users/dfx/Python/astra-sim/pathbudget_feasibility/astra_logs/depth1_switch.log",
+    "logical_depth": 1,
+    "max_cycles": 79280,
+    "min_cycles": 79280,
+    "name": "depth1_switch",
+    "network_config": "/Users/dfx/Python/astra-sim/pathbudget_feasibility/astra_configs/depth1_switch.yml",
+    "npus_count": [
+      16
+    ],
+    "ranks": 16,
+    "timed_out": false,
+    "topology": [
+      "Switch"
+    ]
+  },
+  {
+    "exit_code": 0,
+    "finished_ranks": 16,
+    "log": "/Users/dfx/Python/astra-sim/pathbudget_feasibility/astra_logs/depth1_ring.log",
+    "logical_depth": 1,
+    "max_cycles": 49280,
+    "min_cycles": 49280,
+    "name": "depth1_ring",
+    "network_config": "/Users/dfx/Python/astra-sim/pathbudget_feasibility/astra_configs/depth1_ring.yml",
+    "npus_count": [
+      16
+    ],
+    "ranks": 16,
+    "timed_out": false,
+    "topology": [
+      "Ring"
+    ]
+  },
+  {
+    "exit_code": 0,
+    "finished_ranks": 64,
+    "log": "/Users/dfx/Python/astra-sim/pathbudget_feasibility/astra_logs/depth2_switch_switch.log",
+    "logical_depth": 2,
+    "max_cycles": 79280,
+    "min_cycles": 79280,
+    "name": "depth2_switch_switch",
+    "network_config": "/Users/dfx/Python/astra-sim/pathbudget_feasibility/astra_configs/depth2_switch_switch.yml",
+    "npus_count": [
+      16,
+      4
+    ],
+    "ranks": 64,
+    "timed_out": false,
+    "topology": [
+      "Switch",
+      "Switch"
+    ]
+  },
+  {
+    "exit_code": 0,
+    "finished_ranks": 64,
+    "log": "/Users/dfx/Python/astra-sim/pathbudget_feasibility/astra_logs/depth2_switch_ring.log",
+    "logical_depth": 2,
+    "max_cycles": 79280,
+    "min_cycles": 79280,
+    "name": "depth2_switch_ring",
+    "network_config": "/Users/dfx/Python/astra-sim/pathbudget_feasibility/astra_configs/depth2_switch_ring.yml",
+    "npus_count": [
+      16,
+      4
+    ],
+    "ranks": 64,
+    "timed_out": false,
+    "topology": [
+      "Switch",
+      "Ring"
+    ]
+  },
+  {
+    "exit_code": 0,
+    "finished_ranks": 1024,
+    "log": "/Users/dfx/Python/astra-sim/pathbudget_feasibility/astra_logs/depth3_switch_switch_switch.log",
+    "logical_depth": 3,
+    "max_cycles": 79280,
+    "min_cycles": 79280,
+    "name": "depth3_switch_switch_switch",
+    "network_config": "/Users/dfx/Python/astra-sim/pathbudget_feasibility/astra_configs/depth3_switch_switch_switch.yml",
+    "npus_count": [
+      16,
+      4,
+      16
+    ],
+    "ranks": 1024,
+    "timed_out": false,
+    "topology": [
+      "Switch",
+      "Switch",
+      "Switch"
+    ]
+  },
+  {
+    "exit_code": 0,
+    "finished_ranks": 1024,
+    "log": "/Users/dfx/Python/astra-sim/pathbudget_feasibility/astra_logs/depth3_switch_switch_ring.log",
+    "logical_depth": 3,
+    "max_cycles": 79280,
+    "min_cycles": 79280,
+    "name": "depth3_switch_switch_ring",
+    "network_config": "/Users/dfx/Python/astra-sim/pathbudget_feasibility/astra_configs/depth3_switch_switch_ring.yml",
+    "npus_count": [
+      16,
+      4,
+      16
+    ],
+    "ranks": 1024,
+    "timed_out": false,
+    "topology": [
+      "Switch",
+      "Switch",
+      "Ring"
+    ]
+  },
+  {
+    "exit_code": 0,
+    "finished_ranks": 1024,
+    "log": "/Users/dfx/Python/astra-sim/pathbudget_feasibility/astra_logs/depth3_switch_switch_fc.log",
+    "logical_depth": 3,
+    "max_cycles": 79280,
+    "min_cycles": 79280,
+    "name": "depth3_switch_switch_fc",
+    "network_config": "/Users/dfx/Python/astra-sim/pathbudget_feasibility/astra_configs/depth3_switch_switch_fc.yml",
+    "npus_count": [
+      16,
+      4,
+      16
+    ],
+    "ranks": 1024,
+    "timed_out": false,
+    "topology": [
+      "Switch",
+      "Switch",
+      "FullyConnected"
+    ]
+  }
+]

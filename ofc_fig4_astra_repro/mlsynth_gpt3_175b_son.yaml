@@ -1,0 +1,21 @@
+model:
+  name: "gpt3_175b_fig4_son"
+  num_layers: 96
+  sequence_len: 2048
+  vocab_size: 50257
+  hidden_size: 12288
+  # MLSynth's MegatronLM implementation applies batch_size per DP replica.
+  # Figure 4 uses global batch 1024 and DP=16, so the per-replica batch is 64.
+  batch_size: 64
+  # AMPeD config has microbatch_size=1 for this case, so local batch 64 gives 64 microbatches.
+  num_microbatches: 64
+  bytes_per_val: 2
+  # Keep communication sizes unscaled. Tensor-parallel compute sharding is applied
+  # in postprocess_mlsynth_to_astra.py so TP comm volumes remain intact.
+  scale: 1.0
+
+parallelism:
+  dp_size: 16
+  pp_size: 8
+  tp_size: 8
+

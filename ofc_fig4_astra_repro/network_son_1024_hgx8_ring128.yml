@@ -1,0 +1,8 @@
+topology: [ Switch, Ring ]
+npus_count: [ 8, 128 ]
+# Intra-node: HGX/NVSwitch approximation.
+# Inter-node SON: 1.6 Tb/s per 8-GPU node = 8 x 200 Gb/s NICs = 25 GB/s per GPU/NIC rail.
+bandwidth: [ 400.0, 25.0 ]
+# Paper states 10 ns intra-node and uses 260 ns optical/inter-node latency in the local configs.
+latency: [ 10.0, 260.0 ]
+

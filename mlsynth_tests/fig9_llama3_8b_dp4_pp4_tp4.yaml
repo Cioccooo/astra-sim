@@ -1,0 +1,15 @@
+model:
+  name: "llama3_8b_fig9"
+  num_layers: 32
+  sequence_len: 8196
+  vocab_size: 128256
+  hidden_size: 4096
+  batch_size: 256
+  num_microbatches: 16
+  bytes_per_val: 2
+  scale: 1.0
+
+parallelism:
+  dp_size: 4
+  pp_size: 4
+  tp_size: 4

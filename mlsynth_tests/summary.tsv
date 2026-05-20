@@ -1,0 +1,4 @@
+strategy	status	finished	cycles	exposed_comm
+transformer_1dp_1pp_4tp_8B_16S_32000V_128d_2b_1scale	PASS	4	491232	491200
+transformer_2dp_1pp_2tp_8B_16S_32000V_128d_2b_1scale	FAIL	2	-	-
+transformer_2dp_2pp_1tp_8B_16S_32000V_128d_2b_1scale	PASS	4	13349	13333
