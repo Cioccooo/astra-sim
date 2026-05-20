@@ -1,0 +1,13 @@
+workload,penalty_us,prefill_ocs_raw_native_astra_cycles,prefill_ocs_raw_ms,time_after_penalty_cycles,time_after_penalty_ms,fair_universal_static_native_astra_cycles,beats_fair_universal_static,caveat
+qwen_mmlu_machine_learning,0,126598323,126.598323,126598323,126.598323,126598323,False,
+qwen_mmlu_machine_learning,1,126598323,126.598323,126599323,126.599323,126598323,False,
+qwen_mmlu_machine_learning,10,126598323,126.598323,126608323,126.608323,126598323,False,
+qwen_mmlu_machine_learning,25000,126598323,126.598323,151598323,151.598323,126598323,False,25ms is not acceptable for inference unless amortised over enough decode/batch work
+deepseek_mmlu_machine_learning,0,66947609,66.947609,66947609,66.947609,66947609,False,
+deepseek_mmlu_machine_learning,1,66947609,66.947609,66948609,66.948609,66947609,False,
+deepseek_mmlu_machine_learning,10,66947609,66.947609,66957609,66.957609,66947609,False,
+deepseek_mmlu_machine_learning,25000,66947609,66.947609,91947609,91.947609,66947609,False,25ms is not acceptable for inference unless amortised over enough decode/batch work
+qwen_livecodebench_execution,0,693892205,693.892205,693892205,693.892205,690642122,False,
+qwen_livecodebench_execution,1,693892205,693.892205,693893205,693.893205,690642122,False,
+qwen_livecodebench_execution,10,693892205,693.892205,693902205,693.902205,690642122,False,
+qwen_livecodebench_execution,25000,693892205,693.892205,718892205,718.892205,690642122,False,25ms is not acceptable for inference unless amortised over enough decode/batch work

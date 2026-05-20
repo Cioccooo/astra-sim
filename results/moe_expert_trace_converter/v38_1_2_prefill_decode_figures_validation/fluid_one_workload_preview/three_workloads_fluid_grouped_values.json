@@ -1,0 +1,164 @@
+[
+  {
+    "workload": "qwen_mmlu_machine_learning",
+    "workload_label": "Qwen MMLU ML",
+    "method": "EN",
+    "candidate": "en_folded_clos",
+    "fluid_ms": 54.128952,
+    "normalised_to_fair_static": 1.4901984860028061,
+    "note": "current V38.1 fluid lower-bound column"
+  },
+  {
+    "workload": "qwen_mmlu_machine_learning",
+    "workload_label": "Qwen MMLU ML",
+    "method": "SON / torus",
+    "candidate": "son_torus",
+    "fluid_ms": 126.775016,
+    "normalised_to_fair_static": 3.4901827936033483,
+    "note": "current V38.1 fluid lower-bound column"
+  },
+  {
+    "workload": "qwen_mmlu_machine_learning",
+    "workload_label": "Qwen MMLU ML",
+    "method": "fixed random",
+    "candidate": "random_regular_seed_0",
+    "fluid_ms": 36.548983,
+    "normalised_to_fair_static": 1.0062127035369595,
+    "note": "current V38.1 fluid lower-bound column"
+  },
+  {
+    "workload": "qwen_mmlu_machine_learning",
+    "workload_label": "Qwen MMLU ML",
+    "method": "fair universal static",
+    "candidate": "random_regular_seed_11",
+    "fluid_ms": 36.323317,
+    "normalised_to_fair_static": 1.0,
+    "note": "current V38.1 fluid lower-bound column"
+  },
+  {
+    "workload": "qwen_mmlu_machine_learning",
+    "workload_label": "Qwen MMLU ML",
+    "method": "prefill-informed OCS",
+    "candidate": "random_regular_seed_11",
+    "fluid_ms": 36.323317,
+    "normalised_to_fair_static": 1.0,
+    "note": "current V38.1 fluid lower-bound column"
+  },
+  {
+    "workload": "qwen_mmlu_machine_learning",
+    "workload_label": "Qwen MMLU ML",
+    "method": "oracle",
+    "candidate": "random_regular_seed_24",
+    "fluid_ms": 39.977811,
+    "normalised_to_fair_static": 1.100610139762291,
+    "note": "current V38.1 fluid lower-bound column"
+  },
+  {
+    "workload": "deepseek_mmlu_machine_learning",
+    "workload_label": "DeepSeek MMLU ML",
+    "method": "EN",
+    "candidate": "en_folded_clos",
+    "fluid_ms": 29.862364,
+    "normalised_to_fair_static": 1.4772493657259669,
+    "note": "current V38.1 fluid lower-bound column"
+  },
+  {
+    "workload": "deepseek_mmlu_machine_learning",
+    "workload_label": "DeepSeek MMLU ML",
+    "method": "SON / torus",
+    "candidate": "son_torus",
+    "fluid_ms": 73.912403,
+    "normalised_to_fair_static": 3.6563431632884806,
+    "note": "current V38.1 fluid lower-bound column"
+  },
+  {
+    "workload": "deepseek_mmlu_machine_learning",
+    "workload_label": "DeepSeek MMLU ML",
+    "method": "fixed random",
+    "candidate": "random_regular_seed_0",
+    "fluid_ms": 20.949478,
+    "normalised_to_fair_static": 1.036341365599525,
+    "note": "current V38.1 fluid lower-bound column"
+  },
+  {
+    "workload": "deepseek_mmlu_machine_learning",
+    "workload_label": "DeepSeek MMLU ML",
+    "method": "fair universal static",
+    "candidate": "random_regular_seed_11",
+    "fluid_ms": 20.214843,
+    "normalised_to_fair_static": 1.0,
+    "note": "current V38.1 fluid lower-bound column"
+  },
+  {
+    "workload": "deepseek_mmlu_machine_learning",
+    "workload_label": "DeepSeek MMLU ML",
+    "method": "prefill-informed OCS",
+    "candidate": "random_regular_seed_11",
+    "fluid_ms": 20.214843,
+    "normalised_to_fair_static": 1.0,
+    "note": "current V38.1 fluid lower-bound column"
+  },
+  {
+    "workload": "deepseek_mmlu_machine_learning",
+    "workload_label": "DeepSeek MMLU ML",
+    "method": "oracle",
+    "candidate": "random_regular_seed_11",
+    "fluid_ms": 20.214843,
+    "normalised_to_fair_static": 1.0,
+    "note": "current V38.1 fluid lower-bound column"
+  },
+  {
+    "workload": "qwen_livecodebench_execution",
+    "workload_label": "Qwen LiveCodeBench",
+    "method": "EN",
+    "candidate": "en_folded_clos",
+    "fluid_ms": 301.284484,
+    "normalised_to_fair_static": 3.3417786895854906,
+    "note": "fluid lower-bound preview; Qwen LiveCodeBench fair/OCS/oracle use old V38 optimistic fluid comparison values"
+  },
+  {
+    "workload": "qwen_livecodebench_execution",
+    "workload_label": "Qwen LiveCodeBench",
+    "method": "SON / torus",
+    "candidate": "old_v38_son_torus_fluid",
+    "fluid_ms": 295.541232,
+    "normalised_to_fair_static": 3.2780758500376055,
+    "note": "fluid lower-bound preview; Qwen LiveCodeBench fair/OCS/oracle use old V38 optimistic fluid comparison values"
+  },
+  {
+    "workload": "qwen_livecodebench_execution",
+    "workload_label": "Qwen LiveCodeBench",
+    "method": "fixed random",
+    "candidate": "random_regular_seed_0",
+    "fluid_ms": 182.290114,
+    "normalised_to_fair_static": 2.02192031331859,
+    "note": "fluid lower-bound preview; Qwen LiveCodeBench fair/OCS/oracle use old V38 optimistic fluid comparison values"
+  },
+  {
+    "workload": "qwen_livecodebench_execution",
+    "workload_label": "Qwen LiveCodeBench",
+    "method": "fair universal static",
+    "candidate": "old_v38_fair_universal_static",
+    "fluid_ms": 90.156923,
+    "normalised_to_fair_static": 1.0,
+    "note": "fluid lower-bound preview; Qwen LiveCodeBench fair/OCS/oracle use old V38 optimistic fluid comparison values"
+  },
+  {
+    "workload": "qwen_livecodebench_execution",
+    "workload_label": "Qwen LiveCodeBench",
+    "method": "prefill-informed OCS",
+    "candidate": "old_v38_prefill_selected_gpu_ocs",
+    "fluid_ms": 84.320844,
+    "normalised_to_fair_static": 0.9352675445678197,
+    "note": "fluid lower-bound preview; Qwen LiveCodeBench fair/OCS/oracle use old V38 optimistic fluid comparison values"
+  },
+  {
+    "workload": "qwen_livecodebench_execution",
+    "workload_label": "Qwen LiveCodeBench",
+    "method": "oracle",
+    "candidate": "old_v38_decode_oracle",
+    "fluid_ms": 82.749318,
+    "normalised_to_fair_static": 0.9178365370787998,
+    "note": "fluid lower-bound preview; Qwen LiveCodeBench fair/OCS/oracle use old V38 optimistic fluid comparison values"
+  }
+]

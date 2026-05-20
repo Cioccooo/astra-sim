@@ -1,0 +1,19 @@
+workload,workload_label,method,candidate,fluid_ms,normalised_to_fair_static,note
+qwen_mmlu_machine_learning,Qwen MMLU ML,EN,en_folded_clos,54.128952,1.4901984860028061,current V38.1 fluid lower-bound column
+qwen_mmlu_machine_learning,Qwen MMLU ML,SON / torus,son_torus,126.775016,3.4901827936033483,current V38.1 fluid lower-bound column
+qwen_mmlu_machine_learning,Qwen MMLU ML,fixed random,random_regular_seed_0,36.548983,1.0062127035369595,current V38.1 fluid lower-bound column
+qwen_mmlu_machine_learning,Qwen MMLU ML,fair universal static,random_regular_seed_11,36.323317,1.0,current V38.1 fluid lower-bound column
+qwen_mmlu_machine_learning,Qwen MMLU ML,prefill-informed OCS,random_regular_seed_11,36.323317,1.0,current V38.1 fluid lower-bound column
+qwen_mmlu_machine_learning,Qwen MMLU ML,oracle,random_regular_seed_24,39.977811,1.100610139762291,current V38.1 fluid lower-bound column
+deepseek_mmlu_machine_learning,DeepSeek MMLU ML,EN,en_folded_clos,29.862364,1.4772493657259669,current V38.1 fluid lower-bound column
+deepseek_mmlu_machine_learning,DeepSeek MMLU ML,SON / torus,son_torus,73.912403,3.6563431632884806,current V38.1 fluid lower-bound column
+deepseek_mmlu_machine_learning,DeepSeek MMLU ML,fixed random,random_regular_seed_0,20.949478,1.036341365599525,current V38.1 fluid lower-bound column
+deepseek_mmlu_machine_learning,DeepSeek MMLU ML,fair universal static,random_regular_seed_11,20.214843,1.0,current V38.1 fluid lower-bound column
+deepseek_mmlu_machine_learning,DeepSeek MMLU ML,prefill-informed OCS,random_regular_seed_11,20.214843,1.0,current V38.1 fluid lower-bound column
+deepseek_mmlu_machine_learning,DeepSeek MMLU ML,oracle,random_regular_seed_11,20.214843,1.0,current V38.1 fluid lower-bound column
+qwen_livecodebench_execution,Qwen LiveCodeBench,EN,en_folded_clos,301.284484,3.3417786895854906,fluid lower-bound preview; Qwen LiveCodeBench fair/OCS/oracle use old V38 optimistic fluid comparison values
+qwen_livecodebench_execution,Qwen LiveCodeBench,SON / torus,old_v38_son_torus_fluid,295.541232,3.2780758500376055,fluid lower-bound preview; Qwen LiveCodeBench fair/OCS/oracle use old V38 optimistic fluid comparison values
+qwen_livecodebench_execution,Qwen LiveCodeBench,fixed random,random_regular_seed_0,182.290114,2.02192031331859,fluid lower-bound preview; Qwen LiveCodeBench fair/OCS/oracle use old V38 optimistic fluid comparison values
+qwen_livecodebench_execution,Qwen LiveCodeBench,fair universal static,old_v38_fair_universal_static,90.156923,1.0,fluid lower-bound preview; Qwen LiveCodeBench fair/OCS/oracle use old V38 optimistic fluid comparison values
+qwen_livecodebench_execution,Qwen LiveCodeBench,prefill-informed OCS,old_v38_prefill_selected_gpu_ocs,84.320844,0.9352675445678197,fluid lower-bound preview; Qwen LiveCodeBench fair/OCS/oracle use old V38 optimistic fluid comparison values
+qwen_livecodebench_execution,Qwen LiveCodeBench,oracle,old_v38_decode_oracle,82.749318,0.9178365370787998,fluid lower-bound preview; Qwen LiveCodeBench fair/OCS/oracle use old V38 optimistic fluid comparison values

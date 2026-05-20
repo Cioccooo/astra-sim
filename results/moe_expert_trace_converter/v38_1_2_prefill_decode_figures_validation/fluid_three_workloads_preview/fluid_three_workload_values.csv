@@ -1,0 +1,19 @@
+workload,workload_label,method,candidate,fluid_cycles,fluid_ms,dispatch_fluid_cycles,combine_fluid_cycles
+qwen_mmlu_machine_learning,Qwen MMLU ML,EN,en_folded_clos,54128952,54.128952,27064476,27064476
+qwen_mmlu_machine_learning,Qwen MMLU ML,SON / torus,son_torus,126775016,126.775016,63489023,63285993
+qwen_mmlu_machine_learning,Qwen MMLU ML,fixed random,random_regular_seed_0,36548983,36.548983,18266538,18282445
+qwen_mmlu_machine_learning,Qwen MMLU ML,fair universal static,random_regular_seed_11,36323317,36.323317,18198966,18124351
+qwen_mmlu_machine_learning,Qwen MMLU ML,prefill-informed OCS,random_regular_seed_11,36323317,36.323317,18198966,18124351
+qwen_mmlu_machine_learning,Qwen MMLU ML,oracle,random_regular_seed_11,36323317,36.323317,18198966,18124351
+deepseek_mmlu_machine_learning,DeepSeek MMLU ML,EN,en_folded_clos,29862364,29.862364,14931182,14931182
+deepseek_mmlu_machine_learning,DeepSeek MMLU ML,SON / torus,son_torus,73912403,73.912403,36779581,37132822
+deepseek_mmlu_machine_learning,DeepSeek MMLU ML,fixed random,random_regular_seed_0,20949478,20.949478,10413971,10535507
+deepseek_mmlu_machine_learning,DeepSeek MMLU ML,fair universal static,random_regular_seed_11,20214843,20.214843,10106277,10108566
+deepseek_mmlu_machine_learning,DeepSeek MMLU ML,prefill-informed OCS,random_regular_seed_27,19906666,19.906666,9945208,9961458
+deepseek_mmlu_machine_learning,DeepSeek MMLU ML,oracle,random_regular_seed_27,19906666,19.906666,9945208,9961458
+qwen_livecodebench_execution,Qwen LiveCodeBench,EN,en_folded_clos,301284484,301.284484,150642242,150642242
+qwen_livecodebench_execution,Qwen LiveCodeBench,SON / torus,son_torus,586609165,586.609165,295536371,291072794
+qwen_livecodebench_execution,Qwen LiveCodeBench,fixed random,random_regular_seed_0,182290114,182.290114,90974807,91315307
+qwen_livecodebench_execution,Qwen LiveCodeBench,fair universal static,random_regular_seed_11,167316322,167.316322,85172882,82143440
+qwen_livecodebench_execution,Qwen LiveCodeBench,prefill-informed OCS,random_regular_seed_2,168399111,168.399111,84078267,84320844
+qwen_livecodebench_execution,Qwen LiveCodeBench,oracle,random_regular_seed_8,164402160,164.40216,81652946,82749214

@@ -1,0 +1,68 @@
+{
+  "deepseek_mmlu_machine_learning": {
+    "all_native_astra_runs_success": true,
+    "no_leakage_pass": true,
+    "optical_budget_pass": true,
+    "oracle_labelled_upper_bound": true,
+    "penalty_10us_beats_fair_static": false,
+    "penalty_1us_beats_fair_static": false,
+    "penalty_25ms_beats_fair_static": false,
+    "prefill_ocs_beats_EN": true,
+    "prefill_ocs_beats_SON": true,
+    "prefill_ocs_beats_fair_static": false,
+    "prefill_ocs_beats_fixed_random": true,
+    "selected_fair_universal_candidate": "random_regular_seed_11",
+    "selected_oracle_candidate": "random_regular_seed_11",
+    "selected_prefill_candidate": "random_regular_seed_11",
+    "strongest_predictability_metric": {
+      "Spearman": 0.7034844672253626,
+      "top16 overlap": 0.4375,
+      "top8 overlap": 0.5
+    },
+    "trace_validation_pass": true
+  },
+  "qwen_livecodebench_execution": {
+    "all_native_astra_runs_success": true,
+    "no_leakage_pass": true,
+    "optical_budget_pass": true,
+    "oracle_labelled_upper_bound": true,
+    "penalty_10us_beats_fair_static": false,
+    "penalty_1us_beats_fair_static": false,
+    "penalty_25ms_beats_fair_static": false,
+    "prefill_ocs_beats_EN": false,
+    "prefill_ocs_beats_SON": true,
+    "prefill_ocs_beats_fair_static": false,
+    "prefill_ocs_beats_fixed_random": false,
+    "selected_fair_universal_candidate": "random_regular_seed_11",
+    "selected_oracle_candidate": "random_regular_seed_0",
+    "selected_prefill_candidate": "random_regular_seed_4",
+    "strongest_predictability_metric": {
+      "Spearman": 0.5421969419520234,
+      "top16 overlap": 0.4375,
+      "top8 overlap": 0.375
+    },
+    "trace_validation_pass": true
+  },
+  "qwen_mmlu_machine_learning": {
+    "all_native_astra_runs_success": true,
+    "no_leakage_pass": true,
+    "optical_budget_pass": true,
+    "oracle_labelled_upper_bound": true,
+    "penalty_10us_beats_fair_static": false,
+    "penalty_1us_beats_fair_static": false,
+    "penalty_25ms_beats_fair_static": false,
+    "prefill_ocs_beats_EN": true,
+    "prefill_ocs_beats_SON": true,
+    "prefill_ocs_beats_fair_static": false,
+    "prefill_ocs_beats_fixed_random": true,
+    "selected_fair_universal_candidate": "random_regular_seed_11",
+    "selected_oracle_candidate": "random_regular_seed_24",
+    "selected_prefill_candidate": "random_regular_seed_11",
+    "strongest_predictability_metric": {
+      "Spearman": 0.8655719693428621,
+      "top16 overlap": 0.5625,
+      "top8 overlap": 0.5
+    },
+    "trace_validation_pass": true
+  }
+}

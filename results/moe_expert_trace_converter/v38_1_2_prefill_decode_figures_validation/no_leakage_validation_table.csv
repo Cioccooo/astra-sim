@@ -1,0 +1,19 @@
+workload,method,selection_signal,evaluation_signal,uses_target_decode_for_selection,oracle,selected_candidate,pass
+qwen_mmlu_machine_learning,EN,static electrical folded-Clos reference,decode only,False,False,en_folded_clos,True
+qwen_mmlu_machine_learning,SON / torus,static 8x16 torus,decode only,False,False,son_torus,True
+qwen_mmlu_machine_learning,fixed random,"fixed seed0, no workload signal",decode only,False,False,random_regular_seed_0,True
+qwen_mmlu_machine_learning,fair universal static,leave-one-workload-out decode from other required workloads only,target decode only,False,False,random_regular_seed_11,True
+qwen_mmlu_machine_learning,prefill-informed OCS,target trace[0] prefill only,target trace[1:] decode only,False,False,random_regular_seed_11,True
+qwen_mmlu_machine_learning,oracle,target trace[1:] decode; upper bound only,target trace[1:] decode only,True,True,random_regular_seed_24,True
+deepseek_mmlu_machine_learning,EN,static electrical folded-Clos reference,decode only,False,False,en_folded_clos,True
+deepseek_mmlu_machine_learning,SON / torus,static 8x16 torus,decode only,False,False,son_torus,True
+deepseek_mmlu_machine_learning,fixed random,"fixed seed0, no workload signal",decode only,False,False,random_regular_seed_0,True
+deepseek_mmlu_machine_learning,fair universal static,leave-one-workload-out decode from other required workloads only,target decode only,False,False,random_regular_seed_11,True
+deepseek_mmlu_machine_learning,prefill-informed OCS,target trace[0] prefill only,target trace[1:] decode only,False,False,random_regular_seed_11,True
+deepseek_mmlu_machine_learning,oracle,target trace[1:] decode; upper bound only,target trace[1:] decode only,True,True,random_regular_seed_11,True
+qwen_livecodebench_execution,EN,static electrical folded-Clos reference,decode only,False,False,en_folded_clos,True
+qwen_livecodebench_execution,SON / torus,static 8x16 torus,decode only,False,False,son_torus,True
+qwen_livecodebench_execution,fixed random,"fixed seed0, no workload signal",decode only,False,False,random_regular_seed_0,True
+qwen_livecodebench_execution,fair universal static,leave-one-workload-out decode from other required workloads only,target decode only,False,False,random_regular_seed_11,True
+qwen_livecodebench_execution,prefill-informed OCS,target trace[0] prefill only,target trace[1:] decode only,False,False,random_regular_seed_4,True
+qwen_livecodebench_execution,oracle,target trace[1:] decode; upper bound only,target trace[1:] decode only,True,True,random_regular_seed_0,True

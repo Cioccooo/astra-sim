@@ -1,0 +1,603 @@
+{
+  "caveats": [
+    "No MoE training claim.",
+    "No full serving latency claim.",
+    "No native ASTRA in-run topology swap claim.",
+    "Oracle uses decode/evaluation traffic and is an upper bound only.",
+    "EN is an electrical folded-Clos reference and not the fair optical baseline.",
+    "Fair optical comparisons should focus on SON/fixed-random/fair-universal/prefill-OCS/oracle under degree-4, 400Gb/s/link budget."
+  ],
+  "ecmp_max_paths": 4,
+  "inference_only": true,
+  "method_order": [
+    "EN",
+    "SON / torus",
+    "fixed random",
+    "fair universal static",
+    "prefill-informed OCS",
+    "oracle"
+  ],
+  "native_astra_in_run_topology_swap": false,
+  "normalised_values": {
+    "DeepSeek MMLU ML": {
+      "EN": 1.1739290046938047,
+      "SON / torus": 1.7439804459633501,
+      "fair universal static": 1.0,
+      "fixed random": 1.0298383621138734,
+      "oracle": 1.0,
+      "prefill-informed OCS": 1.0
+    },
+    "Qwen LiveCodeBench": {
+      "EN": 0.8859643663610776,
+      "SON / torus": 1.364171363124591,
+      "fair universal static": 1.0,
+      "fixed random": 0.997809981534836,
+      "oracle": 0.997809981534836,
+      "prefill-informed OCS": 1.0047058858654438
+    },
+    "Qwen MMLU ML": {
+      "EN": 1.0977746521966172,
+      "SON / torus": 1.547390639605866,
+      "fair universal static": 1.0,
+      "fixed random": 1.001796840547406,
+      "oracle": 0.9973807788907283,
+      "prefill-informed OCS": 1.0
+    }
+  },
+  "predictability_values": {
+    "DeepSeek MMLU ML": {
+      "Spearman": 0.7034844672253626,
+      "top16 overlap": 0.4375,
+      "top8 overlap": 0.5
+    },
+    "Qwen LiveCodeBench": {
+      "Spearman": 0.5421969419520234,
+      "top16 overlap": 0.4375,
+      "top8 overlap": 0.375
+    },
+    "Qwen MMLU ML": {
+      "Spearman": 0.8655719693428621,
+      "top16 overlap": 0.5625,
+      "top8 overlap": 0.5
+    }
+  },
+  "raw_values_ms": {
+    "DeepSeek MMLU ML": {
+      "EN": 78.59174,
+      "SON / torus": 116.755321,
+      "fair universal static": 66.947609,
+      "fixed random": 68.945216,
+      "oracle": 66.947609,
+      "prefill-informed OCS": 66.947609
+    },
+    "Qwen LiveCodeBench": {
+      "EN": 611.88431,
+      "SON / torus": 942.154205,
+      "fair universal static": 690.642122,
+      "fixed random": 689.129603,
+      "oracle": 689.129603,
+      "prefill-informed OCS": 693.892205
+    },
+    "Qwen MMLU ML": {
+      "EN": 138.97643,
+      "SON / torus": 195.89706,
+      "fair universal static": 126.598323,
+      "fixed random": 126.8258,
+      "oracle": 126.266734,
+      "prefill-informed OCS": 126.598323
+    }
+  },
+  "required_workloads": [
+    {
+      "full_label": "Qwen MMLU machine_learning",
+      "id": "qwen_mmlu_machine_learning",
+      "label": "Qwen MMLU ML",
+      "path": "/Users/dfx/Python/trace/Qwen/Qwen3-235B-A22B-FP8/mmlu/machine_learning"
+    },
+    {
+      "full_label": "DeepSeek MMLU machine_learning",
+      "id": "deepseek_mmlu_machine_learning",
+      "label": "DeepSeek MMLU ML",
+      "path": "/Users/dfx/Python/trace/cognitivecomputations/DeepSeek-R1-AWQ/mmlu/machine_learning"
+    },
+    {
+      "full_label": "Qwen LiveCodeBench execution",
+      "id": "qwen_livecodebench_execution",
+      "label": "Qwen LiveCodeBench",
+      "path": "/Users/dfx/Python/trace/Qwen/Qwen3-235B-A22B-FP8/livecodebench/execution"
+    }
+  ],
+  "scope": "V38.1/2 preliminary supervisor figures and strict validation for prefill-informed decode OCS",
+  "selections": {
+    "deepseek_mmlu_machine_learning": {
+      "fair_universal": {
+        "scores_top8": [
+          {
+            "candidate": "random_regular_seed_11",
+            "leave_one_out_avg_norm_to_son": 0.28587208843612677
+          },
+          {
+            "candidate": "random_regular_seed_2",
+            "leave_one_out_avg_norm_to_son": 0.2958061037510987
+          },
+          {
+            "candidate": "random_regular_seed_0",
+            "leave_one_out_avg_norm_to_son": 0.2995251194610542
+          },
+          {
+            "candidate": "random_regular_seed_14",
+            "leave_one_out_avg_norm_to_son": 0.30305426528957663
+          },
+          {
+            "candidate": "random_regular_seed_8",
+            "leave_one_out_avg_norm_to_son": 0.3035117194067793
+          },
+          {
+            "candidate": "random_regular_seed_26",
+            "leave_one_out_avg_norm_to_son": 0.30607747185887935
+          },
+          {
+            "candidate": "random_regular_seed_7",
+            "leave_one_out_avg_norm_to_son": 0.3062531355969571
+          },
+          {
+            "candidate": "random_regular_seed_10",
+            "leave_one_out_avg_norm_to_son": 0.3077352682358737
+          }
+        ],
+        "selected": "random_regular_seed_11"
+      },
+      "method_to_candidate": {
+        "EN": "en_folded_clos",
+        "SON / torus": "son_torus",
+        "fair universal static": "random_regular_seed_11",
+        "fixed random": "random_regular_seed_0",
+        "oracle": "random_regular_seed_11",
+        "prefill-informed OCS": "random_regular_seed_11"
+      },
+      "oracle": {
+        "scores_top8": [
+          {
+            "candidate": "random_regular_seed_11",
+            "native_decode_cycles": 66947609,
+            "success": true
+          },
+          {
+            "candidate": "random_regular_seed_27",
+            "native_decode_cycles": 67885186,
+            "success": true
+          },
+          {
+            "candidate": "random_regular_seed_14",
+            "native_decode_cycles": 68343685,
+            "success": true
+          },
+          {
+            "candidate": "random_regular_seed_26",
+            "native_decode_cycles": 68708906,
+            "success": true
+          },
+          {
+            "candidate": "random_regular_seed_2",
+            "native_decode_cycles": 68924017,
+            "success": true
+          },
+          {
+            "candidate": "random_regular_seed_0",
+            "native_decode_cycles": 68945216,
+            "success": true
+          },
+          {
+            "candidate": "random_regular_seed_7",
+            "native_decode_cycles": 69203811,
+            "success": true
+          },
+          {
+            "candidate": "random_regular_seed_1",
+            "native_decode_cycles": 69305946,
+            "success": true
+          }
+        ],
+        "selected": "random_regular_seed_11",
+        "selection_engine": "native_astra_decode_oracle"
+      },
+      "prefill_informed_ocs": {
+        "scores_top8": [
+          {
+            "candidate": "random_regular_seed_11",
+            "native_prefill_cycles": 19613053,
+            "success": true
+          },
+          {
+            "candidate": "random_regular_seed_14",
+            "native_prefill_cycles": 19641263,
+            "success": true
+          },
+          {
+            "candidate": "random_regular_seed_26",
+            "native_prefill_cycles": 19651827,
+            "success": true
+          },
+          {
+            "candidate": "random_regular_seed_1",
+            "native_prefill_cycles": 19707168,
+            "success": true
+          },
+          {
+            "candidate": "random_regular_seed_10",
+            "native_prefill_cycles": 19747863,
+            "success": true
+          },
+          {
+            "candidate": "random_regular_seed_8",
+            "native_prefill_cycles": 19796572,
+            "success": true
+          },
+          {
+            "candidate": "random_regular_seed_7",
+            "native_prefill_cycles": 19811144,
+            "success": true
+          },
+          {
+            "candidate": "random_regular_seed_27",
+            "native_prefill_cycles": 19996460,
+            "success": true
+          }
+        ],
+        "selected": "random_regular_seed_11",
+        "selection_engine": "native_astra_prefill"
+      }
+    },
+    "qwen_livecodebench_execution": {
+      "fair_universal": {
+        "scores_top8": [
+          {
+            "candidate": "random_regular_seed_11",
+            "leave_one_out_avg_norm_to_son": 0.28000762457703865
+          },
+          {
+            "candidate": "random_regular_seed_0",
+            "leave_one_out_avg_norm_to_son": 0.2858672828698916
+          },
+          {
+            "candidate": "random_regular_seed_14",
+            "leave_one_out_avg_norm_to_son": 0.2926380702971167
+          },
+          {
+            "candidate": "random_regular_seed_1",
+            "leave_one_out_avg_norm_to_son": 0.2934132917009292
+          },
+          {
+            "candidate": "random_regular_seed_27",
+            "leave_one_out_avg_norm_to_son": 0.2967310729958293
+          },
+          {
+            "candidate": "random_regular_seed_26",
+            "leave_one_out_avg_norm_to_son": 0.29784474379968295
+          },
+          {
+            "candidate": "random_regular_seed_3",
+            "leave_one_out_avg_norm_to_son": 0.2985984538109342
+          },
+          {
+            "candidate": "random_regular_seed_2",
+            "leave_one_out_avg_norm_to_son": 0.30102327280380653
+          }
+        ],
+        "selected": "random_regular_seed_11"
+      },
+      "method_to_candidate": {
+        "EN": "en_folded_clos",
+        "SON / torus": "son_torus",
+        "fair universal static": "random_regular_seed_11",
+        "fixed random": "random_regular_seed_0",
+        "oracle": "random_regular_seed_0",
+        "prefill-informed OCS": "random_regular_seed_4"
+      },
+      "oracle": {
+        "scores_top8": [
+          {
+            "candidate": "random_regular_seed_0",
+            "native_decode_cycles": 689129603,
+            "success": true
+          },
+          {
+            "candidate": "random_regular_seed_11",
+            "native_decode_cycles": 690642122,
+            "success": true
+          },
+          {
+            "candidate": "random_regular_seed_26",
+            "native_decode_cycles": 690908033,
+            "success": true
+          },
+          {
+            "candidate": "random_regular_seed_14",
+            "native_decode_cycles": 693615351,
+            "success": true
+          },
+          {
+            "candidate": "random_regular_seed_1",
+            "native_decode_cycles": 693635763,
+            "success": true
+          },
+          {
+            "candidate": "random_regular_seed_4",
+            "native_decode_cycles": 693892205,
+            "success": true
+          },
+          {
+            "candidate": "random_regular_seed_27",
+            "native_decode_cycles": 695239170,
+            "success": true
+          },
+          {
+            "candidate": "random_regular_seed_10",
+            "native_decode_cycles": 697306253,
+            "success": true
+          }
+        ],
+        "selected": "random_regular_seed_0",
+        "selection_engine": "native_astra_decode_oracle"
+      },
+      "prefill_informed_ocs": {
+        "scores_top8": [
+          {
+            "candidate": "random_regular_seed_4",
+            "native_prefill_cycles": 645653300,
+            "success": true
+          },
+          {
+            "candidate": "random_regular_seed_0",
+            "native_prefill_cycles": 646183969,
+            "success": true
+          },
+          {
+            "candidate": "random_regular_seed_26",
+            "native_prefill_cycles": 646231370,
+            "success": true
+          },
+          {
+            "candidate": "random_regular_seed_11",
+            "native_prefill_cycles": 646290556,
+            "success": true
+          },
+          {
+            "candidate": "random_regular_seed_1",
+            "native_prefill_cycles": 649443423,
+            "success": true
+          },
+          {
+            "candidate": "random_regular_seed_14",
+            "native_prefill_cycles": 650090293,
+            "success": true
+          },
+          {
+            "candidate": "random_regular_seed_27",
+            "native_prefill_cycles": 651134251,
+            "success": true
+          },
+          {
+            "candidate": "random_regular_seed_10",
+            "native_prefill_cycles": 652640144,
+            "success": true
+          }
+        ],
+        "selected": "random_regular_seed_4",
+        "selection_engine": "native_astra_prefill"
+      }
+    },
+    "qwen_mmlu_machine_learning": {
+      "fair_universal": {
+        "scores_top8": [
+          {
+            "candidate": "random_regular_seed_11",
+            "leave_one_out_avg_norm_to_son": 0.27936176849955563
+          },
+          {
+            "candidate": "random_regular_seed_27",
+            "leave_one_out_avg_norm_to_son": 0.28579846144868626
+          },
+          {
+            "candidate": "random_regular_seed_8",
+            "leave_one_out_avg_norm_to_son": 0.2859916932202101
+          },
+          {
+            "candidate": "random_regular_seed_14",
+            "leave_one_out_avg_norm_to_son": 0.29117276841897943
+          },
+          {
+            "candidate": "random_regular_seed_2",
+            "leave_one_out_avg_norm_to_son": 0.2922892453984635
+          },
+          {
+            "candidate": "random_regular_seed_0",
+            "leave_one_out_avg_norm_to_son": 0.29709440677005394
+          },
+          {
+            "candidate": "random_regular_seed_26",
+            "leave_one_out_avg_norm_to_son": 0.29792662422436367
+          },
+          {
+            "candidate": "random_regular_seed_10",
+            "leave_one_out_avg_norm_to_son": 0.3064449583768818
+          }
+        ],
+        "selected": "random_regular_seed_11"
+      },
+      "method_to_candidate": {
+        "EN": "en_folded_clos",
+        "SON / torus": "son_torus",
+        "fair universal static": "random_regular_seed_11",
+        "fixed random": "random_regular_seed_0",
+        "oracle": "random_regular_seed_24",
+        "prefill-informed OCS": "random_regular_seed_11"
+      },
+      "oracle": {
+        "scores_top8": [
+          {
+            "candidate": "random_regular_seed_24",
+            "native_decode_cycles": 126266734,
+            "success": true
+          },
+          {
+            "candidate": "random_regular_seed_11",
+            "native_decode_cycles": 126598323,
+            "success": true
+          },
+          {
+            "candidate": "random_regular_seed_0",
+            "native_decode_cycles": 126825800,
+            "success": true
+          },
+          {
+            "candidate": "random_regular_seed_10",
+            "native_decode_cycles": 127362553,
+            "success": true
+          },
+          {
+            "candidate": "random_regular_seed_26",
+            "native_decode_cycles": 127801847,
+            "success": true
+          },
+          {
+            "candidate": "random_regular_seed_8",
+            "native_decode_cycles": 128421952,
+            "success": true
+          },
+          {
+            "candidate": "random_regular_seed_27",
+            "native_decode_cycles": 128503945,
+            "success": true
+          },
+          {
+            "candidate": "random_regular_seed_3",
+            "native_decode_cycles": 128505739,
+            "success": true
+          }
+        ],
+        "selected": "random_regular_seed_24",
+        "selection_engine": "native_astra_decode_oracle"
+      },
+      "prefill_informed_ocs": {
+        "scores_top8": [
+          {
+            "candidate": "random_regular_seed_11",
+            "native_prefill_cycles": 34710704,
+            "success": true
+          },
+          {
+            "candidate": "random_regular_seed_14",
+            "native_prefill_cycles": 34879320,
+            "success": true
+          },
+          {
+            "candidate": "random_regular_seed_27",
+            "native_prefill_cycles": 35057345,
+            "success": true
+          },
+          {
+            "candidate": "random_regular_seed_1",
+            "native_prefill_cycles": 35117940,
+            "success": true
+          },
+          {
+            "candidate": "random_regular_seed_24",
+            "native_prefill_cycles": 35236936,
+            "success": true
+          },
+          {
+            "candidate": "random_regular_seed_0",
+            "native_prefill_cycles": 35287525,
+            "success": true
+          },
+          {
+            "candidate": "random_regular_seed_10",
+            "native_prefill_cycles": 35366999,
+            "success": true
+          },
+          {
+            "candidate": "random_regular_seed_7",
+            "native_prefill_cycles": 35403780,
+            "success": true
+          }
+        ],
+        "selected": "random_regular_seed_11",
+        "selection_engine": "native_astra_prefill"
+      }
+    }
+  },
+  "stage_mapping": {
+    "trace[0]": "prefill selection only",
+    "trace[1:]": "decode evaluation only"
+  },
+  "timing_engine": "main plotted bars use native ASTRA analytical congestion-aware GraphTopology cycles; fluid link-load remains a lower-bound/explanation check",
+  "validation_summary": {
+    "deepseek_mmlu_machine_learning": {
+      "all_native_astra_runs_success": true,
+      "no_leakage_pass": true,
+      "optical_budget_pass": true,
+      "oracle_labelled_upper_bound": true,
+      "penalty_10us_beats_fair_static": false,
+      "penalty_1us_beats_fair_static": false,
+      "penalty_25ms_beats_fair_static": false,
+      "prefill_ocs_beats_EN": true,
+      "prefill_ocs_beats_SON": true,
+      "prefill_ocs_beats_fair_static": false,
+      "prefill_ocs_beats_fixed_random": true,
+      "selected_fair_universal_candidate": "random_regular_seed_11",
+      "selected_oracle_candidate": "random_regular_seed_11",
+      "selected_prefill_candidate": "random_regular_seed_11",
+      "strongest_predictability_metric": {
+        "Spearman": 0.7034844672253626,
+        "top16 overlap": 0.4375,
+        "top8 overlap": 0.5
+      },
+      "trace_validation_pass": true
+    },
+    "qwen_livecodebench_execution": {
+      "all_native_astra_runs_success": true,
+      "no_leakage_pass": true,
+      "optical_budget_pass": true,
+      "oracle_labelled_upper_bound": true,
+      "penalty_10us_beats_fair_static": false,
+      "penalty_1us_beats_fair_static": false,
+      "penalty_25ms_beats_fair_static": false,
+      "prefill_ocs_beats_EN": false,
+      "prefill_ocs_beats_SON": true,
+      "prefill_ocs_beats_fair_static": false,
+      "prefill_ocs_beats_fixed_random": false,
+      "selected_fair_universal_candidate": "random_regular_seed_11",
+      "selected_oracle_candidate": "random_regular_seed_0",
+      "selected_prefill_candidate": "random_regular_seed_4",
+      "strongest_predictability_metric": {
+        "Spearman": 0.5421969419520234,
+        "top16 overlap": 0.4375,
+        "top8 overlap": 0.375
+      },
+      "trace_validation_pass": true
+    },
+    "qwen_mmlu_machine_learning": {
+      "all_native_astra_runs_success": true,
+      "no_leakage_pass": true,
+      "optical_budget_pass": true,
+      "oracle_labelled_upper_bound": true,
+      "penalty_10us_beats_fair_static": false,
+      "penalty_1us_beats_fair_static": false,
+      "penalty_25ms_beats_fair_static": false,
+      "prefill_ocs_beats_EN": true,
+      "prefill_ocs_beats_SON": true,
+      "prefill_ocs_beats_fair_static": false,
+      "prefill_ocs_beats_fixed_random": true,
+      "selected_fair_universal_candidate": "random_regular_seed_11",
+      "selected_oracle_candidate": "random_regular_seed_24",
+      "selected_prefill_candidate": "random_regular_seed_11",
+      "strongest_predictability_metric": {
+        "Spearman": 0.8655719693428621,
+        "top16 overlap": 0.5625,
+        "top8 overlap": 0.5
+      },
+      "trace_validation_pass": true
+    }
+  }
+}

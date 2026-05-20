@@ -1,0 +1,50 @@
+[
+  {
+    "workload": "qwen_livecodebench_execution",
+    "method": "EN",
+    "fluid_cycles": 301284484,
+    "fluid_ms": 301.284484,
+    "normalised_to_fair_static": 3.3417786895854906,
+    "note": "current V38.1 fluid lower-bound EN folded-Clos reference"
+  },
+  {
+    "workload": "qwen_livecodebench_execution",
+    "method": "SON / torus",
+    "fluid_cycles": 295541232,
+    "fluid_ms": 295.541232,
+    "normalised_to_fair_static": 3.278075850037606,
+    "note": "V38 fluid-only SON torus; used in old V38 comparison"
+  },
+  {
+    "workload": "qwen_livecodebench_execution",
+    "method": "fixed random",
+    "fluid_cycles": 182290114,
+    "fluid_ms": 182.290114,
+    "normalised_to_fair_static": 2.02192031331859,
+    "note": "current V38.1 fluid lower-bound random_regular_seed_0"
+  },
+  {
+    "workload": "qwen_livecodebench_execution",
+    "method": "fair universal static",
+    "fluid_cycles": 90156923,
+    "fluid_ms": 90.156923,
+    "normalised_to_fair_static": 1.0,
+    "note": "V38 fluid-only fair universal static"
+  },
+  {
+    "workload": "qwen_livecodebench_execution",
+    "method": "prefill-informed OCS",
+    "fluid_cycles": 84320844,
+    "fluid_ms": 84.320844,
+    "normalised_to_fair_static": 0.9352675445678198,
+    "note": "V38 fluid-only prefill-selected GPU-level OCS"
+  },
+  {
+    "workload": "qwen_livecodebench_execution",
+    "method": "oracle",
+    "fluid_cycles": 82749318,
+    "fluid_ms": 82.749318,
+    "normalised_to_fair_static": 0.9178365370787999,
+    "note": "V38 fluid-only decode oracle upper bound"
+  }
+]

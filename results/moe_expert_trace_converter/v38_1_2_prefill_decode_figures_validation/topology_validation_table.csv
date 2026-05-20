@@ -1,0 +1,19 @@
+workload,method,graph_name,node_count,gpu_count,edge_or_circuit_count,degree_distribution_all_nodes,degree_distribution_gpu_nodes,connected_components,component_sizes,duplicate_edges,self_loops,per_link_bandwidth_gbps,per_gpu_bandwidth_tbps,ecmp_max_paths,same_budget_check,budget_note
+qwen_mmlu_machine_learning,EN,en_folded_clos_128gpu_16leaf_16spine,160,128,384,"{1: 128, 16: 16, 24: 16}",{1: 128},1,[160],0,0,400,0.4,4,False,EN electrical reference
+qwen_mmlu_machine_learning,SON / torus,son_torus_8x16_128gpu,128,128,256,{4: 128},{4: 128},1,[128],0,0,400,1.6,4,True,same degree-4 optical budget
+qwen_mmlu_machine_learning,fixed random,ron_random_regular_seed_0,128,128,256,{4: 128},{4: 128},1,[128],0,0,400,1.6,4,True,same degree-4 optical budget
+qwen_mmlu_machine_learning,fair universal static,ron_random_regular_seed_11,128,128,256,{4: 128},{4: 128},1,[128],0,0,400,1.6,4,True,same degree-4 optical budget
+qwen_mmlu_machine_learning,prefill-informed OCS,ron_random_regular_seed_11,128,128,256,{4: 128},{4: 128},1,[128],0,0,400,1.6,4,True,same degree-4 optical budget
+qwen_mmlu_machine_learning,oracle,ron_random_regular_seed_24,128,128,256,{4: 128},{4: 128},1,[128],0,0,400,1.6,4,True,same degree-4 optical budget
+deepseek_mmlu_machine_learning,EN,en_folded_clos_128gpu_16leaf_16spine,160,128,384,"{1: 128, 16: 16, 24: 16}",{1: 128},1,[160],0,0,400,0.4,4,False,EN electrical reference
+deepseek_mmlu_machine_learning,SON / torus,son_torus_8x16_128gpu,128,128,256,{4: 128},{4: 128},1,[128],0,0,400,1.6,4,True,same degree-4 optical budget
+deepseek_mmlu_machine_learning,fixed random,ron_random_regular_seed_0,128,128,256,{4: 128},{4: 128},1,[128],0,0,400,1.6,4,True,same degree-4 optical budget
+deepseek_mmlu_machine_learning,fair universal static,ron_random_regular_seed_11,128,128,256,{4: 128},{4: 128},1,[128],0,0,400,1.6,4,True,same degree-4 optical budget
+deepseek_mmlu_machine_learning,prefill-informed OCS,ron_random_regular_seed_11,128,128,256,{4: 128},{4: 128},1,[128],0,0,400,1.6,4,True,same degree-4 optical budget
+deepseek_mmlu_machine_learning,oracle,ron_random_regular_seed_11,128,128,256,{4: 128},{4: 128},1,[128],0,0,400,1.6,4,True,same degree-4 optical budget
+qwen_livecodebench_execution,EN,en_folded_clos_128gpu_16leaf_16spine,160,128,384,"{1: 128, 16: 16, 24: 16}",{1: 128},1,[160],0,0,400,0.4,4,False,EN electrical reference
+qwen_livecodebench_execution,SON / torus,son_torus_8x16_128gpu,128,128,256,{4: 128},{4: 128},1,[128],0,0,400,1.6,4,True,same degree-4 optical budget
+qwen_livecodebench_execution,fixed random,ron_random_regular_seed_0,128,128,256,{4: 128},{4: 128},1,[128],0,0,400,1.6,4,True,same degree-4 optical budget
+qwen_livecodebench_execution,fair universal static,ron_random_regular_seed_11,128,128,256,{4: 128},{4: 128},1,[128],0,0,400,1.6,4,True,same degree-4 optical budget
+qwen_livecodebench_execution,prefill-informed OCS,ron_random_regular_seed_4,128,128,256,{4: 128},{4: 128},1,[128],0,0,400,1.6,4,True,same degree-4 optical budget
+qwen_livecodebench_execution,oracle,ron_random_regular_seed_0,128,128,256,{4: 128},{4: 128},1,[128],0,0,400,1.6,4,True,same degree-4 optical budget

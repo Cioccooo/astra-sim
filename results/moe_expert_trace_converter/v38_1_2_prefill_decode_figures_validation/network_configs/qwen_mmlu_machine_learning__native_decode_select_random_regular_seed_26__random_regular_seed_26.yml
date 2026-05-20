@@ -1,0 +1,9 @@
+topology: [ Graph ]
+npus_count: [ 128 ]
+bandwidth: [ 50.0 ]
+latency: [ 0.0 ]
+graph_file: /Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v38_1_2_prefill_decode_figures_validation/graphs/qwen_mmlu_machine_learning__native_decode_select_random_regular_seed_26__random_regular_seed_26.json
+routing: ecmp
+ecmp_split: equal_bytes
+ecmp_max_paths: 4
+ecmp_log: false

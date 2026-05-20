@@ -1,0 +1,7 @@
+workload,method,fluid_cycles,fluid_ms,normalised_to_fair_static,note
+qwen_livecodebench_execution,EN,301284484,301.284484,3.3417786895854906,current V38.1 fluid lower-bound EN folded-Clos reference
+qwen_livecodebench_execution,SON / torus,295541232,295.541232,3.278075850037606,V38 fluid-only SON torus; used in old V38 comparison
+qwen_livecodebench_execution,fixed random,182290114,182.290114,2.02192031331859,current V38.1 fluid lower-bound random_regular_seed_0
+qwen_livecodebench_execution,fair universal static,90156923,90.156923,1.0,V38 fluid-only fair universal static
+qwen_livecodebench_execution,prefill-informed OCS,84320844,84.320844,0.9352675445678198,V38 fluid-only prefill-selected GPU-level OCS
+qwen_livecodebench_execution,oracle,82749318,82.749318,0.9178365370787999,V38 fluid-only decode oracle upper bound
