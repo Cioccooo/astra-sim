@@ -1,0 +1,39 @@
+TRAINING TIME BREAKDOWN OVERLAP
+
+[Effective overlap settings]
+DP overlap mode------------------------------------------------------------------ lump
+Requested bucket size (bytes)---------------------------------------------------- 0.0
+Effective bucket size after clamp (bytes)---------------------------------------- 454605344.0
+Gradient bytes per layer--------------------------------------------------------- 454605344.0
+Explicit schedule unit----------------------------------------------------------- one optimization step
+Full-training totals derived as-------------------------------------------------- number_of_batches x per-step explicit schedule totals
+
+[DP communication totals]
+DP raw communication total (s)--------------------------------------------------- 82047.20498657227
+DP hidden communication total (s)------------------------------------------------ 0.0
+DP exposed communication total (s)----------------------------------------------- 82047.20498657227
+
+[DP-related OCS reconfiguration totals]
+DP raw reconfiguration total (s)------------------------------------------------- 0.0
+DP hidden reconfiguration total (s)---------------------------------------------- 0.0
+DP exposed reconfiguration total (s)--------------------------------------------- 0.0
+
+[Shared-fabric wait totals]
+TP inter-node wait due to shared fabric total (s)-------------------------------- 0.0
+DP wait due to shared fabric total (s)------------------------------------------- 0.0
+Backward wait for TP completion total (s)---------------------------------------- 0.0
+
+[PP explicit wait / bubble diagnostics]
+PP explicit wait total (diagnostic, not added on top of legacy bubble term) (s)-- 78.40542422171441
+PP explicit bubble total (diagnostic, not added on top of legacy bubble term) (s) 11562016.922539674
+
+[End-to-end communication-related totals]
+Non-DP communication total (always exposed in Phase II) (s)---------------------- 2468.8995018005376
+Communication-related raw total (s)---------------------------------------------- 84516.1044883728
+Communication-related hidden total (s)------------------------------------------- 0.0
+Communication-related exposed total (s)------------------------------------------ 84516.1044883728
+
+[Small consistency checks]
+Check: DP communication raw - hidden - exposed (s)------------------------------- 0.0
+Check: DP reconfiguration raw - hidden - exposed (s)----------------------------- 0.0
+Check: communication-related raw - hidden - exposed (s)-------------------------- 0.0

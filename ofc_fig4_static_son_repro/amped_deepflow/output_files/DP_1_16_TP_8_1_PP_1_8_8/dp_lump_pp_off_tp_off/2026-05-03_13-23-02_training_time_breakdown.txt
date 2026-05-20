@@ -1,0 +1,33 @@
+TRAINING TIME BREAKDOWN
+
+Total time to train (s)----------------------------------------------- 393575.6161622606
+Total time to train (days)-------------------------------------------- 4.55527333521135
+Total time to train (years)------------------------------------------- 0.01248020091838726
+Computation time forward pass (s)------------------------------------- 103002.78233274844
+Computation time backward pass (s)------------------------------------ 103002.78233274844
+Computation time weight updates (s)----------------------------------- 102852.04991087342
+Total computation time (s)-------------------------------------------- 308857.6145763703
+Communication time forward pass: tensor parallelism intra node (s)---- 449.92260742187506
+Communication time forward pass: tensor parallelism inter node (s)---- 0.0
+Communication time forward pass: pipeline parallelism (s)------------- 537.6371932983399
+Communication time forward pass: Zero-DP (ad-hoc model gathering) (s)- 246.88995018005375
+Total communication time forward pass (s)----------------------------- 1234.4497509002688
+Communication time backward pass: tensor parallelism intra node (s)--- 449.92260742187506
+Communication time backward pass: tensor parallelism inter node (s)--- 0.0
+Communication time backward pass: pipeline parallelism (s)------------ 537.6371932983399
+Communication time backward pass: Zero-DP (ad-hoc model gathering) (s) 246.88995018005375
+Total communication time backward pass (s)---------------------------- 1234.4497509002688
+Communication time: all-reduce gradients for DP intra node (s)-------- 0.0
+Communication time: all-reduce gradients for DP inter node (s)-------- 82047.20498657227
+Communication time: all-reduce gradients for DP total (s)------------- 82047.20498657227
+Total communication time (s)------------------------------------------ 84516.1044883728
+Waiting Time due to pipeline bubbles (s)------------------------------ 201.8970975174765
+total MACs------------------------------------------------------------ 1.568240600832e+23
+TFLOPS---------------------------------------------------------------- 313648120166.39996
+total TFLOPS/sec------------------------------------------------------ 796919.5938121617
+TFLOP/sec/GPU--------------------------------------------------------- 778.2417908321892
+TFLOP/sec/GPU (peak)-------------------------------------------------- 973.2096
+MoE FW pass communication overhead time (s)--------------------------- 0.0
+MoE BW pass communication overhead time (s)--------------------------- 0.0
+MoE Gating network: compute overhead time (s)------------------------- 0.0
+Total MoE communication overhead time--------------------------------- 0.0
