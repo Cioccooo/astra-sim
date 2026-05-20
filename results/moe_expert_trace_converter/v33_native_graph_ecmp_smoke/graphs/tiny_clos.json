@@ -1,0 +1,62 @@
+{
+  "name": "tiny_clos_two_spines",
+  "node_count": 8,
+  "gpu_count": 4,
+  "rank_nodes": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "directed": false,
+  "edges": [
+    {
+      "src": 0,
+      "dst": 4,
+      "bandwidth_gbps": 400,
+      "latency_ns": 0
+    },
+    {
+      "src": 1,
+      "dst": 4,
+      "bandwidth_gbps": 400,
+      "latency_ns": 0
+    },
+    {
+      "src": 2,
+      "dst": 5,
+      "bandwidth_gbps": 400,
+      "latency_ns": 0
+    },
+    {
+      "src": 3,
+      "dst": 5,
+      "bandwidth_gbps": 400,
+      "latency_ns": 0
+    },
+    {
+      "src": 4,
+      "dst": 6,
+      "bandwidth_gbps": 400,
+      "latency_ns": 0
+    },
+    {
+      "src": 4,
+      "dst": 7,
+      "bandwidth_gbps": 400,
+      "latency_ns": 0
+    },
+    {
+      "src": 5,
+      "dst": 6,
+      "bandwidth_gbps": 400,
+      "latency_ns": 0
+    },
+    {
+      "src": 5,
+      "dst": 7,
+      "bandwidth_gbps": 400,
+      "latency_ns": 0
+    }
+  ]
+}

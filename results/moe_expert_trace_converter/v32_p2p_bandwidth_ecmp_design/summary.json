@@ -1,0 +1,61 @@
+{
+  "all_passed": true,
+  "message_size_bytes": 5000,
+  "trace_validation": {
+    "p2p_all_to_all": {
+      "prefix": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v32_p2p_bandwidth_ecmp_design/chakra_traces/p2p_all_to_all_4/workload",
+      "rank_count": 4,
+      "message_size_bytes": 5000,
+      "directed_messages": 12,
+      "node_types": [
+        "COMM_SEND_NODE",
+        "COMM_RECV_NODE"
+      ],
+      "uses_comm_coll_node": false
+    },
+    "one_link": {
+      "prefix": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v32_p2p_bandwidth_ecmp_design/chakra_traces/one_link_0_to_1/workload",
+      "src": 0,
+      "dst": 1,
+      "message_size_bytes": 5000
+    }
+  },
+  "bandwidth_audit": {
+    "input_bandwidth_gbps": 400,
+    "graph_topology_converted_GBps": 50.0,
+    "astra_bytes_per_ns": 53.6870912,
+    "expected_astra_ns": 93.13225746154785,
+    "expected_astra_cycles_truncated": 93,
+    "expected_decimal_ns": 100.0,
+    "decimal_vs_astra_difference_percent": 7.374182400000007,
+    "eight_x_unit_risk": false
+  },
+  "runs": {
+    "p2p_all_to_all_square": {
+      "label": "p2p_all_to_all_square",
+      "returncode": 0,
+      "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v32_p2p_bandwidth_ecmp_design/chakra_traces/p2p_all_to_all_4/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v32_p2p_bandwidth_ecmp_design/network_configs/graph_square4.yml",
+      "stdout": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v32_p2p_bandwidth_ecmp_design/runs/p2p_all_to_all_square.stdout.txt",
+      "stderr": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v32_p2p_bandwidth_ecmp_design/runs/p2p_all_to_all_square.stderr.txt",
+      "cycles": [
+        372,
+        372,
+        465,
+        465
+      ],
+      "max_cycles": 465
+    },
+    "one_link_400gbps": {
+      "label": "one_link_400gbps",
+      "returncode": 0,
+      "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v32_p2p_bandwidth_ecmp_design/chakra_traces/one_link_0_to_1/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v32_p2p_bandwidth_ecmp_design/network_configs/graph_two_node.yml",
+      "stdout": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v32_p2p_bandwidth_ecmp_design/runs/one_link_400gbps.stdout.txt",
+      "stderr": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v32_p2p_bandwidth_ecmp_design/runs/one_link_400gbps.stderr.txt",
+      "cycles": [
+        93,
+        93
+      ],
+      "max_cycles": 93
+    }
+  }
+}

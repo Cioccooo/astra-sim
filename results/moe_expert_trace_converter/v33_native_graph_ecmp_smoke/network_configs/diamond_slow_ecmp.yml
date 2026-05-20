@@ -1,0 +1,9 @@
+topology: [ Graph ]
+npus_count: [ 4 ]
+bandwidth: [ 50.0 ]
+latency: [ 0.0 ]
+graph_file: /Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v33_native_graph_ecmp_smoke/graphs/diamond_slow.json
+routing: ecmp
+ecmp_split: equal_bytes
+ecmp_max_paths: 0
+ecmp_log: true

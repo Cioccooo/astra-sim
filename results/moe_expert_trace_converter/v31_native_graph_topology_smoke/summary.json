@@ -1,0 +1,128 @@
+{
+  "all_passed": true,
+  "message_bytes": 5000,
+  "bandwidth_gbps": 400,
+  "per_hop_serialization_ns": 100.0,
+  "manual_expectations": {
+    "line4_0_to_3_hops": 3,
+    "line4_network_only_ns": 300.0,
+    "torus4x8_0_to_31_hops": 2,
+    "torus4x8_network_only_ns": 200.0,
+    "non_gpu_switch_nodes_0_to_3_hops": 3,
+    "non_gpu_switch_nodes_network_only_ns": 300.0
+  },
+  "runs": [
+    {
+      "label": "graph_line4",
+      "returncode": 0,
+      "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v31_native_graph_topology_smoke/chakra_traces/line4_0_to_3/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v31_native_graph_topology_smoke/network_configs/graph_line4.yml",
+      "stdout": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v31_native_graph_topology_smoke/runs/graph_line4.stdout.txt",
+      "stderr": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v31_native_graph_topology_smoke/runs/graph_line4.stderr.txt",
+      "cycles": [
+        1,
+        1,
+        279,
+        279
+      ],
+      "max_cycles": 279
+    },
+    {
+      "label": "graph_torus4x8",
+      "returncode": 0,
+      "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v31_native_graph_topology_smoke/chakra_traces/torus32_0_to_31/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v31_native_graph_topology_smoke/network_configs/graph_torus4x8.yml",
+      "stdout": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v31_native_graph_topology_smoke/runs/graph_torus4x8.stdout.txt",
+      "stderr": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v31_native_graph_topology_smoke/runs/graph_torus4x8.stderr.txt",
+      "cycles": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        186,
+        186
+      ],
+      "max_cycles": 186
+    },
+    {
+      "label": "graph_non_gpu_switch_nodes",
+      "returncode": 0,
+      "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v31_native_graph_topology_smoke/chakra_traces/basic4_0_to_3/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v31_native_graph_topology_smoke/network_configs/graph_non_gpu_switch_nodes.yml",
+      "stdout": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v31_native_graph_topology_smoke/runs/graph_non_gpu_switch_nodes.stdout.txt",
+      "stderr": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v31_native_graph_topology_smoke/runs/graph_non_gpu_switch_nodes.stderr.txt",
+      "cycles": [
+        1,
+        1,
+        279,
+        279
+      ],
+      "max_cycles": 279
+    },
+    {
+      "label": "existing_ring4",
+      "returncode": 0,
+      "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v31_native_graph_topology_smoke/chakra_traces/basic4_0_to_3/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v31_native_graph_topology_smoke/network_configs/ring4.yml",
+      "stdout": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v31_native_graph_topology_smoke/runs/existing_ring4.stdout.txt",
+      "stderr": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v31_native_graph_topology_smoke/runs/existing_ring4.stderr.txt",
+      "cycles": [
+        1,
+        1,
+        93,
+        93
+      ],
+      "max_cycles": 93
+    },
+    {
+      "label": "existing_switch4",
+      "returncode": 0,
+      "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v31_native_graph_topology_smoke/chakra_traces/basic4_0_to_3/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v31_native_graph_topology_smoke/network_configs/switch4.yml",
+      "stdout": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v31_native_graph_topology_smoke/runs/existing_switch4.stdout.txt",
+      "stderr": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v31_native_graph_topology_smoke/runs/existing_switch4.stderr.txt",
+      "cycles": [
+        1,
+        1,
+        186,
+        186
+      ],
+      "max_cycles": 186
+    },
+    {
+      "label": "existing_fully_connected4",
+      "returncode": 0,
+      "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v31_native_graph_topology_smoke/chakra_traces/basic4_0_to_3/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v31_native_graph_topology_smoke/network_configs/fully_connected4.yml",
+      "stdout": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v31_native_graph_topology_smoke/runs/existing_fully_connected4.stdout.txt",
+      "stderr": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v31_native_graph_topology_smoke/runs/existing_fully_connected4.stderr.txt",
+      "cycles": [
+        1,
+        1,
+        93,
+        93
+      ],
+      "max_cycles": 93
+    }
+  ]
+}

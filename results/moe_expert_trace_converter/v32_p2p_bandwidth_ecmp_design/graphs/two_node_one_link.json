@@ -1,0 +1,14 @@
+{
+  "name": "two_node_one_400gbps_link",
+  "node_count": 2,
+  "gpu_count": 2,
+  "directed": false,
+  "edges": [
+    {
+      "src": 0,
+      "dst": 1,
+      "bandwidth_gbps": 400,
+      "latency_ns": 0
+    }
+  ]
+}

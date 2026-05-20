@@ -1,0 +1,1295 @@
+# V3.5 One-Workload Aggregated Native ASTRA Validation
+
+## Scope
+
+This is a pipeline validation step, not a final paper result and not a full V2.8 reproduction.
+
+Pipeline:
+
+`HF MoE expert-selection trace -> aggregated per-GPU-pair dispatch/combine matrices -> Chakra SEND/RECV traces -> native ASTRA GraphTopology timing`
+
+Workload: Qwen MMLU `machine_learning`, 32 GPUs, prefill only (`trace[0]`), `block_by_token`, block expert placement, `hidden_size=4096`, `bytes_per_value=2`, local traffic excluded.
+
+## Final Answers
+
+1. Can one real HF-derived MoE prefill workload run successfully on native ASTRA GraphTopology? **True.**
+2. Does SON torus ECMP improve over deterministic routing? **True.**
+3. Is `ecmp_max_paths=4` still a good production main setting? **True.**
+4. Should `ecmp_max_paths=2` and `8` remain sensitivity points? **Yes.**
+5. How different are native ASTRA results from the fluid lower bound? **1.67x to 2.63x across topology/phase totals.**
+6. Are the differences explainable? **Yes, by ASTRA's hop-by-hop chunk forwarding/store-and-forward semantics.**
+7. Is it safe to proceed to static RON calibrated/oracle validation next? **True.**
+
+## Byte Conservation
+
+```json
+{
+  "request_ids": [
+    "6835",
+    "6836",
+    "6837",
+    "6838",
+    "6839",
+    "6840",
+    "6841",
+    "6842",
+    "6843",
+    "6844",
+    "6845",
+    "6846",
+    "6847",
+    "6848",
+    "6849",
+    "6850",
+    "6851",
+    "6852",
+    "6853",
+    "6854",
+    "6855",
+    "6856",
+    "6857",
+    "6858",
+    "6859",
+    "6860",
+    "6861",
+    "6862",
+    "6863",
+    "6864",
+    "6865",
+    "6866",
+    "6867",
+    "6868",
+    "6869",
+    "6870",
+    "6871",
+    "6872",
+    "6873",
+    "6874",
+    "6875",
+    "6876",
+    "6877",
+    "6878",
+    "6879",
+    "6880",
+    "6881",
+    "6882",
+    "6883",
+    "6884",
+    "6885",
+    "6886",
+    "6887",
+    "6888",
+    "6889",
+    "6890",
+    "6891",
+    "6892",
+    "6893",
+    "6894",
+    "6895",
+    "6896",
+    "6897",
+    "6898",
+    "6899",
+    "6900",
+    "6901",
+    "6902",
+    "6903",
+    "6904",
+    "6905",
+    "6906",
+    "6907",
+    "6908",
+    "6909",
+    "6910",
+    "6911",
+    "6912",
+    "6913",
+    "6914",
+    "6915",
+    "6916",
+    "6917",
+    "6918",
+    "6919",
+    "6920",
+    "6921",
+    "6922",
+    "6923",
+    "6924",
+    "6925",
+    "6926",
+    "6927",
+    "6928",
+    "6929",
+    "6930",
+    "6931",
+    "6932",
+    "6933",
+    "6934",
+    "6935",
+    "6936",
+    "6937",
+    "6938",
+    "6939",
+    "6940",
+    "6941",
+    "6942",
+    "6943",
+    "6944",
+    "6945",
+    "6946"
+  ],
+  "files_found": 112,
+  "files_used": 112,
+  "prefill_input_tokens": 3812,
+  "rows_by_request": {
+    "6835": 37,
+    "6836": 46,
+    "6837": 51,
+    "6838": 46,
+    "6839": 19,
+    "6840": 50,
+    "6841": 34,
+    "6842": 43,
+    "6843": 25,
+    "6844": 18,
+    "6845": 52,
+    "6846": 18,
+    "6847": 36,
+    "6848": 51,
+    "6849": 9,
+    "6850": 33,
+    "6851": 30,
+    "6852": 46,
+    "6853": 27,
+    "6854": 42,
+    "6855": 5,
+    "6856": 37,
+    "6857": 38,
+    "6858": 58,
+    "6859": 42,
+    "6860": 53,
+    "6861": 6,
+    "6862": 8,
+    "6863": 10,
+    "6864": 29,
+    "6865": 4,
+    "6866": 121,
+    "6867": 67,
+    "6868": 5,
+    "6869": 18,
+    "6870": 6,
+    "6871": 14,
+    "6872": 53,
+    "6873": 25,
+    "6874": 28,
+    "6875": 7,
+    "6876": 36,
+    "6877": 88,
+    "6878": 42,
+    "6879": 50,
+    "6880": 15,
+    "6881": 21,
+    "6882": 9,
+    "6883": 77,
+    "6884": 36,
+    "6885": 19,
+    "6886": 32,
+    "6887": 34,
+    "6888": 11,
+    "6889": 13,
+    "6890": 6,
+    "6891": 61,
+    "6892": 34,
+    "6893": 31,
+    "6894": 13,
+    "6895": 58,
+    "6896": 28,
+    "6897": 44,
+    "6898": 4,
+    "6899": 28,
+    "6900": 23,
+    "6901": 18,
+    "6902": 39,
+    "6903": 59,
+    "6904": 6,
+    "6905": 45,
+    "6906": 5,
+    "6907": 31,
+    "6908": 48,
+    "6909": 17,
+    "6910": 38,
+    "6911": 27,
+    "6912": 61,
+    "6913": 29,
+    "6914": 32,
+    "6915": 51,
+    "6916": 63,
+    "6917": 40,
+    "6918": 14,
+    "6919": 56,
+    "6920": 32,
+    "6921": 17,
+    "6922": 40,
+    "6923": 11,
+    "6924": 31,
+    "6925": 25,
+    "6926": 7,
+    "6927": 43,
+    "6928": 1,
+    "6929": 57,
+    "6930": 4,
+    "6931": 25,
+    "6932": 31,
+    "6933": 9,
+    "6934": 33,
+    "6935": 26,
+    "6936": 63,
+    "6937": 66,
+    "6938": 78,
+    "6939": 59,
+    "6940": 7,
+    "6941": 98,
+    "6942": 6,
+    "6943": 2,
+    "6944": 1,
+    "6945": 108,
+    "6946": 93
+  },
+  "moe_layers": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93
+  ],
+  "moe_layer_count": 94,
+  "inferred_num_experts": 128,
+  "selected_expert_events": 2866624,
+  "malformed_records": 0,
+  "theoretical_dispatch_bytes": 23483383808,
+  "theoretical_combine_bytes": 23483383808,
+  "local_dispatch_bytes_excluded": 734199808,
+  "local_combine_bytes_excluded": 734199808,
+  "remote_dispatch_bytes_retained": 22749184000,
+  "remote_combine_bytes_retained": 22749184000,
+  "byte_conservation_pass": true
+}
+```
+
+## Aggregated Matrix Stats
+
+```json
+{
+  "dispatch": {
+    "total_remote_bytes": 22749184000,
+    "nonzero_gpu_pairs": 992,
+    "top1_share": 0.001519265394310407,
+    "top4_share": 0.005945984875765214,
+    "top8_share": 0.011667626935541952,
+    "top16_share": 0.02274900972272236,
+    "gini": 0.08723826623067361,
+    "message_bytes_min": 15171584,
+    "message_bytes_median": 22716416.0,
+    "message_bytes_mean": 22932645.16129032,
+    "message_bytes_max": 34562048,
+    "messages_lt_54B": 0,
+    "messages_lt_128B": 0,
+    "messages_lt_256B": 0,
+    "messages_lt_1KB": 0
+  },
+  "combine": {
+    "total_remote_bytes": 22749184000,
+    "nonzero_gpu_pairs": 992,
+    "top1_share": 0.001519265394310407,
+    "top4_share": 0.005945984875765214,
+    "top8_share": 0.011667626935541952,
+    "top16_share": 0.02274900972272236,
+    "gini": 0.08723826623067361,
+    "message_bytes_min": 15171584,
+    "message_bytes_median": 22716416.0,
+    "message_bytes_mean": 22932645.16129032,
+    "message_bytes_max": 34562048,
+    "messages_lt_54B": 0,
+    "messages_lt_128B": 0,
+    "messages_lt_256B": 0,
+    "messages_lt_1KB": 0
+  }
+}
+```
+
+## Tiny-Subchunk Audit
+
+```json
+{
+  "dispatch": {
+    "en_folded_clos_ecmp4": {
+      "one_cycle_threshold_bytes": 54,
+      "subchunk_bytes_min": 3792896,
+      "subchunk_bytes_median": 5750784.0,
+      "subchunk_bytes_mean": 6902058.252427184,
+      "subchunk_bytes_max": 34562048,
+      "subchunks_total": 3296,
+      "subchunks_lt_54B": 0,
+      "subchunks_lt_128B": 0,
+      "subchunks_lt_256B": 0,
+      "selected_path_count_min": 1,
+      "selected_path_count_median": 4.0,
+      "selected_path_count_mean": 3.3225806451612905,
+      "selected_path_count_max": 4,
+      "zero_delay_risk": false
+    },
+    "son_torus_deterministic": {
+      "one_cycle_threshold_bytes": 54,
+      "subchunk_bytes_min": 15171584,
+      "subchunk_bytes_median": 22716416.0,
+      "subchunk_bytes_mean": 22932645.16129032,
+      "subchunk_bytes_max": 34562048,
+      "subchunks_total": 992,
+      "subchunks_lt_54B": 0,
+      "subchunks_lt_128B": 0,
+      "subchunks_lt_256B": 0,
+      "selected_path_count_min": 1,
+      "selected_path_count_median": 1.0,
+      "selected_path_count_mean": 1,
+      "selected_path_count_max": 1,
+      "zero_delay_risk": false
+    },
+    "son_torus_ecmp2": {
+      "one_cycle_threshold_bytes": 54,
+      "subchunk_bytes_min": 7585792,
+      "subchunk_bytes_median": 11780096.0,
+      "subchunk_bytes_mean": 13165037.037037037,
+      "subchunk_bytes_max": 34562048,
+      "subchunks_total": 1728,
+      "subchunks_lt_54B": 0,
+      "subchunks_lt_128B": 0,
+      "subchunks_lt_256B": 0,
+      "selected_path_count_min": 1,
+      "selected_path_count_median": 2.0,
+      "selected_path_count_mean": 1.7419354838709677,
+      "selected_path_count_max": 2,
+      "zero_delay_risk": false
+    },
+    "son_torus_ecmp4": {
+      "one_cycle_threshold_bytes": 54,
+      "subchunk_bytes_min": 3899392,
+      "subchunk_bytes_median": 6367232.0,
+      "subchunk_bytes_mean": 8463238.095238095,
+      "subchunk_bytes_max": 34562048,
+      "subchunks_total": 2688,
+      "subchunks_lt_54B": 0,
+      "subchunks_lt_128B": 0,
+      "subchunks_lt_256B": 0,
+      "selected_path_count_min": 1,
+      "selected_path_count_median": 3.0,
+      "selected_path_count_mean": 2.7096774193548385,
+      "selected_path_count_max": 4,
+      "zero_delay_risk": false
+    },
+    "son_torus_ecmp8": {
+      "one_cycle_threshold_bytes": 54,
+      "subchunk_bytes_min": 1949696,
+      "subchunk_bytes_median": 3598336.0,
+      "subchunk_bytes_mean": 6128551.724137931,
+      "subchunk_bytes_max": 34562048,
+      "subchunks_total": 3712,
+      "subchunks_lt_54B": 0,
+      "subchunks_lt_128B": 0,
+      "subchunks_lt_256B": 0,
+      "selected_path_count_min": 1,
+      "selected_path_count_median": 3.0,
+      "selected_path_count_mean": 3.7419354838709675,
+      "selected_path_count_max": 8,
+      "zero_delay_risk": false
+    }
+  },
+  "combine": {
+    "en_folded_clos_ecmp4": {
+      "one_cycle_threshold_bytes": 54,
+      "subchunk_bytes_min": 3792896,
+      "subchunk_bytes_median": 5750784.0,
+      "subchunk_bytes_mean": 6902058.252427184,
+      "subchunk_bytes_max": 34562048,
+      "subchunks_total": 3296,
+      "subchunks_lt_54B": 0,
+      "subchunks_lt_128B": 0,
+      "subchunks_lt_256B": 0,
+      "selected_path_count_min": 1,
+      "selected_path_count_median": 4.0,
+      "selected_path_count_mean": 3.3225806451612905,
+      "selected_path_count_max": 4,
+      "zero_delay_risk": false
+    },
+    "son_torus_deterministic": {
+      "one_cycle_threshold_bytes": 54,
+      "subchunk_bytes_min": 15171584,
+      "subchunk_bytes_median": 22716416.0,
+      "subchunk_bytes_mean": 22932645.16129032,
+      "subchunk_bytes_max": 34562048,
+      "subchunks_total": 992,
+      "subchunks_lt_54B": 0,
+      "subchunks_lt_128B": 0,
+      "subchunks_lt_256B": 0,
+      "selected_path_count_min": 1,
+      "selected_path_count_median": 1.0,
+      "selected_path_count_mean": 1,
+      "selected_path_count_max": 1,
+      "zero_delay_risk": false
+    },
+    "son_torus_ecmp2": {
+      "one_cycle_threshold_bytes": 54,
+      "subchunk_bytes_min": 7585792,
+      "subchunk_bytes_median": 11780096.0,
+      "subchunk_bytes_mean": 13165037.037037037,
+      "subchunk_bytes_max": 34562048,
+      "subchunks_total": 1728,
+      "subchunks_lt_54B": 0,
+      "subchunks_lt_128B": 0,
+      "subchunks_lt_256B": 0,
+      "selected_path_count_min": 1,
+      "selected_path_count_median": 2.0,
+      "selected_path_count_mean": 1.7419354838709677,
+      "selected_path_count_max": 2,
+      "zero_delay_risk": false
+    },
+    "son_torus_ecmp4": {
+      "one_cycle_threshold_bytes": 54,
+      "subchunk_bytes_min": 3899392,
+      "subchunk_bytes_median": 6367232.0,
+      "subchunk_bytes_mean": 8463238.095238095,
+      "subchunk_bytes_max": 34562048,
+      "subchunks_total": 2688,
+      "subchunks_lt_54B": 0,
+      "subchunks_lt_128B": 0,
+      "subchunks_lt_256B": 0,
+      "selected_path_count_min": 1,
+      "selected_path_count_median": 3.0,
+      "selected_path_count_mean": 2.7096774193548385,
+      "selected_path_count_max": 4,
+      "zero_delay_risk": false
+    },
+    "son_torus_ecmp8": {
+      "one_cycle_threshold_bytes": 54,
+      "subchunk_bytes_min": 1949696,
+      "subchunk_bytes_median": 3598336.0,
+      "subchunk_bytes_mean": 6128551.724137931,
+      "subchunk_bytes_max": 34562048,
+      "subchunks_total": 3712,
+      "subchunks_lt_54B": 0,
+      "subchunks_lt_128B": 0,
+      "subchunks_lt_256B": 0,
+      "selected_path_count_min": 1,
+      "selected_path_count_median": 3.0,
+      "selected_path_count_mean": 3.7419354838709675,
+      "selected_path_count_max": 8,
+      "zero_delay_risk": false
+    }
+  }
+}
+```
+
+## Native ASTRA Timing Totals
+
+Dispatch and combine are run separately, then summed.
+
+```json
+{
+  "en_folded_clos_ecmp4": {
+    "dispatch_cycles": 51121349,
+    "combine_cycles": 52775144,
+    "total_cycles": 103896493,
+    "dispatch_fluid_cycles": 21996421,
+    "combine_fluid_cycles": 21996421,
+    "total_fluid_cycles": 43992842,
+    "astra_over_fluid_total": 2.3616681322838837,
+    "success": true
+  },
+  "son_torus_deterministic": {
+    "dispatch_cycles": 66465221,
+    "combine_cycles": 68996355,
+    "total_cycles": 135461576,
+    "dispatch_fluid_cycles": 41528015,
+    "combine_fluid_cycles": 39421234,
+    "total_fluid_cycles": 80949249,
+    "astra_over_fluid_total": 1.673413622404329,
+    "success": true
+  },
+  "son_torus_ecmp2": {
+    "dispatch_cycles": 51793650,
+    "combine_cycles": 53851523,
+    "total_cycles": 105645173,
+    "dispatch_fluid_cycles": 32296829,
+    "combine_fluid_cycles": 30375747,
+    "total_fluid_cycles": 62672576,
+    "astra_over_fluid_total": 1.685668273791714,
+    "success": true
+  },
+  "son_torus_ecmp4": {
+    "dispatch_cycles": 47818644,
+    "combine_cycles": 50421167,
+    "total_cycles": 98239811,
+    "dispatch_fluid_cycles": 24690653,
+    "combine_fluid_cycles": 23177833,
+    "total_fluid_cycles": 47868486,
+    "astra_over_fluid_total": 2.052285735546347,
+    "success": true
+  },
+  "son_torus_ecmp8": {
+    "dispatch_cycles": 46966688,
+    "combine_cycles": 51742318,
+    "total_cycles": 98709006,
+    "dispatch_fluid_cycles": 19172000,
+    "combine_fluid_cycles": 18344752,
+    "total_fluid_cycles": 37516752,
+    "astra_over_fluid_total": 2.631064810727752,
+    "success": true
+  }
+}
+```
+
+## Native ASTRA Per-Phase Timing
+
+```json
+{
+  "dispatch": {
+    "en_folded_clos_ecmp4": {
+      "label": "dispatch_en_folded_clos_ecmp4",
+      "returncode": 0,
+      "success": true,
+      "runtime_s": 0.03968395804986358,
+      "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v35_one_workload_aggregated_native_astra_validation/chakra_traces/dispatch/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v35_one_workload_aggregated_native_astra_validation/network_configs/en_folded_clos_ecmp4.yml",
+      "stdout": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v35_one_workload_aggregated_native_astra_validation/runs/dispatch_en_folded_clos_ecmp4.stdout.txt",
+      "stderr": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v35_one_workload_aggregated_native_astra_validation/runs/dispatch_en_folded_clos_ecmp4.stderr.txt",
+      "stderr_tail": [],
+      "max_cycles": 51121349,
+      "cycles_count": 32
+    },
+    "son_torus_deterministic": {
+      "label": "dispatch_son_torus_deterministic",
+      "returncode": 0,
+      "success": true,
+      "runtime_s": 0.02353562496136874,
+      "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v35_one_workload_aggregated_native_astra_validation/chakra_traces/dispatch/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v35_one_workload_aggregated_native_astra_validation/network_configs/son_torus_deterministic.yml",
+      "stdout": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v35_one_workload_aggregated_native_astra_validation/runs/dispatch_son_torus_deterministic.stdout.txt",
+      "stderr": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v35_one_workload_aggregated_native_astra_validation/runs/dispatch_son_torus_deterministic.stderr.txt",
+      "stderr_tail": [],
+      "max_cycles": 66465221,
+      "cycles_count": 32
+    },
+    "son_torus_ecmp2": {
+      "label": "dispatch_son_torus_ecmp2",
+      "returncode": 0,
+      "success": true,
+      "runtime_s": 0.024880166980437934,
+      "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v35_one_workload_aggregated_native_astra_validation/chakra_traces/dispatch/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v35_one_workload_aggregated_native_astra_validation/network_configs/son_torus_ecmp2.yml",
+      "stdout": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v35_one_workload_aggregated_native_astra_validation/runs/dispatch_son_torus_ecmp2.stdout.txt",
+      "stderr": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v35_one_workload_aggregated_native_astra_validation/runs/dispatch_son_torus_ecmp2.stderr.txt",
+      "stderr_tail": [],
+      "max_cycles": 51793650,
+      "cycles_count": 32
+    },
+    "son_torus_ecmp4": {
+      "label": "dispatch_son_torus_ecmp4",
+      "returncode": 0,
+      "success": true,
+      "runtime_s": 0.025282915914431214,
+      "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v35_one_workload_aggregated_native_astra_validation/chakra_traces/dispatch/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v35_one_workload_aggregated_native_astra_validation/network_configs/son_torus_ecmp4.yml",
+      "stdout": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v35_one_workload_aggregated_native_astra_validation/runs/dispatch_son_torus_ecmp4.stdout.txt",
+      "stderr": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v35_one_workload_aggregated_native_astra_validation/runs/dispatch_son_torus_ecmp4.stderr.txt",
+      "stderr_tail": [],
+      "max_cycles": 47818644,
+      "cycles_count": 32
+    },
+    "son_torus_ecmp8": {
+      "label": "dispatch_son_torus_ecmp8",
+      "returncode": 0,
+      "success": true,
+      "runtime_s": 0.025532792089506984,
+      "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v35_one_workload_aggregated_native_astra_validation/chakra_traces/dispatch/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v35_one_workload_aggregated_native_astra_validation/network_configs/son_torus_ecmp8.yml",
+      "stdout": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v35_one_workload_aggregated_native_astra_validation/runs/dispatch_son_torus_ecmp8.stdout.txt",
+      "stderr": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v35_one_workload_aggregated_native_astra_validation/runs/dispatch_son_torus_ecmp8.stderr.txt",
+      "stderr_tail": [],
+      "max_cycles": 46966688,
+      "cycles_count": 32
+    }
+  },
+  "combine": {
+    "en_folded_clos_ecmp4": {
+      "label": "combine_en_folded_clos_ecmp4",
+      "returncode": 0,
+      "success": true,
+      "runtime_s": 0.02479366702027619,
+      "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v35_one_workload_aggregated_native_astra_validation/chakra_traces/combine/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v35_one_workload_aggregated_native_astra_validation/network_configs/en_folded_clos_ecmp4.yml",
+      "stdout": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v35_one_workload_aggregated_native_astra_validation/runs/combine_en_folded_clos_ecmp4.stdout.txt",
+      "stderr": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v35_one_workload_aggregated_native_astra_validation/runs/combine_en_folded_clos_ecmp4.stderr.txt",
+      "stderr_tail": [],
+      "max_cycles": 52775144,
+      "cycles_count": 32
+    },
+    "son_torus_deterministic": {
+      "label": "combine_son_torus_deterministic",
+      "returncode": 0,
+      "success": true,
+      "runtime_s": 0.025856707943603396,
+      "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v35_one_workload_aggregated_native_astra_validation/chakra_traces/combine/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v35_one_workload_aggregated_native_astra_validation/network_configs/son_torus_deterministic.yml",
+      "stdout": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v35_one_workload_aggregated_native_astra_validation/runs/combine_son_torus_deterministic.stdout.txt",
+      "stderr": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v35_one_workload_aggregated_native_astra_validation/runs/combine_son_torus_deterministic.stderr.txt",
+      "stderr_tail": [],
+      "max_cycles": 68996355,
+      "cycles_count": 32
+    },
+    "son_torus_ecmp2": {
+      "label": "combine_son_torus_ecmp2",
+      "returncode": 0,
+      "success": true,
+      "runtime_s": 0.033700125059112906,
+      "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v35_one_workload_aggregated_native_astra_validation/chakra_traces/combine/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v35_one_workload_aggregated_native_astra_validation/network_configs/son_torus_ecmp2.yml",
+      "stdout": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v35_one_workload_aggregated_native_astra_validation/runs/combine_son_torus_ecmp2.stdout.txt",
+      "stderr": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v35_one_workload_aggregated_native_astra_validation/runs/combine_son_torus_ecmp2.stderr.txt",
+      "stderr_tail": [],
+      "max_cycles": 53851523,
+      "cycles_count": 32
+    },
+    "son_torus_ecmp4": {
+      "label": "combine_son_torus_ecmp4",
+      "returncode": 0,
+      "success": true,
+      "runtime_s": 0.026379332994110882,
+      "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v35_one_workload_aggregated_native_astra_validation/chakra_traces/combine/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v35_one_workload_aggregated_native_astra_validation/network_configs/son_torus_ecmp4.yml",
+      "stdout": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v35_one_workload_aggregated_native_astra_validation/runs/combine_son_torus_ecmp4.stdout.txt",
+      "stderr": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v35_one_workload_aggregated_native_astra_validation/runs/combine_son_torus_ecmp4.stderr.txt",
+      "stderr_tail": [],
+      "max_cycles": 50421167,
+      "cycles_count": 32
+    },
+    "son_torus_ecmp8": {
+      "label": "combine_son_torus_ecmp8",
+      "returncode": 0,
+      "success": true,
+      "runtime_s": 0.028145499993115664,
+      "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v35_one_workload_aggregated_native_astra_validation/chakra_traces/combine/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v35_one_workload_aggregated_native_astra_validation/network_configs/son_torus_ecmp8.yml",
+      "stdout": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v35_one_workload_aggregated_native_astra_validation/runs/combine_son_torus_ecmp8.stdout.txt",
+      "stderr": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v35_one_workload_aggregated_native_astra_validation/runs/combine_son_torus_ecmp8.stderr.txt",
+      "stderr_tail": [],
+      "max_cycles": 51742318,
+      "cycles_count": 32
+    }
+  }
+}
+```
+
+## Fluid Lower-Bound Tables
+
+```json
+{
+  "dispatch": {
+    "en_folded_clos_ecmp4": {
+      "selected_path_count_min": 1,
+      "selected_path_count_median": 4.0,
+      "selected_path_count_mean": 3.3225806451612905,
+      "selected_path_count_max": 4,
+      "max_link_load_bytes": 1180923904,
+      "fluid_cycles": 21996421,
+      "hot_links": [
+        {
+          "src": 32,
+          "dst": 36,
+          "bytes": 1180923904
+        },
+        {
+          "src": 32,
+          "dst": 37,
+          "bytes": 1180923904
+        },
+        {
+          "src": 32,
+          "dst": 38,
+          "bytes": 1180923904
+        },
+        {
+          "src": 32,
+          "dst": 39,
+          "bytes": 1180923904
+        },
+        {
+          "src": 36,
+          "dst": 34,
+          "bytes": 1148760064
+        },
+        {
+          "src": 37,
+          "dst": 34,
+          "bytes": 1148760064
+        },
+        {
+          "src": 38,
+          "dst": 34,
+          "bytes": 1148760064
+        },
+        {
+          "src": 39,
+          "dst": 34,
+          "bytes": 1148760064
+        }
+      ]
+    },
+    "son_torus_deterministic": {
+      "selected_path_count_min": 1,
+      "selected_path_count_median": 1.0,
+      "selected_path_count_mean": 1,
+      "selected_path_count_max": 1,
+      "max_link_load_bytes": 2229518336,
+      "fluid_cycles": 41528015,
+      "hot_links": [
+        {
+          "src": 2,
+          "dst": 1,
+          "bytes": 2229518336
+        },
+        {
+          "src": 1,
+          "dst": 0,
+          "bytes": 2170183680
+        },
+        {
+          "src": 3,
+          "dst": 2,
+          "bytes": 2122850304
+        },
+        {
+          "src": 4,
+          "dst": 3,
+          "bytes": 1908260864
+        },
+        {
+          "src": 0,
+          "dst": 7,
+          "bytes": 1841201152
+        },
+        {
+          "src": 2,
+          "dst": 3,
+          "bytes": 1724866560
+        },
+        {
+          "src": 5,
+          "dst": 4,
+          "bytes": 1681350656
+        },
+        {
+          "src": 0,
+          "dst": 1,
+          "bytes": 1680695296
+        }
+      ]
+    },
+    "son_torus_ecmp2": {
+      "selected_path_count_min": 1,
+      "selected_path_count_median": 2.0,
+      "selected_path_count_mean": 1.7419354838709677,
+      "selected_path_count_max": 2,
+      "max_link_load_bytes": 1733922816,
+      "fluid_cycles": 32296829,
+      "hot_links": [
+        {
+          "src": 2,
+          "dst": 1,
+          "bytes": 1733922816
+        },
+        {
+          "src": 1,
+          "dst": 0,
+          "bytes": 1683685376
+        },
+        {
+          "src": 3,
+          "dst": 2,
+          "bytes": 1659162624
+        },
+        {
+          "src": 4,
+          "dst": 3,
+          "bytes": 1580781568
+        },
+        {
+          "src": 0,
+          "dst": 7,
+          "bytes": 1493422080
+        },
+        {
+          "src": 5,
+          "dst": 4,
+          "bytes": 1431769088
+        },
+        {
+          "src": 0,
+          "dst": 1,
+          "bytes": 1430523904
+        },
+        {
+          "src": 2,
+          "dst": 3,
+          "bytes": 1428459520
+        }
+      ]
+    },
+    "son_torus_ecmp4": {
+      "selected_path_count_min": 1,
+      "selected_path_count_median": 3.0,
+      "selected_path_count_mean": 2.7096774193548385,
+      "selected_path_count_max": 4,
+      "max_link_load_bytes": 1325569370,
+      "fluid_cycles": 24690653,
+      "hot_links": [
+        {
+          "src": 2,
+          "dst": 1,
+          "bytes": 1325569370
+        },
+        {
+          "src": 1,
+          "dst": 0,
+          "bytes": 1285866157
+        },
+        {
+          "src": 3,
+          "dst": 2,
+          "bytes": 1263711576
+        },
+        {
+          "src": 4,
+          "dst": 3,
+          "bytes": 1198155779
+        },
+        {
+          "src": 0,
+          "dst": 7,
+          "bytes": 1104338946
+        },
+        {
+          "src": 0,
+          "dst": 1,
+          "bytes": 1067130884
+        },
+        {
+          "src": 5,
+          "dst": 4,
+          "bytes": 1064729261
+        },
+        {
+          "src": 2,
+          "dst": 3,
+          "bytes": 1033713667
+        }
+      ]
+    },
+    "son_torus_ecmp8": {
+      "selected_path_count_min": 1,
+      "selected_path_count_median": 3.0,
+      "selected_path_count_mean": 3.7419354838709675,
+      "selected_path_count_max": 8,
+      "max_link_load_bytes": 1029288966,
+      "fluid_cycles": 19172000,
+      "hot_links": [
+        {
+          "src": 2,
+          "dst": 1,
+          "bytes": 1029288966
+        },
+        {
+          "src": 1,
+          "dst": 0,
+          "bytes": 995495940
+        },
+        {
+          "src": 3,
+          "dst": 2,
+          "bytes": 976580271
+        },
+        {
+          "src": 4,
+          "dst": 3,
+          "bytes": 969182554
+        },
+        {
+          "src": 7,
+          "dst": 0,
+          "bytes": 953941338
+        },
+        {
+          "src": 6,
+          "dst": 7,
+          "bytes": 935432195
+        },
+        {
+          "src": 2,
+          "dst": 3,
+          "bytes": 933118298
+        },
+        {
+          "src": 0,
+          "dst": 1,
+          "bytes": 927680517
+        }
+      ]
+    }
+  },
+  "combine": {
+    "en_folded_clos_ecmp4": {
+      "selected_path_count_min": 1,
+      "selected_path_count_median": 4.0,
+      "selected_path_count_mean": 3.3225806451612905,
+      "selected_path_count_max": 4,
+      "max_link_load_bytes": 1180923904,
+      "fluid_cycles": 21996421,
+      "hot_links": [
+        {
+          "src": 36,
+          "dst": 32,
+          "bytes": 1180923904
+        },
+        {
+          "src": 37,
+          "dst": 32,
+          "bytes": 1180923904
+        },
+        {
+          "src": 38,
+          "dst": 32,
+          "bytes": 1180923904
+        },
+        {
+          "src": 39,
+          "dst": 32,
+          "bytes": 1180923904
+        },
+        {
+          "src": 34,
+          "dst": 36,
+          "bytes": 1148760064
+        },
+        {
+          "src": 34,
+          "dst": 37,
+          "bytes": 1148760064
+        },
+        {
+          "src": 34,
+          "dst": 38,
+          "bytes": 1148760064
+        },
+        {
+          "src": 34,
+          "dst": 39,
+          "bytes": 1148760064
+        }
+      ]
+    },
+    "son_torus_deterministic": {
+      "selected_path_count_min": 1,
+      "selected_path_count_median": 1.0,
+      "selected_path_count_mean": 1,
+      "selected_path_count_max": 1,
+      "max_link_load_bytes": 2116411392,
+      "fluid_cycles": 39421234,
+      "hot_links": [
+        {
+          "src": 3,
+          "dst": 2,
+          "bytes": 2116411392
+        },
+        {
+          "src": 1,
+          "dst": 0,
+          "bytes": 2096939008
+        },
+        {
+          "src": 2,
+          "dst": 1,
+          "bytes": 2025914368
+        },
+        {
+          "src": 0,
+          "dst": 7,
+          "bytes": 1961394176
+        },
+        {
+          "src": 4,
+          "dst": 3,
+          "bytes": 1864613888
+        },
+        {
+          "src": 1,
+          "dst": 2,
+          "bytes": 1808482304
+        },
+        {
+          "src": 0,
+          "dst": 1,
+          "bytes": 1778638848
+        },
+        {
+          "src": 7,
+          "dst": 6,
+          "bytes": 1754652672
+        }
+      ]
+    },
+    "son_torus_ecmp2": {
+      "selected_path_count_min": 1,
+      "selected_path_count_median": 2.0,
+      "selected_path_count_mean": 1.7419354838709677,
+      "selected_path_count_max": 2,
+      "max_link_load_bytes": 1630785536,
+      "fluid_cycles": 30375747,
+      "hot_links": [
+        {
+          "src": 3,
+          "dst": 2,
+          "bytes": 1630785536
+        },
+        {
+          "src": 1,
+          "dst": 0,
+          "bytes": 1599565824
+        },
+        {
+          "src": 0,
+          "dst": 7,
+          "bytes": 1567789056
+        },
+        {
+          "src": 2,
+          "dst": 1,
+          "bytes": 1556213760
+        },
+        {
+          "src": 1,
+          "dst": 2,
+          "bytes": 1543933952
+        },
+        {
+          "src": 4,
+          "dst": 3,
+          "bytes": 1522425856
+        },
+        {
+          "src": 0,
+          "dst": 1,
+          "bytes": 1503948800
+        },
+        {
+          "src": 7,
+          "dst": 6,
+          "bytes": 1474232320
+        }
+      ]
+    },
+    "son_torus_ecmp4": {
+      "selected_path_count_min": 1,
+      "selected_path_count_median": 3.0,
+      "selected_path_count_mean": 2.7096774193548385,
+      "selected_path_count_max": 4,
+      "max_link_load_bytes": 1244350467,
+      "fluid_cycles": 23177833,
+      "hot_links": [
+        {
+          "src": 3,
+          "dst": 2,
+          "bytes": 1244350467
+        },
+        {
+          "src": 1,
+          "dst": 0,
+          "bytes": 1224818692
+        },
+        {
+          "src": 2,
+          "dst": 1,
+          "bytes": 1182177965
+        },
+        {
+          "src": 0,
+          "dst": 7,
+          "bytes": 1169762307
+        },
+        {
+          "src": 4,
+          "dst": 3,
+          "bytes": 1138499586
+        },
+        {
+          "src": 1,
+          "dst": 2,
+          "bytes": 1130401114
+        },
+        {
+          "src": 0,
+          "dst": 1,
+          "bytes": 1111624365
+        },
+        {
+          "src": 7,
+          "dst": 6,
+          "bytes": 1072414039
+        }
+      ]
+    },
+    "son_torus_ecmp8": {
+      "selected_path_count_min": 1,
+      "selected_path_count_median": 3.0,
+      "selected_path_count_mean": 3.7419354838709675,
+      "selected_path_count_max": 8,
+      "max_link_load_bytes": 984876377,
+      "fluid_cycles": 18344752,
+      "hot_links": [
+        {
+          "src": 0,
+          "dst": 7,
+          "bytes": 984876377
+        },
+        {
+          "src": 1,
+          "dst": 2,
+          "bytes": 983412743
+        },
+        {
+          "src": 3,
+          "dst": 2,
+          "bytes": 970235226
+        },
+        {
+          "src": 7,
+          "dst": 6,
+          "bytes": 968307715
+        },
+        {
+          "src": 0,
+          "dst": 1,
+          "bytes": 960108549
+        },
+        {
+          "src": 1,
+          "dst": 0,
+          "bytes": 949880838
+        },
+        {
+          "src": 4,
+          "dst": 3,
+          "bytes": 918495918
+        },
+        {
+          "src": 2,
+          "dst": 1,
+          "bytes": 915667971
+        }
+      ]
+    }
+  }
+}
+```
+
+## Interpretation
+
+- EN folded-Clos is an electrical reference, not the fair optical baseline.
+- The fair optical trend check is SON deterministic vs SON ECMP-2/4/8.
+- Native ASTRA is expected to differ from the fluid link-load lower bound because ASTRA serializes and queues chunks over each hop.
+- V35 uses one aggregated SEND/RECV message per nonzero GPU pair. This intentionally avoids token/layer-level tiny-message artifacts.
+
+## Generated Files
+
+- Aggregated matrices: `traffic_matrices/dispatch_matrix.json`, `traffic_matrices/combine_matrix.json`
+- Graph JSONs: `graphs/en_folded_clos_32.json`, `graphs/son_torus_4x8_32.json`
+- Network configs: `network_configs/*.yml`
+- Chakra traces: `chakra_traces/dispatch/workload.*.et`, `chakra_traces/combine/workload.*.et`
+- Run logs: `runs/*.stdout.txt`, `runs/*.stderr.txt`
+- Machine-readable summary: `summary.json`

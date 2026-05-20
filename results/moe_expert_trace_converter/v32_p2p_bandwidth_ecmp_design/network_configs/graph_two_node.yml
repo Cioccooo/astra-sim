@@ -1,0 +1,5 @@
+topology: [ Graph ]
+npus_count: [ 2 ]
+bandwidth: [ 50.0 ]  # required by parser; Graph edge bandwidth_gbps is authoritative
+latency: [ 0.0 ]
+graph_file: /Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v32_p2p_bandwidth_ecmp_design/graphs/two_node_one_link.json

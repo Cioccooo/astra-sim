@@ -1,0 +1,1706 @@
+{
+  "all_passed": false,
+  "core_production_passed": true,
+  "all_path_passed": false,
+  "en": {
+    "node_count": 40,
+    "gpu_count": 32,
+    "rank_nodes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31
+    ],
+    "leaf_nodes": [
+      32,
+      33,
+      34,
+      35
+    ],
+    "spine_nodes": [
+      36,
+      37,
+      38,
+      39
+    ],
+    "intra_leaf_paths": [
+      [
+        0,
+        32,
+        1
+      ]
+    ],
+    "cross_leaf_paths": [
+      [
+        0,
+        32,
+        36,
+        34,
+        16
+      ],
+      [
+        0,
+        32,
+        37,
+        34,
+        16
+      ],
+      [
+        0,
+        32,
+        38,
+        34,
+        16
+      ],
+      [
+        0,
+        32,
+        39,
+        34,
+        16
+      ]
+    ],
+    "cross_leaf_path_count": 4,
+    "intra_leaf_run": {
+      "label": "en_intra_0_to_1",
+      "returncode": 0,
+      "success": true,
+      "runtime_s": 0.015208416036330163,
+      "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/chakra_traces/en_intra_0_to_1/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/network_configs/en_ecmp_all_log.yml",
+      "stdout": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/runs/en_intra_0_to_1.stdout.txt",
+      "stderr": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/runs/en_intra_0_to_1.stderr.txt",
+      "stderr_tail": [],
+      "max_cycles": 186,
+      "cycles_count": 32,
+      "sample_ecmp_logs": []
+    },
+    "cross_leaf_run": {
+      "label": "en_cross_0_to_16",
+      "returncode": 0,
+      "success": true,
+      "runtime_s": 0.007804166991263628,
+      "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/chakra_traces/en_cross_0_to_16/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/network_configs/en_ecmp_all_log.yml",
+      "stdout": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/runs/en_cross_0_to_16.stdout.txt",
+      "stderr": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/runs/en_cross_0_to_16.stderr.txt",
+      "stderr_tail": [],
+      "max_cycles": 161,
+      "cycles_count": 32,
+      "sample_ecmp_logs": [
+        "[ecmp] tag=1 src=0 dst=16 bytes=5000 paths=4 subchunk0=1250 route=[0,32,36,34,16] subchunk1=1250 route=[0,32,37,34,16] subchunk2=1250 route=[0,32,38,34,16] subchunk3=1250 route=[0,32,39,34,16]"
+      ]
+    }
+  },
+  "son_path_distribution": {
+    "min": 1,
+    "median": 3.0,
+    "mean": 6.580645161290323,
+    "max": 60,
+    "histogram": {
+      "1": 256,
+      "2": 192,
+      "3": 128,
+      "4": 128,
+      "6": 64,
+      "10": 64,
+      "12": 64,
+      "20": 64,
+      "60": 32
+    },
+    "largest_pairs": [
+      {
+        "src": 0,
+        "dst": 20,
+        "path_count": 60,
+        "hop_count": 6
+      },
+      {
+        "src": 1,
+        "dst": 21,
+        "path_count": 60,
+        "hop_count": 6
+      },
+      {
+        "src": 2,
+        "dst": 22,
+        "path_count": 60,
+        "hop_count": 6
+      },
+      {
+        "src": 3,
+        "dst": 23,
+        "path_count": 60,
+        "hop_count": 6
+      },
+      {
+        "src": 4,
+        "dst": 16,
+        "path_count": 60,
+        "hop_count": 6
+      },
+      {
+        "src": 5,
+        "dst": 17,
+        "path_count": 60,
+        "hop_count": 6
+      },
+      {
+        "src": 6,
+        "dst": 18,
+        "path_count": 60,
+        "hop_count": 6
+      },
+      {
+        "src": 7,
+        "dst": 19,
+        "path_count": 60,
+        "hop_count": 6
+      },
+      {
+        "src": 8,
+        "dst": 28,
+        "path_count": 60,
+        "hop_count": 6
+      },
+      {
+        "src": 9,
+        "dst": 29,
+        "path_count": 60,
+        "hop_count": 6
+      },
+      {
+        "src": 10,
+        "dst": 30,
+        "path_count": 60,
+        "hop_count": 6
+      },
+      {
+        "src": 11,
+        "dst": 31,
+        "path_count": 60,
+        "hop_count": 6
+      },
+      {
+        "src": 12,
+        "dst": 24,
+        "path_count": 60,
+        "hop_count": 6
+      },
+      {
+        "src": 13,
+        "dst": 25,
+        "path_count": 60,
+        "hop_count": 6
+      },
+      {
+        "src": 14,
+        "dst": 26,
+        "path_count": 60,
+        "hop_count": 6
+      },
+      {
+        "src": 15,
+        "dst": 27,
+        "path_count": 60,
+        "hop_count": 6
+      },
+      {
+        "src": 16,
+        "dst": 4,
+        "path_count": 60,
+        "hop_count": 6
+      },
+      {
+        "src": 17,
+        "dst": 5,
+        "path_count": 60,
+        "hop_count": 6
+      },
+      {
+        "src": 18,
+        "dst": 6,
+        "path_count": 60,
+        "hop_count": 6
+      },
+      {
+        "src": 19,
+        "dst": 7,
+        "path_count": 60,
+        "hop_count": 6
+      }
+    ]
+  },
+  "traffic_trace_meta": {
+    "single_pair_0_to_4": {
+      "prefix": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/chakra_traces/single_pair_0_to_4/workload",
+      "rank_count": 32,
+      "messages": 1,
+      "total_bytes": 16000
+    },
+    "single_pair_maxpath_0_to_20": {
+      "prefix": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/chakra_traces/single_pair_maxpath_0_to_20/workload",
+      "rank_count": 32,
+      "messages": 1,
+      "total_bytes": 16000
+    },
+    "uniform_all_to_all": {
+      "prefix": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/chakra_traces/uniform_all_to_all/workload",
+      "rank_count": 32,
+      "messages": 992,
+      "total_bytes": 992000
+    },
+    "hot_destination_0": {
+      "prefix": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/chakra_traces/hot_destination_0/workload",
+      "rank_count": 32,
+      "messages": 31,
+      "total_bytes": 248000
+    },
+    "sparse_random_seed_20260518": {
+      "prefix": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/chakra_traces/sparse_random_seed_20260518/workload",
+      "rank_count": 32,
+      "messages": 64,
+      "total_bytes": 430820
+    }
+  },
+  "son_results": {
+    "single_pair_0_to_4": {
+      "deterministic": {
+        "astra_max_cycles": 1192,
+        "run_returncode": 0,
+        "run_success": true,
+        "stderr_tail": [],
+        "runtime_s": 0.008701374987140298,
+        "link_load_fluid_cycles": 298,
+        "astra_over_fluid": 4.0,
+        "selected_path_count_min": 1,
+        "selected_path_count_median": 1,
+        "selected_path_count_mean": 1,
+        "selected_path_count_max": 1,
+        "max_link_load_bytes": 16000,
+        "hot_links": [
+          {
+            "src": 0,
+            "dst": 1,
+            "bytes": 16000
+          },
+          {
+            "src": 1,
+            "dst": 2,
+            "bytes": 16000
+          },
+          {
+            "src": 2,
+            "dst": 3,
+            "bytes": 16000
+          },
+          {
+            "src": 3,
+            "dst": 4,
+            "bytes": 16000
+          }
+        ],
+        "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/chakra_traces/single_pair_0_to_4/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/network_configs/son_deterministic.yml"
+      },
+      "ecmp_2": {
+        "astra_max_cycles": 596,
+        "run_returncode": 0,
+        "run_success": true,
+        "stderr_tail": [],
+        "runtime_s": 0.008218499948270619,
+        "link_load_fluid_cycles": 149,
+        "astra_over_fluid": 4.0,
+        "selected_path_count_min": 2,
+        "selected_path_count_median": 2,
+        "selected_path_count_mean": 2,
+        "selected_path_count_max": 2,
+        "max_link_load_bytes": 8000,
+        "hot_links": [
+          {
+            "src": 0,
+            "dst": 1,
+            "bytes": 8000
+          },
+          {
+            "src": 1,
+            "dst": 2,
+            "bytes": 8000
+          },
+          {
+            "src": 2,
+            "dst": 3,
+            "bytes": 8000
+          },
+          {
+            "src": 3,
+            "dst": 4,
+            "bytes": 8000
+          },
+          {
+            "src": 0,
+            "dst": 7,
+            "bytes": 8000
+          },
+          {
+            "src": 7,
+            "dst": 6,
+            "bytes": 8000
+          },
+          {
+            "src": 6,
+            "dst": 5,
+            "bytes": 8000
+          },
+          {
+            "src": 5,
+            "dst": 4,
+            "bytes": 8000
+          }
+        ],
+        "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/chakra_traces/single_pair_0_to_4/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/network_configs/son_ecmp_2.yml"
+      },
+      "ecmp_4": {
+        "astra_max_cycles": 596,
+        "run_returncode": 0,
+        "run_success": true,
+        "stderr_tail": [],
+        "runtime_s": 0.008559750043787062,
+        "link_load_fluid_cycles": 149,
+        "astra_over_fluid": 4.0,
+        "selected_path_count_min": 2,
+        "selected_path_count_median": 2,
+        "selected_path_count_mean": 2,
+        "selected_path_count_max": 2,
+        "max_link_load_bytes": 8000,
+        "hot_links": [
+          {
+            "src": 0,
+            "dst": 1,
+            "bytes": 8000
+          },
+          {
+            "src": 1,
+            "dst": 2,
+            "bytes": 8000
+          },
+          {
+            "src": 2,
+            "dst": 3,
+            "bytes": 8000
+          },
+          {
+            "src": 3,
+            "dst": 4,
+            "bytes": 8000
+          },
+          {
+            "src": 0,
+            "dst": 7,
+            "bytes": 8000
+          },
+          {
+            "src": 7,
+            "dst": 6,
+            "bytes": 8000
+          },
+          {
+            "src": 6,
+            "dst": 5,
+            "bytes": 8000
+          },
+          {
+            "src": 5,
+            "dst": 4,
+            "bytes": 8000
+          }
+        ],
+        "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/chakra_traces/single_pair_0_to_4/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/network_configs/son_ecmp_4.yml"
+      },
+      "ecmp_8": {
+        "astra_max_cycles": 596,
+        "run_returncode": 0,
+        "run_success": true,
+        "stderr_tail": [],
+        "runtime_s": 0.008321208995766938,
+        "link_load_fluid_cycles": 149,
+        "astra_over_fluid": 4.0,
+        "selected_path_count_min": 2,
+        "selected_path_count_median": 2,
+        "selected_path_count_mean": 2,
+        "selected_path_count_max": 2,
+        "max_link_load_bytes": 8000,
+        "hot_links": [
+          {
+            "src": 0,
+            "dst": 1,
+            "bytes": 8000
+          },
+          {
+            "src": 1,
+            "dst": 2,
+            "bytes": 8000
+          },
+          {
+            "src": 2,
+            "dst": 3,
+            "bytes": 8000
+          },
+          {
+            "src": 3,
+            "dst": 4,
+            "bytes": 8000
+          },
+          {
+            "src": 0,
+            "dst": 7,
+            "bytes": 8000
+          },
+          {
+            "src": 7,
+            "dst": 6,
+            "bytes": 8000
+          },
+          {
+            "src": 6,
+            "dst": 5,
+            "bytes": 8000
+          },
+          {
+            "src": 5,
+            "dst": 4,
+            "bytes": 8000
+          }
+        ],
+        "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/chakra_traces/single_pair_0_to_4/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/network_configs/son_ecmp_8.yml"
+      },
+      "ecmp_all": {
+        "astra_max_cycles": 596,
+        "run_returncode": 0,
+        "run_success": true,
+        "stderr_tail": [],
+        "runtime_s": 0.008630833006463945,
+        "link_load_fluid_cycles": 149,
+        "astra_over_fluid": 4.0,
+        "selected_path_count_min": 2,
+        "selected_path_count_median": 2,
+        "selected_path_count_mean": 2,
+        "selected_path_count_max": 2,
+        "max_link_load_bytes": 8000,
+        "hot_links": [
+          {
+            "src": 0,
+            "dst": 1,
+            "bytes": 8000
+          },
+          {
+            "src": 1,
+            "dst": 2,
+            "bytes": 8000
+          },
+          {
+            "src": 2,
+            "dst": 3,
+            "bytes": 8000
+          },
+          {
+            "src": 3,
+            "dst": 4,
+            "bytes": 8000
+          },
+          {
+            "src": 0,
+            "dst": 7,
+            "bytes": 8000
+          },
+          {
+            "src": 7,
+            "dst": 6,
+            "bytes": 8000
+          },
+          {
+            "src": 6,
+            "dst": 5,
+            "bytes": 8000
+          },
+          {
+            "src": 5,
+            "dst": 4,
+            "bytes": 8000
+          }
+        ],
+        "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/chakra_traces/single_pair_0_to_4/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/network_configs/son_ecmp_all.yml"
+      }
+    },
+    "single_pair_maxpath_0_to_20": {
+      "deterministic": {
+        "astra_max_cycles": 1788,
+        "run_returncode": 0,
+        "run_success": true,
+        "stderr_tail": [],
+        "runtime_s": 0.008981292019598186,
+        "link_load_fluid_cycles": 298,
+        "astra_over_fluid": 6.0,
+        "selected_path_count_min": 1,
+        "selected_path_count_median": 1,
+        "selected_path_count_mean": 1,
+        "selected_path_count_max": 1,
+        "max_link_load_bytes": 16000,
+        "hot_links": [
+          {
+            "src": 0,
+            "dst": 1,
+            "bytes": 16000
+          },
+          {
+            "src": 1,
+            "dst": 2,
+            "bytes": 16000
+          },
+          {
+            "src": 2,
+            "dst": 3,
+            "bytes": 16000
+          },
+          {
+            "src": 3,
+            "dst": 4,
+            "bytes": 16000
+          },
+          {
+            "src": 4,
+            "dst": 12,
+            "bytes": 16000
+          },
+          {
+            "src": 12,
+            "dst": 20,
+            "bytes": 16000
+          }
+        ],
+        "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/chakra_traces/single_pair_maxpath_0_to_20/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/network_configs/son_deterministic.yml"
+      },
+      "ecmp_2": {
+        "astra_max_cycles": 1043,
+        "run_returncode": 0,
+        "run_success": true,
+        "stderr_tail": [],
+        "runtime_s": 0.008221833035349846,
+        "link_load_fluid_cycles": 298,
+        "astra_over_fluid": 3.5,
+        "selected_path_count_min": 2,
+        "selected_path_count_median": 2,
+        "selected_path_count_mean": 2,
+        "selected_path_count_max": 2,
+        "max_link_load_bytes": 16000,
+        "hot_links": [
+          {
+            "src": 0,
+            "dst": 1,
+            "bytes": 16000
+          },
+          {
+            "src": 1,
+            "dst": 2,
+            "bytes": 16000
+          },
+          {
+            "src": 2,
+            "dst": 3,
+            "bytes": 16000
+          },
+          {
+            "src": 3,
+            "dst": 4,
+            "bytes": 16000
+          },
+          {
+            "src": 4,
+            "dst": 12,
+            "bytes": 8000
+          },
+          {
+            "src": 12,
+            "dst": 20,
+            "bytes": 8000
+          },
+          {
+            "src": 4,
+            "dst": 28,
+            "bytes": 8000
+          },
+          {
+            "src": 28,
+            "dst": 20,
+            "bytes": 8000
+          }
+        ],
+        "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/chakra_traces/single_pair_maxpath_0_to_20/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/network_configs/son_ecmp_2.yml"
+      },
+      "ecmp_4": {
+        "astra_max_cycles": 666,
+        "run_returncode": 0,
+        "run_success": true,
+        "stderr_tail": [],
+        "runtime_s": 0.008316082996316254,
+        "link_load_fluid_cycles": 298,
+        "astra_over_fluid": 2.2348993288590604,
+        "selected_path_count_min": 4,
+        "selected_path_count_median": 4,
+        "selected_path_count_mean": 4,
+        "selected_path_count_max": 4,
+        "max_link_load_bytes": 16000,
+        "hot_links": [
+          {
+            "src": 0,
+            "dst": 1,
+            "bytes": 16000
+          },
+          {
+            "src": 1,
+            "dst": 2,
+            "bytes": 16000
+          },
+          {
+            "src": 2,
+            "dst": 3,
+            "bytes": 16000
+          },
+          {
+            "src": 3,
+            "dst": 4,
+            "bytes": 8000
+          },
+          {
+            "src": 12,
+            "dst": 20,
+            "bytes": 8000
+          },
+          {
+            "src": 3,
+            "dst": 11,
+            "bytes": 8000
+          },
+          {
+            "src": 4,
+            "dst": 12,
+            "bytes": 4000
+          },
+          {
+            "src": 4,
+            "dst": 28,
+            "bytes": 4000
+          }
+        ],
+        "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/chakra_traces/single_pair_maxpath_0_to_20/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/network_configs/son_ecmp_4.yml"
+      },
+      "ecmp_8": {
+        "astra_max_cycles": 481,
+        "run_returncode": 0,
+        "run_success": true,
+        "stderr_tail": [],
+        "runtime_s": 0.00814166700001806,
+        "link_load_fluid_cycles": 298,
+        "astra_over_fluid": 1.6140939597315436,
+        "selected_path_count_min": 8,
+        "selected_path_count_median": 8,
+        "selected_path_count_mean": 8,
+        "selected_path_count_max": 8,
+        "max_link_load_bytes": 16000,
+        "hot_links": [
+          {
+            "src": 0,
+            "dst": 1,
+            "bytes": 16000
+          },
+          {
+            "src": 1,
+            "dst": 2,
+            "bytes": 16000
+          },
+          {
+            "src": 2,
+            "dst": 3,
+            "bytes": 12000
+          },
+          {
+            "src": 12,
+            "dst": 20,
+            "bytes": 6000
+          },
+          {
+            "src": 19,
+            "dst": 20,
+            "bytes": 6000
+          },
+          {
+            "src": 3,
+            "dst": 4,
+            "bytes": 4000
+          },
+          {
+            "src": 28,
+            "dst": 20,
+            "bytes": 4000
+          },
+          {
+            "src": 3,
+            "dst": 11,
+            "bytes": 4000
+          }
+        ],
+        "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/chakra_traces/single_pair_maxpath_0_to_20/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/network_configs/son_ecmp_8.yml"
+      },
+      "ecmp_all": {
+        "astra_max_cycles": 108,
+        "run_returncode": 0,
+        "run_success": true,
+        "stderr_tail": [],
+        "runtime_s": 0.00816070893779397,
+        "link_load_fluid_cycles": 99,
+        "astra_over_fluid": 1.0909090909090908,
+        "selected_path_count_min": 60,
+        "selected_path_count_median": 60,
+        "selected_path_count_mean": 60,
+        "selected_path_count_max": 60,
+        "max_link_load_bytes": 5340,
+        "hot_links": [
+          {
+            "src": 0,
+            "dst": 1,
+            "bytes": 5340
+          },
+          {
+            "src": 0,
+            "dst": 7,
+            "bytes": 5340
+          },
+          {
+            "src": 19,
+            "dst": 20,
+            "bytes": 5332
+          },
+          {
+            "src": 21,
+            "dst": 20,
+            "bytes": 5332
+          },
+          {
+            "src": 1,
+            "dst": 2,
+            "bytes": 3204
+          },
+          {
+            "src": 7,
+            "dst": 6,
+            "bytes": 3204
+          },
+          {
+            "src": 18,
+            "dst": 19,
+            "bytes": 3198
+          },
+          {
+            "src": 22,
+            "dst": 21,
+            "bytes": 3198
+          }
+        ],
+        "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/chakra_traces/single_pair_maxpath_0_to_20/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/network_configs/son_ecmp_all.yml"
+      }
+    },
+    "uniform_all_to_all": {
+      "deterministic": {
+        "astra_max_cycles": 2682,
+        "run_returncode": 0,
+        "run_success": true,
+        "stderr_tail": [],
+        "runtime_s": 0.021633250056765974,
+        "link_load_fluid_cycles": 1676,
+        "astra_over_fluid": 1.600238663484487,
+        "selected_path_count_min": 1,
+        "selected_path_count_median": 1.0,
+        "selected_path_count_mean": 1,
+        "selected_path_count_max": 1,
+        "max_link_load_bytes": 90000,
+        "hot_links": [
+          {
+            "src": 1,
+            "dst": 0,
+            "bytes": 90000
+          },
+          {
+            "src": 2,
+            "dst": 1,
+            "bytes": 90000
+          },
+          {
+            "src": 3,
+            "dst": 2,
+            "bytes": 90000
+          },
+          {
+            "src": 0,
+            "dst": 7,
+            "bytes": 81000
+          },
+          {
+            "src": 4,
+            "dst": 3,
+            "bytes": 81000
+          },
+          {
+            "src": 0,
+            "dst": 1,
+            "bytes": 72000
+          },
+          {
+            "src": 1,
+            "dst": 2,
+            "bytes": 72000
+          },
+          {
+            "src": 2,
+            "dst": 3,
+            "bytes": 72000
+          }
+        ],
+        "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/chakra_traces/uniform_all_to_all/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/network_configs/son_deterministic.yml"
+      },
+      "ecmp_2": {
+        "astra_max_cycles": 2250,
+        "run_returncode": 0,
+        "run_success": true,
+        "stderr_tail": [],
+        "runtime_s": 0.02257412497419864,
+        "link_load_fluid_cycles": 1294,
+        "astra_over_fluid": 1.7387944358578054,
+        "selected_path_count_min": 1,
+        "selected_path_count_median": 2.0,
+        "selected_path_count_mean": 1.7419354838709677,
+        "selected_path_count_max": 2,
+        "max_link_load_bytes": 69500,
+        "hot_links": [
+          {
+            "src": 1,
+            "dst": 0,
+            "bytes": 69500
+          },
+          {
+            "src": 2,
+            "dst": 1,
+            "bytes": 69500
+          },
+          {
+            "src": 3,
+            "dst": 2,
+            "bytes": 69500
+          },
+          {
+            "src": 4,
+            "dst": 3,
+            "bytes": 66500
+          },
+          {
+            "src": 0,
+            "dst": 7,
+            "bytes": 64500
+          },
+          {
+            "src": 0,
+            "dst": 1,
+            "bytes": 61500
+          },
+          {
+            "src": 1,
+            "dst": 2,
+            "bytes": 61500
+          },
+          {
+            "src": 5,
+            "dst": 4,
+            "bytes": 61500
+          }
+        ],
+        "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/chakra_traces/uniform_all_to_all/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/network_configs/son_ecmp_2.yml"
+      },
+      "ecmp_4": {
+        "astra_max_cycles": 1983,
+        "run_returncode": 0,
+        "run_success": true,
+        "stderr_tail": [],
+        "runtime_s": 0.023189833969809115,
+        "link_load_fluid_cycles": 982,
+        "astra_over_fluid": 2.019348268839104,
+        "selected_path_count_min": 1,
+        "selected_path_count_median": 3.0,
+        "selected_path_count_mean": 2.7096774193548385,
+        "selected_path_count_max": 4,
+        "max_link_load_bytes": 52754,
+        "hot_links": [
+          {
+            "src": 1,
+            "dst": 0,
+            "bytes": 52754
+          },
+          {
+            "src": 2,
+            "dst": 1,
+            "bytes": 52754
+          },
+          {
+            "src": 3,
+            "dst": 2,
+            "bytes": 52754
+          },
+          {
+            "src": 4,
+            "dst": 3,
+            "bytes": 49754
+          },
+          {
+            "src": 0,
+            "dst": 7,
+            "bytes": 47754
+          },
+          {
+            "src": 0,
+            "dst": 1,
+            "bytes": 45254
+          },
+          {
+            "src": 5,
+            "dst": 4,
+            "bytes": 45254
+          },
+          {
+            "src": 1,
+            "dst": 2,
+            "bytes": 44754
+          }
+        ],
+        "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/chakra_traces/uniform_all_to_all/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/network_configs/son_ecmp_4.yml"
+      },
+      "ecmp_8": {
+        "astra_max_cycles": 2020,
+        "run_returncode": 0,
+        "run_success": true,
+        "stderr_tail": [],
+        "runtime_s": 0.02504187496379018,
+        "link_load_fluid_cycles": 756,
+        "astra_over_fluid": 2.671957671957672,
+        "selected_path_count_min": 1,
+        "selected_path_count_median": 3.0,
+        "selected_path_count_mean": 3.7419354838709675,
+        "selected_path_count_max": 8,
+        "max_link_load_bytes": 40630,
+        "hot_links": [
+          {
+            "src": 1,
+            "dst": 0,
+            "bytes": 40630
+          },
+          {
+            "src": 2,
+            "dst": 1,
+            "bytes": 40630
+          },
+          {
+            "src": 3,
+            "dst": 2,
+            "bytes": 40630
+          },
+          {
+            "src": 4,
+            "dst": 3,
+            "bytes": 40005
+          },
+          {
+            "src": 0,
+            "dst": 7,
+            "bytes": 39630
+          },
+          {
+            "src": 0,
+            "dst": 1,
+            "bytes": 39255
+          },
+          {
+            "src": 5,
+            "dst": 4,
+            "bytes": 39255
+          },
+          {
+            "src": 1,
+            "dst": 2,
+            "bytes": 39005
+          }
+        ],
+        "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/chakra_traces/uniform_all_to_all/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/network_configs/son_ecmp_8.yml"
+      },
+      "ecmp_all": {
+        "astra_max_cycles": null,
+        "run_returncode": -6,
+        "run_success": false,
+        "stderr_tail": [
+          "Assertion failed: (current_event_list.get_event_time() > current_time), function proceed, file EventQueue.cpp, line 33."
+        ],
+        "runtime_s": 0.021892499993555248,
+        "link_load_fluid_cycles": 596,
+        "astra_over_fluid": null,
+        "selected_path_count_min": 1,
+        "selected_path_count_median": 3.0,
+        "selected_path_count_mean": 6.580645161290323,
+        "selected_path_count_max": 60,
+        "max_link_load_bytes": 32044,
+        "hot_links": [
+          {
+            "src": 0,
+            "dst": 7,
+            "bytes": 32044
+          },
+          {
+            "src": 1,
+            "dst": 0,
+            "bytes": 32044
+          },
+          {
+            "src": 2,
+            "dst": 1,
+            "bytes": 32044
+          },
+          {
+            "src": 3,
+            "dst": 2,
+            "bytes": 32044
+          },
+          {
+            "src": 2,
+            "dst": 3,
+            "bytes": 32040
+          },
+          {
+            "src": 7,
+            "dst": 6,
+            "bytes": 32040
+          },
+          {
+            "src": 1,
+            "dst": 2,
+            "bytes": 32035
+          },
+          {
+            "src": 4,
+            "dst": 3,
+            "bytes": 32035
+          }
+        ],
+        "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/chakra_traces/uniform_all_to_all/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/network_configs/son_ecmp_all.yml"
+      }
+    },
+    "hot_destination_0": {
+      "deterministic": {
+        "astra_max_cycles": 2384,
+        "run_returncode": 0,
+        "run_success": true,
+        "stderr_tail": [],
+        "runtime_s": 0.008803125005215406,
+        "link_load_fluid_cycles": 2384,
+        "astra_over_fluid": 1.0,
+        "selected_path_count_min": 1,
+        "selected_path_count_median": 1,
+        "selected_path_count_mean": 1,
+        "selected_path_count_max": 1,
+        "max_link_load_bytes": 128000,
+        "hot_links": [
+          {
+            "src": 1,
+            "dst": 0,
+            "bytes": 128000
+          },
+          {
+            "src": 2,
+            "dst": 1,
+            "bytes": 96000
+          },
+          {
+            "src": 7,
+            "dst": 0,
+            "bytes": 96000
+          },
+          {
+            "src": 3,
+            "dst": 2,
+            "bytes": 64000
+          },
+          {
+            "src": 6,
+            "dst": 7,
+            "bytes": 64000
+          },
+          {
+            "src": 4,
+            "dst": 3,
+            "bytes": 32000
+          },
+          {
+            "src": 5,
+            "dst": 6,
+            "bytes": 32000
+          },
+          {
+            "src": 8,
+            "dst": 0,
+            "bytes": 16000
+          }
+        ],
+        "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/chakra_traces/hot_destination_0/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/network_configs/son_deterministic.yml"
+      },
+      "ecmp_2": {
+        "astra_max_cycles": 1853,
+        "run_returncode": 0,
+        "run_success": true,
+        "stderr_tail": [],
+        "runtime_s": 0.008237791014835238,
+        "link_load_fluid_cycles": 1862,
+        "astra_over_fluid": 0.9951664876476907,
+        "selected_path_count_min": 1,
+        "selected_path_count_median": 2,
+        "selected_path_count_mean": 1.7419354838709677,
+        "selected_path_count_max": 2,
+        "max_link_load_bytes": 100000,
+        "hot_links": [
+          {
+            "src": 1,
+            "dst": 0,
+            "bytes": 100000
+          },
+          {
+            "src": 7,
+            "dst": 0,
+            "bytes": 100000
+          },
+          {
+            "src": 2,
+            "dst": 1,
+            "bytes": 68000
+          },
+          {
+            "src": 6,
+            "dst": 7,
+            "bytes": 68000
+          },
+          {
+            "src": 3,
+            "dst": 2,
+            "bytes": 36000
+          },
+          {
+            "src": 5,
+            "dst": 6,
+            "bytes": 36000
+          },
+          {
+            "src": 8,
+            "dst": 0,
+            "bytes": 28000
+          },
+          {
+            "src": 24,
+            "dst": 0,
+            "bytes": 20000
+          }
+        ],
+        "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/chakra_traces/hot_destination_0/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/network_configs/son_ecmp_2.yml"
+      },
+      "ecmp_4": {
+        "astra_max_cycles": 1679,
+        "run_returncode": 0,
+        "run_success": true,
+        "stderr_tail": [],
+        "runtime_s": 0.008635749923996627,
+        "link_load_fluid_cycles": 1688,
+        "astra_over_fluid": 0.9946682464454977,
+        "selected_path_count_min": 1,
+        "selected_path_count_median": 3,
+        "selected_path_count_mean": 2.7096774193548385,
+        "selected_path_count_max": 4,
+        "max_link_load_bytes": 90668,
+        "hot_links": [
+          {
+            "src": 1,
+            "dst": 0,
+            "bytes": 90668
+          },
+          {
+            "src": 7,
+            "dst": 0,
+            "bytes": 78668
+          },
+          {
+            "src": 2,
+            "dst": 1,
+            "bytes": 57334
+          },
+          {
+            "src": 6,
+            "dst": 7,
+            "bytes": 45334
+          },
+          {
+            "src": 8,
+            "dst": 0,
+            "bytes": 45332
+          },
+          {
+            "src": 24,
+            "dst": 0,
+            "bytes": 33332
+          },
+          {
+            "src": 3,
+            "dst": 2,
+            "bytes": 30000
+          },
+          {
+            "src": 5,
+            "dst": 6,
+            "bytes": 24000
+          }
+        ],
+        "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/chakra_traces/hot_destination_0/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/network_configs/son_ecmp_4.yml"
+      },
+      "ecmp_8": {
+        "astra_max_cycles": 1531,
+        "run_returncode": 0,
+        "run_success": true,
+        "stderr_tail": [],
+        "runtime_s": 0.008865332929417491,
+        "link_load_fluid_cycles": 1552,
+        "astra_over_fluid": 0.9864690721649485,
+        "selected_path_count_min": 1,
+        "selected_path_count_median": 3,
+        "selected_path_count_mean": 3.7419354838709675,
+        "selected_path_count_max": 8,
+        "max_link_load_bytes": 83335,
+        "hot_links": [
+          {
+            "src": 1,
+            "dst": 0,
+            "bytes": 83335
+          },
+          {
+            "src": 7,
+            "dst": 0,
+            "bytes": 80335
+          },
+          {
+            "src": 8,
+            "dst": 0,
+            "bytes": 46666
+          },
+          {
+            "src": 2,
+            "dst": 1,
+            "bytes": 46334
+          },
+          {
+            "src": 6,
+            "dst": 7,
+            "bytes": 46334
+          },
+          {
+            "src": 24,
+            "dst": 0,
+            "bytes": 37664
+          },
+          {
+            "src": 3,
+            "dst": 2,
+            "bytes": 23000
+          },
+          {
+            "src": 5,
+            "dst": 6,
+            "bytes": 23000
+          }
+        ],
+        "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/chakra_traces/hot_destination_0/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/network_configs/son_ecmp_8.yml"
+      },
+      "ecmp_all": {
+        "astra_max_cycles": 1443,
+        "run_returncode": 0,
+        "run_success": true,
+        "stderr_tail": [],
+        "runtime_s": 0.00881570903584361,
+        "link_load_fluid_cycles": 1475,
+        "astra_over_fluid": 0.9783050847457627,
+        "selected_path_count_min": 1,
+        "selected_path_count_median": 3,
+        "selected_path_count_mean": 6.580645161290323,
+        "selected_path_count_max": 60,
+        "max_link_load_bytes": 79205,
+        "hot_links": [
+          {
+            "src": 1,
+            "dst": 0,
+            "bytes": 79205
+          },
+          {
+            "src": 7,
+            "dst": 0,
+            "bytes": 79199
+          },
+          {
+            "src": 8,
+            "dst": 0,
+            "bytes": 44804
+          },
+          {
+            "src": 24,
+            "dst": 0,
+            "bytes": 44792
+          },
+          {
+            "src": 2,
+            "dst": 1,
+            "bytes": 43469
+          },
+          {
+            "src": 6,
+            "dst": 7,
+            "bytes": 43466
+          },
+          {
+            "src": 3,
+            "dst": 2,
+            "bytes": 20801
+          },
+          {
+            "src": 5,
+            "dst": 6,
+            "bytes": 20800
+          }
+        ],
+        "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/chakra_traces/hot_destination_0/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/network_configs/son_ecmp_all.yml"
+      }
+    },
+    "sparse_random_seed_20260518": {
+      "deterministic": {
+        "astra_max_cycles": 2126,
+        "run_returncode": 0,
+        "run_success": true,
+        "stderr_tail": [],
+        "runtime_s": 0.00900262501090765,
+        "link_load_fluid_cycles": 1039,
+        "astra_over_fluid": 2.046198267564966,
+        "selected_path_count_min": 1,
+        "selected_path_count_median": 1.0,
+        "selected_path_count_mean": 1,
+        "selected_path_count_max": 1,
+        "max_link_load_bytes": 55814,
+        "hot_links": [
+          {
+            "src": 4,
+            "dst": 3,
+            "bytes": 55814
+          },
+          {
+            "src": 3,
+            "dst": 2,
+            "bytes": 48703
+          },
+          {
+            "src": 2,
+            "dst": 10,
+            "bytes": 42043
+          },
+          {
+            "src": 21,
+            "dst": 20,
+            "bytes": 37064
+          },
+          {
+            "src": 0,
+            "dst": 1,
+            "bytes": 36729
+          },
+          {
+            "src": 2,
+            "dst": 1,
+            "bytes": 33347
+          },
+          {
+            "src": 22,
+            "dst": 21,
+            "bytes": 31813
+          },
+          {
+            "src": 1,
+            "dst": 0,
+            "bytes": 30090
+          }
+        ],
+        "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/chakra_traces/sparse_random_seed_20260518/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/network_configs/son_deterministic.yml"
+      },
+      "ecmp_2": {
+        "astra_max_cycles": 1440,
+        "run_returncode": 0,
+        "run_success": true,
+        "stderr_tail": [],
+        "runtime_s": 0.008747832966037095,
+        "link_load_fluid_cycles": 835,
+        "astra_over_fluid": 1.7245508982035929,
+        "selected_path_count_min": 1,
+        "selected_path_count_median": 2.0,
+        "selected_path_count_mean": 1.6875,
+        "selected_path_count_max": 2,
+        "max_link_load_bytes": 44867,
+        "hot_links": [
+          {
+            "src": 4,
+            "dst": 3,
+            "bytes": 44867
+          },
+          {
+            "src": 3,
+            "dst": 2,
+            "bytes": 38838
+          },
+          {
+            "src": 21,
+            "dst": 20,
+            "bytes": 31730
+          },
+          {
+            "src": 26,
+            "dst": 27,
+            "bytes": 31273
+          },
+          {
+            "src": 0,
+            "dst": 1,
+            "bytes": 29872
+          },
+          {
+            "src": 25,
+            "dst": 26,
+            "bytes": 27081
+          },
+          {
+            "src": 2,
+            "dst": 10,
+            "bytes": 26623
+          },
+          {
+            "src": 1,
+            "dst": 2,
+            "bytes": 25643
+          }
+        ],
+        "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/chakra_traces/sparse_random_seed_20260518/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/network_configs/son_ecmp_2.yml"
+      },
+      "ecmp_4": {
+        "astra_max_cycles": 1483,
+        "run_returncode": 0,
+        "run_success": true,
+        "stderr_tail": [],
+        "runtime_s": 0.008790666935965419,
+        "link_load_fluid_cycles": 719,
+        "astra_over_fluid": 2.062586926286509,
+        "selected_path_count_min": 1,
+        "selected_path_count_median": 3.0,
+        "selected_path_count_mean": 2.671875,
+        "selected_path_count_max": 4,
+        "max_link_load_bytes": 38639,
+        "hot_links": [
+          {
+            "src": 26,
+            "dst": 27,
+            "bytes": 38639
+          },
+          {
+            "src": 25,
+            "dst": 26,
+            "bytes": 33908
+          },
+          {
+            "src": 4,
+            "dst": 3,
+            "bytes": 33110
+          },
+          {
+            "src": 20,
+            "dst": 19,
+            "bytes": 27225
+          },
+          {
+            "src": 21,
+            "dst": 20,
+            "bytes": 26903
+          },
+          {
+            "src": 3,
+            "dst": 2,
+            "bytes": 25764
+          },
+          {
+            "src": 0,
+            "dst": 1,
+            "bytes": 24333
+          },
+          {
+            "src": 27,
+            "dst": 28,
+            "bytes": 23640
+          }
+        ],
+        "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/chakra_traces/sparse_random_seed_20260518/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/network_configs/son_ecmp_4.yml"
+      },
+      "ecmp_8": {
+        "astra_max_cycles": 1504,
+        "run_returncode": 0,
+        "run_success": true,
+        "stderr_tail": [],
+        "runtime_s": 0.008717415970750153,
+        "link_load_fluid_cycles": 716,
+        "astra_over_fluid": 2.100558659217877,
+        "selected_path_count_min": 1,
+        "selected_path_count_median": 3.0,
+        "selected_path_count_mean": 3.609375,
+        "selected_path_count_max": 8,
+        "max_link_load_bytes": 38465,
+        "hot_links": [
+          {
+            "src": 26,
+            "dst": 27,
+            "bytes": 38465
+          },
+          {
+            "src": 25,
+            "dst": 26,
+            "bytes": 34837
+          },
+          {
+            "src": 20,
+            "dst": 19,
+            "bytes": 30967
+          },
+          {
+            "src": 4,
+            "dst": 3,
+            "bytes": 30580
+          },
+          {
+            "src": 21,
+            "dst": 20,
+            "bytes": 26903
+          },
+          {
+            "src": 17,
+            "dst": 18,
+            "bytes": 24978
+          },
+          {
+            "src": 27,
+            "dst": 28,
+            "bytes": 24913
+          },
+          {
+            "src": 28,
+            "dst": 27,
+            "bytes": 24837
+          }
+        ],
+        "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/chakra_traces/sparse_random_seed_20260518/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/network_configs/son_ecmp_8.yml"
+      },
+      "ecmp_all": {
+        "astra_max_cycles": 1512,
+        "run_returncode": 0,
+        "run_success": true,
+        "stderr_tail": [],
+        "runtime_s": 0.00854583305772394,
+        "link_load_fluid_cycles": 775,
+        "astra_over_fluid": 1.9509677419354838,
+        "selected_path_count_min": 1,
+        "selected_path_count_median": 3.0,
+        "selected_path_count_mean": 5.296875,
+        "selected_path_count_max": 60,
+        "max_link_load_bytes": 41635,
+        "hot_links": [
+          {
+            "src": 26,
+            "dst": 27,
+            "bytes": 41635
+          },
+          {
+            "src": 25,
+            "dst": 26,
+            "bytes": 36950
+          },
+          {
+            "src": 20,
+            "dst": 19,
+            "bytes": 32361
+          },
+          {
+            "src": 28,
+            "dst": 27,
+            "bytes": 28729
+          },
+          {
+            "src": 17,
+            "dst": 18,
+            "bytes": 28438
+          },
+          {
+            "src": 21,
+            "dst": 20,
+            "bytes": 27885
+          },
+          {
+            "src": 27,
+            "dst": 28,
+            "bytes": 27678
+          },
+          {
+            "src": 4,
+            "dst": 3,
+            "bytes": 25275
+          }
+        ],
+        "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/chakra_traces/sparse_random_seed_20260518/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/network_configs/son_ecmp_all.yml"
+      }
+    }
+  },
+  "recommendation": {
+    "production_son_ecmp_max_paths": 4,
+    "reason": "4 removes deterministic BFS tie-breaking while avoiding the optimistic/tiny-subchunk fanout of all-path ECMP; keep 2 and 8 as sensitivity. Treat all-path as route-statistics/upper-bound only until tiny-subchunk handling is fixed.",
+    "safe_to_run_one_real_moe_next": true
+  }
+}

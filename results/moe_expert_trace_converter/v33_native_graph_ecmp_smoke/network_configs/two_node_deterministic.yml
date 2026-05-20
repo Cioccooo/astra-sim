@@ -1,0 +1,5 @@
+topology: [ Graph ]
+npus_count: [ 2 ]
+bandwidth: [ 50.0 ]
+latency: [ 0.0 ]
+graph_file: /Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v33_native_graph_ecmp_smoke/graphs/two_node.json

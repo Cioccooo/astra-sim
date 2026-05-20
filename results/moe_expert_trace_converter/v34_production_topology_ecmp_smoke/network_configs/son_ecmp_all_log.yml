@@ -1,0 +1,9 @@
+topology: [ Graph ]
+npus_count: [ 32 ]
+bandwidth: [ 50.0 ]
+latency: [ 0.0 ]
+graph_file: /Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v34_production_topology_ecmp_smoke/graphs/son_torus_4x8_32.json
+routing: ecmp
+ecmp_split: equal_bytes
+ecmp_max_paths: 0
+ecmp_log: true

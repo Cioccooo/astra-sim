@@ -1,0 +1,26 @@
+{
+  "name": "line4_deterministic",
+  "node_count": 4,
+  "gpu_count": 4,
+  "directed": false,
+  "edges": [
+    {
+      "src": 0,
+      "dst": 1,
+      "bandwidth_gbps": 400,
+      "latency_ns": 0
+    },
+    {
+      "src": 1,
+      "dst": 2,
+      "bandwidth_gbps": 400,
+      "latency_ns": 0
+    },
+    {
+      "src": 2,
+      "dst": 3,
+      "bandwidth_gbps": 400,
+      "latency_ns": 0
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+topology: [ Graph ]
+npus_count: [ 4 ]
+bandwidth: [ 50.0 ]  # GB/s; Graph edges use bandwidth_gbps and convert /8 internally
+latency: [ 0.0 ]  # ns; Graph can override this per edge
+graph_file: /Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v31_native_graph_topology_smoke/graphs/four_gpu_two_switch_nodes.json

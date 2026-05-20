@@ -1,0 +1,1634 @@
+{
+  "anti_leakage": {
+    "ron_calibrated_allowed_candidates": [
+      "son_torus",
+      "calibration_greedy",
+      "random_regular_seed_0",
+      "random_regular_seed_1",
+      "random_regular_seed_2",
+      "random_regular_seed_3",
+      "random_regular_seed_4",
+      "random_regular_seed_5",
+      "random_regular_seed_6",
+      "random_regular_seed_7",
+      "random_regular_seed_8",
+      "random_regular_seed_9",
+      "random_regular_seed_10",
+      "random_regular_seed_11",
+      "random_regular_seed_12",
+      "random_regular_seed_13",
+      "random_regular_seed_14",
+      "random_regular_seed_15",
+      "random_regular_seed_16",
+      "random_regular_seed_17",
+      "random_regular_seed_18",
+      "random_regular_seed_19",
+      "random_regular_seed_20",
+      "random_regular_seed_21",
+      "random_regular_seed_22",
+      "random_regular_seed_23",
+      "random_regular_seed_24",
+      "random_regular_seed_25",
+      "random_regular_seed_26",
+      "random_regular_seed_27",
+      "random_regular_seed_28",
+      "random_regular_seed_29",
+      "random_regular_seed_30",
+      "random_regular_seed_31"
+    ],
+    "ron_calibrated_uses_only_calibration": true,
+    "ron_oracle_reference_only": true,
+    "ron_oracle_uses_evaluation_for_topology": true
+  },
+  "final_recommendation": {
+    "claim_not_supported": [
+      "W=4 dynamic reconfiguration",
+      "generalisation to all workloads",
+      "real serving latency",
+      "physical transparent OCS modelling",
+      "token/layer-level execution timing"
+    ],
+    "claim_supported": "static RON graph generation and native ASTRA execution work for one real aggregated workload under the same degree/bandwidth budget",
+    "recommended_next_step": "four-workload static SON/RON calibrated/oracle validation",
+    "safe_to_proceed_to_four_workload_static": true
+  },
+  "fluid_lower_bound": {
+    "combine": {
+      "ron_calibrated_ecmp4": {
+        "average_hop_count": 2.763157894736842,
+        "average_link_load_bytes": 388525056,
+        "byte_weighted_average_hop_count": 2.470562811963951,
+        "fluid_cycles": 10234629,
+        "hot_links": [
+          {
+            "bytes": 549467477,
+            "dst": 27,
+            "src": 0
+          },
+          {
+            "bytes": 541543765,
+            "dst": 19,
+            "src": 22
+          },
+          {
+            "bytes": 541442049,
+            "dst": 11,
+            "src": 12
+          },
+          {
+            "bytes": 541356032,
+            "dst": 22,
+            "src": 19
+          },
+          {
+            "bytes": 516208641,
+            "dst": 22,
+            "src": 16
+          },
+          {
+            "bytes": 515392171,
+            "dst": 15,
+            "src": 0
+          },
+          {
+            "bytes": 513785855,
+            "dst": 30,
+            "src": 12
+          },
+          {
+            "bytes": 513538048,
+            "dst": 10,
+            "src": 24
+          }
+        ],
+        "max_link_load_bytes": 549467477,
+        "median_link_load_bytes": 388509355.5,
+        "selected_path_count_max": 4,
+        "selected_path_count_mean": 1.532258064516129,
+        "selected_path_count_median": 1.0,
+        "selected_path_count_min": 1
+      },
+      "ron_oracle_ecmp4": {
+        "average_hop_count": 2.8270401948842876,
+        "average_link_load_bytes": 393172736,
+        "byte_weighted_average_hop_count": 2.5001165954139135,
+        "fluid_cycles": 9888585,
+        "hot_links": [
+          {
+            "bytes": 530889387,
+            "dst": 10,
+            "src": 5
+          },
+          {
+            "bytes": 523236011,
+            "dst": 6,
+            "src": 17
+          },
+          {
+            "bytes": 516335616,
+            "dst": 4,
+            "src": 0
+          },
+          {
+            "bytes": 515720533,
+            "dst": 5,
+            "src": 10
+          },
+          {
+            "bytes": 514345643,
+            "dst": 21,
+            "src": 20
+          },
+          {
+            "bytes": 509290496,
+            "dst": 31,
+            "src": 13
+          },
+          {
+            "bytes": 508693163,
+            "dst": 15,
+            "src": 12
+          },
+          {
+            "bytes": 491819690,
+            "dst": 0,
+            "src": 23
+          }
+        ],
+        "max_link_load_bytes": 530889387,
+        "median_link_load_bytes": 389011115.0,
+        "selected_path_count_max": 4,
+        "selected_path_count_mean": 1.655241935483871,
+        "selected_path_count_median": 1.0,
+        "selected_path_count_min": 1
+      },
+      "son_torus_ecmp4": {
+        "average_hop_count": 3.5952380952380953,
+        "average_link_load_bytes": 487581248,
+        "byte_weighted_average_hop_count": 3.100443795109504,
+        "fluid_cycles": 20296847,
+        "hot_links": [
+          {
+            "bytes": 1089678681,
+            "dst": 0,
+            "src": 1
+          },
+          {
+            "bytes": 1088266925,
+            "dst": 2,
+            "src": 3
+          },
+          {
+            "bytes": 1044350295,
+            "dst": 7,
+            "src": 0
+          },
+          {
+            "bytes": 1041542489,
+            "dst": 1,
+            "src": 2
+          },
+          {
+            "bytes": 999461550,
+            "dst": 2,
+            "src": 1
+          },
+          {
+            "bytes": 992342018,
+            "dst": 3,
+            "src": 4
+          },
+          {
+            "bytes": 978022403,
+            "dst": 1,
+            "src": 0
+          },
+          {
+            "bytes": 958519980,
+            "dst": 6,
+            "src": 7
+          }
+        ],
+        "max_link_load_bytes": 1089678681,
+        "median_link_load_bytes": 444004692.5,
+        "selected_path_count_max": 4,
+        "selected_path_count_mean": 2.7096774193548385,
+        "selected_path_count_median": 3.0,
+        "selected_path_count_min": 1
+      }
+    },
+    "dispatch": {
+      "ron_calibrated_ecmp4": {
+        "average_hop_count": 2.763157894736842,
+        "average_link_load_bytes": 388525056,
+        "byte_weighted_average_hop_count": 2.470562811963951,
+        "fluid_cycles": 10425974,
+        "hot_links": [
+          {
+            "bytes": 559740245,
+            "dst": 0,
+            "src": 27
+          },
+          {
+            "bytes": 547669333,
+            "dst": 22,
+            "src": 19
+          },
+          {
+            "bytes": 535906304,
+            "dst": 19,
+            "src": 22
+          },
+          {
+            "bytes": 530917376,
+            "dst": 12,
+            "src": 30
+          },
+          {
+            "bytes": 519312725,
+            "dst": 10,
+            "src": 24
+          },
+          {
+            "bytes": 518716074,
+            "dst": 0,
+            "src": 15
+          },
+          {
+            "bytes": 516102144,
+            "dst": 20,
+            "src": 31
+          },
+          {
+            "bytes": 514799617,
+            "dst": 12,
+            "src": 11
+          }
+        ],
+        "max_link_load_bytes": 559740245,
+        "median_link_load_bytes": 386918058.5,
+        "selected_path_count_max": 4,
+        "selected_path_count_mean": 1.532258064516129,
+        "selected_path_count_median": 1.0,
+        "selected_path_count_min": 1
+      },
+      "ron_oracle_ecmp4": {
+        "average_hop_count": 2.8270401948842876,
+        "average_link_load_bytes": 393172736,
+        "byte_weighted_average_hop_count": 2.5001165954139135,
+        "fluid_cycles": 9819780,
+        "hot_links": [
+          {
+            "bytes": 527195478,
+            "dst": 10,
+            "src": 5
+          },
+          {
+            "bytes": 520151723,
+            "dst": 5,
+            "src": 10
+          },
+          {
+            "bytes": 517053099,
+            "dst": 17,
+            "src": 6
+          },
+          {
+            "bytes": 511524864,
+            "dst": 13,
+            "src": 31
+          },
+          {
+            "bytes": 508682923,
+            "dst": 12,
+            "src": 15
+          },
+          {
+            "bytes": 505860096,
+            "dst": 0,
+            "src": 4
+          },
+          {
+            "bytes": 503712426,
+            "dst": 20,
+            "src": 21
+          },
+          {
+            "bytes": 498936491,
+            "dst": 1,
+            "src": 18
+          }
+        ],
+        "max_link_load_bytes": 527195478,
+        "median_link_load_bytes": 390178475.5,
+        "selected_path_count_max": 4,
+        "selected_path_count_mean": 1.655241935483871,
+        "selected_path_count_median": 1.0,
+        "selected_path_count_min": 1
+      },
+      "son_torus_ecmp4": {
+        "average_hop_count": 3.5952380952380953,
+        "average_link_load_bytes": 487581248,
+        "byte_weighted_average_hop_count": 3.100443795109504,
+        "fluid_cycles": 21812718,
+        "hot_links": [
+          {
+            "bytes": 1171061422,
+            "dst": 1,
+            "src": 2
+          },
+          {
+            "bytes": 1126604801,
+            "dst": 2,
+            "src": 3
+          },
+          {
+            "bytes": 1126311939,
+            "dst": 0,
+            "src": 1
+          },
+          {
+            "bytes": 1072188759,
+            "dst": 3,
+            "src": 4
+          },
+          {
+            "bytes": 959610882,
+            "dst": 7,
+            "src": 0
+          },
+          {
+            "bytes": 949595480,
+            "dst": 4,
+            "src": 5
+          },
+          {
+            "bytes": 944317785,
+            "dst": 1,
+            "src": 0
+          },
+          {
+            "bytes": 905024857,
+            "dst": 2,
+            "src": 1
+          }
+        ],
+        "max_link_load_bytes": 1171061422,
+        "median_link_load_bytes": 456530258.5,
+        "selected_path_count_max": 4,
+        "selected_path_count_mean": 2.7096774193548385,
+        "selected_path_count_median": 3.0,
+        "selected_path_count_min": 1
+      }
+    }
+  },
+  "gain_loss_explanation": {
+    "calibrated_gain_vs_son_percent": 18.17294072847533,
+    "calibrated_vs_oracle_gap_percent": 1.6745712236477324,
+    "hop_count_change_vs_son": {
+      "ron_calibrated_ecmp4": {
+        "combine_byte_weighted_avg_hop": 2.470562811963951,
+        "dispatch_byte_weighted_avg_hop": 2.470562811963951
+      },
+      "ron_oracle_ecmp4": {
+        "combine_byte_weighted_avg_hop": 2.5001165954139135,
+        "dispatch_byte_weighted_avg_hop": 2.5001165954139135
+      },
+      "son_torus_ecmp4": {
+        "combine_byte_weighted_avg_hop": 3.100443795109504,
+        "dispatch_byte_weighted_avg_hop": 3.100443795109504
+      }
+    },
+    "interpretation": "RON helps if it reduces max hot-link load and/or byte-weighted hop count without increasing degree/bandwidth. Negative results are valid and indicate weak skew or poor calibration transfer.",
+    "max_link_load_change_vs_son": {
+      "ron_calibrated_ecmp4": {
+        "combine_change_vs_son_percent": 49.57527511727101,
+        "combine_max_link_load_bytes": 549467477,
+        "dispatch_change_vs_son_percent": 52.20231539657021,
+        "dispatch_max_link_load_bytes": 559740245
+      },
+      "ron_oracle_ecmp4": {
+        "combine_change_vs_son_percent": 51.28018963234172,
+        "combine_max_link_load_bytes": 530889387,
+        "dispatch_change_vs_son_percent": 54.98139823446426,
+        "dispatch_max_link_load_bytes": 527195478
+      },
+      "son_torus_ecmp4": {
+        "combine_change_vs_son_percent": 0.0,
+        "combine_max_link_load_bytes": 1089678681,
+        "dispatch_change_vs_son_percent": 0.0,
+        "dispatch_max_link_load_bytes": 1171061422
+      }
+    },
+    "oracle_gain_vs_son_percent": 19.543193116193454,
+    "ron_calibrated_beats_son": true,
+    "ron_oracle_beats_son": true,
+    "selected_candidates": {
+      "ron_calibrated": "random_regular_seed_16",
+      "ron_oracle": "random_regular_seed_22"
+    },
+    "top_candidate_scores": {
+      "calibrated": [
+        {
+          "name": "random_regular_seed_16",
+          "score_max_link_load_bytes": 77485397
+        },
+        {
+          "name": "random_regular_seed_22",
+          "score_max_link_load_bytes": 79163391
+        },
+        {
+          "name": "random_regular_seed_3",
+          "score_max_link_load_bytes": 81089195
+        },
+        {
+          "name": "random_regular_seed_19",
+          "score_max_link_load_bytes": 81855147
+        },
+        {
+          "name": "random_regular_seed_27",
+          "score_max_link_load_bytes": 84490923
+        },
+        {
+          "name": "random_regular_seed_18",
+          "score_max_link_load_bytes": 84752385
+        },
+        {
+          "name": "random_regular_seed_13",
+          "score_max_link_load_bytes": 85124438
+        },
+        {
+          "name": "random_regular_seed_9",
+          "score_max_link_load_bytes": 85803007
+        }
+      ],
+      "oracle": [
+        {
+          "name": "random_regular_seed_22",
+          "score_max_link_load_bytes": 530889387
+        },
+        {
+          "name": "random_regular_seed_16",
+          "score_max_link_load_bytes": 559740245
+        },
+        {
+          "name": "random_regular_seed_20",
+          "score_max_link_load_bytes": 595292844
+        },
+        {
+          "name": "random_regular_seed_18",
+          "score_max_link_load_bytes": 602815831
+        },
+        {
+          "name": "random_regular_seed_19",
+          "score_max_link_load_bytes": 615293612
+        },
+        {
+          "name": "random_regular_seed_13",
+          "score_max_link_load_bytes": 616904705
+        },
+        {
+          "name": "random_regular_seed_25",
+          "score_max_link_load_bytes": 619573248
+        },
+        {
+          "name": "random_regular_seed_29",
+          "score_max_link_load_bytes": 620749484
+        }
+      ]
+    },
+    "total_cycles": {
+      "ron_calibrated_ecmp4": 72070031,
+      "ron_oracle_ecmp4": 70863167,
+      "son_torus_ecmp4": 88076037
+    }
+  },
+  "graph_audit": {
+    "ron_calibrated_ecmp4": {
+      "component_sizes": [
+        32
+      ],
+      "connected_components": 1,
+      "degree_distribution": {
+        "4": 32
+      },
+      "degree_max": 4,
+      "degree_min": 4,
+      "duplicate_edges": 0,
+      "edge_circuit_count": 64,
+      "gpu_count": 32,
+      "name": "ron_random_regular_seed_16",
+      "node_count": 32,
+      "per_gpu_optical_bandwidth_tbps": 1.6,
+      "per_link_bandwidth_gbps": 400,
+      "same_degree_bandwidth_budget_as_son": true,
+      "self_loops": 0,
+      "valid": true
+    },
+    "ron_oracle_ecmp4": {
+      "component_sizes": [
+        32
+      ],
+      "connected_components": 1,
+      "degree_distribution": {
+        "4": 32
+      },
+      "degree_max": 4,
+      "degree_min": 4,
+      "duplicate_edges": 0,
+      "edge_circuit_count": 64,
+      "gpu_count": 32,
+      "name": "ron_random_regular_seed_22",
+      "node_count": 32,
+      "per_gpu_optical_bandwidth_tbps": 1.6,
+      "per_link_bandwidth_gbps": 400,
+      "same_degree_bandwidth_budget_as_son": true,
+      "self_loops": 0,
+      "valid": true
+    },
+    "son_torus_ecmp4": {
+      "component_sizes": [
+        32
+      ],
+      "connected_components": 1,
+      "degree_distribution": {
+        "4": 32
+      },
+      "degree_max": 4,
+      "degree_min": 4,
+      "duplicate_edges": 0,
+      "edge_circuit_count": 64,
+      "gpu_count": 32,
+      "name": "son_torus_4x8_32gpu",
+      "node_count": 32,
+      "per_gpu_optical_bandwidth_tbps": 1.6,
+      "per_link_bandwidth_gbps": 400,
+      "same_degree_bandwidth_budget_as_son": true,
+      "self_loops": 0,
+      "valid": true
+    }
+  },
+  "graph_budget_fairness_pass": true,
+  "graph_quality": {
+    "ron_calibrated_ecmp4": {
+      "average_shortest_path_length": 2.473790322580645,
+      "diameter": 4,
+      "ecmp_path_count_distribution_cap4": {
+        "1": 654,
+        "2": 216,
+        "3": 54,
+        "4": 68
+      },
+      "ecmp_path_count_max_cap4": 4,
+      "ecmp_path_count_mean_cap4": 1.532258064516129,
+      "ecmp_path_count_median_cap4": 1.0,
+      "ecmp_path_count_min_cap4": 1,
+      "shortest_path_length_distribution": {
+        "1": 128,
+        "2": 334,
+        "3": 462,
+        "4": 68
+      },
+      "unreachable_pairs": 0
+    },
+    "ron_oracle_ecmp4": {
+      "average_shortest_path_length": 2.5,
+      "diameter": 4,
+      "ecmp_path_count_distribution_cap4": {
+        "1": 600,
+        "2": 230,
+        "3": 66,
+        "4": 96
+      },
+      "ecmp_path_count_max_cap4": 4,
+      "ecmp_path_count_mean_cap4": 1.655241935483871,
+      "ecmp_path_count_median_cap4": 1.0,
+      "ecmp_path_count_min_cap4": 1,
+      "shortest_path_length_distribution": {
+        "1": 128,
+        "2": 330,
+        "3": 444,
+        "4": 90
+      },
+      "unreachable_pairs": 0
+    },
+    "son_torus_ecmp4": {
+      "average_shortest_path_length": 3.096774193548387,
+      "diameter": 6,
+      "ecmp_path_count_distribution_cap4": {
+        "1": 256,
+        "2": 192,
+        "3": 128,
+        "4": 416
+      },
+      "ecmp_path_count_max_cap4": 4,
+      "ecmp_path_count_mean_cap4": 2.7096774193548385,
+      "ecmp_path_count_median_cap4": 3.0,
+      "ecmp_path_count_min_cap4": 1,
+      "shortest_path_length_distribution": {
+        "1": 128,
+        "2": 224,
+        "3": 256,
+        "4": 224,
+        "5": 128,
+        "6": 32
+      },
+      "unreachable_pairs": 0
+    }
+  },
+  "native_astra_results": {
+    "combine": {
+      "ron_calibrated_ecmp4": {
+        "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v36_static_ron_one_workload_validation/chakra_traces/evaluation_combine/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v36_static_ron_one_workload_validation/network_configs/ron_calibrated_ecmp4.yml",
+        "cycles_count": 32,
+        "label": "combine_ron_calibrated_ecmp4",
+        "max_cycles": 36642032,
+        "returncode": 0,
+        "runtime_s": 0.02486754092387855,
+        "stderr": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v36_static_ron_one_workload_validation/runs/combine_ron_calibrated_ecmp4.stderr.txt",
+        "stderr_tail": [],
+        "stdout": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v36_static_ron_one_workload_validation/runs/combine_ron_calibrated_ecmp4.stdout.txt",
+        "success": true
+      },
+      "ron_oracle_ecmp4": {
+        "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v36_static_ron_one_workload_validation/chakra_traces/evaluation_combine/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v36_static_ron_one_workload_validation/network_configs/ron_oracle_ecmp4.yml",
+        "cycles_count": 32,
+        "label": "combine_ron_oracle_ecmp4",
+        "max_cycles": 36142168,
+        "returncode": 0,
+        "runtime_s": 0.0248624999076128,
+        "stderr": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v36_static_ron_one_workload_validation/runs/combine_ron_oracle_ecmp4.stderr.txt",
+        "stderr_tail": [],
+        "stdout": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v36_static_ron_one_workload_validation/runs/combine_ron_oracle_ecmp4.stdout.txt",
+        "success": true
+      },
+      "son_torus_ecmp4": {
+        "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v36_static_ron_one_workload_validation/chakra_traces/evaluation_combine/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v36_static_ron_one_workload_validation/network_configs/son_torus_ecmp4.yml",
+        "cycles_count": 32,
+        "label": "combine_son_torus_ecmp4",
+        "max_cycles": 44878393,
+        "returncode": 0,
+        "runtime_s": 0.02732654195278883,
+        "stderr": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v36_static_ron_one_workload_validation/runs/combine_son_torus_ecmp4.stderr.txt",
+        "stderr_tail": [],
+        "stdout": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v36_static_ron_one_workload_validation/runs/combine_son_torus_ecmp4.stdout.txt",
+        "success": true
+      }
+    },
+    "dispatch": {
+      "ron_calibrated_ecmp4": {
+        "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v36_static_ron_one_workload_validation/chakra_traces/evaluation_dispatch/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v36_static_ron_one_workload_validation/network_configs/ron_calibrated_ecmp4.yml",
+        "cycles_count": 32,
+        "label": "dispatch_ron_calibrated_ecmp4",
+        "max_cycles": 35427999,
+        "returncode": 0,
+        "runtime_s": 0.024607375031337142,
+        "stderr": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v36_static_ron_one_workload_validation/runs/dispatch_ron_calibrated_ecmp4.stderr.txt",
+        "stderr_tail": [],
+        "stdout": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v36_static_ron_one_workload_validation/runs/dispatch_ron_calibrated_ecmp4.stdout.txt",
+        "success": true
+      },
+      "ron_oracle_ecmp4": {
+        "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v36_static_ron_one_workload_validation/chakra_traces/evaluation_dispatch/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v36_static_ron_one_workload_validation/network_configs/ron_oracle_ecmp4.yml",
+        "cycles_count": 32,
+        "label": "dispatch_ron_oracle_ecmp4",
+        "max_cycles": 34720999,
+        "returncode": 0,
+        "runtime_s": 0.024425624986179173,
+        "stderr": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v36_static_ron_one_workload_validation/runs/dispatch_ron_oracle_ecmp4.stderr.txt",
+        "stderr_tail": [],
+        "stdout": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v36_static_ron_one_workload_validation/runs/dispatch_ron_oracle_ecmp4.stdout.txt",
+        "success": true
+      },
+      "son_torus_ecmp4": {
+        "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v36_static_ron_one_workload_validation/chakra_traces/evaluation_dispatch/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v36_static_ron_one_workload_validation/network_configs/son_torus_ecmp4.yml",
+        "cycles_count": 32,
+        "label": "dispatch_son_torus_ecmp4",
+        "max_cycles": 43197644,
+        "returncode": 0,
+        "runtime_s": 0.04465704201720655,
+        "stderr": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v36_static_ron_one_workload_validation/runs/dispatch_son_torus_ecmp4.stderr.txt",
+        "stderr_tail": [],
+        "stdout": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v36_static_ron_one_workload_validation/runs/dispatch_son_torus_ecmp4.stdout.txt",
+        "success": true
+      }
+    }
+  },
+  "native_astra_totals": {
+    "ron_calibrated_ecmp4": {
+      "astra_over_fluid_total": 3.488283038012008,
+      "combine_cycles": 36642032,
+      "combine_fluid_cycles": 10234629,
+      "dispatch_cycles": 35427999,
+      "dispatch_fluid_cycles": 10425974,
+      "runtime_s": 0.04947491595521569,
+      "success": true,
+      "total_cycles": 72070031,
+      "total_fluid_cycles": 20660603
+    },
+    "ron_oracle_ecmp4": {
+      "astra_over_fluid_total": 3.5955883199849406,
+      "combine_cycles": 36142168,
+      "combine_fluid_cycles": 9888585,
+      "dispatch_cycles": 34720999,
+      "dispatch_fluid_cycles": 9819780,
+      "runtime_s": 0.049288124893791974,
+      "success": true,
+      "total_cycles": 70863167,
+      "total_fluid_cycles": 19708365
+    },
+    "son_torus_ecmp4": {
+      "astra_over_fluid_total": 2.0915921833911133,
+      "combine_cycles": 44878393,
+      "combine_fluid_cycles": 20296847,
+      "dispatch_cycles": 43197644,
+      "dispatch_fluid_cycles": 21812718,
+      "runtime_s": 0.07198358396999538,
+      "success": true,
+      "total_cycles": 88076037,
+      "total_fluid_cycles": 42109565
+    }
+  },
+  "ron_construction": {
+    "calibrated_selection": {
+      "scores": [
+        {
+          "name": "random_regular_seed_16",
+          "score_max_link_load_bytes": 77485397
+        },
+        {
+          "name": "random_regular_seed_22",
+          "score_max_link_load_bytes": 79163391
+        },
+        {
+          "name": "random_regular_seed_3",
+          "score_max_link_load_bytes": 81089195
+        },
+        {
+          "name": "random_regular_seed_19",
+          "score_max_link_load_bytes": 81855147
+        },
+        {
+          "name": "random_regular_seed_27",
+          "score_max_link_load_bytes": 84490923
+        },
+        {
+          "name": "random_regular_seed_18",
+          "score_max_link_load_bytes": 84752385
+        },
+        {
+          "name": "random_regular_seed_13",
+          "score_max_link_load_bytes": 85124438
+        },
+        {
+          "name": "random_regular_seed_9",
+          "score_max_link_load_bytes": 85803007
+        },
+        {
+          "name": "random_regular_seed_30",
+          "score_max_link_load_bytes": 87787520
+        },
+        {
+          "name": "random_regular_seed_25",
+          "score_max_link_load_bytes": 88010069
+        },
+        {
+          "name": "random_regular_seed_20",
+          "score_max_link_load_bytes": 91353772
+        },
+        {
+          "name": "random_regular_seed_14",
+          "score_max_link_load_bytes": 91495084
+        },
+        {
+          "name": "random_regular_seed_12",
+          "score_max_link_load_bytes": 91816619
+        },
+        {
+          "name": "random_regular_seed_31",
+          "score_max_link_load_bytes": 92149078
+        },
+        {
+          "name": "random_regular_seed_29",
+          "score_max_link_load_bytes": 92525909
+        },
+        {
+          "name": "random_regular_seed_23",
+          "score_max_link_load_bytes": 92876801
+        },
+        {
+          "name": "random_regular_seed_17",
+          "score_max_link_load_bytes": 93321902
+        },
+        {
+          "name": "random_regular_seed_24",
+          "score_max_link_load_bytes": 94182060
+        },
+        {
+          "name": "random_regular_seed_0",
+          "score_max_link_load_bytes": 95158954
+        },
+        {
+          "name": "random_regular_seed_5",
+          "score_max_link_load_bytes": 95779500
+        },
+        {
+          "name": "random_regular_seed_2",
+          "score_max_link_load_bytes": 97125718
+        },
+        {
+          "name": "random_regular_seed_6",
+          "score_max_link_load_bytes": 97390592
+        },
+        {
+          "name": "random_regular_seed_8",
+          "score_max_link_load_bytes": 97395369
+        },
+        {
+          "name": "random_regular_seed_4",
+          "score_max_link_load_bytes": 99314348
+        },
+        {
+          "name": "random_regular_seed_10",
+          "score_max_link_load_bytes": 99708245
+        },
+        {
+          "name": "random_regular_seed_7",
+          "score_max_link_load_bytes": 101642239
+        },
+        {
+          "name": "random_regular_seed_15",
+          "score_max_link_load_bytes": 106201087
+        },
+        {
+          "name": "random_regular_seed_1",
+          "score_max_link_load_bytes": 107635367
+        },
+        {
+          "name": "random_regular_seed_11",
+          "score_max_link_load_bytes": 110968831
+        },
+        {
+          "name": "random_regular_seed_21",
+          "score_max_link_load_bytes": 112403798
+        },
+        {
+          "name": "random_regular_seed_26",
+          "score_max_link_load_bytes": 112730112
+        },
+        {
+          "name": "random_regular_seed_28",
+          "score_max_link_load_bytes": 142980436
+        },
+        {
+          "name": "son_torus",
+          "score_max_link_load_bytes": 159554221
+        },
+        {
+          "name": "calibration_greedy",
+          "score_max_link_load_bytes": 165089282
+        }
+      ],
+      "selected_name": "random_regular_seed_16"
+    },
+    "candidate_pool_size": 35,
+    "degree_enforced": 4,
+    "disconnected_graph_repair": "random regular generator requires connected; greedy starts from connected ring and fills to degree 4",
+    "edges_bidirectional": true,
+    "oracle_selection": {
+      "scores": [
+        {
+          "name": "random_regular_seed_22",
+          "score_max_link_load_bytes": 530889387
+        },
+        {
+          "name": "random_regular_seed_16",
+          "score_max_link_load_bytes": 559740245
+        },
+        {
+          "name": "random_regular_seed_20",
+          "score_max_link_load_bytes": 595292844
+        },
+        {
+          "name": "random_regular_seed_18",
+          "score_max_link_load_bytes": 602815831
+        },
+        {
+          "name": "random_regular_seed_19",
+          "score_max_link_load_bytes": 615293612
+        },
+        {
+          "name": "random_regular_seed_13",
+          "score_max_link_load_bytes": 616904705
+        },
+        {
+          "name": "random_regular_seed_25",
+          "score_max_link_load_bytes": 619573248
+        },
+        {
+          "name": "random_regular_seed_29",
+          "score_max_link_load_bytes": 620749484
+        },
+        {
+          "name": "random_regular_seed_30",
+          "score_max_link_load_bytes": 630147072
+        },
+        {
+          "name": "random_regular_seed_3",
+          "score_max_link_load_bytes": 635793407
+        },
+        {
+          "name": "random_regular_seed_9",
+          "score_max_link_load_bytes": 644166997
+        },
+        {
+          "name": "random_regular_seed_17",
+          "score_max_link_load_bytes": 646270295
+        },
+        {
+          "name": "random_regular_seed_31",
+          "score_max_link_load_bytes": 646653270
+        },
+        {
+          "name": "random_regular_seed_2",
+          "score_max_link_load_bytes": 658284543
+        },
+        {
+          "name": "random_regular_seed_8",
+          "score_max_link_load_bytes": 658412201
+        },
+        {
+          "name": "random_regular_seed_0",
+          "score_max_link_load_bytes": 663841451
+        },
+        {
+          "name": "random_regular_seed_14",
+          "score_max_link_load_bytes": 663965695
+        },
+        {
+          "name": "random_regular_seed_12",
+          "score_max_link_load_bytes": 667076608
+        },
+        {
+          "name": "random_regular_seed_24",
+          "score_max_link_load_bytes": 671512574
+        },
+        {
+          "name": "random_regular_seed_27",
+          "score_max_link_load_bytes": 671531690
+        },
+        {
+          "name": "random_regular_seed_11",
+          "score_max_link_load_bytes": 681358677
+        },
+        {
+          "name": "random_regular_seed_15",
+          "score_max_link_load_bytes": 699373567
+        },
+        {
+          "name": "random_regular_seed_5",
+          "score_max_link_load_bytes": 700613293
+        },
+        {
+          "name": "random_regular_seed_23",
+          "score_max_link_load_bytes": 708517888
+        },
+        {
+          "name": "random_regular_seed_1",
+          "score_max_link_load_bytes": 708746581
+        },
+        {
+          "name": "random_regular_seed_7",
+          "score_max_link_load_bytes": 715705686
+        },
+        {
+          "name": "random_regular_seed_6",
+          "score_max_link_load_bytes": 718203561
+        },
+        {
+          "name": "random_regular_seed_4",
+          "score_max_link_load_bytes": 722173955
+        },
+        {
+          "name": "evaluation_greedy",
+          "score_max_link_load_bytes": 741645654
+        },
+        {
+          "name": "random_regular_seed_21",
+          "score_max_link_load_bytes": 763559254
+        },
+        {
+          "name": "random_regular_seed_26",
+          "score_max_link_load_bytes": 765840726
+        },
+        {
+          "name": "random_regular_seed_10",
+          "score_max_link_load_bytes": 776919722
+        },
+        {
+          "name": "random_regular_seed_28",
+          "score_max_link_load_bytes": 937758037
+        },
+        {
+          "name": "son_torus",
+          "score_max_link_load_bytes": 1171061422
+        }
+      ],
+      "selected_name": "random_regular_seed_22"
+    },
+    "random_candidate_count": 32,
+    "selection_objective": "minimize max link load proxy under ECMP-4 using dispatch and combine matrices",
+    "traffic_symmetrised": "no explicit symmetrisation; dispatch and combine directed matrices are both included in demand/score"
+  },
+  "ron_graphs_valid": true,
+  "ron_runs_success": true,
+  "scope": "static RON calibrated/oracle validation on one real aggregated workload",
+  "split": {
+    "calibration_fraction_requested": 0.1,
+    "calibration_request_count": 12,
+    "calibration_request_ids": [
+      "6835",
+      "6836",
+      "6837",
+      "6838",
+      "6839",
+      "6840",
+      "6841",
+      "6842",
+      "6843",
+      "6844",
+      "6845",
+      "6846"
+    ],
+    "calibration_rule": "front ceil(10%) requests",
+    "evaluation_request_count": 100,
+    "evaluation_request_ids": [
+      "6847",
+      "6848",
+      "6849",
+      "6850",
+      "6851",
+      "6852",
+      "6853",
+      "6854",
+      "6855",
+      "6856",
+      "6857",
+      "6858",
+      "6859",
+      "6860",
+      "6861",
+      "6862",
+      "6863",
+      "6864",
+      "6865",
+      "6866",
+      "6867",
+      "6868",
+      "6869",
+      "6870",
+      "6871",
+      "6872",
+      "6873",
+      "6874",
+      "6875",
+      "6876",
+      "6877",
+      "6878",
+      "6879",
+      "6880",
+      "6881",
+      "6882",
+      "6883",
+      "6884",
+      "6885",
+      "6886",
+      "6887",
+      "6888",
+      "6889",
+      "6890",
+      "6891",
+      "6892",
+      "6893",
+      "6894",
+      "6895",
+      "6896",
+      "6897",
+      "6898",
+      "6899",
+      "6900",
+      "6901",
+      "6902",
+      "6903",
+      "6904",
+      "6905",
+      "6906",
+      "6907",
+      "6908",
+      "6909",
+      "6910",
+      "6911",
+      "6912",
+      "6913",
+      "6914",
+      "6915",
+      "6916",
+      "6917",
+      "6918",
+      "6919",
+      "6920",
+      "6921",
+      "6922",
+      "6923",
+      "6924",
+      "6925",
+      "6926",
+      "6927",
+      "6928",
+      "6929",
+      "6930",
+      "6931",
+      "6932",
+      "6933",
+      "6934",
+      "6935",
+      "6936",
+      "6937",
+      "6938",
+      "6939",
+      "6940",
+      "6941",
+      "6942",
+      "6943",
+      "6944",
+      "6945",
+      "6946"
+    ]
+  },
+  "tiny_subchunk_audit": {
+    "combine": {
+      "ron_calibrated_ecmp4": {
+        "one_cycle_threshold_bytes": 54,
+        "selected_path_count_max": 4,
+        "selected_path_count_mean": 1.532258064516129,
+        "selected_path_count_median": 1.0,
+        "selected_path_count_min": 1,
+        "subchunk_bytes_median": 11167744.0,
+        "subchunk_bytes_min": 3661824,
+        "subchunks_lt_128B": 0,
+        "subchunks_lt_256B": 0,
+        "subchunks_lt_54B": 0,
+        "subchunks_total": 1520,
+        "zero_delay_risk": false
+      },
+      "ron_oracle_ecmp4": {
+        "one_cycle_threshold_bytes": 54,
+        "selected_path_count_max": 4,
+        "selected_path_count_mean": 1.655241935483871,
+        "selected_path_count_median": 1.0,
+        "selected_path_count_min": 1,
+        "subchunk_bytes_median": 10121216.0,
+        "subchunk_bytes_min": 3540992,
+        "subchunks_lt_128B": 0,
+        "subchunks_lt_256B": 0,
+        "subchunks_lt_54B": 0,
+        "subchunks_total": 1642,
+        "zero_delay_risk": false
+      },
+      "son_torus_ecmp4": {
+        "one_cycle_threshold_bytes": 54,
+        "selected_path_count_max": 4,
+        "selected_path_count_mean": 2.7096774193548385,
+        "selected_path_count_median": 3.0,
+        "selected_path_count_min": 1,
+        "subchunk_bytes_median": 5734400.0,
+        "subchunk_bytes_min": 3330048,
+        "subchunks_lt_128B": 0,
+        "subchunks_lt_256B": 0,
+        "subchunks_lt_54B": 0,
+        "subchunks_total": 2688,
+        "zero_delay_risk": false
+      }
+    },
+    "dispatch": {
+      "ron_calibrated_ecmp4": {
+        "one_cycle_threshold_bytes": 54,
+        "selected_path_count_max": 4,
+        "selected_path_count_mean": 1.532258064516129,
+        "selected_path_count_median": 1.0,
+        "selected_path_count_min": 1,
+        "subchunk_bytes_median": 11167744.0,
+        "subchunk_bytes_min": 3661824,
+        "subchunks_lt_128B": 0,
+        "subchunks_lt_256B": 0,
+        "subchunks_lt_54B": 0,
+        "subchunks_total": 1520,
+        "zero_delay_risk": false
+      },
+      "ron_oracle_ecmp4": {
+        "one_cycle_threshold_bytes": 54,
+        "selected_path_count_max": 4,
+        "selected_path_count_mean": 1.655241935483871,
+        "selected_path_count_median": 1.0,
+        "selected_path_count_min": 1,
+        "subchunk_bytes_median": 10121216.0,
+        "subchunk_bytes_min": 3540992,
+        "subchunks_lt_128B": 0,
+        "subchunks_lt_256B": 0,
+        "subchunks_lt_54B": 0,
+        "subchunks_total": 1642,
+        "zero_delay_risk": false
+      },
+      "son_torus_ecmp4": {
+        "one_cycle_threshold_bytes": 54,
+        "selected_path_count_max": 4,
+        "selected_path_count_mean": 2.7096774193548385,
+        "selected_path_count_median": 3.0,
+        "selected_path_count_min": 1,
+        "subchunk_bytes_median": 5734400.0,
+        "subchunk_bytes_min": 3330048,
+        "subchunks_lt_128B": 0,
+        "subchunks_lt_256B": 0,
+        "subchunks_lt_54B": 0,
+        "subchunks_total": 2688,
+        "zero_delay_risk": false
+      }
+    }
+  },
+  "trace_meta": {
+    "evaluation_combine": {
+      "messages": 992,
+      "prefix": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v36_static_ron_one_workload_validation/chakra_traces/evaluation_combine/workload",
+      "rank_count": 32,
+      "total_bytes": 20129505280
+    },
+    "evaluation_dispatch": {
+      "messages": 992,
+      "prefix": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v36_static_ron_one_workload_validation/chakra_traces/evaluation_dispatch/workload",
+      "rank_count": 32,
+      "total_bytes": 20129505280
+    }
+  },
+  "trace_parse": {
+    "calibration": {
+      "byte_conservation_pass": true,
+      "combine_checksum": "d94710399125e4bffe862defd91cbdcdf18fa985dcf42b0989d1d0dd6312cdb5",
+      "dispatch_checksum": "f4cca47bdde8640fd580b27b3e9f8369ae979a51ec7db16ab172ca0e92743a39",
+      "local_combine_bytes_excluded": 84729856,
+      "local_dispatch_bytes_excluded": 84729856,
+      "prefill_input_tokens": 439,
+      "remote_combine_bytes_retained": 2619678720,
+      "remote_dispatch_bytes_retained": 2619678720,
+      "request_count": 12,
+      "request_ids": [
+        "6835",
+        "6836",
+        "6837",
+        "6838",
+        "6839",
+        "6840",
+        "6841",
+        "6842",
+        "6843",
+        "6844",
+        "6845",
+        "6846"
+      ],
+      "selected_expert_events": 330128,
+      "theoretical_combine_bytes": 2704408576,
+      "theoretical_dispatch_bytes": 2704408576
+    },
+    "evaluation": {
+      "byte_conservation_pass": true,
+      "combine_checksum": "8082004614f2dfdb95e13215549708d1e216bcf5ddf47c041312f64b8575c055",
+      "dispatch_checksum": "484f2a52ab9e785fb9bec5b14e3460e923d8edd48e7d992b4155b7c80cb017b4",
+      "local_combine_bytes_excluded": 649469952,
+      "local_dispatch_bytes_excluded": 649469952,
+      "prefill_input_tokens": 3373,
+      "remote_combine_bytes_retained": 20129505280,
+      "remote_dispatch_bytes_retained": 20129505280,
+      "request_count": 100,
+      "request_ids": [
+        "6847",
+        "6848",
+        "6849",
+        "6850",
+        "6851",
+        "6852",
+        "6853",
+        "6854",
+        "6855",
+        "6856",
+        "6857",
+        "6858",
+        "6859",
+        "6860",
+        "6861",
+        "6862",
+        "6863",
+        "6864",
+        "6865",
+        "6866",
+        "6867",
+        "6868",
+        "6869",
+        "6870",
+        "6871",
+        "6872",
+        "6873",
+        "6874",
+        "6875",
+        "6876",
+        "6877",
+        "6878",
+        "6879",
+        "6880",
+        "6881",
+        "6882",
+        "6883",
+        "6884",
+        "6885",
+        "6886",
+        "6887",
+        "6888",
+        "6889",
+        "6890",
+        "6891",
+        "6892",
+        "6893",
+        "6894",
+        "6895",
+        "6896",
+        "6897",
+        "6898",
+        "6899",
+        "6900",
+        "6901",
+        "6902",
+        "6903",
+        "6904",
+        "6905",
+        "6906",
+        "6907",
+        "6908",
+        "6909",
+        "6910",
+        "6911",
+        "6912",
+        "6913",
+        "6914",
+        "6915",
+        "6916",
+        "6917",
+        "6918",
+        "6919",
+        "6920",
+        "6921",
+        "6922",
+        "6923",
+        "6924",
+        "6925",
+        "6926",
+        "6927",
+        "6928",
+        "6929",
+        "6930",
+        "6931",
+        "6932",
+        "6933",
+        "6934",
+        "6935",
+        "6936",
+        "6937",
+        "6938",
+        "6939",
+        "6940",
+        "6941",
+        "6942",
+        "6943",
+        "6944",
+        "6945",
+        "6946"
+      ],
+      "selected_expert_events": 2536496,
+      "theoretical_combine_bytes": 20778975232,
+      "theoretical_dispatch_bytes": 20778975232
+    },
+    "files_found": 112,
+    "files_used": 112,
+    "full": {
+      "byte_conservation_pass": true,
+      "combine_checksum": "80e799f5ca37a9fafd7fef465bb32667ad58115d2728042589c98885e16635fd",
+      "dispatch_checksum": "3be34923153d26650dcf8773405ffb4cfdf2ebb122da73bfa23b4798491991f3",
+      "local_combine_bytes_excluded": 734199808,
+      "local_dispatch_bytes_excluded": 734199808,
+      "prefill_input_tokens": 3812,
+      "remote_combine_bytes_retained": 22749184000,
+      "remote_dispatch_bytes_retained": 22749184000,
+      "request_count": 112,
+      "request_ids": [
+        "6835",
+        "6836",
+        "6837",
+        "6838",
+        "6839",
+        "6840",
+        "6841",
+        "6842",
+        "6843",
+        "6844",
+        "6845",
+        "6846",
+        "6847",
+        "6848",
+        "6849",
+        "6850",
+        "6851",
+        "6852",
+        "6853",
+        "6854",
+        "6855",
+        "6856",
+        "6857",
+        "6858",
+        "6859",
+        "6860",
+        "6861",
+        "6862",
+        "6863",
+        "6864",
+        "6865",
+        "6866",
+        "6867",
+        "6868",
+        "6869",
+        "6870",
+        "6871",
+        "6872",
+        "6873",
+        "6874",
+        "6875",
+        "6876",
+        "6877",
+        "6878",
+        "6879",
+        "6880",
+        "6881",
+        "6882",
+        "6883",
+        "6884",
+        "6885",
+        "6886",
+        "6887",
+        "6888",
+        "6889",
+        "6890",
+        "6891",
+        "6892",
+        "6893",
+        "6894",
+        "6895",
+        "6896",
+        "6897",
+        "6898",
+        "6899",
+        "6900",
+        "6901",
+        "6902",
+        "6903",
+        "6904",
+        "6905",
+        "6906",
+        "6907",
+        "6908",
+        "6909",
+        "6910",
+        "6911",
+        "6912",
+        "6913",
+        "6914",
+        "6915",
+        "6916",
+        "6917",
+        "6918",
+        "6919",
+        "6920",
+        "6921",
+        "6922",
+        "6923",
+        "6924",
+        "6925",
+        "6926",
+        "6927",
+        "6928",
+        "6929",
+        "6930",
+        "6931",
+        "6932",
+        "6933",
+        "6934",
+        "6935",
+        "6936",
+        "6937",
+        "6938",
+        "6939",
+        "6940",
+        "6941",
+        "6942",
+        "6943",
+        "6944",
+        "6945",
+        "6946"
+      ],
+      "selected_expert_events": 2866624,
+      "theoretical_combine_bytes": 23483383808,
+      "theoretical_dispatch_bytes": 23483383808
+    },
+    "inferred_num_experts": 128,
+    "malformed_records": 0,
+    "moe_layer_count": 94
+  },
+  "traffic_fingerprint": {
+    "calibration_combine": {
+      "entropy_bits": 9.726011529138002,
+      "gini": 0.11997523321580765,
+      "message_bytes_max": 5136384,
+      "message_bytes_mean": 3018063.0414746543,
+      "message_bytes_median": 3022848.0,
+      "message_bytes_min": 958464,
+      "nonzero_gpu_pairs": 868,
+      "top16_share": 0.027824944884844504,
+      "top1_share": 0.001960692340166049,
+      "top4_share": 0.007376831308535422,
+      "top8_share": 0.014325249777194052,
+      "total_remote_bytes": 2619678720
+    },
+    "calibration_dispatch": {
+      "entropy_bits": 9.726011529138006,
+      "gini": 0.11997523321580765,
+      "message_bytes_max": 5136384,
+      "message_bytes_mean": 3018063.0414746543,
+      "message_bytes_median": 3022848.0,
+      "message_bytes_min": 958464,
+      "nonzero_gpu_pairs": 868,
+      "top16_share": 0.027824944884844504,
+      "top1_share": 0.001960692340166049,
+      "top4_share": 0.007376831308535422,
+      "top8_share": 0.014325249777194052,
+      "total_remote_bytes": 2619678720
+    },
+    "evaluation_combine": {
+      "entropy_bits": 9.936601247209476,
+      "gini": 0.08914874853730617,
+      "message_bytes_max": 30998528,
+      "message_bytes_mean": 20291840,
+      "message_bytes_median": 20094976.0,
+      "message_bytes_min": 13320192,
+      "nonzero_gpu_pairs": 992,
+      "top16_share": 0.022588174010007265,
+      "top1_share": 0.0015399547862112188,
+      "top4_share": 0.005937616366496216,
+      "top8_share": 0.011602973284795998,
+      "total_remote_bytes": 20129505280
+    },
+    "evaluation_dispatch": {
+      "entropy_bits": 9.936601247209483,
+      "gini": 0.08914874853730617,
+      "message_bytes_max": 30998528,
+      "message_bytes_mean": 20291840,
+      "message_bytes_median": 20094976.0,
+      "message_bytes_min": 13320192,
+      "nonzero_gpu_pairs": 992,
+      "top16_share": 0.022588174010007265,
+      "top1_share": 0.0015399547862112188,
+      "top4_share": 0.005937616366496216,
+      "top8_share": 0.011602973284795998,
+      "total_remote_bytes": 20129505280
+    }
+  },
+  "v35_consistency": {
+    "combine_checksum_match": true,
+    "dispatch_checksum_match": true,
+    "files_used_match": true,
+    "local_bytes_match": true,
+    "matches_v35": true,
+    "moe_layer_count_match": true,
+    "prefill_tokens_match": true,
+    "remote_bytes_match": true,
+    "selected_events_match": true,
+    "theoretical_dispatch_bytes_match": true
+  },
+  "workload": {
+    "block_size": 16,
+    "bytes_per_selection": 8192,
+    "bytes_per_value": 2,
+    "expert_placement": "block",
+    "hidden_size": 4096,
+    "name": "Qwen MMLU machine_learning",
+    "npu_count": 32,
+    "source_policy": "block_by_token",
+    "stage": "prefill",
+    "trace_dir": "/Users/dfx/Python/trace/Qwen/Qwen3-235B-A22B-FP8/mmlu/machine_learning",
+    "trace_entry": "trace[0]"
+  }
+}

@@ -1,0 +1,333 @@
+{
+  "all_passed": true,
+  "byte_conservation": {
+    "diamond_5000": true,
+    "clos_5000": true,
+    "torus_5000": true,
+    "recv_before_send_5001": true,
+    "send_before_recv_5001": true,
+    "two_tags": true
+  },
+  "manual": {
+    "bytes_per_ns": 53.6870912,
+    "one_link_5000B_cycles": 93,
+    "diamond_subchunk_cycles_per_hop": 46,
+    "diamond_expected_cycles": 92
+  },
+  "runs": {
+    "diamond_ecmp": {
+      "label": "diamond_ecmp",
+      "returncode": 0,
+      "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v33_native_graph_ecmp_smoke/chakra_traces/diamond_0_to_3_5000/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v33_native_graph_ecmp_smoke/network_configs/diamond_ecmp.yml",
+      "stdout": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v33_native_graph_ecmp_smoke/runs/diamond_ecmp.stdout.txt",
+      "stderr": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v33_native_graph_ecmp_smoke/runs/diamond_ecmp.stderr.txt",
+      "cycles": [
+        1,
+        1,
+        92,
+        92
+      ],
+      "max_cycles": 92,
+      "ecmp_logs": [
+        {
+          "tag": 1,
+          "src": 0,
+          "dst": 3,
+          "bytes": 5000,
+          "paths": 2,
+          "subchunks": [
+            {
+              "index": 0,
+              "bytes": 2500,
+              "route": "[0,1,3]"
+            },
+            {
+              "index": 1,
+              "bytes": 2500,
+              "route": "[0,2,3]"
+            }
+          ],
+          "byte_sum": 5000
+        }
+      ]
+    },
+    "tiny_clos_ecmp": {
+      "label": "tiny_clos_ecmp",
+      "returncode": 0,
+      "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v33_native_graph_ecmp_smoke/chakra_traces/clos_0_to_2_5000/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v33_native_graph_ecmp_smoke/network_configs/tiny_clos_ecmp.yml",
+      "stdout": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v33_native_graph_ecmp_smoke/runs/tiny_clos_ecmp.stdout.txt",
+      "stderr": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v33_native_graph_ecmp_smoke/runs/tiny_clos_ecmp.stderr.txt",
+      "cycles": [
+        1,
+        1,
+        230,
+        230
+      ],
+      "max_cycles": 230,
+      "ecmp_logs": [
+        {
+          "tag": 1,
+          "src": 0,
+          "dst": 2,
+          "bytes": 5000,
+          "paths": 2,
+          "subchunks": [
+            {
+              "index": 0,
+              "bytes": 2500,
+              "route": "[0,4,6,5,2]"
+            },
+            {
+              "index": 1,
+              "bytes": 2500,
+              "route": "[0,4,7,5,2]"
+            }
+          ],
+          "byte_sum": 5000
+        }
+      ]
+    },
+    "tiny_torus_ecmp": {
+      "label": "tiny_torus_ecmp",
+      "returncode": 0,
+      "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v33_native_graph_ecmp_smoke/chakra_traces/torus_0_to_4_5000/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v33_native_graph_ecmp_smoke/network_configs/torus3x3_ecmp.yml",
+      "stdout": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v33_native_graph_ecmp_smoke/runs/tiny_torus_ecmp.stdout.txt",
+      "stderr": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v33_native_graph_ecmp_smoke/runs/tiny_torus_ecmp.stderr.txt",
+      "cycles": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        92,
+        92
+      ],
+      "max_cycles": 92,
+      "ecmp_logs": [
+        {
+          "tag": 1,
+          "src": 0,
+          "dst": 4,
+          "bytes": 5000,
+          "paths": 2,
+          "subchunks": [
+            {
+              "index": 0,
+              "bytes": 2500,
+              "route": "[0,1,4]"
+            },
+            {
+              "index": 1,
+              "bytes": 2500,
+              "route": "[0,3,4]"
+            }
+          ],
+          "byte_sum": 5000
+        }
+      ]
+    },
+    "recv_before_send_odd_slow_path": {
+      "label": "recv_before_send_odd_slow_path",
+      "returncode": 0,
+      "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v33_native_graph_ecmp_smoke/chakra_traces/recv_before_send_odd/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v33_native_graph_ecmp_smoke/network_configs/diamond_slow_ecmp.yml",
+      "stdout": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v33_native_graph_ecmp_smoke/runs/recv_before_send_odd_slow_path.stdout.txt",
+      "stderr": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v33_native_graph_ecmp_smoke/runs/recv_before_send_odd_slow_path.stderr.txt",
+      "cycles": [
+        1,
+        1,
+        2092,
+        2092
+      ],
+      "max_cycles": 2092,
+      "ecmp_logs": [
+        {
+          "tag": 1,
+          "src": 0,
+          "dst": 3,
+          "bytes": 5001,
+          "paths": 2,
+          "subchunks": [
+            {
+              "index": 0,
+              "bytes": 2501,
+              "route": "[0,1,3]"
+            },
+            {
+              "index": 1,
+              "bytes": 2500,
+              "route": "[0,2,3]"
+            }
+          ],
+          "byte_sum": 5001
+        }
+      ]
+    },
+    "send_before_recv_odd_slow_path": {
+      "label": "send_before_recv_odd_slow_path",
+      "returncode": 0,
+      "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v33_native_graph_ecmp_smoke/chakra_traces/send_before_recv_odd/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v33_native_graph_ecmp_smoke/network_configs/diamond_slow_ecmp.yml",
+      "stdout": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v33_native_graph_ecmp_smoke/runs/send_before_recv_odd_slow_path.stdout.txt",
+      "stderr": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v33_native_graph_ecmp_smoke/runs/send_before_recv_odd_slow_path.stderr.txt",
+      "cycles": [
+        1,
+        1,
+        1092,
+        1092
+      ],
+      "max_cycles": 1092,
+      "ecmp_logs": [
+        {
+          "tag": 1,
+          "src": 0,
+          "dst": 3,
+          "bytes": 5001,
+          "paths": 2,
+          "subchunks": [
+            {
+              "index": 0,
+              "bytes": 2501,
+              "route": "[0,1,3]"
+            },
+            {
+              "index": 1,
+              "bytes": 2500,
+              "route": "[0,2,3]"
+            }
+          ],
+          "byte_sum": 5001
+        }
+      ]
+    },
+    "two_tags_same_pair": {
+      "label": "two_tags_same_pair",
+      "returncode": 0,
+      "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v33_native_graph_ecmp_smoke/chakra_traces/two_tags_same_pair/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v33_native_graph_ecmp_smoke/network_configs/diamond_ecmp.yml",
+      "stdout": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v33_native_graph_ecmp_smoke/runs/two_tags_same_pair.stdout.txt",
+      "stderr": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v33_native_graph_ecmp_smoke/runs/two_tags_same_pair.stderr.txt",
+      "cycles": [
+        1,
+        1,
+        184,
+        184
+      ],
+      "max_cycles": 184,
+      "ecmp_logs": [
+        {
+          "tag": 1,
+          "src": 0,
+          "dst": 3,
+          "bytes": 5000,
+          "paths": 2,
+          "subchunks": [
+            {
+              "index": 0,
+              "bytes": 2500,
+              "route": "[0,1,3]"
+            },
+            {
+              "index": 1,
+              "bytes": 2500,
+              "route": "[0,2,3]"
+            }
+          ],
+          "byte_sum": 5000
+        },
+        {
+          "tag": 2,
+          "src": 0,
+          "dst": 3,
+          "bytes": 5000,
+          "paths": 2,
+          "subchunks": [
+            {
+              "index": 0,
+              "bytes": 2500,
+              "route": "[0,1,3]"
+            },
+            {
+              "index": 1,
+              "bytes": 2500,
+              "route": "[0,2,3]"
+            }
+          ],
+          "byte_sum": 5000
+        }
+      ]
+    },
+    "deterministic_graph_line4": {
+      "label": "deterministic_graph_line4",
+      "returncode": 0,
+      "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v33_native_graph_ecmp_smoke/chakra_traces/line4_0_to_3_5000/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v33_native_graph_ecmp_smoke/network_configs/line4_deterministic.yml",
+      "stdout": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v33_native_graph_ecmp_smoke/runs/deterministic_graph_line4.stdout.txt",
+      "stderr": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v33_native_graph_ecmp_smoke/runs/deterministic_graph_line4.stderr.txt",
+      "cycles": [
+        1,
+        1,
+        279,
+        279
+      ],
+      "max_cycles": 279,
+      "ecmp_logs": []
+    },
+    "one_link_400gbps": {
+      "label": "one_link_400gbps",
+      "returncode": 0,
+      "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v33_native_graph_ecmp_smoke/chakra_traces/one_link_0_to_1_5000/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v33_native_graph_ecmp_smoke/network_configs/two_node_deterministic.yml",
+      "stdout": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v33_native_graph_ecmp_smoke/runs/one_link_400gbps.stdout.txt",
+      "stderr": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v33_native_graph_ecmp_smoke/runs/one_link_400gbps.stderr.txt",
+      "cycles": [
+        93,
+        93
+      ],
+      "max_cycles": 93,
+      "ecmp_logs": []
+    },
+    "existing_ring4": {
+      "label": "existing_ring4",
+      "returncode": 0,
+      "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v33_native_graph_ecmp_smoke/chakra_traces/basic4_all_to_all/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v33_native_graph_ecmp_smoke/network_configs/ring4.yml",
+      "stdout": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v33_native_graph_ecmp_smoke/runs/existing_ring4.stdout.txt",
+      "stderr": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v33_native_graph_ecmp_smoke/runs/existing_ring4.stderr.txt",
+      "cycles": [
+        372,
+        465,
+        465,
+        465
+      ],
+      "max_cycles": 465,
+      "ecmp_logs": []
+    },
+    "existing_switch4": {
+      "label": "existing_switch4",
+      "returncode": 0,
+      "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v33_native_graph_ecmp_smoke/chakra_traces/basic4_all_to_all/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v33_native_graph_ecmp_smoke/network_configs/switch4.yml",
+      "stdout": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v33_native_graph_ecmp_smoke/runs/existing_switch4.stdout.txt",
+      "stderr": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v33_native_graph_ecmp_smoke/runs/existing_switch4.stderr.txt",
+      "cycles": [
+        558,
+        651,
+        744,
+        744
+      ],
+      "max_cycles": 744,
+      "ecmp_logs": []
+    },
+    "existing_fully_connected4": {
+      "label": "existing_fully_connected4",
+      "returncode": 0,
+      "command": "/Users/dfx/Python/astra-sim/build/astra_analytical/build/bin/AstraSim_Analytical_Congestion_Aware --workload-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v33_native_graph_ecmp_smoke/chakra_traces/basic4_all_to_all/workload --system-configuration=/Users/dfx/Python/astra-sim/examples/system/native_collectives/Ring_4chunks.json --remote-memory-configuration=/Users/dfx/Python/astra-sim/examples/remote_memory/analytical/no_memory_expansion.json --network-configuration=/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v33_native_graph_ecmp_smoke/network_configs/fully_connected4.yml",
+      "stdout": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v33_native_graph_ecmp_smoke/runs/existing_fully_connected4.stdout.txt",
+      "stderr": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v33_native_graph_ecmp_smoke/runs/existing_fully_connected4.stderr.txt",
+      "cycles": [
+        279,
+        279,
+        279,
+        279
+      ],
+      "max_cycles": 279,
+      "ecmp_logs": []
+    }
+  }
+}
