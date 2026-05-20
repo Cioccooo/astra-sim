@@ -1,0 +1,25 @@
+{
+  "astra_core_cpp_modified": false,
+  "byte_conservation_all_passed": true,
+  "bytes_per_value": 2,
+  "chakra_generated": true,
+  "dispatch_and_combine_sequential": true,
+  "en_uses_400gbps_links": true,
+  "expert_placement": "block",
+  "final_timing_engine": "v30 ASTRA-side graph/link-contention backend, not old V2.8 evaluator",
+  "full_core_astra_replacement": false,
+  "hidden_size": 4096,
+  "local_src_eq_dst_excluded": true,
+  "only_four_specified_workloads": [
+    "qwen_mmlu_ml",
+    "qwen_livecode",
+    "qwen_mmlu_zh_anatomy",
+    "deepseek_livecode"
+  ],
+  "prefill_only_trace0": true,
+  "ron_calibrated_uses_first_10pct": true,
+  "ron_w4_uses_previous_4_requests_plus_1us": true,
+  "son_ron_degree4_400gbps_links_1p6tbps_per_gpu": true,
+  "source_policy": "block_by_token",
+  "timing_granularity": "request_phase_aggregated_layers"
+}

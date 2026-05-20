@@ -1,0 +1,5 @@
+mode,current_core_blocker,v30_status,needed_core_change
+EN folded-Clos ECMP,NetworkParser only accepts Ring/Switch/FullyConnected; no folded-Clos graph generator.,"Supported by new graph backend, not integrated C++ ASTRA core.",Add GraphTopology/folded-Clos generator and ECMP path splitting.
+SON 2D torus ECMP,No 2D torus ECMP graph routing in congestion-aware backend.,"Supported by new graph backend, not integrated C++ ASTRA core.",Add graph topology parser/generator plus equal-cost shortest path routing.
+custom degree-4 RON,No arbitrary topology loader and no per-edge topology JSON support.,Supported by new graph backend for calibrated/oracle/W4 topology JSONs.,Add arbitrary graph loader and route cache for selected graph.
+per-request RON reconfiguration,No topology update API inside one ASTRA run.,Segmented-run approximation: one graph timing segment per evaluated request.,Add in-run topology swap event or official segmented-run orchestrator.

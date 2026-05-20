@@ -1,0 +1,5 @@
+dataset_id,dataset_label,files_found,files_used,calibration_requests,evaluation_requests,prefill_only,source_policy,expert_placement,hidden_size,bytes_per_value,inferred_num_experts,moe_layers,remote_bytes_all_requests_dispatch_plus_combine,remote_bytes_eval_dispatch_plus_combine,local_bytes_excluded_all_requests,malformed_records
+qwen_mmlu_ml,Qwen MMLU ML,112,112,12,100,True,block_by_token,block,4096,2,128,94,45498368000,40259010560,734199808,0
+qwen_livecode,Qwen LiveCodeBench,479,479,48,431,True,block_by_token,block,4096,2,128,94,624685072384,571247869952,10098122752,0
+qwen_mmlu_zh_anatomy,Qwen ZH Anatomy,135,135,14,121,True,block_by_token,block,4096,2,128,94,18713034752,16353214464,309125120,0
+deepseek_livecode,DeepSeek LiveCodeBench,440,440,44,396,True,block_by_token,block,4096,2,256,58,372098318336,340402962432,6004613120,0

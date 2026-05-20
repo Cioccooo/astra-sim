@@ -1,0 +1,38 @@
+{
+  "deepseek_livecode": {
+    "aggregate_eval_chakra_prefixes": {
+      "combine": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v30_astrasim_custom_topology_attempt/chakra_traces/deepseek_livecode/aggregate_eval/combine/workload",
+      "dispatch": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v30_astrasim_custom_topology_attempt/chakra_traces/deepseek_livecode/aggregate_eval/dispatch/workload"
+    },
+    "request_segment_chakra_written": 4,
+    "request_segment_count": 396,
+    "request_segment_index": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v30_astrasim_custom_topology_attempt/request_segments/deepseek_livecode/segment_index.json"
+  },
+  "qwen_livecode": {
+    "aggregate_eval_chakra_prefixes": {
+      "combine": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v30_astrasim_custom_topology_attempt/chakra_traces/qwen_livecode/aggregate_eval/combine/workload",
+      "dispatch": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v30_astrasim_custom_topology_attempt/chakra_traces/qwen_livecode/aggregate_eval/dispatch/workload"
+    },
+    "request_segment_chakra_written": 4,
+    "request_segment_count": 431,
+    "request_segment_index": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v30_astrasim_custom_topology_attempt/request_segments/qwen_livecode/segment_index.json"
+  },
+  "qwen_mmlu_ml": {
+    "aggregate_eval_chakra_prefixes": {
+      "combine": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v30_astrasim_custom_topology_attempt/chakra_traces/qwen_mmlu_ml/aggregate_eval/combine/workload",
+      "dispatch": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v30_astrasim_custom_topology_attempt/chakra_traces/qwen_mmlu_ml/aggregate_eval/dispatch/workload"
+    },
+    "request_segment_chakra_written": 4,
+    "request_segment_count": 100,
+    "request_segment_index": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v30_astrasim_custom_topology_attempt/request_segments/qwen_mmlu_ml/segment_index.json"
+  },
+  "qwen_mmlu_zh_anatomy": {
+    "aggregate_eval_chakra_prefixes": {
+      "combine": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v30_astrasim_custom_topology_attempt/chakra_traces/qwen_mmlu_zh_anatomy/aggregate_eval/combine/workload",
+      "dispatch": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v30_astrasim_custom_topology_attempt/chakra_traces/qwen_mmlu_zh_anatomy/aggregate_eval/dispatch/workload"
+    },
+    "request_segment_chakra_written": 4,
+    "request_segment_count": 121,
+    "request_segment_index": "/Users/dfx/Python/astra-sim/results/moe_expert_trace_converter/v30_astrasim_custom_topology_attempt/request_segments/qwen_mmlu_zh_anatomy/segment_index.json"
+  }
+}
