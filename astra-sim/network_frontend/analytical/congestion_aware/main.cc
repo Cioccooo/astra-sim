@@ -63,6 +63,9 @@ int main(int argc, char* argv[]) {
     // Set up Network API
     CongestionAwareNetworkApi::set_event_queue(event_queue);
     CongestionAwareNetworkApi::set_topology(topology);
+    CongestionAwareNetworkApi::set_routing_config(
+        network_parser.get_routing(), network_parser.get_ecmp_split(),
+        network_parser.get_ecmp_max_paths(), network_parser.get_ecmp_log());
 
     // Create ASTRA-sim related resources
     auto network_apis =

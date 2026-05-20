@@ -1,0 +1,668 @@
+diff --git a/common/network-parser/NetworkParser.cpp b/common/network-parser/NetworkParser.cpp
+index 51a9fbe..603bc57 100644
+--- a/common/network-parser/NetworkParser.cpp
++++ b/common/network-parser/NetworkParser.cpp
+@@ -4,6 +4,7 @@ LICENSE file in the root directory of this source tree.
+ *******************************************************************************/
+ 
+ #include "common/NetworkParser.h"
++#include <algorithm>
+ #include <cassert>
+ #include <iostream>
+ 
+@@ -15,6 +16,11 @@ NetworkParser::NetworkParser(const std::string& path) noexcept : dims_count(-1)
+     bandwidth_per_dim = {};
+     latency_per_dim = {};
+     topology_per_dim = {};
++    graph_file = "";
++    routing = "deterministic";
++    ecmp_split = "equal_bytes";
++    ecmp_max_paths = 0;
++    ecmp_log = false;
+ 
+     try {
+         // load network config file
+@@ -22,6 +28,12 @@ NetworkParser::NetworkParser(const std::string& path) noexcept : dims_count(-1)
+ 
+         // parse network configs
+         parse_network_config_yml(network_config);
++        if (!graph_file.empty() && graph_file[0] != '/') {
++            const auto slash_pos = path.find_last_of("/\\");
++            if (slash_pos != std::string::npos) {
++                graph_file = path.substr(0, slash_pos + 1) + graph_file;
++            }
++        }
+     } catch (const YAML::BadFile& e) {
+         // loading network config file failed
+         std::cerr << "[Error] (network/analytical) " << e.what() << std::endl;
+@@ -63,6 +75,26 @@ std::vector<TopologyBuildingBlock> NetworkParser::get_topologies_per_dim() const
+     return topology_per_dim;
+ }
+ 
++std::string NetworkParser::get_graph_file() const noexcept {
++    return graph_file;
++}
++
++std::string NetworkParser::get_routing() const noexcept {
++    return routing;
++}
++
++std::string NetworkParser::get_ecmp_split() const noexcept {
++    return ecmp_split;
++}
++
++int NetworkParser::get_ecmp_max_paths() const noexcept {
++    return ecmp_max_paths;
++}
++
++bool NetworkParser::get_ecmp_log() const noexcept {
++    return ecmp_log;
++}
++
+ void NetworkParser::parse_network_config_yml(const YAML::Node& network_config) noexcept {
+     // parse topology_per_dim
+     const auto topology_names = parse_vector<std::string>(network_config["topology"]);
+@@ -79,6 +111,47 @@ void NetworkParser::parse_network_config_yml(const YAML::Node& network_config) n
+     bandwidth_per_dim = parse_vector<Bandwidth>(network_config["bandwidth"]);
+     latency_per_dim = parse_vector<Latency>(network_config["latency"]);
+ 
++    if (network_config["graph_file"]) {
++        try {
++            graph_file = network_config["graph_file"].as<std::string>();
++        } catch (const YAML::BadConversion& e) {
++            std::cerr << "[Error] (network/analytical) " << e.what() << std::endl;
++            std::exit(-1);
++        }
++    }
++    if (network_config["routing"]) {
++        try {
++            routing = network_config["routing"].as<std::string>();
++        } catch (const YAML::BadConversion& e) {
++            std::cerr << "[Error] (network/analytical) " << e.what() << std::endl;
++            std::exit(-1);
++        }
++    }
++    if (network_config["ecmp_split"]) {
++        try {
++            ecmp_split = network_config["ecmp_split"].as<std::string>();
++        } catch (const YAML::BadConversion& e) {
++            std::cerr << "[Error] (network/analytical) " << e.what() << std::endl;
++            std::exit(-1);
++        }
++    }
++    if (network_config["ecmp_max_paths"]) {
++        try {
++            ecmp_max_paths = network_config["ecmp_max_paths"].as<int>();
++        } catch (const YAML::BadConversion& e) {
++            std::cerr << "[Error] (network/analytical) " << e.what() << std::endl;
++            std::exit(-1);
++        }
++    }
++    if (network_config["ecmp_log"]) {
++        try {
++            ecmp_log = network_config["ecmp_log"].as<bool>();
++        } catch (const YAML::BadConversion& e) {
++            std::cerr << "[Error] (network/analytical) " << e.what() << std::endl;
++            std::exit(-1);
++        }
++    }
++
+     // check the validity of the parsed network config
+     check_validity();
+ }
+@@ -98,6 +171,10 @@ TopologyBuildingBlock NetworkParser::parse_topology_name(const std::string& topo
+         return TopologyBuildingBlock::Switch;
+     }
+ 
++    if (topology_name == "Graph") {
++        return TopologyBuildingBlock::Graph;
++    }
++
+     // shouldn't reach here
+     std::cerr << "[Error] (network/analytical) " << "Topology name " << topology_name << " not supported" << std::endl;
+     std::exit(-1);
+@@ -123,6 +200,35 @@ void NetworkParser::check_validity() const noexcept {
+         std::exit(-1);
+     }
+ 
++    const auto graph_requested =
++        std::find(topology_per_dim.begin(), topology_per_dim.end(), TopologyBuildingBlock::Graph) != topology_per_dim.end();
++    if (graph_requested) {
++        if (dims_count != 1) {
++            std::cerr << "[Error] (network/analytical) Graph topology must be the only topology dimension" << std::endl;
++            std::exit(-1);
++        }
++        if (graph_file.empty()) {
++            std::cerr << "[Error] (network/analytical) Graph topology requires graph_file" << std::endl;
++            std::exit(-1);
++        }
++    }
++    if (routing != "deterministic" && routing != "ecmp") {
++        std::cerr << "[Error] (network/analytical) routing must be deterministic or ecmp" << std::endl;
++        std::exit(-1);
++    }
++    if (routing == "ecmp" && !graph_requested) {
++        std::cerr << "[Error] (network/analytical) routing: ecmp is only supported with Graph topology" << std::endl;
++        std::exit(-1);
++    }
++    if (ecmp_split != "equal_bytes") {
++        std::cerr << "[Error] (network/analytical) only ecmp_split: equal_bytes is supported" << std::endl;
++        std::exit(-1);
++    }
++    if (ecmp_max_paths < 0) {
++        std::cerr << "[Error] (network/analytical) ecmp_max_paths must be non-negative" << std::endl;
++        std::exit(-1);
++    }
++
+     // npus_count should be all positive
+     for (const auto& npus_count : npus_count_per_dim) {
+         if (npus_count <= 1) {
+diff --git a/congestion_aware/topology/Helper.cpp b/congestion_aware/topology/Helper.cpp
+index cf719a3..241d0b4 100644
+--- a/congestion_aware/topology/Helper.cpp
++++ b/congestion_aware/topology/Helper.cpp
+@@ -5,6 +5,7 @@ LICENSE file in the root directory of this source tree.
+ 
+ #include "congestion_aware/Helper.h"
+ #include "congestion_aware/FullyConnected.h"
++#include "congestion_aware/GraphTopology.h"
+ #include "congestion_aware/Ring.h"
+ #include "congestion_aware/Switch.h"
+ #include <cstdlib>
+@@ -22,7 +23,8 @@ std::shared_ptr<Topology> NetworkAnalyticalCongestionAware::construct_topology(
+     const auto bandwidths_per_dim = network_parser.get_bandwidths_per_dim();
+     const auto latencies_per_dim = network_parser.get_latencies_per_dim();
+ 
+-    // for now, congestion_aware backend supports 1-dim topology only
++    // for now, congestion_aware backend supports 1-dim topology only.
++    // Graph is represented as a single arbitrary graph dimension.
+     if (dims_count != 1) {
+         std::cerr << "[Error] (network/analytical/congestion_aware) " << "only support 1-dim topology" << std::endl;
+         std::exit(-1);
+@@ -41,6 +43,8 @@ std::shared_ptr<Topology> NetworkAnalyticalCongestionAware::construct_topology(
+         return std::make_shared<Switch>(npus_count, bandwidth, latency);
+     case TopologyBuildingBlock::FullyConnected:
+         return std::make_shared<FullyConnected>(npus_count, bandwidth, latency);
++    case TopologyBuildingBlock::Graph:
++        return std::make_shared<GraphTopology>(network_parser.get_graph_file(), npus_count);
+     default:
+         // shouldn't reaach here
+         std::cerr << "[Error] (network/analytical/congestion_aware) " << "not supported basic-topology" << std::endl;
+diff --git a/congestion_aware/topology/Topology.cpp b/congestion_aware/topology/Topology.cpp
+index 0aa326c..de31664 100644
+--- a/congestion_aware/topology/Topology.cpp
++++ b/congestion_aware/topology/Topology.cpp
+@@ -67,6 +67,10 @@ void Topology::send(std::unique_ptr<Chunk> chunk) noexcept {
+     devices[src]->send(std::move(chunk));
+ }
+ 
++std::vector<Route> Topology::routes(const DeviceId src, const DeviceId dest) const noexcept {
++    return {route(src, dest)};
++}
++
+ void Topology::connect(const DeviceId src,
+                        const DeviceId dest,
+                        const Bandwidth bandwidth,
+diff --git a/include/astra-network-analytical/common/NetworkParser.h b/include/astra-network-analytical/common/NetworkParser.h
+index d0e2163..e6ff673 100644
+--- a/include/astra-network-analytical/common/NetworkParser.h
++++ b/include/astra-network-analytical/common/NetworkParser.h
+@@ -7,6 +7,8 @@ LICENSE file in the root directory of this source tree.
+ 
+ #include "common/Type.h"
+ #include <iostream>
++#include <string>
++#include <vector>
+ #include <yaml-cpp/yaml.h>
+ 
+ namespace NetworkAnalytical {
+@@ -60,6 +62,21 @@ class NetworkParser {
+      */
+     [[nodiscard]] std::vector<TopologyBuildingBlock> get_topologies_per_dim() const noexcept;
+ 
++    /**
++     * Read "graph_file" value for Graph topology.
++     *
++     * @return graph topology file path, or empty string when not set
++     */
++    [[nodiscard]] std::string get_graph_file() const noexcept;
++
++    [[nodiscard]] std::string get_routing() const noexcept;
++
++    [[nodiscard]] std::string get_ecmp_split() const noexcept;
++
++    [[nodiscard]] int get_ecmp_max_paths() const noexcept;
++
++    [[nodiscard]] bool get_ecmp_log() const noexcept;
++
+   private:
+     /// number of network dimensions
+     int dims_count;
+@@ -76,6 +93,22 @@ class NetworkParser {
+     /// topology building block per each dimension
+     std::vector<TopologyBuildingBlock> topology_per_dim;
+ 
++    /// graph topology file path for Graph topology
++    std::string graph_file;
++
++    /// routing mode. Currently "deterministic" and "ecmp" are recognized by
++    /// congestion-aware GraphTopology.
++    std::string routing;
++
++    /// ECMP split policy. Currently only "equal_bytes" is supported.
++    std::string ecmp_split;
++
++    /// Maximum ECMP paths to use. <= 0 means all equal-cost shortest paths.
++    int ecmp_max_paths;
++
++    /// Whether to log selected ECMP paths and subchunk sizes.
++    bool ecmp_log;
++
+     /**
+      * Parse topology name (in string) into TopologyBuildingBlock enum
+      *
+diff --git a/include/astra-network-analytical/common/Type.h b/include/astra-network-analytical/common/Type.h
+index b18e70a..c97ebb1 100644
+--- a/include/astra-network-analytical/common/Type.h
++++ b/include/astra-network-analytical/common/Type.h
+@@ -31,6 +31,6 @@ using Latency = double;
+ using EventTime = uint64_t;
+ 
+ /// Basic multi-dimensional topology building blocks
+-enum class TopologyBuildingBlock { Undefined, Ring, FullyConnected, Switch };
++enum class TopologyBuildingBlock { Undefined, Ring, FullyConnected, Switch, Graph };
+ 
+ }  // namespace NetworkAnalytical
+diff --git a/include/astra-network-analytical/congestion_aware/Topology.h b/include/astra-network-analytical/congestion_aware/Topology.h
+index 20056d4..5855cf1 100644
+--- a/include/astra-network-analytical/congestion_aware/Topology.h
++++ b/include/astra-network-analytical/congestion_aware/Topology.h
+@@ -46,6 +46,15 @@ class Topology {
+      */
+     [[nodiscard]] virtual Route route(DeviceId src, DeviceId dest) const noexcept = 0;
+ 
++    /**
++     * Construct one or more routes from src to dest.
++     *
++     * The default implementation preserves existing deterministic single-route
++     * behavior. Topologies that support multipath routing, such as Graph, can
++     * override this to return equal-cost alternatives.
++     */
++    [[nodiscard]] virtual std::vector<Route> routes(DeviceId src, DeviceId dest) const noexcept;
++
+     /**
+      * Initiate a transmission of a chunk.
+      *
+diff --git a/congestion_aware/basic-topology/GraphTopology.cpp b/congestion_aware/basic-topology/GraphTopology.cpp
+new file mode 100644
+index 0000000..a913304
+--- /dev/null
++++ b/congestion_aware/basic-topology/GraphTopology.cpp
+@@ -0,0 +1,278 @@
++/******************************************************************************
++This source code is licensed under the MIT license found in the
++LICENSE file in the root directory of this source tree.
++*******************************************************************************/
++
++#include "congestion_aware/GraphTopology.h"
++#include <algorithm>
++#include <cassert>
++#include <cstdlib>
++#include <functional>
++#include <iostream>
++#include <limits>
++#include <queue>
++#include <set>
++#include <yaml-cpp/yaml.h>
++
++using namespace NetworkAnalytical;
++using namespace NetworkAnalyticalCongestionAware;
++
++GraphTopology::GraphTopology(const std::string& graph_file, const int expected_npus_count) : Topology() {
++    load_graph_file(graph_file, expected_npus_count);
++    precompute_rank_paths();
++}
++
++void GraphTopology::load_graph_file(const std::string& graph_file, const int expected_npus_count) {
++    if (expected_npus_count <= 0) {
++        std::cerr << "[Error] (network/analytical/congestion_aware/GraphTopology) "
++                  << "expected_npus_count must be positive" << std::endl;
++        std::exit(-1);
++    }
++
++    YAML::Node graph;
++    try {
++        graph = YAML::LoadFile(graph_file);
++    } catch (const YAML::BadFile& e) {
++        std::cerr << "[Error] (network/analytical/congestion_aware/GraphTopology) " << e.what() << std::endl;
++        std::exit(-1);
++    }
++
++    try {
++        devices_count = graph["node_count"].as<int>();
++        npus_count = graph["gpu_count"].as<int>();
++    } catch (const YAML::BadConversion& e) {
++        std::cerr << "[Error] (network/analytical/congestion_aware/GraphTopology) " << e.what() << std::endl;
++        std::exit(-1);
++    }
++
++    if (npus_count != expected_npus_count) {
++        std::cerr << "[Error] (network/analytical/congestion_aware/GraphTopology) "
++                  << "gpu_count (" << npus_count << ") does not match npus_count (" << expected_npus_count << ")"
++                  << std::endl;
++        std::exit(-1);
++    }
++    if (devices_count < npus_count) {
++        std::cerr << "[Error] (network/analytical/congestion_aware/GraphTopology) "
++                  << "node_count must be >= gpu_count" << std::endl;
++        std::exit(-1);
++    }
++
++    dims_count = 1;
++    npus_count_per_dim.push_back(npus_count);
++    adjacency.assign(devices_count, {});
++    instantiate_devices();
++
++    if (graph["rank_nodes"]) {
++        for (const auto& node : graph["rank_nodes"]) {
++            rank_to_node.push_back(node.as<DeviceId>());
++        }
++    } else {
++        for (auto rank = 0; rank < npus_count; rank++) {
++            rank_to_node.push_back(rank);
++        }
++    }
++    if (static_cast<int>(rank_to_node.size()) != npus_count) {
++        std::cerr << "[Error] (network/analytical/congestion_aware/GraphTopology) "
++                  << "rank_nodes length must equal gpu_count" << std::endl;
++        std::exit(-1);
++    }
++    auto seen_rank_nodes = std::set<DeviceId>();
++    for (const auto node : rank_to_node) {
++        if (node < 0 || node >= devices_count || seen_rank_nodes.count(node) > 0) {
++            std::cerr << "[Error] (network/analytical/congestion_aware/GraphTopology) "
++                      << "rank_nodes must contain unique valid graph node IDs" << std::endl;
++            std::exit(-1);
++        }
++        seen_rank_nodes.insert(node);
++    }
++
++    const auto directed = graph["directed"] ? graph["directed"].as<bool>() : false;
++    if (!graph["edges"] || !graph["edges"].IsSequence()) {
++        std::cerr << "[Error] (network/analytical/congestion_aware/GraphTopology) "
++                  << "graph file requires an edges sequence" << std::endl;
++        std::exit(-1);
++    }
++
++    auto connected_edges = std::set<std::pair<DeviceId, DeviceId>>();
++    auto max_bandwidth = Bandwidth(0);
++    for (const auto& edge : graph["edges"]) {
++        const auto src = edge["src"].as<DeviceId>();
++        const auto dst = edge["dst"].as<DeviceId>();
++        const auto bandwidth_gbps = edge["bandwidth_gbps"].as<Bandwidth>();
++        const auto latency_ns = edge["latency_ns"] ? edge["latency_ns"].as<Latency>() : Latency(0);
++        const auto bidirectional = edge["bidirectional"] ? edge["bidirectional"].as<bool>() : !directed;
++
++        if (src < 0 || src >= devices_count || dst < 0 || dst >= devices_count || src == dst) {
++            std::cerr << "[Error] (network/analytical/congestion_aware/GraphTopology) "
++                      << "edge contains invalid src/dst" << std::endl;
++            std::exit(-1);
++        }
++        if (bandwidth_gbps <= 0 || latency_ns < 0) {
++            std::cerr << "[Error] (network/analytical/congestion_aware/GraphTopology) "
++                      << "edge bandwidth_gbps must be positive and latency_ns non-negative" << std::endl;
++            std::exit(-1);
++        }
++
++        const auto bandwidth_GBps = bandwidth_gbps / 8.0;
++        max_bandwidth = std::max(max_bandwidth, bandwidth_GBps);
++
++        if (connected_edges.count({src, dst}) > 0 || (bidirectional && connected_edges.count({dst, src}) > 0)) {
++            std::cerr << "[Error] (network/analytical/congestion_aware/GraphTopology) "
++                      << "duplicate graph edge found" << std::endl;
++            std::exit(-1);
++        }
++
++        connect(src, dst, bandwidth_GBps, latency_ns, bidirectional);
++        connected_edges.insert({src, dst});
++        adjacency[src].push_back(dst);
++        if (bidirectional) {
++            connected_edges.insert({dst, src});
++            adjacency[dst].push_back(src);
++        }
++    }
++
++    if (max_bandwidth <= 0) {
++        std::cerr << "[Error] (network/analytical/congestion_aware/GraphTopology) "
++                  << "graph must contain at least one edge" << std::endl;
++        std::exit(-1);
++    }
++    bandwidth_per_dim.push_back(max_bandwidth);
++    for (auto& neighbors : adjacency) {
++        std::sort(neighbors.begin(), neighbors.end());
++    }
++}
++
++std::vector<DeviceId> GraphTopology::compute_shortest_path(const DeviceId src_node, const DeviceId dst_node) const {
++    auto parent = std::vector<DeviceId>(devices_count, -1);
++    auto visited = std::vector<bool>(devices_count, false);
++    auto queue = std::queue<DeviceId>();
++    visited[src_node] = true;
++    queue.push(src_node);
++
++    while (!queue.empty()) {
++        const auto node = queue.front();
++        queue.pop();
++        if (node == dst_node) {
++            break;
++        }
++        for (const auto next : adjacency[node]) {
++            if (!visited[next]) {
++                visited[next] = true;
++                parent[next] = node;
++                queue.push(next);
++            }
++        }
++    }
++
++    if (!visited[dst_node]) {
++        return {};
++    }
++
++    auto path = std::vector<DeviceId>();
++    auto current = dst_node;
++    while (current != -1) {
++        path.push_back(current);
++        current = parent[current];
++    }
++    std::reverse(path.begin(), path.end());
++    return path;
++}
++
++std::vector<std::vector<DeviceId>> GraphTopology::compute_equal_cost_shortest_paths(
++    const DeviceId src_node,
++    const DeviceId dst_node) const {
++    auto distance = std::vector<int>(devices_count, -1);
++    auto parents = std::vector<std::vector<DeviceId>>(devices_count);
++    auto queue = std::queue<DeviceId>();
++    distance[src_node] = 0;
++    queue.push(src_node);
++
++    while (!queue.empty()) {
++        const auto node = queue.front();
++        queue.pop();
++        for (const auto next : adjacency[node]) {
++            if (distance[next] == -1) {
++                distance[next] = distance[node] + 1;
++                parents[next].push_back(node);
++                queue.push(next);
++            } else if (distance[next] == distance[node] + 1) {
++                parents[next].push_back(node);
++            }
++        }
++    }
++
++    if (distance[dst_node] == -1) {
++        return {};
++    }
++
++    auto paths = std::vector<std::vector<DeviceId>>();
++    auto current_path = std::vector<DeviceId>();
++    std::function<void(DeviceId)> backtrack = [&](const DeviceId node) {
++        current_path.push_back(node);
++        if (node == src_node) {
++            auto path = current_path;
++            std::reverse(path.begin(), path.end());
++            paths.push_back(std::move(path));
++        } else {
++            auto node_parents = parents[node];
++            std::sort(node_parents.begin(), node_parents.end());
++            for (const auto parent : node_parents) {
++                backtrack(parent);
++            }
++        }
++        current_path.pop_back();
++    };
++    backtrack(dst_node);
++    std::sort(paths.begin(), paths.end());
++    return paths;
++}
++
++void GraphTopology::precompute_rank_paths() {
++    shortest_paths_by_rank.assign(npus_count, std::vector<std::vector<DeviceId>>(npus_count));
++    equal_cost_paths_by_rank.assign(
++        npus_count,
++        std::vector<std::vector<std::vector<DeviceId>>>(npus_count));
++    for (auto src = 0; src < npus_count; src++) {
++        for (auto dst = 0; dst < npus_count; dst++) {
++            if (src == dst) {
++                shortest_paths_by_rank[src][dst] = {rank_to_node[src]};
++                equal_cost_paths_by_rank[src][dst] = {{rank_to_node[src]}};
++                continue;
++            }
++            const auto paths = compute_equal_cost_shortest_paths(rank_to_node[src], rank_to_node[dst]);
++            if (paths.empty()) {
++                std::cerr << "[Error] (network/analytical/congestion_aware/GraphTopology) "
++                          << "graph is disconnected for rank pair " << src << " -> " << dst << std::endl;
++                std::exit(-1);
++            }
++            equal_cost_paths_by_rank[src][dst] = paths;
++            shortest_paths_by_rank[src][dst] = paths.front();
++        }
++    }
++}
++
++Route GraphTopology::route(const DeviceId src, const DeviceId dest) const noexcept {
++    assert(0 <= src && src < npus_count);
++    assert(0 <= dest && dest < npus_count);
++
++    auto route = Route();
++    for (const auto graph_node : shortest_paths_by_rank[src][dest]) {
++        route.push_back(devices[graph_node]);
++    }
++    return route;
++}
++
++std::vector<Route> GraphTopology::routes(const DeviceId src, const DeviceId dest) const noexcept {
++    assert(0 <= src && src < npus_count);
++    assert(0 <= dest && dest < npus_count);
++
++    auto routes = std::vector<Route>();
++    for (const auto& graph_path : equal_cost_paths_by_rank[src][dest]) {
++        auto route = Route();
++        for (const auto graph_node : graph_path) {
++            route.push_back(devices[graph_node]);
++        }
++        routes.push_back(std::move(route));
++    }
++    return routes;
++}
+diff --git a/include/astra-network-analytical/congestion_aware/GraphTopology.h b/include/astra-network-analytical/congestion_aware/GraphTopology.h
+new file mode 100644
+index 0000000..fd45ee5
+--- /dev/null
++++ b/include/astra-network-analytical/congestion_aware/GraphTopology.h
+@@ -0,0 +1,83 @@
++/******************************************************************************
++This source code is licensed under the MIT license found in the
++LICENSE file in the root directory of this source tree.
++*******************************************************************************/
++
++#pragma once
++
++#include "common/Type.h"
++#include "congestion_aware/Topology.h"
++#include <string>
++#include <utility>
++#include <vector>
++
++using namespace NetworkAnalytical;
++
++namespace NetworkAnalyticalCongestionAware {
++
++/**
++ * GraphTopology implements an arbitrary deterministic graph topology.
++ *
++ * Ranks map to graph nodes through rank_nodes. Graph nodes may include
++ * non-GPU switch nodes, which lets the same topology class represent
++ * structures such as folded-Clos in addition to GPU-only graphs.
++ */
++class GraphTopology final : public Topology {
++  public:
++    /**
++     * Constructor.
++     *
++     * @param graph_file YAML/JSON graph topology file.
++     * @param expected_npus_count expected ASTRA rank/NPU count.
++     */
++    GraphTopology(const std::string& graph_file, int expected_npus_count);
++
++    /**
++     * Construct deterministic shortest path route from source rank to
++     * destination rank.
++     */
++    [[nodiscard]] Route route(DeviceId src, DeviceId dest) const noexcept override;
++
++    /**
++     * Construct all deterministic equal-cost shortest paths from source rank to
++     * destination rank.
++     */
++    [[nodiscard]] std::vector<Route> routes(DeviceId src, DeviceId dest) const noexcept override;
++
++  private:
++    /// rank id -> graph node id
++    std::vector<DeviceId> rank_to_node;
++
++    /// adjacency list of graph node ids
++    std::vector<std::vector<DeviceId>> adjacency;
++
++    /// precomputed shortest graph-node paths indexed by source/destination rank
++    std::vector<std::vector<std::vector<DeviceId>>> shortest_paths_by_rank;
++
++    /// precomputed equal-cost shortest graph-node paths indexed by source/destination rank
++    std::vector<std::vector<std::vector<std::vector<DeviceId>>>> equal_cost_paths_by_rank;
++
++    /**
++     * Load and validate topology from YAML/JSON file.
++     */
++    void load_graph_file(const std::string& graph_file, int expected_npus_count);
++
++    /**
++     * Compute deterministic shortest path between two graph nodes.
++     */
++    [[nodiscard]] std::vector<DeviceId> compute_shortest_path(DeviceId src_node, DeviceId dst_node) const;
++
++    /**
++     * Compute all equal-cost shortest paths between two graph nodes.
++     */
++    [[nodiscard]] std::vector<std::vector<DeviceId>> compute_equal_cost_shortest_paths(
++        DeviceId src_node,
++        DeviceId dst_node) const;
++
++    /**
++     * Precompute deterministic shortest paths between all rank pairs.
++     */
++    void precompute_rank_paths();
++};
++
++}  // namespace NetworkAnalyticalCongestionAware

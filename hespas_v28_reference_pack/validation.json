@@ -1,0 +1,15 @@
+{
+  "results_from_astra_sim": false,
+  "results_from_custom_analytical_evaluator": true,
+  "astra_sim_only_used_for_earlier_smoke_tests": true,
+  "en_uses_no_optical_paths": true,
+  "son_ron_use_no_eps_fallback": true,
+  "torus_deterministic_and_ecmp_same_topology_bandwidth": true,
+  "son_torus_and_ron_degree4_1p6tbps_per_gpu_400gbps_per_link": true,
+  "son_ring_degree2_1p6tbps_per_gpu_800gbps_per_link": true,
+  "local_traffic_excluded": true,
+  "dispatch_combine_sequential": true,
+  "ron_calibrated_uses_first_10_percent": true,
+  "ron_w4_reconfigures_once_per_request": true,
+  "multi_hop_semantics": "abstract optical switching fabric path; if interpreted as GPU/NIC forwarding this is a serious modelling limitation"
+}

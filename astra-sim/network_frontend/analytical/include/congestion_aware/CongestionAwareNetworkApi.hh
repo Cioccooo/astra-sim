@@ -7,6 +7,7 @@ LICENSE file in the root directory of this source tree.
 
 #include "common/CommonNetworkApi.hh"
 #include <astra-network-analytical/congestion_aware/Topology.h>
+#include <string>
 
 using namespace AstraSim;
 using namespace AstraSimAnalytical;
@@ -23,6 +24,14 @@ class CongestionAwareNetworkApi final : public CommonNetworkApi {
      * @param topology_ptr pointer to the topology
      */
     static void set_topology(std::shared_ptr<Topology> topology_ptr) noexcept;
+
+    /**
+     * Set routing options parsed from the network configuration.
+     */
+    static void set_routing_config(std::string routing,
+                                   std::string ecmp_split,
+                                   int ecmp_max_paths,
+                                   bool ecmp_log) noexcept;
 
     /**
      * Constructor.
@@ -46,6 +55,14 @@ class CongestionAwareNetworkApi final : public CommonNetworkApi {
   private:
     /// topology
     static std::shared_ptr<Topology> topology;
+
+    static bool ecmp_enabled;
+
+    static int ecmp_max_paths;
+
+    static bool ecmp_log;
+
+    static void process_ecmp_chunk_arrival(void* args) noexcept;
 };
 
 }  // namespace AstraSimAnalyticalCongestionAware

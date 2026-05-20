@@ -1,0 +1,11 @@
+ common/network-parser/NetworkParser.cpp            | 106 +++++++++++++++++++++
+ congestion_aware/topology/Helper.cpp               |   6 +-
+ congestion_aware/topology/Topology.cpp             |   4 +
+ .../common/NetworkParser.h                         |  33 +++++++
+ include/astra-network-analytical/common/Type.h     |   2 +-
+ .../congestion_aware/Topology.h                    |   9 ++
+ 6 files changed, 158 insertions(+), 2 deletions(-)
+
+Untracked files included in patch:
+- congestion_aware/basic-topology/GraphTopology.cpp
+- include/astra-network-analytical/congestion_aware/GraphTopology.h

@@ -29,3 +29,14 @@ build/astra_htsim/build/
 
 # runs
 runs
+
+# Codex archive hygiene
+**/.venv/
+**/.stg_cache/
+**/__pycache__/
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+**/.mplconfig/
+**/node_modules/
+**/.DS_Store
